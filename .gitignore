@@ -1,0 +1,16 @@
+# Data files (keep local, don't push to public repo)
+*.json
+!docs/data.json
+raw_translations/
+*.csv
+*.png
+*.out
+*.toc
+
+# Reports
+reports/
+
+# Python
+__pycache__/
+*.pyc
+.env

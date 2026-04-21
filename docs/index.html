@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Translation Annotation Tool</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f5; color: #1a1a1a; }
+
+  /* Login */
+  .login-wrapper {
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  }
+  .login-box {
+    background: #fff; border-radius: 12px; padding: 40px; max-width: 380px; width: 90%;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  }
+  .login-box h1 { font-size: 22px; margin-bottom: 6px; color: #1a1a2e; }
+  .login-box p { font-size: 14px; color: #666; margin-bottom: 24px; }
+  .login-field { margin-bottom: 16px; }
+  .login-field label { display: block; font-size: 13px; font-weight: 600; color: #555; margin-bottom: 6px; }
+  .login-field input {
+    width: 100%; padding: 10px 14px; border: 1.5px solid #d1d5db; border-radius: 6px;
+    font-size: 15px; font-family: inherit;
+  }
+  .login-field input:focus { outline: none; border-color: #3b82f6; }
+  .login-btn {
+    width: 100%; padding: 12px; border: none; border-radius: 6px; font-size: 15px;
+    font-weight: 700; cursor: pointer; background: #3b82f6; color: #fff; transition: background 0.15s;
+  }
+  .login-btn:hover { background: #2563eb; }
+  .login-error { color: #dc2626; font-size: 13px; margin-top: 12px; display: none; }
+
+  /* Header bar */
+  .topbar {
+    background: #1a1a2e; color: #fff; padding: 12px 24px; display: flex; align-items: center; gap: 16px;
+    position: sticky; top: 0; z-index: 100; flex-wrap: wrap;
+  }
+  .topbar-title { font-size: 18px; font-weight: 700; margin-right: auto; }
+  .topbar-info { font-size: 13px; color: #b0b0c0; }
+  .topbar-info strong { color: #fff; }
+  .topbar-btn {
+    padding: 7px 16px; border-radius: 6px; border: none; font-size: 13px; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .topbar-btn-primary { background: #3b82f6; color: #fff; }
+  .topbar-btn-primary:hover { background: #2563eb; }
+  .topbar-btn-secondary { background: #374151; color: #e5e7eb; }
+  .topbar-btn-secondary:hover { background: #4b5563; }
+  .topbar-btn-export { background: #059669; color: #fff; }
+  .topbar-btn-export:hover { background: #047857; }
+  .topbar-btn-logout { background: #dc2626; color: #fff; }
+  .topbar-btn-logout:hover { background: #b91c1c; }
+  .topbar-btn:disabled { opacity: 0.4; cursor: default; }
+
+  .status-badge {
+    font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 12px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .status-not-started { background: #6b7280; color: #fff; }
+  .status-partial { background: #f59e0b; color: #fff; }
+  .status-complete { background: #10b981; color: #fff; }
+
+  .container { max-width: 1400px; margin: 0 auto; padding: 24px; }
+
+  .card { background: #fff; border-radius: 8px; border: 1px solid #e0e0e0; padding: 20px; margin-bottom: 16px; }
+
+  .passage-header { display: flex; gap: 8px; align-items: center; margin-bottom: 12px; flex-wrap: wrap; }
+  .badge { font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 4px; white-space: nowrap; }
+  .badge-id { background: #1a1a2e; color: #fff; }
+  .badge-grade { background: #7c3aed; color: #fff; }
+  .badge-domain { background: #e8f5e9; color: #1b5e20; }
+  .badge-subject { background: #e8f0fe; color: #1e3a5f; }
+  .badge-age { background: #fef3c7; color: #92400e; }
+  .badge-standard { background: #1b5e20; color: #fff; }
+  .badge-sci { background: #0d9488; color: #fff; }
+  .badge-grades { background: #6366f1; color: #fff; }
+
+  .passage-text {
+    font-size: 15px; line-height: 1.7; color: #333; padding: 14px 18px;
+    background: #fafafa; border-radius: 6px; border-left: 3px solid #1e3a5f; white-space: pre-line;
+  }
+
+  .section-label {
+    font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;
+    color: #888; margin-bottom: 10px; margin-top: 4px;
+  }
+
+  /* 3-column translations grid */
+  .translations-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  @media (max-width: 1000px) { .translations-grid { grid-template-columns: 1fr; } }
+
+  .translation-col { display: flex; flex-direction: column; }
+  .translation-col-header {
+    font-weight: 700; font-size: 15px; padding: 10px 16px; border-radius: 8px 8px 0 0;
+    text-align: center;
+  }
+  .col-a .translation-col-header { background: #fef3c7; color: #92400e; }
+  .col-b .translation-col-header { background: #dbeafe; color: #1e40af; }
+  .col-c .translation-col-header { background: #ede9fe; color: #5b21b6; }
+
+  .translation-text-card {
+    font-size: 14px; line-height: 1.65; color: #333; padding: 14px 16px;
+    background: #fafafa; border: 1px solid #e0e0e0; border-top: none;
+    border-radius: 0 0 8px 8px; flex: 1; white-space: pre-line; min-height: 120px;
+  }
+
+  /* Quality rating section */
+  .quality-section { margin-top: 12px; }
+  .quality-label { font-size: 13px; font-weight: 600; color: #555; margin-bottom: 8px; }
+
+  .quality-btn-group { display: flex; gap: 0; }
+  .quality-btn {
+    flex: 1; padding: 8px 4px; border: 1.5px solid #d1d5db; background: #fff;
+    font-size: 13px; font-weight: 500; cursor: pointer; transition: all 0.15s; text-align: center;
+  }
+  .quality-btn:first-child { border-radius: 6px 0 0 6px; }
+  .quality-btn:last-child { border-radius: 0 6px 6px 0; }
+  .quality-btn:not(:first-child) { border-left: none; }
+  .quality-btn:hover { background: #f9fafb; }
+  .quality-btn.selected {
+    background: #fbbf24; color: #78350f; border-color: #f59e0b; font-weight: 700;
+  }
+  .quality-btn.readonly-selected {
+    background: #e5e7eb; color: #374151; border-color: #9ca3af; font-weight: 700;
+    cursor: default;
+  }
+
+  .comment-field {
+    width: 100%; border: 1px solid #ddd; border-radius: 6px; padding: 8px 10px;
+    font-size: 13px; font-family: inherit; margin-top: 8px; resize: vertical;
+  }
+  .comment-label { font-size: 12px; color: #888; margin-top: 8px; }
+  .readonly-comment {
+    font-size: 13px; color: #555; background: #f3f4f6; padding: 8px 10px;
+    border-radius: 6px; margin-top: 6px; font-style: italic; min-height: 20px;
+  }
+
+  /* Standards section */
+  .standard-block {
+    border: 1px solid #e0e0e0; border-radius: 8px; padding: 16px; margin-bottom: 14px;
+  }
+  .standard-header { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+  .standard-desc { font-size: 14px; color: #444; line-height: 1.5; margin-bottom: 12px; }
+
+  .confirm-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+  .confirm-label { font-size: 13px; color: #555; font-weight: 500; }
+  .confirm-btn {
+    padding: 6px 18px; border-radius: 6px; border: 1.5px solid #ccc; background: #fff;
+    font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.15s;
+  }
+  .confirm-btn:hover { border-color: #999; }
+  .confirm-btn.selected-yes { background: #1b5e20; color: #fff; border-color: #1b5e20; }
+  .confirm-btn.selected-no { background: #c62828; color: #fff; border-color: #c62828; }
+
+  /* Preservation ratings */
+  .preservation-ratings { margin-top: 10px; }
+  .preservation-row { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+  .preservation-label { font-size: 13px; font-weight: 600; min-width: 110px; }
+  .rating-scale { display: flex; gap: 0; flex: 1; max-width: 400px; }
+  .rating-btn {
+    flex: 1; padding: 7px 4px; border: 1.5px solid #ddd; background: #fff;
+    font-size: 12px; cursor: pointer; transition: all 0.15s; text-align: center; font-weight: 500;
+  }
+  .rating-btn:first-child { border-radius: 6px 0 0 6px; }
+  .rating-btn:last-child { border-radius: 0 6px 6px 0; }
+  .rating-btn:not(:first-child) { border-left: none; }
+  .rating-btn:hover { background: #f5f5f5; }
+  .rating-btn.active-1 { background: #fecaca; border-color: #dc2626; color: #dc2626; font-weight: 700; }
+  .rating-btn.active-2 { background: #fed7aa; border-color: #ea580c; color: #ea580c; font-weight: 700; }
+  .rating-btn.active-3 { background: #bbf7d0; border-color: #16a34a; color: #16a34a; font-weight: 700; }
+  .rating-btn.active-4 { background: #bfdbfe; border-color: #2563eb; color: #2563eb; font-weight: 700; }
+
+  .disabled-overlay { opacity: 0.3; pointer-events: none; }
+
+  .standard-comment-field {
+    width: 100%; border: 1px solid #ddd; border-radius: 6px; padding: 8px 10px;
+    font-size: 13px; font-family: inherit; margin-top: 8px; resize: vertical;
+  }
+
+  /* Legend */
+  .legend {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;
+    padding: 12px; background: #fafafa; border-radius: 6px; margin-bottom: 16px;
+  }
+  .legend-item { text-align: center; }
+  .legend-num { font-weight: 700; font-size: 16px; }
+  .legend-label { font-size: 11px; color: #666; }
+  .legend-1 .legend-num { color: #dc2626; }
+  .legend-2 .legend-num { color: #ea580c; }
+  .legend-3 .legend-num { color: #16a34a; }
+  .legend-4 .legend-num { color: #2563eb; }
+
+  /* Toast */
+  .toast {
+    position: fixed; bottom: 24px; right: 24px; background: #1a1a2e; color: #fff;
+    padding: 12px 20px; border-radius: 8px; font-size: 14px; font-weight: 500;
+    z-index: 200; opacity: 0; transition: opacity 0.3s; pointer-events: none;
+  }
+  .toast.show { opacity: 1; }
+
+  .rater-indicator {
+    font-size: 12px; background: #8b5cf6; color: #fff; padding: 3px 10px;
+    border-radius: 12px; font-weight: 600;
+  }
+
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+
+<!-- Login screen -->
+<div id="loginScreen" class="login-wrapper">
+  <div class="login-box">
+    <h1>Translation Annotation Tool</h1>
+    <p>Sign in with your assigned username and password.</p>
+    <div class="login-field">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="rater1 or rater2" autocomplete="username">
+    </div>
+    <div class="login-field">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter password" autocomplete="current-password">
+    </div>
+    <button class="login-btn" onclick="attemptLogin()">Sign In</button>
+    <div class="login-error" id="loginError">Invalid username or password.</div>
+  </div>
+</div>
+
+<!-- App (hidden until login) -->
+<div id="appScreen" class="hidden">
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="topbar-title">Translation Annotation Tool</div>
+    <span class="rater-indicator" id="raterBadge"></span>
+    <span class="topbar-info" id="pageInfo"></span>
+    <span class="topbar-info" id="doneInfo"></span>
+    <span class="status-badge" id="statusBadge"></span>
+    <button class="topbar-btn topbar-btn-export" onclick="exportJSON()">Export JSON</button>
+    <button class="topbar-btn topbar-btn-primary" onclick="saveProgress(); showToast('Progress saved!')">Save</button>
+    <button class="topbar-btn topbar-btn-secondary" id="prevBtn" onclick="navigate(-1)">&larr; Prev</button>
+    <button class="topbar-btn topbar-btn-secondary" id="nextBtn" onclick="navigate(1)">Next &rarr;</button>
+    <button class="topbar-btn topbar-btn-logout" onclick="logout()">Logout</button>
+  </div>
+
+  <div class="container" id="mainContainer"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ==================== CONFIG ====================
+// Simple client-side auth. Not truly secure, but controls rater view.
+// Change these passwords before deploying.
+const CREDENTIALS = {
+  rater1: 'standards2026r1',
+  rater2: 'standards2026r2'
+};
+
+// ==================== STATE ====================
+let DATA = [];
+let currentPage = 0;
+let raterMode = null; // 1 or 2
+let annotations = {};
+
+// ==================== AUTH ====================
+function attemptLogin() {
+  const user = document.getElementById('username').value.trim().toLowerCase();
+  const pass = document.getElementById('password').value;
+  const errEl = document.getElementById('loginError');
+
+  if (CREDENTIALS[user] && CREDENTIALS[user] === pass) {
+    raterMode = user === 'rater1' ? 1 : 2;
+    localStorage.setItem('at_session', JSON.stringify({ user, rater: raterMode }));
+    errEl.style.display = 'none';
+    showApp();
+  } else {
+    errEl.style.display = 'block';
+  }
+}
+
+function logout() {
+  localStorage.removeItem('at_session');
+  raterMode = null;
+  document.getElementById('appScreen').classList.add('hidden');
+  document.getElementById('loginScreen').classList.remove('hidden');
+  document.getElementById('username').value = '';
+  document.getElementById('password').value = '';
+}
+
+function checkSession() {
+  const session = localStorage.getItem('at_session');
+  if (session) {
+    try {
+      const s = JSON.parse(session);
+      if (CREDENTIALS[s.user]) {
+        raterMode = s.rater;
+        return true;
+      }
+    } catch(e) {}
+  }
+  return false;
+}
+
+function showApp() {
+  document.getElementById('loginScreen').classList.add('hidden');
+  document.getElementById('appScreen').classList.remove('hidden');
+  loadProgress();
+  render();
+}
+
+// Enter key triggers login
+document.getElementById('password').addEventListener('keydown', e => {
+  if (e.key === 'Enter') attemptLogin();
+});
+document.getElementById('username').addEventListener('keydown', e => {
+  if (e.key === 'Enter') document.getElementById('password').focus();
+});
+
+// ==================== BLINDING ====================
+function shuffleOrder(pageId) {
+  let hash = 0;
+  for (let i = 0; i < pageId.length; i++) {
+    hash = ((hash << 5) - hash) + pageId.charCodeAt(i);
+    hash |= 0;
+  }
+  hash = Math.abs(hash);
+  const perms = [[0,1,2],[0,2,1],[1,0,2],[1,2,0],[2,0,1],[2,1,0]];
+  return perms[hash % 6];
+}
+
+function getLabels() { return ['Translation A', 'Translation B', 'Translation C']; }
+
+// ==================== PERSISTENCE ====================
+function storageKey() { return 'at_annotations_r' + raterMode; }
+
+function saveProgress() {
+  localStorage.setItem(storageKey(), JSON.stringify({ page: currentPage, data: annotations }));
+}
+
+function loadProgress() {
+  const saved = localStorage.getItem(storageKey());
+  if (saved) {
+    try {
+      const s = JSON.parse(saved);
+      currentPage = s.page || 0;
+      annotations = s.data || {};
+    } catch(e) {
+      annotations = {};
+    }
+  }
+  if (currentPage >= DATA.length) currentPage = 0;
+}
+
+function ensureAnnotation(pageId) {
+  if (!annotations[pageId]) {
+    const order = shuffleOrder(pageId);
+    annotations[pageId] = {
+      rater: raterMode,
+      translationOrder: order,
+      quality: {},
+      qualityComments: {},
+      sourceConfirmed: {},
+      preservation: {},
+      standardComments: {},
+    };
+  }
+  return annotations[pageId];
+}
+
+// ==================== COMPLETION ====================
+function getPageStatus(pageId) {
+  const ann = annotations[pageId];
+  const page = DATA.find(d => d.page_id === pageId);
+  if (!ann || !page) return 'not-started';
+
+  let hasAnything = false;
+  let allDone = true;
+
+  // Quality (rater 2 only)
+  if (raterMode === 2) {
+    page.translations.forEach(t => {
+      if (ann.quality[t.model]) hasAnything = true;
+      else allDone = false;
+    });
+  }
+
+  // Source confirmation + preservation
+  page.standards.forEach(s => {
+    const conf = ann.sourceConfirmed[s.standard_code];
+    if (conf !== undefined) {
+      hasAnything = true;
+      if (conf === true) {
+        page.translations.forEach(t => {
+          const key = s.standard_code + '__' + t.model;
+          if (ann.preservation[key]) hasAnything = true;
+          else allDone = false;
+        });
+      }
+    } else {
+      allDone = false;
+    }
+  });
+
+  if (!hasAnything) return 'not-started';
+  if (allDone) return 'complete';
+  return 'partial';
+}
+
+function countDone() {
+  let count = 0;
+  DATA.forEach(d => { if (getPageStatus(d.page_id) === 'complete') count++; });
+  return count;
+}
+
+// ==================== RENDER ====================
+function render() {
+  if (!raterMode || DATA.length === 0) return;
+  const page = DATA[currentPage];
+  const ann = ensureAnnotation(page.page_id);
+  const order = ann.translationOrder;
+  const labels = getLabels();
+  const colClasses = ['col-a', 'col-b', 'col-c'];
+
+  // Topbar
+  document.getElementById('pageInfo').innerHTML = 'Page <strong>' + (currentPage+1) + '</strong> of <strong>' + DATA.length + '</strong>';
+  document.getElementById('doneInfo').innerHTML = 'Done: <strong>' + countDone() + '</strong> / <strong>' + DATA.length + '</strong>';
+  document.getElementById('raterBadge').textContent = 'Rater ' + raterMode;
+  document.getElementById('prevBtn').disabled = currentPage === 0;
+  document.getElementById('nextBtn').disabled = currentPage === DATA.length - 1;
+
+  const status = getPageStatus(page.page_id);
+  const statusEl = document.getElementById('statusBadge');
+  statusEl.className = 'status-badge';
+  if (status === 'not-started') { statusEl.classList.add('status-not-started'); statusEl.textContent = 'Not Started'; }
+  else if (status === 'partial') { statusEl.classList.add('status-partial'); statusEl.textContent = 'Partial'; }
+  else { statusEl.classList.add('status-complete'); statusEl.textContent = 'Complete'; }
+
+  let html = '';
+
+  // === SOURCE PASSAGE ===
+  html += '<div class="card">';
+  html += '<div class="passage-header">';
+  html += '<span class="badge badge-id">' + page.page_id + '</span>';
+  html += '<span class="badge badge-grade">Grade: ' + page.textbook_grade + '</span>';
+  if (page.target_grade) html += '<span class="badge badge-grade">Target: ' + page.target_grade + '</span>';
+  if (page.domain) html += '<span class="badge badge-domain">' + page.domain + '</span>';
+  if (page.subject) html += '<span class="badge badge-subject">' + page.subject + '</span>';
+  if (page.target_age) html += '<span class="badge badge-age">Age ' + page.target_age + '</span>';
+  html += '</div>';
+  html += '<div class="section-label">English (Source)</div>';
+  html += '<div class="passage-text">' + escapeHtml(page.english_text) + '</div>';
+  html += '</div>';
+
+  // === TRANSLATIONS (3 columns) ===
+  html += '<div class="translations-grid">';
+  for (let i = 0; i < 3; i++) {
+    const tIdx = order[i];
+    const t = page.translations[tIdx];
+    if (!t) continue;
+
+    html += '<div class="translation-col ' + colClasses[i] + '">';
+    html += '<div class="translation-col-header">' + labels[i] + '</div>';
+    html += '<div class="translation-text-card">' + escapeHtml(t.spanish_translation) + '</div>';
+
+    // Quality section
+    html += '<div class="quality-section">';
+    html += '<div class="quality-label">Translation Quality</div>';
+
+    if (raterMode === 1) {
+      const r1q = t.rater1_quality || '';
+      html += '<div class="quality-btn-group">';
+      ['Worst', 'Middle', 'Best'].forEach(function(val) {
+        const cls = r1q === val ? 'readonly-selected' : '';
+        html += '<button class="quality-btn ' + cls + '" disabled>' + val + '</button>';
+      });
+      html += '</div>';
+      if (t.rater1_comment) {
+        html += '<div class="comment-label">Your previous comment</div>';
+        html += '<div class="readonly-comment">' + escapeHtml(t.rater1_comment) + '</div>';
+      }
+      if (!r1q) {
+        html += '<div style="font-size:12px;color:#999;margin-top:6px;font-style:italic;">No previous rating for this translation.</div>';
+      }
+    } else {
+      const q = ann.quality[t.model] || '';
+      html += '<div class="quality-btn-group">';
+      ['Worst', 'Middle', 'Best'].forEach(function(val) {
+        const cls = q === val ? 'selected' : '';
+        html += '<button class="quality-btn ' + cls + '" onclick="setQuality(\'' + t.model + '\',\'' + val + '\')">' + val + '</button>';
+      });
+      html += '</div>';
+      html += '<div class="comment-label">Comment (optional)</div>';
+      const cmt = ann.qualityComments[t.model] || '';
+      html += '<textarea class="comment-field" rows="2" placeholder="Notes on translation quality..." onchange="setQualityComment(\'' + t.model + '\', this.value)" oninput="setQualityComment(\'' + t.model + '\', this.value)">' + escapeHtml(cmt) + '</textarea>';
+    }
+
+    html += '</div></div>';
+  }
+  html += '</div>';
+
+  // === STANDARDS SECTION ===
+  html += '<div class="card">';
+  html += '<div class="section-label">Standards Preservation</div>';
+  html += '<p style="font-size:13px; color:#666; margin-bottom:14px;">';
+  html += 'For each standard, first confirm whether the source passage teaches part of it. If yes, rate how well each translation preserves that content.';
+  html += '</p>';
+  html += '<div class="legend">';
+  html += '<div class="legend-item legend-1"><div class="legend-num">1</div><div class="legend-label">None &mdash; content lost</div></div>';
+  html += '<div class="legend-item legend-2"><div class="legend-num">2</div><div class="legend-label">Weak &mdash; vague trace</div></div>';
+  html += '<div class="legend-item legend-3"><div class="legend-num">3</div><div class="legend-label">Partial &mdash; some ideas</div></div>';
+  html += '<div class="legend-item legend-4"><div class="legend-num">4</div><div class="legend-label">Full &mdash; fully preserved</div></div>';
+  html += '</div>';
+
+  page.standards.forEach(function(s) {
+    const confirmed = ann.sourceConfirmed[s.standard_code];
+    const isConfirmedYes = confirmed === true;
+    const ratingsDisabled = !isConfirmedYes;
+
+    html += '<div class="standard-block">';
+    html += '<div class="standard-header">';
+    html += '<span class="badge badge-standard">' + s.standard_code + '</span>';
+    html += '<span class="badge badge-sci">Subject: Science</span>';
+    html += '<span class="badge badge-grades">Grades ' + s.grade_band + '</span>';
+    html += '</div>';
+    html += '<div class="standard-desc">' + escapeHtml(s.description) + '</div>';
+
+    html += '<div class="confirm-row">';
+    html += '<span class="confirm-label">Does the source passage teach part of this standard?</span>';
+    html += '<button class="confirm-btn ' + (confirmed === true ? 'selected-yes' : '') + '" onclick="setSourceConfirm(\'' + s.standard_code + '\', true)">Yes</button>';
+    html += '<button class="confirm-btn ' + (confirmed === false ? 'selected-no' : '') + '" onclick="setSourceConfirm(\'' + s.standard_code + '\', false)">No</button>';
+    html += '</div>';
+
+    html += '<div class="preservation-ratings ' + (ratingsDisabled ? 'disabled-overlay' : '') + '">';
+
+    for (let i = 0; i < 3; i++) {
+      const tIdx = order[i];
+      const t = page.translations[tIdx];
+      if (!t) continue;
+      const key = s.standard_code + '__' + t.model;
+      const val = ann.preservation[key] || 0;
+
+      html += '<div class="preservation-row">';
+      html += '<span class="preservation-label">' + labels[i] + '</span>';
+      html += '<div class="rating-scale">';
+      var rLabels = {1:'1 None', 2:'2 Weak', 3:'3 Partial', 4:'4 Full'};
+      [1,2,3,4].forEach(function(r) {
+        const activeCls = val === r ? 'active-' + r : '';
+        html += '<button class="rating-btn ' + activeCls + '" onclick="setPreservation(\'' + s.standard_code + '\',\'' + t.model + '\',' + r + ')" ' + (ratingsDisabled ? 'disabled' : '') + '>' + rLabels[r] + '</button>';
+      });
+      html += '</div></div>';
+    }
+
+    const sCmt = ann.standardComments[s.standard_code] || '';
+    html += '</div>';
+    html += '<div class="comment-label" style="margin-top:10px;">Standard comment (optional)</div>';
+    html += '<textarea class="standard-comment-field" rows="2" placeholder="Notes about this standard..." onchange="setStandardComment(\'' + s.standard_code + '\', this.value)" oninput="setStandardComment(\'' + s.standard_code + '\', this.value)">' + escapeHtml(sCmt) + '</textarea>';
+    html += '</div>';
+  });
+
+  html += '</div>';
+
+  document.getElementById('mainContainer').innerHTML = html;
+}
+
+function escapeHtml(str) {
+  if (!str) return '';
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ==================== EVENT HANDLERS ====================
+function setQuality(model, value) {
+  const page = DATA[currentPage];
+  const ann = ensureAnnotation(page.page_id);
+  ann.quality[model] = value;
+  saveProgress();
+  render();
+}
+
+function setQualityComment(model, value) {
+  const page = DATA[currentPage];
+  const ann = ensureAnnotation(page.page_id);
+  ann.qualityComments[model] = value;
+  saveProgress();
+}
+
+function setSourceConfirm(stdCode, value) {
+  const page = DATA[currentPage];
+  const ann = ensureAnnotation(page.page_id);
+  ann.sourceConfirmed[stdCode] = value;
+  if (value === false) {
+    page.translations.forEach(function(t) {
+      delete ann.preservation[stdCode + '__' + t.model];
+    });
+  }
+  saveProgress();
+  render();
+}
+
+function setPreservation(stdCode, model, rating) {
+  const page = DATA[currentPage];
+  const ann = ensureAnnotation(page.page_id);
+  ann.preservation[stdCode + '__' + model] = rating;
+  saveProgress();
+  render();
+}
+
+function setStandardComment(stdCode, value) {
+  const page = DATA[currentPage];
+  const ann = ensureAnnotation(page.page_id);
+  ann.standardComments[stdCode] = value;
+  saveProgress();
+}
+
+function navigate(dir) {
+  const newPage = currentPage + dir;
+  if (newPage < 0 || newPage >= DATA.length) return;
+  currentPage = newPage;
+  saveProgress();
+  render();
+  window.scrollTo(0, 0);
+}
+
+// ==================== EXPORT ====================
+function exportJSON() {
+  const output = DATA.map(function(page) {
+    const ann = annotations[page.page_id] || {};
+    const order = ann.translationOrder || shuffleOrder(page.page_id);
+
+    const translationAnnotations = page.translations.map(function(t, idx) {
+      const blindLabel = 'Translation ' + ['A','B','C'][order.indexOf(idx)];
+      const result = { model: t.model, blind_label: blindLabel };
+      if (raterMode === 1) {
+        result.rater1_quality = t.rater1_quality;
+        result.rater1_comment = t.rater1_comment;
+      } else {
+        result.rater2_quality = (ann.quality || {})[t.model] || null;
+        result.rater2_comment = (ann.qualityComments || {})[t.model] || '';
+      }
+      return result;
+    });
+
+    const standardAnnotations = page.standards.map(function(s) {
+      const confirmed = (ann.sourceConfirmed || {})[s.standard_code];
+      const preservationRatings = page.translations.map(function(t) {
+        return {
+          model: t.model,
+          rating: (ann.preservation || {})[s.standard_code + '__' + t.model] || null
+        };
+      });
+      return {
+        standard_code: s.standard_code,
+        description: s.description,
+        source_confirmed: confirmed === true ? 'yes' : confirmed === false ? 'no' : null,
+        preservation_ratings: preservationRatings,
+        comment: (ann.standardComments || {})[s.standard_code] || ''
+      };
+    });
+
+    return {
+      page_id: page.page_id,
+      rater: raterMode,
+      status: getPageStatus(page.page_id),
+      translations: translationAnnotations,
+      standards: standardAnnotations
+    };
+  });
+
+  const blob = new Blob([JSON.stringify(output, null, 2)], {type: 'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'annotations_rater' + raterMode + '_' + new Date().toISOString().slice(0,10) + '.json';
+  a.click();
+  URL.revokeObjectURL(url);
+  showToast('JSON exported!');
+}
+
+// ==================== TOAST ====================
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(function() { t.classList.remove('show'); }, 2000);
+}
+
+// ==================== KEYBOARD NAV ====================
+document.addEventListener('keydown', function(e) {
+  if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') return;
+  if (e.key === 'ArrowLeft') navigate(-1);
+  if (e.key === 'ArrowRight') navigate(1);
+});
+
+// ==================== INIT ====================
+async function init() {
+  // Load data
+  try {
+    const resp = await fetch('data.json');
+    DATA = await resp.json();
+  } catch(e) {
+    document.getElementById('loginScreen').innerHTML = '<div class="login-box"><h1>Error</h1><p>Could not load data.json. Make sure it is in the same directory.</p></div>';
+    return;
+  }
+
+  // Check existing session
+  if (checkSession()) {
+    showApp();
+  }
+}
+
+init();
+</script>
+</body>
+</html>
