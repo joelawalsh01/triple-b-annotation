@@ -235,12 +235,15 @@
   <div class="topbar">
     <div class="topbar-title">Translation Annotation Tool</div>
     <span class="rater-indicator" id="raterBadge"></span>
+    <select id="datasetSelect" onchange="switchDataset(this.value)" style="padding:6px 10px;border-radius:6px;border:1px solid #555;background:#374151;color:#e5e7eb;font-size:13px;font-weight:600;cursor:pointer;"></select>
     <span class="topbar-info" id="pageInfo"></span>
     <span class="topbar-info" id="doneInfo"></span>
     <span class="status-badge" id="statusBadge"></span>
     <span id="syncStatus" style="font-size:12px;color:#b0b0c0;"></span>
     <button class="topbar-btn topbar-btn-export" onclick="exportJSON()">Export JSON</button>
+    <button class="topbar-btn topbar-btn-logout" style="background:#b91c1c;" onclick="resetAnnotations()">Reset</button>
     <button class="topbar-btn topbar-btn-primary" onclick="saveProgress(); syncToGitHub(); showToast('Saving...')">Save</button>
+    <button class="topbar-btn topbar-btn-secondary" onclick="resetCurrentPage()">Clear Page</button>
     <button class="topbar-btn topbar-btn-secondary" id="prevBtn" onclick="navigate(-1)">&larr; Prev</button>
     <button class="topbar-btn topbar-btn-secondary" id="nextBtn" onclick="navigate(1)">Next &rarr;</button>
     <button class="topbar-btn topbar-btn-logout" onclick="logout()">Logout</button>
@@ -263,10 +266,17 @@ const GH_OWNER = 'joelawalsh01';
 const GH_REPO = 'triple-b-annotation';
 const GH_TOKEN = ['github_pat_11ADND6YI0','IQCPUeu2D9gi_sGQNr6L9N2V','vazdXxZaBqImFyN8bYH7q7FF','BJ6ppLvsXHEI4YD2HC7nRRzL'].join('');
 
+// ==================== DATASETS ====================
+const DATASETS = [
+  { id: 'initial_set', label: 'Initial Set', file: 'data.json' },
+  // { id: 'second_set', label: 'Second Set', file: 'data_second.json' },
+];
+
 // ==================== STATE ====================
 let DATA = [];
 let currentPage = 0;
 let raterMode = null; // 1 or 2
+let currentDataset = DATASETS[0].id;
 let annotations = {};
 let ghFileSha = {}; // tracks SHA per rater file for updates
 let saveTimer = null; // debounce timer
@@ -341,8 +351,8 @@ function shuffleOrder(pageId) {
 function getLabels() { return ['Translation A', 'Translation B', 'Translation C']; }
 
 // ==================== PERSISTENCE ====================
-function storageKey() { return 'at_annotations_r' + raterMode; }
-function ghFileName() { return 'annotations_rater' + raterMode + '.json'; }
+function storageKey() { return 'at_annotations_' + currentDataset + '_r' + raterMode; }
+function ghFileName() { return 'annotations_' + currentDataset + '_rater' + raterMode + '.json'; }
 
 function saveProgress() {
   // Always save to localStorage immediately
@@ -808,6 +818,73 @@ function exportJSON() {
   showToast('JSON exported!');
 }
 
+// ==================== DATASET SWITCH ====================
+async function switchDataset(datasetId) {
+  // Save current progress first
+  saveProgress();
+  if (saveTimer) { clearTimeout(saveTimer); await syncToGitHub(); }
+
+  currentDataset = datasetId;
+  const ds = DATASETS.find(d => d.id === datasetId);
+  try {
+    const resp = await fetch(ds.file);
+    DATA = await resp.json();
+  } catch(e) {
+    showToast('Could not load ' + ds.file);
+    return;
+  }
+  currentPage = 0;
+  annotations = {};
+  ghFileSha = {};
+  await loadProgress();
+  render();
+  showToast('Switched to ' + ds.label);
+}
+
+// ==================== CLEAR PAGE ====================
+function resetCurrentPage() {
+  const page = DATA[currentPage];
+  if (!confirm('Clear all annotations on this page (' + page.page_id + ')?')) return;
+  delete annotations[page.page_id];
+  saveProgress();
+  render();
+  showToast('Page cleared.');
+}
+
+// ==================== RESET ====================
+async function resetAnnotations() {
+  if (!confirm('Reset ALL annotations for Rater ' + raterMode + '? This cannot be undone.')) return;
+  if (!confirm('Are you sure? This will delete all your work.')) return;
+
+  // Clear local
+  annotations = {};
+  currentPage = 0;
+  localStorage.removeItem(storageKey());
+
+  // Delete from GitHub
+  const filename = ghFileName();
+  const sha = ghFileSha[filename];
+  if (sha && GH_TOKEN !== 'PASTE_TOKEN_HERE') {
+    try {
+      await fetch('https://api.github.com/repos/' + GH_OWNER + '/' + GH_REPO + '/contents/' + filename, {
+        method: 'DELETE',
+        headers: {
+          'Authorization': 'Bearer ' + GH_TOKEN,
+          'Content-Type': 'application/json',
+          'Accept': 'application/vnd.github.v3+json'
+        },
+        body: JSON.stringify({ message: 'Reset rater ' + raterMode + ' annotations', sha: sha })
+      });
+      delete ghFileSha[filename];
+    } catch(e) {
+      console.error('GitHub delete error:', e);
+    }
+  }
+
+  render();
+  showToast('Annotations reset.');
+}
+
 // ==================== TOAST ====================
 function showToast(msg) {
   const t = document.getElementById('toast');
@@ -825,12 +902,23 @@ document.addEventListener('keydown', function(e) {
 
 // ==================== INIT ====================
 async function init() {
+  // Populate dataset dropdown
+  const sel = document.getElementById('datasetSelect');
+  DATASETS.forEach(function(ds) {
+    const opt = document.createElement('option');
+    opt.value = ds.id;
+    opt.textContent = ds.label;
+    sel.appendChild(opt);
+  });
+  sel.value = currentDataset;
+
   // Load data
+  const ds = DATASETS.find(d => d.id === currentDataset);
   try {
-    const resp = await fetch('data.json');
+    const resp = await fetch(ds.file);
     DATA = await resp.json();
   } catch(e) {
-    document.getElementById('loginScreen').innerHTML = '<div class="login-box"><h1>Error</h1><p>Could not load data.json. Make sure it is in the same directory.</p></div>';
+    document.getElementById('loginScreen').innerHTML = '<div class="login-box"><h1>Error</h1><p>Could not load ' + ds.file + '. Make sure it is in the same directory.</p></div>';
     return;
   }
 
