@@ -238,8 +238,9 @@
     <span class="topbar-info" id="pageInfo"></span>
     <span class="topbar-info" id="doneInfo"></span>
     <span class="status-badge" id="statusBadge"></span>
+    <span id="syncStatus" style="font-size:12px;color:#b0b0c0;"></span>
     <button class="topbar-btn topbar-btn-export" onclick="exportJSON()">Export JSON</button>
-    <button class="topbar-btn topbar-btn-primary" onclick="saveProgress(); showToast('Progress saved!')">Save</button>
+    <button class="topbar-btn topbar-btn-primary" onclick="saveProgress(); syncToGitHub(); showToast('Saving...')">Save</button>
     <button class="topbar-btn topbar-btn-secondary" id="prevBtn" onclick="navigate(-1)">&larr; Prev</button>
     <button class="topbar-btn topbar-btn-secondary" id="nextBtn" onclick="navigate(1)">Next &rarr;</button>
     <button class="topbar-btn topbar-btn-logout" onclick="logout()">Logout</button>
@@ -252,18 +253,24 @@
 
 <script>
 // ==================== CONFIG ====================
-// Simple client-side auth. Not truly secure, but controls rater view.
-// Change these passwords before deploying.
 const CREDENTIALS = {
   rater1: 'standards2026r1',
   rater2: 'standards2026r2'
 };
+
+// GitHub persistence config
+const GH_OWNER = 'joelawalsh01';
+const GH_REPO = 'triple-b-annotation';
+const GH_TOKEN = 'PASTE_TOKEN_HERE'; // fine-grained PAT with Contents read/write on this repo
 
 // ==================== STATE ====================
 let DATA = [];
 let currentPage = 0;
 let raterMode = null; // 1 or 2
 let annotations = {};
+let ghFileSha = {}; // tracks SHA per rater file for updates
+let saveTimer = null; // debounce timer
+let isSyncing = false;
 
 // ==================== AUTH ====================
 function attemptLogin() {
@@ -304,10 +311,10 @@ function checkSession() {
   return false;
 }
 
-function showApp() {
+async function showApp() {
   document.getElementById('loginScreen').classList.add('hidden');
   document.getElementById('appScreen').classList.remove('hidden');
-  loadProgress();
+  await loadProgress();
   render();
 }
 
@@ -335,22 +342,145 @@ function getLabels() { return ['Translation A', 'Translation B', 'Translation C'
 
 // ==================== PERSISTENCE ====================
 function storageKey() { return 'at_annotations_r' + raterMode; }
+function ghFileName() { return 'annotations_rater' + raterMode + '.json'; }
 
 function saveProgress() {
+  // Always save to localStorage immediately
   localStorage.setItem(storageKey(), JSON.stringify({ page: currentPage, data: annotations }));
+  // Debounce GitHub sync (5 seconds after last change)
+  if (saveTimer) clearTimeout(saveTimer);
+  saveTimer = setTimeout(syncToGitHub, 5000);
 }
 
-function loadProgress() {
-  const saved = localStorage.getItem(storageKey());
-  if (saved) {
-    try {
-      const s = JSON.parse(saved);
-      currentPage = s.page || 0;
-      annotations = s.data || {};
-    } catch(e) {
-      annotations = {};
+async function syncToGitHub() {
+  if (isSyncing || !raterMode || GH_TOKEN === 'PASTE_TOKEN_HERE') return;
+  isSyncing = true;
+
+  const filename = ghFileName();
+  const payload = JSON.stringify({ page: currentPage, data: annotations }, null, 2);
+  const content = btoa(unescape(encodeURIComponent(payload))); // base64 encode
+
+  const url = 'https://api.github.com/repos/' + GH_OWNER + '/' + GH_REPO + '/contents/' + filename;
+  const body = {
+    message: 'Auto-save rater ' + raterMode + ' progress',
+    content: content
+  };
+
+  // Include SHA if updating existing file
+  const sha = ghFileSha[filename];
+  if (sha) body.sha = sha;
+
+  try {
+    const resp = await fetch(url, {
+      method: 'PUT',
+      headers: {
+        'Authorization': 'Bearer ' + GH_TOKEN,
+        'Content-Type': 'application/json',
+        'Accept': 'application/vnd.github.v3+json'
+      },
+      body: JSON.stringify(body)
+    });
+
+    if (resp.ok) {
+      const result = await resp.json();
+      ghFileSha[filename] = result.content.sha;
+      updateSyncStatus('saved');
+    } else if (resp.status === 409) {
+      // Conflict — refetch SHA and retry once
+      await fetchGitHubSha();
+      isSyncing = false;
+      return syncToGitHub();
+    } else {
+      console.error('GitHub save failed:', resp.status);
+      updateSyncStatus('error');
     }
+  } catch(e) {
+    console.error('GitHub save error:', e);
+    updateSyncStatus('error');
   }
+  isSyncing = false;
+}
+
+async function loadFromGitHub() {
+  if (GH_TOKEN === 'PASTE_TOKEN_HERE') return false;
+
+  const filename = ghFileName();
+  const url = 'https://api.github.com/repos/' + GH_OWNER + '/' + GH_REPO + '/contents/' + filename;
+
+  try {
+    const resp = await fetch(url, {
+      headers: {
+        'Authorization': 'Bearer ' + GH_TOKEN,
+        'Accept': 'application/vnd.github.v3+json'
+      }
+    });
+
+    if (resp.ok) {
+      const result = await resp.json();
+      ghFileSha[filename] = result.sha;
+      const decoded = decodeURIComponent(escape(atob(result.content.replace(/\n/g, ''))));
+      const saved = JSON.parse(decoded);
+      return saved;
+    }
+  } catch(e) {
+    console.error('GitHub load error:', e);
+  }
+  return null;
+}
+
+async function fetchGitHubSha() {
+  if (GH_TOKEN === 'PASTE_TOKEN_HERE') return;
+  const filename = ghFileName();
+  const url = 'https://api.github.com/repos/' + GH_OWNER + '/' + GH_REPO + '/contents/' + filename;
+  try {
+    const resp = await fetch(url, {
+      headers: { 'Authorization': 'Bearer ' + GH_TOKEN, 'Accept': 'application/vnd.github.v3+json' }
+    });
+    if (resp.ok) {
+      const result = await resp.json();
+      ghFileSha[filename] = result.sha;
+    }
+  } catch(e) {}
+}
+
+function updateSyncStatus(status) {
+  const el = document.getElementById('syncStatus');
+  if (!el) return;
+  if (status === 'saved') {
+    el.textContent = 'Synced';
+    el.style.color = '#10b981';
+  } else if (status === 'error') {
+    el.textContent = 'Sync failed';
+    el.style.color = '#f59e0b';
+  } else if (status === 'saving') {
+    el.textContent = 'Saving...';
+    el.style.color = '#b0b0c0';
+  }
+}
+
+async function loadProgress() {
+  // Try GitHub first, fall back to localStorage
+  const ghData = await loadFromGitHub();
+  const localRaw = localStorage.getItem(storageKey());
+  let localData = null;
+  if (localRaw) {
+    try { localData = JSON.parse(localRaw); } catch(e) {}
+  }
+
+  // Use whichever has more data (more annotation keys)
+  const ghCount = ghData ? Object.keys(ghData.data || {}).length : 0;
+  const localCount = localData ? Object.keys(localData.data || {}).length : 0;
+
+  if (ghCount >= localCount && ghData) {
+    currentPage = ghData.page || 0;
+    annotations = ghData.data || {};
+    // Also update localStorage
+    localStorage.setItem(storageKey(), JSON.stringify(ghData));
+  } else if (localData) {
+    currentPage = localData.page || 0;
+    annotations = localData.data || {};
+  }
+
   if (currentPage >= DATA.length) currentPage = 0;
 }
 
