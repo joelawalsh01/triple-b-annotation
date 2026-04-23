@@ -1,6 +1,7 @@
 # Data files (keep local, don't push to public repo)
 *.json
 !docs/data.json
+!annotations_initial_set_rater*.json
 raw_translations/
 *.csv
 *.png
@@ -9,6 +10,19 @@ raw_translations/
 
 # Reports
 reports/
+
+# Internal research files (keep local, do not deploy to public repo)
+CLAUDE.md
+bug.md
+development.md
+annotation_mockup.html
+annotation_tool.html
+analyze_translations.py
+czi_connector.py
+
+# OS / editor cruft
+.DS_Store
+.claude/
 
 # Python
 __pycache__/
