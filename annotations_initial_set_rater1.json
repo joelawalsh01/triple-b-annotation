@@ -53,8 +53,9 @@
         "3-PS2-3": true
       },
       "preservation": {
-        "3-PS2-3__gemini": 3,
-        "3-PS2-3__aya": 2
+        "3-PS2-3__gemini": 1,
+        "3-PS2-3__aya": 1,
+        "3-PS2-3__gpt4o": 1
       },
       "standardComments": {}
     }
