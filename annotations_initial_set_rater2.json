@@ -50,12 +50,14 @@
       "quality": {},
       "qualityComments": {},
       "sourceConfirmed": {
-        "3-PS2-3": true
+        "3-PS2-3": true,
+        "3-PS2-4": true
       },
       "preservation": {
         "3-PS2-3__gemini": 3,
         "3-PS2-3__aya": 3,
-        "3-PS2-3__gpt4o": 4
+        "3-PS2-3__gpt4o": 4,
+        "3-PS2-4__gpt4o": 3
       },
       "standardComments": {}
     }
