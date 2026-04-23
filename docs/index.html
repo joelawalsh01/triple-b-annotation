@@ -305,15 +305,9 @@
 
 <script>
 // ==================== CONFIG ====================
-const CREDENTIALS = {
-  rater1: 'standards2026r1',
-  rater2: 'standards2026r2'
-};
-
-// GitHub persistence config
-const GH_OWNER = 'joelawalsh01';
-const GH_REPO = 'triple-b-annotation';
-const GH_TOKEN = ['github_pat_11ADND6YI0','IQCPUeu2D9gi_sGQNr6L9N2V','vazdXxZaBqImFyN8bYH7q7FF','BJ6ppLvsXHEI4YD2HC7nRRzL'].join('');
+// Auth + persistence go through a Cloudflare Worker so the GitHub PAT
+// never ships in client JS. See worker/SETUP.md in the research repo.
+const WORKER_URL = 'https://triple-b-annotation-worker.joelawalsh01.workers.dev';
 
 // ==================== DATASETS ====================
 const DATASETS = [
@@ -324,32 +318,43 @@ const DATASETS = [
 // ==================== STATE ====================
 let DATA = [];
 let currentPage = 0;
-let raterMode = null; // 1 or 2
+let raterMode = null;     // 1 or 2
+let raterPassword = null; // held in memory for Worker requests (not localStorage)
 let currentDataset = DATASETS[0].id;
 let annotations = {};
-let ghFileSha = {}; // tracks SHA per rater file for updates
-let saveTimer = null; // debounce timer
+let latestSha = null;     // GitHub SHA of the current rater's annotation file
+let saveTimer = null;
 let isSyncing = false;
 
 // ==================== AUTH ====================
-function attemptLogin() {
+async function attemptLogin() {
   const user = document.getElementById('username').value.trim().toLowerCase();
   const pass = document.getElementById('password').value;
   const errEl = document.getElementById('loginError');
+  const rater = user === 'rater1' ? 1 : user === 'rater2' ? 2 : null;
+  if (!rater) { errEl.style.display = 'block'; return; }
 
-  if (CREDENTIALS[user] && CREDENTIALS[user] === pass) {
-    raterMode = user === 'rater1' ? 1 : 2;
-    localStorage.setItem('at_session', JSON.stringify({ user, rater: raterMode }));
-    errEl.style.display = 'none';
-    showApp();
-  } else {
-    errEl.style.display = 'block';
-  }
+  try {
+    const resp = await fetch(WORKER_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ rater, password: pass, action: 'login' })
+    });
+    if (!resp.ok) { errEl.style.display = 'block'; return; }
+  } catch(e) { errEl.style.display = 'block'; return; }
+
+  raterMode = rater;
+  raterPassword = pass;
+  sessionStorage.setItem('at_session', JSON.stringify({ rater, password: pass }));
+  errEl.style.display = 'none';
+  showApp();
 }
 
 function logout() {
-  localStorage.removeItem('at_session');
+  sessionStorage.removeItem('at_session');
   raterMode = null;
+  raterPassword = null;
+  latestSha = null;
   document.getElementById('appScreen').classList.add('hidden');
   document.getElementById('loginScreen').classList.remove('hidden');
   document.getElementById('username').value = '';
@@ -357,12 +362,13 @@ function logout() {
 }
 
 function checkSession() {
-  const session = localStorage.getItem('at_session');
+  const session = sessionStorage.getItem('at_session');
   if (session) {
     try {
       const s = JSON.parse(session);
-      if (CREDENTIALS[s.user]) {
+      if ((s.rater === 1 || s.rater === 2) && typeof s.password === 'string') {
         raterMode = s.rater;
+        raterPassword = s.password;
         return true;
       }
     } catch(e) {}
@@ -401,105 +407,58 @@ function getLabels() { return ['Translation A', 'Translation B', 'Translation C'
 
 // ==================== PERSISTENCE ====================
 function storageKey() { return 'at_annotations_' + currentDataset + '_r' + raterMode; }
-function ghFileName() { return 'annotations_' + currentDataset + '_rater' + raterMode + '.json'; }
 
 function saveProgress() {
   // Always save to localStorage immediately
   localStorage.setItem(storageKey(), JSON.stringify({ page: currentPage, data: annotations }));
-  // Debounce GitHub sync (5 seconds after last change)
+  // Debounce Worker sync (5 seconds after last change)
   if (saveTimer) clearTimeout(saveTimer);
   saveTimer = setTimeout(syncToGitHub, 5000);
 }
 
+async function workerPost(action, extra) {
+  return fetch(WORKER_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ rater: raterMode, password: raterPassword, action, ...(extra || {}) })
+  });
+}
+
 async function syncToGitHub() {
-  if (isSyncing || !raterMode || GH_TOKEN === 'PASTE_TOKEN_HERE') return;
+  if (isSyncing || !raterMode || !raterPassword) return;
   isSyncing = true;
-
-  const filename = ghFileName();
-  const payload = JSON.stringify({ page: currentPage, data: annotations }, null, 2);
-  const content = btoa(unescape(encodeURIComponent(payload))); // base64 encode
-
-  const url = 'https://api.github.com/repos/' + GH_OWNER + '/' + GH_REPO + '/contents/' + filename;
-  const body = {
-    message: 'Auto-save rater ' + raterMode + ' progress',
-    content: content
-  };
-
-  // Include SHA if updating existing file
-  const sha = ghFileSha[filename];
-  if (sha) body.sha = sha;
-
   try {
-    const resp = await fetch(url, {
-      method: 'PUT',
-      headers: {
-        'Authorization': 'Bearer ' + GH_TOKEN,
-        'Content-Type': 'application/json',
-        'Accept': 'application/vnd.github.v3+json'
-      },
-      body: JSON.stringify(body)
+    const resp = await workerPost('save', {
+      content: { page: currentPage, data: annotations },
+      sha: latestSha || undefined
     });
-
     if (resp.ok) {
       const result = await resp.json();
-      ghFileSha[filename] = result.content.sha;
+      latestSha = result.sha;
       updateSyncStatus('saved');
-    } else if (resp.status === 409) {
-      // Conflict — refetch SHA and retry once
-      await fetchGitHubSha();
-      isSyncing = false;
-      return syncToGitHub();
     } else {
-      console.error('GitHub save failed:', resp.status);
+      console.error('Worker save failed:', resp.status);
       updateSyncStatus('error');
     }
   } catch(e) {
-    console.error('GitHub save error:', e);
+    console.error('Worker save error:', e);
     updateSyncStatus('error');
   }
   isSyncing = false;
 }
 
 async function loadFromGitHub() {
-  if (GH_TOKEN === 'PASTE_TOKEN_HERE') return false;
-
-  const filename = ghFileName();
-  const url = 'https://api.github.com/repos/' + GH_OWNER + '/' + GH_REPO + '/contents/' + filename;
-
+  if (!raterMode || !raterPassword) return null;
   try {
-    const resp = await fetch(url, {
-      headers: {
-        'Authorization': 'Bearer ' + GH_TOKEN,
-        'Accept': 'application/vnd.github.v3+json'
-      }
-    });
-
-    if (resp.ok) {
-      const result = await resp.json();
-      ghFileSha[filename] = result.sha;
-      const decoded = decodeURIComponent(escape(atob(result.content.replace(/\n/g, ''))));
-      const saved = JSON.parse(decoded);
-      return saved;
-    }
+    const resp = await workerPost('load');
+    if (!resp.ok) return null;
+    const result = await resp.json();
+    latestSha = result.sha;
+    return result.data;  // null if file doesn't exist yet
   } catch(e) {
-    console.error('GitHub load error:', e);
+    console.error('Worker load error:', e);
+    return null;
   }
-  return null;
-}
-
-async function fetchGitHubSha() {
-  if (GH_TOKEN === 'PASTE_TOKEN_HERE') return;
-  const filename = ghFileName();
-  const url = 'https://api.github.com/repos/' + GH_OWNER + '/' + GH_REPO + '/contents/' + filename;
-  try {
-    const resp = await fetch(url, {
-      headers: { 'Authorization': 'Bearer ' + GH_TOKEN, 'Accept': 'application/vnd.github.v3+json' }
-    });
-    if (resp.ok) {
-      const result = await resp.json();
-      ghFileSha[filename] = result.sha;
-    }
-  } catch(e) {}
 }
 
 function updateSyncStatus(status) {
@@ -930,7 +889,7 @@ async function switchDataset(datasetId) {
   }
   currentPage = 0;
   annotations = {};
-  ghFileSha = {};
+  latestSha = null;
   await loadProgress();
   render();
   showToast('Switched to ' + ds.label);
@@ -951,28 +910,26 @@ async function resetAnnotations() {
   if (!confirm('Reset ALL annotations for Rater ' + raterMode + '? This cannot be undone.')) return;
   if (!confirm('Are you sure? This will delete all your work.')) return;
 
-  // Clear local
+  // Clear local state
   annotations = {};
   currentPage = 0;
   localStorage.removeItem(storageKey());
 
-  // Delete from GitHub
-  const filename = ghFileName();
-  const sha = ghFileSha[filename];
-  if (sha && GH_TOKEN !== 'PASTE_TOKEN_HERE') {
+  // Overwrite the remote file with an empty state
+  if (raterMode && raterPassword) {
     try {
-      await fetch('https://api.github.com/repos/' + GH_OWNER + '/' + GH_REPO + '/contents/' + filename, {
-        method: 'DELETE',
-        headers: {
-          'Authorization': 'Bearer ' + GH_TOKEN,
-          'Content-Type': 'application/json',
-          'Accept': 'application/vnd.github.v3+json'
-        },
-        body: JSON.stringify({ message: 'Reset rater ' + raterMode + ' annotations', sha: sha })
+      const resp = await workerPost('save', {
+        content: { page: 0, data: {} },
+        sha: latestSha || undefined
       });
-      delete ghFileSha[filename];
+      if (resp.ok) {
+        const result = await resp.json();
+        latestSha = result.sha;
+      } else {
+        console.error('Worker reset failed:', resp.status);
+      }
     } catch(e) {
-      console.error('GitHub delete error:', e);
+      console.error('Worker reset error:', e);
     }
   }
 

@@ -19,6 +19,7 @@ annotation_mockup.html
 annotation_tool.html
 analyze_translations.py
 czi_connector.py
+worker/
 
 # OS / editor cruft
 .DS_Store
