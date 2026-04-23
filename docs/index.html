@@ -207,6 +207,55 @@
   }
 
   .hidden { display: none !important; }
+
+  /* Hover tooltips (data-tooltip attribute) */
+  [data-tooltip] { position: relative; }
+  [data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1a1a2e;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.35;
+    white-space: nowrap;
+    z-index: 1000;
+    pointer-events: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    animation: tooltipFade 0.1s ease-out;
+  }
+  [data-tooltip]:hover::before {
+    content: '';
+    position: absolute;
+    bottom: calc(100% + 2px);
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: #1a1a2e;
+    z-index: 1000;
+    pointer-events: none;
+  }
+  [data-tooltip-pos="below"]:hover::after {
+    bottom: auto;
+    top: calc(100% + 8px);
+  }
+  [data-tooltip-pos="below"]:hover::before {
+    bottom: auto;
+    top: calc(100% + 2px);
+    border-top-color: transparent;
+    border-bottom-color: #1a1a2e;
+  }
+  [data-tooltip-wide]:hover::after {
+    white-space: normal;
+    max-width: 260px;
+    text-align: center;
+  }
+  @keyframes tooltipFade { from { opacity: 0; } to { opacity: 1; } }
 </style>
 </head>
 <body>
@@ -240,13 +289,13 @@
     <span class="topbar-info" id="doneInfo"></span>
     <span class="status-badge" id="statusBadge"></span>
     <span id="syncStatus" style="font-size:12px;color:#b0b0c0;"></span>
-    <button class="topbar-btn topbar-btn-export" onclick="exportJSON()">Export JSON</button>
-    <button class="topbar-btn topbar-btn-logout" style="background:#b91c1c;" onclick="resetAnnotations()">Reset</button>
-    <button class="topbar-btn topbar-btn-primary" onclick="saveProgress(); syncToGitHub(); showToast('Saving...')">Save</button>
-    <button class="topbar-btn topbar-btn-secondary" onclick="resetCurrentPage()">Clear Page</button>
-    <button class="topbar-btn topbar-btn-secondary" id="prevBtn" onclick="navigate(-1)">&larr; Prev</button>
-    <button class="topbar-btn topbar-btn-secondary" id="nextBtn" onclick="navigate(1)">Next &rarr;</button>
-    <button class="topbar-btn topbar-btn-logout" onclick="logout()">Logout</button>
+    <button class="topbar-btn topbar-btn-export" onclick="exportJSON()" data-tooltip="Download your annotations as a JSON file" data-tooltip-pos="below" data-tooltip-wide>Export JSON</button>
+    <button class="topbar-btn topbar-btn-logout" style="background:#b91c1c;" onclick="resetAnnotations()" data-tooltip="Erase ALL annotations on this dataset — cannot be undone" data-tooltip-pos="below" data-tooltip-wide>Reset</button>
+    <button class="topbar-btn topbar-btn-primary" onclick="saveProgress(); syncToGitHub(); showToast('Saving...')" data-tooltip="Push changes to GitHub now (auto-saves every 5 seconds anyway)" data-tooltip-pos="below" data-tooltip-wide>Save</button>
+    <button class="topbar-btn topbar-btn-secondary" onclick="resetCurrentPage()" data-tooltip="Delete only this page's annotations" data-tooltip-pos="below" data-tooltip-wide>Clear Page</button>
+    <button class="topbar-btn topbar-btn-secondary" id="prevBtn" onclick="navigate(-1)" data-tooltip="Previous passage (← arrow key)" data-tooltip-pos="below">&larr; Prev</button>
+    <button class="topbar-btn topbar-btn-secondary" id="nextBtn" onclick="navigate(1)" data-tooltip="Next passage (→ arrow key)" data-tooltip-pos="below">Next &rarr;</button>
+    <button class="topbar-btn topbar-btn-logout" onclick="logout()" data-tooltip="Sign out" data-tooltip-pos="below">Logout</button>
   </div>
 
   <div class="container" id="mainContainer"></div>
@@ -612,22 +661,23 @@ function render() {
     if (raterMode === 1) {
       const unlocked = ann.unlocked && ann.unlocked[t.model];
       const r1q = unlocked ? (ann.quality[t.model] || t.rater1_quality || '') : (t.rater1_quality || '');
+      const qualityTips = { Worst: 'Lowest overall translation quality', Middle: 'Middle overall translation quality', Best: 'Highest overall translation quality' };
       if (unlocked) {
         html += '<div class="quality-btn-group">';
         ['Worst', 'Middle', 'Best'].forEach(function(val) {
           const cls = r1q === val ? 'selected' : '';
-          html += '<button class="quality-btn ' + cls + '" onclick="setQuality(\'' + t.model + '\',\'' + val + '\')">' + val + '</button>';
+          html += '<button class="quality-btn ' + cls + '" data-tooltip="' + qualityTips[val] + '" onclick="setQuality(\'' + t.model + '\',\'' + val + '\')">' + val + '</button>';
         });
         html += '</div>';
         html += '<div class="comment-label">Comment</div>';
         const cmt = ann.qualityComments[t.model] !== undefined ? ann.qualityComments[t.model] : (t.rater1_comment || '');
         html += '<textarea class="comment-field" rows="2" placeholder="Notes on translation quality..." onchange="setQualityComment(\'' + t.model + '\', this.value)" oninput="setQualityComment(\'' + t.model + '\', this.value)">' + escapeHtml(cmt) + '</textarea>';
-        html += '<button class="topbar-btn topbar-btn-secondary" style="margin-top:6px;font-size:11px;padding:4px 10px;" onclick="lockQuality(\'' + t.model + '\')">Lock</button>';
+        html += '<button class="topbar-btn topbar-btn-secondary" style="margin-top:6px;font-size:11px;padding:4px 10px;" data-tooltip="Finalize this edit and lock the rating again" data-tooltip-wide onclick="lockQuality(\'' + t.model + '\')">Lock</button>';
       } else {
         html += '<div class="quality-btn-group">';
         ['Worst', 'Middle', 'Best'].forEach(function(val) {
           const cls = r1q === val ? 'readonly-selected' : '';
-          html += '<button class="quality-btn ' + cls + '" disabled>' + val + '</button>';
+          html += '<button class="quality-btn ' + cls + '" data-tooltip="Your previous rating (locked — click Unlock to change)" data-tooltip-wide disabled>' + val + '</button>';
         });
         html += '</div>';
         if (t.rater1_comment) {
@@ -637,14 +687,15 @@ function render() {
         if (!r1q) {
           html += '<div style="font-size:12px;color:#999;margin-top:6px;font-style:italic;">No previous rating for this translation.</div>';
         }
-        html += '<button class="topbar-btn topbar-btn-secondary" style="margin-top:6px;font-size:11px;padding:4px 10px;" onclick="unlockQuality(\'' + t.model + '\')">Unlock</button>';
+        html += '<button class="topbar-btn topbar-btn-secondary" style="margin-top:6px;font-size:11px;padding:4px 10px;" data-tooltip="Edit your pre-existing rating" data-tooltip-wide onclick="unlockQuality(\'' + t.model + '\')">Unlock</button>';
       }
     } else {
       const q = ann.quality[t.model] || '';
+      const qualityTips = { Worst: 'Lowest overall translation quality', Middle: 'Middle overall translation quality', Best: 'Highest overall translation quality' };
       html += '<div class="quality-btn-group">';
       ['Worst', 'Middle', 'Best'].forEach(function(val) {
         const cls = q === val ? 'selected' : '';
-        html += '<button class="quality-btn ' + cls + '" onclick="setQuality(\'' + t.model + '\',\'' + val + '\')">' + val + '</button>';
+        html += '<button class="quality-btn ' + cls + '" data-tooltip="' + qualityTips[val] + '" onclick="setQuality(\'' + t.model + '\',\'' + val + '\')">' + val + '</button>';
       });
       html += '</div>';
       html += '<div class="comment-label">Comment (optional)</div>';
@@ -684,8 +735,8 @@ function render() {
 
     html += '<div class="confirm-row">';
     html += '<span class="confirm-label">Does the source passage teach part of this standard?</span>';
-    html += '<button class="confirm-btn ' + (confirmed === true ? 'selected-yes' : '') + '" onclick="setSourceConfirm(\'' + s.standard_code + '\', true)">Yes</button>';
-    html += '<button class="confirm-btn ' + (confirmed === false ? 'selected-no' : '') + '" onclick="setSourceConfirm(\'' + s.standard_code + '\', false)">No</button>';
+    html += '<button class="confirm-btn ' + (confirmed === true ? 'selected-yes' : '') + '" data-tooltip="The source passage substantively teaches part of this standard" data-tooltip-wide onclick="setSourceConfirm(\'' + s.standard_code + '\', true)">Yes</button>';
+    html += '<button class="confirm-btn ' + (confirmed === false ? 'selected-no' : '') + '" data-tooltip="Source does not teach this standard — preservation step will be skipped" data-tooltip-wide onclick="setSourceConfirm(\'' + s.standard_code + '\', false)">No</button>';
     html += '</div>';
 
     html += '<div class="preservation-ratings ' + (ratingsDisabled ? 'disabled-overlay' : '') + '">';
@@ -701,9 +752,15 @@ function render() {
       html += '<span class="preservation-label">' + labels[i] + '</span>';
       html += '<div class="rating-scale">';
       var rLabels = {1:'1 None', 2:'2 Weak', 3:'3 Partial', 4:'4 Full'};
+      var rTips = {
+        1: 'None — standard\'s content is lost in translation',
+        2: 'Weak — only a vague trace of the content remains',
+        3: 'Partial — some ideas preserved, others lost',
+        4: 'Full — standard\'s content fully preserved'
+      };
       [1,2,3,4].forEach(function(r) {
         const activeCls = val === r ? 'active-' + r : '';
-        html += '<button class="rating-btn ' + activeCls + '" onclick="setPreservation(\'' + s.standard_code + '\',\'' + t.model + '\',' + r + ')" ' + (ratingsDisabled ? 'disabled' : '') + '>' + rLabels[r] + '</button>';
+        html += '<button class="rating-btn ' + activeCls + '" data-tooltip="' + rTips[r] + '" data-tooltip-wide onclick="setPreservation(\'' + s.standard_code + '\',\'' + t.model + '\',' + r + ')" ' + (ratingsDisabled ? 'disabled' : '') + '>' + rLabels[r] + '</button>';
       });
       html += '</div></div>';
     }
