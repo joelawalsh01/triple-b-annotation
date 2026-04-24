@@ -1,5 +1,5 @@
 {
-  "page": 81,
+  "page": 80,
   "data": {
     "14891590": {
       "rater": 1,
@@ -1055,6 +1055,58 @@
       "standardComments": {}
     },
     "dedca72f": {
+      "rater": 1,
+      "translationOrder": [
+        0,
+        1,
+        2
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "11dde5e6": {
+      "rater": 1,
+      "translationOrder": [
+        1,
+        2,
+        0
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "1e93a007": {
+      "rater": 1,
+      "translationOrder": [
+        0,
+        1,
+        2
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "21323d23": {
+      "rater": 1,
+      "translationOrder": [
+        1,
+        0,
+        2
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "2d761c54": {
       "rater": 1,
       "translationOrder": [
         0,
