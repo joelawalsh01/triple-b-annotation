@@ -1091,7 +1091,9 @@
       "qualityComments": {},
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "noStandardsApply": true,
+      "noStandardsProposed": ""
     },
     "21323d23": {
       "rater": 1,
