@@ -892,11 +892,34 @@
         0,
         2
       ],
-      "quality": {},
-      "qualityComments": {},
-      "sourceConfirmed": {},
-      "preservation": {},
-      "standardComments": {}
+      "quality": {
+        "gpt4o": "Middle",
+        "aya": "Best",
+        "gemini": "Best"
+      },
+      "qualityComments": {
+        "gpt4o": "",
+        "aya": "Great translation, vocabulary and examples are great and the complexity is the same as the source.",
+        "gemini": "Great translation, vocabulary and examples are great and the complexity is the same as the source."
+      },
+      "sourceConfirmed": {
+        "HS-PS1-3": true,
+        "HS-PS2-6": true,
+        "HS-PS1-2": true,
+        "HS-PS1-1": true
+      },
+      "preservation": {
+        "HS-PS1-3__aya": 3,
+        "HS-PS2-6__aya": 3,
+        "HS-PS1-2__aya": 3,
+        "HS-PS1-1__aya": 3
+      },
+      "standardComments": {},
+      "unlocked": {
+        "gpt4o": true,
+        "aya": true,
+        "gemini": true
+      }
     },
     "e5f02862": {
       "rater": 1,
