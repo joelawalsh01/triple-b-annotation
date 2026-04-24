@@ -3740,5 +3740,485 @@
         "rater1_comment": "Great translation, great vocabulary used and matches complexity of the original source."
       }
     ]
+  },
+  {
+    "page_id": "11dde5e6",
+    "english_text": "Q: What is the maximum mass this triple beam balance can measure? A: The maximum mass it can measure is 610 grams (500 grams + 100 grams + 10 grams). Q: What is the smallest mass this triple beam balance can measure? A: The smallest mass it can measure is one-tenth (0.1) of a gram. To measure very small masses, scientists use electronic balances, like the one in the Figure 1.31. This type of balance also makes it easier to make accurate measurements because mass is shown as a digital readout. In the picture below, the balance is being used to measure the mass of a yellow powder on a glass dish. The mass of the dish alone would have to be measured ﬁrst and then subtracted from the mass of the dish and powder together. The difference between the two masses is the mass of the powder alone.",
+    "textbook_grade": "Middle School",
+    "target_grade": "5th",
+    "target_age": "9-10",
+    "domain": "Physical Science",
+    "subject": "Scientiﬁc Measuring Devices",
+    "standards": [],
+    "translations": [
+      {
+        "model": "aya",
+        "spanish_translation": "Q: ¿Cuál es la masa más pequeña que esta balanza de tres brazos puede medir? A: La masa más pequeña que puede medir es una décima (0,1) de gramo. Para medir masas muy pequeñas, los científicos usan balanzas electrónicas, como la que se muestra en la Figura 1.31. Este tipo de balanza también facilita obtener mediciones precisas porque la masa se muestra como una lectura digital. En la imagen de abajo, la balanza se está utilizando para medir la masa de un polvo amarillo en un plato de vidrio. Primero habría que medir la masa del plato solo y luego restarla de la masa del plato y el polvo juntos. La diferencia entre las dos masas es la masa del polvo solo.\"}",
+        "rater1_quality": "Middle",
+        "rater1_comment": "While the translation is not terrible it is missing small details.  But overall it is understandable and proper to use in the classroom. "
+      },
+      {
+        "model": "gemini",
+        "spanish_translation": "P: ¿Cuál es la masa máxima que puede medir esta balanza de triple brazo? R: La masa máxima que puede medir es 610 gramos (500 gramos + 100 gramos + 10 gramos). P: ¿Cuál es la masa más pequeña que puede medir esta balanza de triple brazo? R: La masa más pequeña que puede medir es una décima (0.1) de un gramo. Para medir masas muy pequeñas, los científicos usan balanzas electrónicas, como la de la Figura 1.31. Este tipo de balanza también facilita hacer mediciones precisas porque la masa aparece en una pantalla digital. En la foto de abajo, la balanza se está usando para medir la masa de un polvo amarillo sobre un platillo de vidrio. La masa del platillo solo se tendría que medir primero y luego restarse de la masa del platillo y el polvo juntos. La diferencia entre las dos masas es la masa del polvo solo.",
+        "rater1_quality": "Middle",
+        "rater1_comment": "While the translation is not terrible it is missing small details.  But overall it is understandable and proper to use in the classroom. "
+      },
+      {
+        "model": "gpt4o",
+        "spanish_translation": "Pregunta: ¿Cuál es la masa máxima que puede medir esta balanza de triple brazo? Respuesta: La masa máxima que puede medir es de 610 gramos (500 gramos + 100 gramos + 10 gramos). Pregunta: ¿Cuál es la masa más pequeña que puede medir esta balanza de triple brazo? Respuesta: La masa más pequeña que puede medir es una décima (0.1) de gramo. Para medir masas muy pequeñas, los científicos utilizan balanzas electrónicas, como la que se muestra en la Figura 1.31. Este tipo de balanza también facilita hacer mediciones precisas porque la masa se muestra en un indicador digital. En la imagen de abajo, la balanza se está utilizando para medir la masa de un polvo amarillo en un plato de vidrio. La masa del plato solo debe medirse primero y luego restarse de la masa del plato y el polvo juntos. La diferencia entre las dos masas es la masa del polvo solamente.",
+        "rater1_quality": "Middle",
+        "rater1_comment": "While the translation is not terrible it is missing small details.  But overall it is understandable and proper to use in the classroom. "
+      }
+    ]
+  },
+  {
+    "page_id": "1e93a007",
+    "english_text": "How Scientists Make Maps: The science of making maps, called cartography, is a subfield of Earth science and geography. Scientists who make maps are called cartographers. Cartographers use data from a variety of sources to create maps. They may collect data by conducting a field survey, shown in Figure 1. During a field survey, cartographers walk or drive through an area to be mapped and make measurements of that area. The information they collect is then plotted on a map. Because surveyors cannot take measurements at every site in an area, they often use their measurements to make estimated measurements for sites between surveyed points. By using remote sensing, cartographers can collect information about a site without being at that site. In remote sensing, remote sensing, equipment on satellites or airplanes obtains images of Earth’s surface. Maps are often made by combining information from images gathered remotely with information from field surveys.",
+    "textbook_grade": "High School",
+    "target_grade": "7th-8th",
+    "target_age": "12-14",
+    "domain": "Earth and Space Science",
+    "subject": "Models of the Earth",
+    "standards": [],
+    "translations": [
+      {
+        "model": "aya",
+        "spanish_translation": "Cómo los científicos hacen mapas: La ciencia de hacer mapas, llamada cartografía, es un subcampo de las ciencias de la Tierra y la geografía. Los científicos que hacen mapas se llaman cartógrafos. Los cartógrafos utilizan datos de diversas fuentes para crear mapas. Pueden recopilar datos realizando una encuesta de campo, como se muestra en la Figura 1. Durante una encuesta de campo, los cartógrafos caminan o conducen a través de un área a mapear y toman mediciones de esa área. La información que recopilan se luego traza en un mapa. Dado que los encuestadores no pueden tomar mediciones en cada sitio de un área, a menudo usan sus mediciones para hacer mediciones estimadas para sitios entre los puntos encuestados. Mediante la teledetección, los cartógrafos pueden recopilar información sobre un sitio sin estar en ese sitio. En la teledetección, el equipo de satélites o aviones obtiene imágenes de la superficie de la Tierra. Los mapas a menudo se hacen combinando información de imágenes recopiladas de forma remota con información de encuestas de campo.",
+        "rater1_quality": "",
+        "rater1_comment": ""
+      },
+      {
+        "model": "gemini",
+        "spanish_translation": "La cartografía, la ciencia dedicada a la elaboración de mapas, es un subcampo de las ciencias de la Tierra y la geografía. Los científicos que se especializan en esta disciplina son los cartógrafos, quienes emplean datos de diversas fuentes para crear sus mapas. Una forma de obtener estos datos es a través de un estudio de campo (Figura 1), en el cual los cartógrafos recorren un área para recopilar mediciones del terreno. La información recolectada es posteriormente trazada en un mapa. Dado que no es posible tomar mediciones en cada punto, frecuentemente se utilizan las mediciones existentes para estimar los valores de los sitios intermedios. Otra técnica es la teledetección, que permite a los cartógrafos recopilar información de un sitio sin estar físicamente presentes. Mediante este método, equipos instalados en satélites o aviones capturan imágenes de la superficie terrestre. Frecuentemente, los mapas se elaboran combinando la información de estas imágenes remotas con los datos de los estudios de campo.",
+        "rater1_quality": "Middle",
+        "rater1_comment": "It is not a terrible translation, the only problem is midway through the translation it begins to be repetitive and the information is dumbed down too much to make an instructional impact."
+      },
+      {
+        "model": "gpt4o",
+        "spanish_translation": "Cómo los Científicos Elaboran Mapas: La cartografía es la ciencia de crear mapas y es una subdivisión de la ciencia de la Tierra y la geografía. Los científicos que se especializan en mapas son llamados cartógrafos. Estos profesionales emplean datos de diversas fuentes para diseñar mapas precisos. Pueden recolectar estos datos mediante un levantamiento de campo, como se muestra en la Figura 1. Durante un levantamiento de campo, los cartógrafos recorren un área caminando o en vehículo para medirla detalladamente. La información recolectada se representa gráficamente en un mapa. Como no es posible medir cada punto del área, los cartógrafos usan las mediciones obtenidas para hacer estimaciones de los sitios intermedios. Mediante la teledetección, los cartógrafos obtienen información sin estar presentes en el lugar. Por ejemplo, equipos en satélites o en aviones capturan imágenes de la superficie terrestre. A menudo, los mapas se crean combinando imágenes tomadas desde el espacio con la información obtenida en campo.",
+        "rater1_quality": "Middle",
+        "rater1_comment": "It is not a terrible translation, the only problem is midway through the translation it begins to be repetitive and the information is dumbed down too much to make an instructional impact."
+      }
+    ]
+  },
+  {
+    "page_id": "21323d23",
+    "english_text": "Describing the Center The central tendency of a sample can be represented by the mean, median, or mode. The mean is the average value. It is calculated by adding the individual measurements and dividing the sum by the total number of measurements. The median is the middle value. To ﬁnd the median, rank all the measurements from smallest to largest and then ﬁnd the measurement that is in the middle. The mode is the most common value. It is the value that occurs most often.",
+    "textbook_grade": "Middle School",
+    "target_grade": "6th",
+    "target_age": "11-12",
+    "domain": "Engineering Design",
+    "subject": "Descriptive Statistics",
+    "standards": [],
+    "translations": [
+      {
+        "model": "aya",
+        "spanish_translation": "**Media:** Es el valor promedio. Para calcularla, sumas todas las mediciones y luego divides esa suma entre el número total de mediciones.",
+        "rater1_quality": "Best",
+        "rater1_comment": "Great translation, vocabulary and examples are great and the complexity is the same as the source. "
+      },
+      {
+        "model": "gemini",
+        "spanish_translation": "Describiendo el Centro. La tendencia central de un conjunto de datos puede representarse mediante la media, la mediana o la moda. La media, que representa el valor promedio, se calcula sumando todas las mediciones individuales y dividiendo la suma por el número total de mediciones. La mediana es el valor que ocupa la posición central; para encontrarla, se deben ordenar todas las mediciones de menor a mayor para luego identificar el valor que se encuentra justo en el medio. La moda es el valor con la mayor frecuencia, es decir, el que aparece más a menudo en el conjunto de datos.",
+        "rater1_quality": "",
+        "rater1_comment": ""
+      },
+      {
+        "model": "gpt4o",
+        "spanish_translation": "Describiendo la Tendencia Central. La tendencia central de una muestra puede ser representada por la media, la mediana o la moda. La media es el valor promedio, calculado sumando todas las mediciones individuales y dividiendo dicha suma por el número total de mediciones. La mediana es el valor intermedio. Para determinar la mediana, es necesario ordenar todas las mediciones de menor a mayor y localizar el valor central. La moda es el valor más frecuente, es decir, el que aparece con mayor regularidad en el conjunto de datos.",
+        "rater1_quality": "Best",
+        "rater1_comment": "Great translation, vocabulary and examples are great and the complexity is the same as the source. "
+      }
+    ]
+  },
+  {
+    "page_id": "2d761c54",
+    "english_text": "Evolution of Science People have probably wondered about the natural world for as long as there have been people. So it’s no surprise that science has roots that go back thousands of years. Some of the earliest contributions to science were made by Greek philosophers more than two thousand years ago. It wasn’t until many centuries later, however, that the scientiﬁc method and experimentation were introduced. The dawn of modern science occurred even more recently. It is generally traced back to the scientiﬁc revolution, which took place in Europe starting in the 1500s.",
+    "textbook_grade": "Middle School",
+    "target_grade": "5th",
+    "target_age": "11-12",
+    "domain": "Physical Science",
+    "subject": "History of Science",
+    "standards": [],
+    "translations": [
+      {
+        "model": "aya",
+        "spanish_translation": "La evolución de la ciencia. Es probable que las personas se hayan preguntado sobre el mundo natural desde que existen los seres humanos. Por lo tanto, no es de extrañar que la ciencia tenga raíces que se remontan a miles de años atrás. Algunas de las primeras contribuciones a la ciencia fueron realizadas por filósofos griegos hace más de dos mil años. Sin embargo, no fue hasta muchos siglos después que se introdujeron el método científico y la experimentación. El amanecer de la ciencia moderna ocurrió aún más recientemente. Por lo general, se remonta a la Revolución Científica, que tuvo lugar en Europa a partir de los años 1500.",
+        "rater1_quality": "Middle",
+        "rater1_comment": "Over simplified for the grade level and age group. The main idea is clear in both but the delivery is very different than the source. "
+      },
+      {
+        "model": "gemini",
+        "spanish_translation": "La historia de la ciencia\n\nLa gente siempre se ha hecho preguntas sobre el mundo. Por eso, la ciencia empezó hace miles de años. Unos pensadores en Grecia tuvieron las primeras ideas importantes. Esto fue hace más de dos mil años. Mucho tiempo después, la gente empezó a hacer experimentos. Usaban un plan llamado el método científico para probar sus ideas. La ciencia moderna empezó hace menos tiempo. Comenzó en un período llamado la revolución científica. Esto pasó en Europa a partir del año 1500.",
+        "rater1_quality": "Middle",
+        "rater1_comment": "Over simplified for the grade level and age group. The main idea is clear in both but the delivery is very different than the source. "
+      },
+      {
+        "model": "gpt4o",
+        "spanish_translation": "Evolución de la Ciencia Las personas han sentido curiosidad sobre el mundo natural desde siempre. La ciencia tiene raíces de hace miles de años. Filósofos griegos hicieron algunas de las primeras contribuciones hace más de dos mil años. No fue hasta siglos después que empezaron a usar el método científico. El comienzo de la ciencia moderna es más reciente. Esto empezó con un gran cambio en la ciencia en Europa, en los años 1500.",
+        "rater1_quality": "",
+        "rater1_comment": ""
+      }
+    ]
+  },
+  {
+    "page_id": "3dfa7ff5",
+    "english_text": "Summary Cultural, social, and economic biases have made it far harder for women and people of color than for white males to excel in science. This explains why there have been fewer scientists among their ranks. Despite their relative lack of opportunities, women and people of color have made many important contributions to science, and several have won Nobel prizes for their discoveries. ",
+    "textbook_grade": "Middle School",
+    "target_grade": "6th",
+    "target_age": "11-12",
+    "domain": "Engineering Design",
+    "subject": "Women and People of Color",
+    "standards": [],
+    "translations": [
+      {
+        "model": "aya",
+        "spanish_translation": "Los prejuicios sociales y económicos han hecho que sea más difícil para las mujeres y las personas de color ser científicas. Esto explica por qué hay menos mujeres y personas de color en la ciencia. A pesar de tener menos oportunidades, han hecho grandes aportes a la ciencia y algunas han ganado premios Nobel por sus importantes contribuciones.",
+        "rater1_quality": "",
+        "rater1_comment": ""
+      },
+      {
+        "model": "gemini",
+        "spanish_translation": "Resumen: Por causa de ideas injustas en la sociedad, para las mujeres y las personas de color ha sido mucho más difícil tener éxito en la ciencia que para los hombres blancos. Esto explica por qué ha habido menos científicos en estos grupos. A pesar de tener menos oportunidades, han hecho muchas contribuciones importantes a la ciencia, y varios de ellos han ganado premios Nobel por sus descubrimientos.",
+        "rater1_quality": "Worst",
+        "rater1_comment": "Translation fall apart in the first sentence causing it to lose the entirety of its sense. "
+      },
+      {
+        "model": "gpt4o",
+        "spanish_translation": "Las ideas culturales, sociales y de dinero han dificultado a mujeres y personas de color sobresalir en ciencia más que a los hombres blancos. Por eso, hay menos científicos entre ellos. Aunque tienen menos oportunidades, han hecho contribuciones importantes en ciencia. Algunos han ganado premios por sus descubrimientos.",
+        "rater1_quality": "",
+        "rater1_comment": ""
+      }
+    ]
+  },
+  {
+    "page_id": "693644d2",
+    "english_text": "A Scientiﬁc Hypothesis Must Be Falsiﬁable A hypothesis may be testable, but even that isn’t enough for it to be a scientiﬁc hypothesis. In addition, it must be possible to show that the hypothesis is false if it really is false. Consider this statement: “There are other planets in the universe where life exists.” This statement is testable. If it is true, it is at least theoretically possible to ﬁnd evidence showing that it’s true. ",
+    "textbook_grade": "Middle School",
+    "target_grade": "6th",
+    "target_age": "11-12",
+    "domain": "Earth and Space Science",
+    "subject": "Hypothesis",
+    "standards": [],
+    "translations": [
+      {
+        "model": "aya",
+        "spanish_translation": "Para que una hipótesis sea científica, debe poder ser desmentida. Aunque una hipótesis pueda ser probada, eso no es suficiente. Debe haber una forma de demostrar que la hipótesis es falsa si resulta serlo. Por ejemplo, si alguien dice: «En el universo hay otros planetas con vida», esta afirmación se puede probar. Si es verdadera, podríamos encontrar pruebas. Es importante recordar que las ideas científicas deben estar abiertas a ser cuestionadas y verificadas.",
+        "rater1_quality": "Middle",
+        "rater1_comment": "Not terrible, it is over simplified but the key concept is understandable"
+      },
+      {
+        "model": "gemini",
+        "spanish_translation": "Una hipótesis científica debe poder probarse que es falsa. Se puede poner a prueba una hipótesis, pero eso no es suficiente para que sea científica. Además, debe ser posible demostrar que la hipótesis es falsa, si realmente lo es. Piensa en este planteamiento: «Hay otros planetas en el universo donde existe vida». Este planteamiento se puede poner a prueba. Si fuera cierto, sería posible encontrar evidencia que demuestre que es verdad.",
+        "rater1_quality": "",
+        "rater1_comment": ""
+      },
+      {
+        "model": "gpt4o",
+        "spanish_translation": "Una hipótesis científica debe poder demostrarse falsa. Una hipótesis se puede comprobar, pero eso no basta. También se debe poder mostrar que no es cierta si es falsa. Mira este ejemplo: “Existen planetas con vida en el universo.” Podemos comprobar esta idea. Si es verdad, teóricamente podríamos encontrar evidencia.",
+        "rater1_quality": "Middle",
+        "rater1_comment": "Not terrible, it is over simplified but the key concept is understandable"
+      }
+    ]
+  },
+  {
+    "page_id": "851665a8",
+    "english_text": "Q: If you were to hit four golf balls toward a hole and your shots were both accurate and precise, where would the balls land? A: All four golf balls would land in the hole (accurate) and also very close to one another (precise). Summary Accuracy means making measurements that are close to the true value.",
+    "textbook_grade": "Middle School",
+    "target_grade": "6th",
+    "target_age": "11-12",
+    "domain": "Physical Science",
+    "subject": "Accuracy and Precision",
+    "standards": [],
+    "translations": [
+      {
+        "model": "aya",
+        "spanish_translation": "Si golpearas cuatro pelotas de golf hacia un hoyo y tus golpes fueran tanto precisos como exactos, ¿dónde caerían las pelotas? Respuesta: Las cuatro pelotas de golf caerían en el hoyo (exactas) y también muy cerca unas de otras (precisas). Resumen: La exactitud significa hacer mediciones que estén cerca del valor real.",
+        "rater1_quality": "Best",
+        "rater1_comment": "Good translation, some minor grammar errors but none that can be overlooked and the text understood "
+      },
+      {
+        "model": "gemini",
+        "spanish_translation": "P: Si golpearas cuatro pelotas de golf hacia un hoyo y tus tiros fueran tanto exactos como precisos, ¿dónde aterrizarían las pelotas? R: Las cuatro pelotas de golf aterrizarían dentro del hoyo (lo que demuestra la exactitud) y también estarían muy agrupadas entre sí (lo que demuestra la precisión). Resumen: La exactitud se refiere a qué tan cerca están las mediciones del valor verdadero.",
+        "rater1_quality": "Best",
+        "rater1_comment": "Good translation, some minor grammar errors but none that can be overlooked and the text understood "
+      },
+      {
+        "model": "gpt4o",
+        "spanish_translation": "P: Si lanzaras cuatro pelotas de golf hacia un hoyo y tus tiros fueran tanto precisos como exactos, ¿dónde caerían las pelotas? R: Las cuatro pelotas de golf caerían en el hoyo (exacto) y también muy cerca unas de otras (precisas). Resumen: La exactitud significa hacer mediciones que están cerca del valor verdadero.",
+        "rater1_quality": "Best",
+        "rater1_comment": "Good translation, some minor grammar errors but none that can be overlooked and the text understood "
+      }
+    ]
+  },
+  {
+    "page_id": "86972ae3",
+    "english_text": "Introducing the Scientiﬁc Method In the ﬁrst 1000 years CE, Europe went through a period called the Dark Ages. Science and learning in general were all but abandoned. However, in other parts of the world science ﬂourished. During this period, some of the most important contributions to science were made by Persian scholars. For example, during the 700s CE, a Persian scientist named Geber introduced the scientiﬁc method and experimentation in chemistry. His ideas and methods were later adopted by European chemists. Today, Geber is known as the “father of chemistry.”",
+    "textbook_grade": "Middle School",
+    "target_grade": "6th",
+    "target_age": "10-11",
+    "domain": "Physical Science",
+    "subject": "History of Science",
+    "standards": [],
+    "translations": [
+      {
+        "model": "aya",
+        "spanish_translation": "Presentando el Método Científico En los primeros 1000 años de nuestra era, Europa atravesó un período conocido como la Edad Media. La ciencia y el aprendizaje en general fueron casi abandonados. Sin embargo, en otras partes del mundo, la ciencia floreció. Durante este tiempo, algunos de los mayores avances científicos fueron hechos por eruditos persas. Por ejemplo, durante los años 700 de nuestra era, un científico persa llamado Geber introdujo el método científico y la experimentación en química. Sus ideas y métodos fueron más tarde adoptados por químicos europeos. Hoy en día, Geber es conocido como el 'padre de la química'.",
+        "rater1_quality": "",
+        "rater1_comment": ""
+      },
+      {
+        "model": "gemini",
+        "spanish_translation": "Introducción al método científico. Durante los primeros 1000 años d.C., Europa atravesó un período llamado la Edad Oscura. La ciencia y el aprendizaje en general fueron casi abandonados. Sin embargo, en otras partes del mundo la ciencia floreció. Durante este período, algunas de las contribuciones más importantes a la ciencia fueron hechas por eruditos persas. Por ejemplo, durante los años 700 d.C., un científico persa llamado Geber introdujo el método científico y la experimentación en la química. Sus ideas y métodos fueron adoptados más tarde por los químicos europeos. Hoy en día, a Geber se le conoce como el “padre de la química”.",
+        "rater1_quality": "Middle",
+        "rater1_comment": "Good translation, vocabulary and examples are great and the complexity is the same as the source. "
+      },
+      {
+        "model": "gpt4o",
+        "spanish_translation": "Introducción al Método Científico En los primeros 1000 años de nuestra era, Europa pasó por un periodo llamado la Edad Media. La ciencia y el aprendizaje en general fueron casi abandonados. Sin embargo, en otras partes del mundo la ciencia floreció. Durante este periodo, algunos de los aportes más importantes a la ciencia fueron hechos por eruditos persas. Por ejemplo, durante los años 700 de nuestra era, un científico persa llamado Geber introdujo el método científico y la experimentación en química. Sus ideas y métodos fueron adoptados más tarde por los químicos europeos. Hoy, Geber es conocido como el “padre de la química.”",
+        "rater1_quality": "",
+        "rater1_comment": ""
+      }
+    ]
+  },
+  {
+    "page_id": "a03fd616",
+    "english_text": " A series of conic projections may be used to increase accuracy by mapping a number of neighboring areas. Each cone touches the globe at a slightly different latitude. Fitting the adjoining areas together then produces a continuous map. Maps made in this way are called polyconic projections. The relative size and shape of small areas on the map are nearly the same as those on the globe. ",
+    "textbook_grade": "High School",
+    "target_grade": "6th",
+    "target_age": "12-14",
+    "domain": "Earth and Space Science",
+    "subject": "Models of the Earth",
+    "standards": [],
+    "translations": [
+      {
+        "model": "aya",
+        "spanish_translation": "Una serie de proyecciones cónicas puede utilizarse para aumentar la precisión mapeando varias áreas vecinas. Cada cono toca el globo en una latitud ligeramente diferente. Al unir las áreas adyacentes, se obtiene un mapa continuo. Los mapas hechos de esta manera se llaman proyecciones policonas. El tamaño y la forma relativos de las áreas pequeñas en el mapa son casi los mismos que los del globo.",
+        "rater1_quality": "",
+        "rater1_comment": ""
+      },
+      {
+        "model": "gemini",
+        "spanish_translation": "Para aumentar la precisión de un mapa, se utilizan varias proyecciones cónicas para dibujar áreas vecinas. Cada cono toca el globo en una latitud ligeramente distinta, de modo que al unir estas áreas se crea un mapa continuo. A este método se le llama proyección policónica. Con esta técnica, el tamaño y la forma de las áreas pequeñas en el mapa son casi los mismos que en el globo terráqueo.",
+        "rater1_quality": "Best",
+        "rater1_comment": "Great translation, vocabulary and examples are great and the complexity is the same as the source. "
+      },
+      {
+        "model": "gpt4o",
+        "spanish_translation": "Una serie de proyecciones cónicas se puede usar para aumentar la precisión al mapear varias áreas vecinas. Cada cono toca el globo en una latitud ligeramente diferente. Al unir las áreas adyacentes, se produce un mapa continuo. Los mapas hechos de esta manera se llaman proyecciones policónicas. El tamaño y la forma relativa de las pequeñas áreas en el mapa son casi los mismos que en el globo terráqueo.",
+        "rater1_quality": "",
+        "rater1_comment": ""
+      }
+    ]
+  },
+  {
+    "page_id": "b25626a8",
+    "english_text": "Limits on Inductive Reasoning Inductive reasoning can’t solve a crime or arrive at the correct scientiﬁc conclusion with 100 percent certainty. It’s always possible that some piece of evidence remains to be found that would disprove the conclusion. That’s why jurors in a trial are told to decide whether the defendant is guilty “without a reasonable doubt”—not without a shred of doubt. Similarly, a scientiﬁc theory is never really proven conclusively to be true. However, it can be supported by so much evidence that it is accepted “without a reasonable doubt.” ",
+    "textbook_grade": "Middle School",
+    "target_grade": "6th",
+    "target_age": "11-12",
+    "domain": "Physical Science",
+    "subject": "Scientiﬁc Induction",
+    "standards": [],
+    "translations": [
+      {
+        "model": "aya",
+        "spanish_translation": "La forma de pensar llamada lógica inductiva no siempre es correcta. Siempre hay una pequeña posibilidad de que falte algo que cambie nuestra idea. Por eso, en los tribunales, los jueces piden que decidamos si alguien es culpable sin tener la menor duda. Con las teorías científicas pasa algo parecido; nunca están completamente comprobadas. Pero si hay muchas pruebas que las apoyan, las aceptamos como ciertas, también sin duda.",
+        "rater1_quality": "Worst",
+        "rater1_comment": "Translation is completely different than the source. The first sentence began with a totally different concept causing the entire translation to lose its meaning"
+      },
+      {
+        "model": "gemini",
+        "spanish_translation": "Límites del razonamiento inductivo. El razonamiento inductivo no puede resolver un crimen o llegar a la conclusión científica correcta con un 100 por ciento de certeza. Siempre es posible que quede por encontrar alguna prueba que demuestre que la conclusión es falsa. Por eso, a los miembros de un jurado en un juicio se les dice que decidan si el acusado es culpable \"sin una duda razonable\", y no \"sin la más mínima duda\". De manera similar, una teoría científica nunca se prueba de forma concluyente que es verdadera. Sin embargo, puede estar respaldada por tanta evidencia que se acepta \"sin una duda razonable\".",
+        "rater1_quality": "Worst",
+        "rater1_comment": "Translation is completely different than the source. The first sentence began with a totally different concept causing the entire translation to lose its meaning"
+      },
+      {
+        "model": "gpt4o",
+        "spanish_translation": "Límites del razonamiento basado en observaciones Este tipo de razonamiento no resuelve crímenes seguro. Puede faltar algo de prueba nueva. Por eso se decide con la idea de no estar seguro. En ciencia, un resultado no es 100% verdadero. Puede aceptarse porque tiene mucha prueba a favor.",
+        "rater1_quality": "Worst",
+        "rater1_comment": "Translation is completely different than the source. The first sentence began with a totally different concept causing the entire translation to lose its meaning"
+      }
+    ]
+  },
+  {
+    "page_id": "b2e4004f",
+    "english_text": "Great Circles: A great circle is often used in navigation, especially by long- distance aircraft. A great circle is any circle that divides the globe into halves, or marks the circumference of the globe. Any circle formed by two meridians of longitude that are directly across the globe from each other is a great circle. The equator is the only line of latitude that is a great circle. Great circles can run in any direction around the globe. Just as a straight line is the shortest distance between two points on a flat surface or plane, the route along a great circle is the shortest distance between two points on a sphere, as shown in Figure 3. As a result, air and sea routes often travel along great circles. ",
+    "textbook_grade": "High School",
+    "target_grade": "6th",
+    "target_age": "7-8",
+    "domain": "Earth and Space Science",
+    "subject": "Models of the Earth",
+    "standards": [],
+    "translations": [
+      {
+        "model": "aya",
+        "spanish_translation": "Círculos Grandes: Un círculo grande se utiliza con frecuencia en la navegación, especialmente por parte de aviones de larga distancia. Un círculo grande es cualquier círculo que divide la Tierra en mitades, o marca el perímetro de la Tierra. Cualquier círculo formado por dos meridianos de longitud que están directamente opuestos en el globo es un círculo grande. El ecuador es la única línea de latitud que es un círculo grande. Los círculos grandes pueden ir en cualquier dirección alrededor de la Tierra. Al igual que una línea recta es la distancia más corta entre dos puntos en una superficie plana o plano, la ruta a lo largo de un círculo grande es la distancia más corta entre dos puntos en una esfera, como se muestra en la Figura 3. Como resultado, las rutas aéreas y marítimas a menudo viajan a lo largo de círculos grandes.",
+        "rater1_quality": "Worst",
+        "rater1_comment": "Translation is on a topic that the source is not. While they both have navigation of boats and planes, that is the only thing they both talk about. The source is great at explaining key concepts and their importance while the translation only says who uses something that is not explained "
+      },
+      {
+        "model": "gemini",
+        "spanish_translation": "Círculos Máximos: Un círculo máximo se usa a menudo en la navegación, especialmente en los aviones que recorren largas distancias. Un círculo máximo es cualquier círculo que divide el globo terráqueo en dos mitades iguales, o que marca la circunferencia del globo. Cualquier círculo formado por dos meridianos que se encuentran en lados opuestos del globo es un círculo máximo. El ecuador es la única línea de latitud que es un círculo máximo. Los círculos máximos pueden ir en cualquier dirección alrededor del globo. Así como una línea recta es la distancia más corta entre dos puntos en una superficie plana, la ruta a lo largo de un círculo máximo es la distancia más corta entre dos puntos en una esfera, como se muestra en la Figura 3. Como resultado, las rutas aéreas y marítimas suelen viajar a lo largo de los círculos máximos.",
+        "rater1_quality": "",
+        "rater1_comment": ""
+      },
+      {
+        "model": "gpt4o",
+        "spanish_translation": "Círculos máximos: Un círculo máximo se usa a menudo en la navegación, especialmente por aviones de larga distancia. Un círculo máximo es cualquier círculo que divide el globo en mitades o marca la circunferencia del globo. Cualquier círculo formado por dos meridianos de longitud que están directamente opuestos en el globo es un círculo máximo. El ecuador es la única línea de latitud que es un círculo máximo. Los círculos máximos pueden correr en cualquier dirección alrededor del globo. Así como una línea recta es la distancia más corta entre dos puntos en una superficie plana, la ruta a lo largo de un círculo máximo es la distancia más corta entre dos puntos en una esfera, como se muestra en la Figura 3. Como resultado, las rutas aéreas y marítimas a menudo viajan a lo largo de círculos máximos.",
+        "rater1_quality": "Worst",
+        "rater1_comment": "Translation is on a topic that the source is not. While they both have navigation of boats and planes, that is the only thing they both talk about. The source is great at explaining key concepts and their importance while the translation only says who uses something that is not explained "
+      }
+    ]
+  },
+  {
+    "page_id": "d849fac4",
+    "english_text": "Using Graphs in Science Graphs are very useful tools in science. They can help you visualize a set of data. With a graph, you can actually see what all the numbers in a data table mean. Three commonly used types of graphs are bar graphs, circle graphs, and line graphs. Each type of graph is suitable for showing a different type of data.",
+    "textbook_grade": "Middle School",
+    "target_grade": "6th",
+    "target_age": "11-12",
+    "domain": "Physical Science",
+    "subject": "Scientiﬁc Graphing",
+    "standards": [],
+    "translations": [
+      {
+        "model": "aya",
+        "spanish_translation": "Los gráficos científicos son herramientas muy útiles para interpretar datos. Existen tres tipos principales: los gráficos de barras, que comparan diferentes elementos; los gráficos circulares, que muestran partes de un todo; y los gráficos de líneas, que ilustran cambios a lo largo del tiempo. Por ejemplo, imagina un gráfico que muestre las calificaciones de tus amigos en la escuela. Así, podrías ver rápidamente quién tiene las mejores notas.",
+        "rater1_quality": "Best",
+        "rater1_comment": "Great translation, good explanation of concepts and good vocabulary used."
+      },
+      {
+        "model": "gemini",
+        "spanish_translation": "El uso de gráficas en la ciencia es fundamental, ya que son herramientas que permiten visualizar conjuntos de datos. Con una gráfica, es posible interpretar lo que significan los números en una tabla de datos. Los tres tipos de gráficas más utilizados son las de barras, las circulares y las de líneas. Cada tipo de gráfica es adecuado para representar una clase de datos distinta.",
+        "rater1_quality": "Best",
+        "rater1_comment": "Great translation, good explanation of concepts and good vocabulary used."
+      },
+      {
+        "model": "gpt4o",
+        "spanish_translation": "El uso de gráficos en la ciencia Los gráficos son herramientas muy útiles en la ciencia. Pueden ayudarte a visualizar un conjunto de datos. Con un gráfico, puedes ver realmente qué significan todos los números en una tabla de datos. Tres tipos de gráficos comúnmente utilizados son los gráficos de barras, los gráficos circulares y los gráficos de líneas. Cada tipo de gráfico es adecuado para mostrar un tipo diferente de datos.",
+        "rater1_quality": "",
+        "rater1_comment": ""
+      }
+    ]
+  },
+  {
+    "page_id": "ed41b4a5",
+    "english_text": "Degrees of Longitude: Because a circle is 360 °, the meridian opposite the prime meridian, halfway around the world, is labeled 180 °. All locations east of the prime meridian have longitudes between 0 ° and 180 °E. All locations west of the prime meridian have longitudes between 0 ° and 180 °W. Washington, D.C., which lies west of the prime meridian, has a longitude of 77 °W. Like latitude, longitude can be expressed in degrees, minutes, and seconds. So, a more precise location for Washington, D.C., is 38 °53'23\"N, 77 °00'33\"W. ",
+    "textbook_grade": "High School",
+    "target_grade": "5th",
+    "target_age": "9-10",
+    "domain": "Earth and Space Science",
+    "subject": "Models of the Earth",
+    "standards": [],
+    "translations": [
+      {
+        "model": "aya",
+        "spanish_translation": "{\"spanish_translation\": \"Grados de Longitud: Dado que un círculo es de 360°, el meridiano opuesto al meridiano principal, que está a la mitad del mundo, se etiqueta como 180°. Todos los lugares al este del meridiano principal tienen longitudes entre 0° y 180°E. Todos los lugares al oeste del meridiano principal tienen longitudes entre 0° y 180°O. Washington D.C., que está al oeste del meridiano principal, tiene una longitud de 77°O. Al igual que la latitud, la longitud también se puede expresar en grados, minutos y segundos. Entonces, una ubicación más precisa para Washington D.C. es 38°53'23\"N, 77°00'33\"O.\"}",
+        "rater1_quality": "",
+        "rater1_comment": ""
+      },
+      {
+        "model": "gemini",
+        "spanish_translation": "Un círculo completo tiene 360 grados. Por eso, la línea imaginaria (o meridiano) que está justo al otro lado del mundo desde el meridiano principal se marca con el número 180°. Todos los lugares al este del meridiano principal tienen longitudes entre 0° y 180° Este (E). Todos los lugares al oeste del meridiano principal tienen longitudes entre 0° y 180° Oeste (O). Por ejemplo, la ciudad de Washington, D.C. está al oeste del meridiano principal y tiene una longitud de 77° O. Al igual que la latitud, la longitud se puede medir con más exactitud usando grados, minutos y segundos. Así, una ubicación más precisa de Washington, D.C. es 38°53'23\" N (Norte) y 77°00'33\" O (Oeste).",
+        "rater1_quality": "Best",
+        "rater1_comment": "Great translation, good explanation of concepts and good vocabulary used."
+      },
+      {
+        "model": "gpt4o",
+        "spanish_translation": "Grados de Longitud: Como un círculo tiene 360°, el meridiano opuesto al meridiano de Greenwich, que está a medio camino alrededor del mundo, se marca como 180°. Todos los lugares al este del meridiano de Greenwich tienen longitudes entre 0° y 180° E. Todos los lugares al oeste del meridiano de Greenwich tienen longitudes entre 0° y 180° O. Washington, D.C., que se encuentra al oeste del meridiano de Greenwich, tiene una longitud de 77° O. Al igual que la latitud, la longitud se puede expresar en grados, minutos y segundos. Así que una ubicación más precisa para Washington, D.C., es 38°53'23\" N, 77°00'33\" O.",
+        "rater1_quality": "",
+        "rater1_comment": ""
+      }
+    ]
+  },
+  {
+    "page_id": "f3f1e1e9",
+    "english_text": "Measuring Length with a Metric Ruler You’ve probably been using a ruler to measure length since you were in elementary school. But you may have made most of the measurements in English units of length, such as inches and feet. In science, length is most often measured in SI units, such as millimeters and centimeters. Many rulers have both types of units, one on each edge. The ruler pictured below has only SI units. It is shown here bigger than it really is so it’s easier to see the small lines, which measure millimeters. The large lines and numbers stand for centimeters. Count the number of small lines from the left end of the ruler (0.0). You should count 10 lines because there are 10 millimeters in a centimeter. ",
+    "textbook_grade": "Middle School",
+    "target_grade": "6th",
+    "target_age": "11-12",
+    "domain": "Physical Science",
+    "subject": "Scientiﬁc Measuring Devices",
+    "standards": [],
+    "translations": [
+      {
+        "model": "aya",
+        "spanish_translation": "Medición de Longitud con una Regla Métrica Probablemente has estado usando una regla para medir longitudes desde que estabas en la escuela primaria. Pero es posible que la mayoría de tus mediciones se hayan realizado en unidades de longitud en inglés, como pulgadas y pies. En ciencia, la longitud se mide con más frecuencia en unidades SI, como milímetros y centímetros. Muchas reglas tienen ambos tipos de unidades, una en cada borde. La regla ilustrada a continuación tiene solo unidades SI. Se muestra aquí más grande de lo que realmente es para que sea más fácil ver las líneas pequeñas, que miden milímetros. Las líneas y números grandes representan centímetros. Cuenta el número de líneas pequeñas desde el extremo izquierdo de la regla (0,0). Deberías contar 10 líneas porque hay 10 milímetros en un centímetro.",
+        "rater1_quality": "Worst",
+        "rater1_comment": "Terrible translation, entirely too simplified. Loses all context in the original source."
+      },
+      {
+        "model": "gemini",
+        "spanish_translation": "Medir la longitud con una regla métrica\nSeguramente has usado una regla para medir longitudes desde la primaria. Sin embargo, es probable que la mayoría de esas mediciones las hicieras en unidades del sistema inglés, como pulgadas y pies. En ciencia, la longitud se mide más frecuentemente en unidades del SI (Sistema Internacional), como milímetros y centímetros, para que los científicos de todo el mundo puedan comparar sus datos fácilmente.\n\nMuchas reglas traen ambos tipos de unidades, una en cada borde. La regla en la imagen de abajo solo tiene unidades del SI. Se muestra más grande de su tamaño real para que sea más fácil ver las marcas pequeñas, las cuales miden los milímetros. Las líneas y números más grandes representan los centímetros. Cuenta cuántas marcas pequeñas hay desde el inicio de la regla (0.0). Deberías contar 10 marcas, porque en un centímetro hay 10 milímetros.",
+        "rater1_quality": "",
+        "rater1_comment": ""
+      },
+      {
+        "model": "gpt4o",
+        "spanish_translation": "Midiendo Longitud con una Regla Métrica Probablemente has estado usando una regla para medir longitudes desde que estabas en la escuela primaria. Pero quizás la mayoría de las medidas que hiciste fueron en unidades inglesas de longitud, como pulgadas y pies. En ciencia, la longitud se mide más a menudo en unidades del SI, como milímetros y centímetros. Muchas reglas tienen ambos tipos de unidades, una en cada borde. La regla que se muestra a continuación tiene solo unidades del SI. Se muestra aquí más grande de lo que realmente es para que sea más fácil ver las líneas pequeñas, que miden milímetros. Las líneas grandes y los números representan centímetros. Cuenta el número de líneas pequeñas desde el extremo izquierdo de la regla (0,0). Deberías contar 10 líneas porque hay 10 milímetros en un centímetro.",
+        "rater1_quality": "Worst",
+        "rater1_comment": "Terrible translation, entirely too simplified. Loses all context in the original source."
+      }
+    ]
+  },
+  {
+    "page_id": "f7368a32",
+    "english_text": "Topographic Map Symbols: Symbols are used to show certain features on topographic maps. Symbol color indicates the type of feature. For example, constructed features, such as buildings, boundaries, roads, and rail-roads, are generally shown in black. Major highways are shown in red. Bodies of water are shown in blue, and forested areas are shown in green. Contour lines are brown or black. Often, areas whose map information has been updated based on aerial photography but not verified by field exploration are shown in purple. A key to common topographic map symbols is provided for your reference in Appendix E.",
+    "textbook_grade": "High School",
+    "target_grade": "7th-8th",
+    "target_age": "12-14",
+    "domain": "Earth and Space Science",
+    "subject": "Models of the Earth",
+    "standards": [],
+    "translations": [
+      {
+        "model": "aya",
+        "spanish_translation": "Símbolos en mapas topográficos: Los símbolos se utilizan para mostrar ciertas características en los mapas topográficos. El color del símbolo indica el tipo de característica. Por ejemplo, las características construidas, como edificios, límites, carreteras y ferrocarriles, generalmente se muestran en negro. Las carreteras principales se muestran en rojo. Los cuerpos de agua se muestran en azul, y las áreas boscosas se muestran en verde. Las líneas de contorno son marrones o negras. A menudo, las áreas cuya información del mapa se ha actualizado con base en la fotografía aérea pero no ha sido verificada por exploración en campo se muestran en morado. Se proporciona una clave de símbolos comunes en los mapas topográficos para su referencia en el Apéndice E.",
+        "rater1_quality": "Best",
+        "rater1_comment": "Great translation, vocabulary and examples are great and the complexity is the same as the source. "
+      },
+      {
+        "model": "gemini",
+        "spanish_translation": "Símbolos en los mapas topográficos: Los símbolos se usan para mostrar características específicas en los mapas topográficos, y el color del símbolo indica el tipo de característica. Por ejemplo, los elementos artificiales, como edificios, límites, carreteras y ferrocarriles, se muestran generalmente en negro, mientras que las autopistas principales se representan en rojo. Los elementos de agua como ríos y lagos aparecen en azul y las áreas con bosques en verde. Las curvas de nivel son de color marrón o negro. Con frecuencia, la información de un área se actualiza usando fotografía aérea; si esos datos no han sido confirmados con una revisión en el terreno, el área se marca en color púrpura. En el Apéndice E encontrarás una leyenda con los símbolos topográficos comunes como referencia.",
+        "rater1_quality": "",
+        "rater1_comment": ""
+      },
+      {
+        "model": "gpt4o",
+        "spanish_translation": "Símbolos de Mapas Topográficos: Se utilizan símbolos para mostrar ciertas características en los mapas topográficos. El color del símbolo indica el tipo de característica. Por ejemplo, las características construidas, como edificios, límites, carreteras y ferrocarriles, generalmente se muestran en negro. Las carreteras principales se muestran en rojo. Los cuerpos de agua se muestran en azul, y las áreas boscosas se muestran en verde. Las líneas de contorno son marrones o negras. A menudo, las áreas cuya información del mapa ha sido actualizada con base en fotografía aérea pero no verificada por exploración de campo se muestran en morado. Se proporciona una clave de símbolos comunes de mapas topográficos para tu referencia en el Apéndice E.",
+        "rater1_quality": "Best",
+        "rater1_comment": "Great translation, vocabulary and examples are great and the complexity is the same as the source. "
+      }
+    ]
+  },
+  {
+    "page_id": "f76c5ea8",
+    "english_text": "Q: It’s not just athletes that depend on physical science. We all do. What might be some ways that physical science inﬂuences our lives? A: We depend on physical science for just about everything that makes modern life possible. You couldn’t turn on a light, make a phone call, or use a computer without centuries of discoveries in chemistry and physics. The Figure 1.10 show a variety of other ways that people depend on physical science. Think about how knowledge of energy and matter makes each action possible.",
+    "textbook_grade": "Middle School",
+    "target_grade": "6th",
+    "target_age": "11-12",
+    "domain": "Physical Science",
+    "subject": "Scope of Physical Science",
+    "standards": [],
+    "translations": [
+      {
+        "model": "aya",
+        "spanish_translation": "No solo los atletas dependen de la ciencia física. ¡Todos lo hacemos! ¿De qué formas podría influir la ciencia física en nuestras vidas? Respuesta: Dependemos de la ciencia física para casi todo lo que hace posible la vida moderna. No podrías encender una luz, hacer una llamada telefónica o usar una computadora sin siglos de descubrimientos en química y física. La Figura 1.10 muestra diversas formas en que las personas dependen de la ciencia física. Piensa en cómo el conocimiento de la energía y la materia hace posible cada acción.",
+        "rater1_quality": "Best",
+        "rater1_comment": "Great translation, vocabulary and examples are great and the complexity is the same as the source. "
+      },
+      {
+        "model": "gemini",
+        "spanish_translation": "P: La ciencia física no solo es crucial para los atletas, sino que es indispensable para cada uno de nosotros. ¿De qué maneras influye esta disciplina en nuestras vidas? R: Dependemos de la ciencia física para prácticamente todo aquello que sustenta nuestra sociedad moderna. No podríamos encender una luz, comunicarnos por teléfono u operar una computadora sin los siglos de descubrimientos en los campos de la química y la física. La Figura 1.10 ilustra diversas maneras adicionales en las que las personas dependen de la ciencia física. Reflexiona sobre cómo la comprensión de los principios de la energía y la materia hace posible cada una de estas acciones.",
+        "rater1_quality": "Best",
+        "rater1_comment": "Great translation, vocabulary and examples are great and the complexity is the same as the source. "
+      },
+      {
+        "model": "gpt4o",
+        "spanish_translation": "P: No solo los deportistas dependen de la ciencia física. Todos lo hacemos. ¿De qué maneras podría influir la ciencia física en nuestras vidas? R: Dependemos de la ciencia física para prácticamente todo lo que hace posible la vida moderna. No podrías encender una luz, realizar una llamada telefónica, o utilizar una computadora sin siglos de descubrimientos en campos como la química y la física. La Figura 1.10 ilustra una variedad de otros modos en los que la gente depende de la ciencia física. Reflexiona sobre cómo el conocimiento de la energía y la materia facilita cada acción.",
+        "rater1_quality": "Best",
+        "rater1_comment": "Great translation, vocabulary and examples are great and the complexity is the same as the source. "
+      }
+    ]
   }
 ]

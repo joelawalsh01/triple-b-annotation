@@ -290,7 +290,7 @@
     <span class="status-badge" id="statusBadge"></span>
     <span id="syncStatus" style="font-size:12px;color:#b0b0c0;"></span>
     <button class="topbar-btn topbar-btn-export" onclick="exportJSON()" data-tooltip="Download your annotations as a JSON file" data-tooltip-pos="below" data-tooltip-wide>Export JSON</button>
-    <button class="topbar-btn topbar-btn-logout" style="background:#b91c1c;" onclick="resetAnnotations()" data-tooltip="Erase ALL annotations on this dataset — cannot be undone" data-tooltip-pos="below" data-tooltip-wide>Reset</button>
+    <button class="topbar-btn topbar-btn-logout" style="background:#b91c1c;" onclick="showResetScreen()" data-tooltip="Erase ALL annotations on this dataset — cannot be undone" data-tooltip-pos="below" data-tooltip-wide>Reset</button>
     <button class="topbar-btn topbar-btn-primary" onclick="saveProgress(); syncToGitHub(); showToast('Saving...')" data-tooltip="Push changes to GitHub now (auto-saves every 5 seconds anyway)" data-tooltip-pos="below" data-tooltip-wide>Save</button>
     <button class="topbar-btn topbar-btn-secondary" onclick="resetCurrentPage()" data-tooltip="Delete only this page's annotations" data-tooltip-pos="below" data-tooltip-wide>Clear Page</button>
     <button class="topbar-btn topbar-btn-secondary" id="prevBtn" onclick="navigate(-1)" data-tooltip="Previous passage (← arrow key)" data-tooltip-pos="below">&larr; Prev</button>
@@ -299,6 +299,36 @@
   </div>
 
   <div class="container" id="mainContainer"></div>
+</div>
+
+<!-- Reset confirmation screen (hidden until Reset clicked) -->
+<div id="resetScreen" class="hidden" style="min-height:100vh;background:linear-gradient(135deg,#7f1d1d 0%,#1a1a2e 100%);display:flex;align-items:center;justify-content:center;padding:24px;">
+  <div style="background:#fff;border-radius:12px;padding:36px;max-width:520px;width:100%;box-shadow:0 8px 32px rgba(0,0,0,0.3);">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
+      <div style="width:40px;height:40px;border-radius:50%;background:#fee2e2;display:flex;align-items:center;justify-content:center;color:#b91c1c;font-size:24px;font-weight:900;">!</div>
+      <h1 style="font-size:22px;color:#7f1d1d;margin:0;">Reset all annotations?</h1>
+    </div>
+    <p style="font-size:15px;line-height:1.6;color:#374151;margin-bottom:14px;">
+      This will <strong>permanently delete every annotation</strong> you've made on this dataset
+      &mdash; including all source-confirmations, preservation ratings, quality ratings, and comments.
+    </p>
+    <p style="font-size:14px;line-height:1.55;color:#6b7280;margin-bottom:18px;">
+      Your work will be erased from this browser <em>and</em> from GitHub. This cannot be undone.
+      If you only meant to clear the current page, go back and use <strong>Clear Page</strong> instead.
+    </p>
+    <div id="resetSummary" style="background:#fef3c7;border:1px solid #f59e0b;border-radius:6px;padding:10px 14px;font-size:13px;color:#78350f;margin-bottom:18px;"></div>
+    <div style="margin-bottom:18px;">
+      <label for="resetConfirmInput" style="display:block;font-size:13px;font-weight:600;color:#374151;margin-bottom:6px;">
+        To confirm, type <code style="background:#f3f4f6;padding:2px 6px;border-radius:3px;font-weight:700;">RESET</code> below:
+      </label>
+      <input type="text" id="resetConfirmInput" autocomplete="off" oninput="updateResetButton()"
+        style="width:100%;padding:10px 14px;border:1.5px solid #d1d5db;border-radius:6px;font-size:15px;font-family:inherit;">
+    </div>
+    <div style="display:flex;gap:12px;justify-content:flex-end;">
+      <button class="topbar-btn topbar-btn-secondary" style="padding:10px 20px;font-size:14px;" onclick="hideResetScreen()">Cancel &mdash; take me back</button>
+      <button id="resetConfirmBtn" class="topbar-btn topbar-btn-logout" style="padding:10px 20px;font-size:14px;opacity:0.4;cursor:not-allowed;" disabled onclick="confirmResetAnnotations()">Permanently delete everything</button>
+    </div>
+  </div>
 </div>
 
 <div class="toast" id="toast"></div>
@@ -535,22 +565,28 @@ function getPageStatus(pageId) {
     });
   }
 
-  // Source confirmation + preservation
-  page.standards.forEach(s => {
-    const conf = ann.sourceConfirmed[s.standard_code];
-    if (conf !== undefined) {
-      hasAnything = true;
-      if (conf === true) {
-        page.translations.forEach(t => {
-          const key = s.standard_code + '__' + t.model;
-          if (ann.preservation[key]) hasAnything = true;
-          else allDone = false;
-        });
+  if (page.standards.length === 0) {
+    // Zero-standards passage: completion = the "does any standard apply?" question is answered
+    if (ann.noStandardsApply !== undefined) hasAnything = true;
+    else allDone = false;
+  } else {
+    // Source confirmation + preservation
+    page.standards.forEach(s => {
+      const conf = ann.sourceConfirmed[s.standard_code];
+      if (conf !== undefined) {
+        hasAnything = true;
+        if (conf === true) {
+          page.translations.forEach(t => {
+            const key = s.standard_code + '__' + t.model;
+            if (ann.preservation[key]) hasAnything = true;
+            else allDone = false;
+          });
+        }
+      } else {
+        allDone = false;
       }
-    } else {
-      allDone = false;
-    }
-  });
+    });
+  }
 
   if (!hasAnything) return 'not-started';
   if (allDone) return 'complete';
@@ -668,6 +704,32 @@ function render() {
 
   // === STANDARDS SECTION ===
   html += '<div class="card">';
+
+  if (page.standards.length === 0) {
+    // Zero-standards passage: ask rater whether any standard applies
+    html += '<div class="section-label">Standards Check</div>';
+    html += '<p style="font-size:13px; color:#666; margin-bottom:14px;">';
+    html += 'The standards-matching pipeline did not flag any NGSS standards for this passage. Please confirm whether you agree.';
+    html += '</p>';
+
+    const noApply = ann.noStandardsApply;
+    html += '<div class="confirm-row">';
+    html += '<span class="confirm-label">Does any NGSS standard apply to this passage?</span>';
+    html += '<button class="confirm-btn ' + (noApply === true ? 'selected-yes' : '') + '" data-tooltip="At least one NGSS standard applies (the pipeline missed it)" data-tooltip-wide onclick="setNoStandardsApply(true)">Yes</button>';
+    html += '<button class="confirm-btn ' + (noApply === false ? 'selected-no' : '') + '" data-tooltip="No NGSS standard applies — pipeline was correct" data-tooltip-wide onclick="setNoStandardsApply(false)">No</button>';
+    html += '</div>';
+
+    if (noApply === true) {
+      const proposed = ann.noStandardsProposed || '';
+      html += '<div class="comment-label" style="margin-top:12px;">Which standard(s)? Code or short description.</div>';
+      html += '<textarea class="standard-comment-field" rows="3" placeholder="e.g., MS-PS3-1, or \'Conservation of energy in collisions\'..." onchange="setNoStandardsProposed(this.value)" oninput="setNoStandardsProposed(this.value)">' + escapeHtml(proposed) + '</textarea>';
+    }
+
+    html += '</div>';  // close card
+    document.getElementById('mainContainer').innerHTML = html;
+    return;
+  }
+
   html += '<div class="section-label">Standards Preservation</div>';
   html += '<p style="font-size:13px; color:#666; margin-bottom:14px;">';
   html += 'For each standard, first confirm whether the source passage teaches part of it. If yes, rate how well each translation preserves that content.';
@@ -806,6 +868,22 @@ function setStandardComment(stdCode, value) {
   saveProgress();
 }
 
+function setNoStandardsApply(value) {
+  const page = DATA[currentPage];
+  const ann = ensureAnnotation(page.page_id);
+  ann.noStandardsApply = value;
+  if (value === false) ann.noStandardsProposed = '';
+  saveProgress();
+  render();
+}
+
+function setNoStandardsProposed(value) {
+  const page = DATA[currentPage];
+  const ann = ensureAnnotation(page.page_id);
+  ann.noStandardsProposed = value;
+  saveProgress();
+}
+
 function navigate(dir) {
   const newPage = currentPage + dir;
   if (newPage < 0 || newPage >= DATA.length) return;
@@ -853,13 +931,20 @@ function exportJSON() {
       };
     });
 
-    return {
+    const result = {
       page_id: page.page_id,
       rater: raterMode,
       status: getPageStatus(page.page_id),
       translations: translationAnnotations,
       standards: standardAnnotations
     };
+    if (page.standards.length === 0) {
+      result.no_standards_check = {
+        any_standard_applies: ann.noStandardsApply === true ? 'yes' : ann.noStandardsApply === false ? 'no' : null,
+        proposed_standards: ann.noStandardsProposed || ''
+      };
+    }
+    return result;
   });
 
   const blob = new Blob([JSON.stringify(output, null, 2)], {type: 'application/json'});
@@ -906,10 +991,42 @@ function resetCurrentPage() {
 }
 
 // ==================== RESET ====================
-async function resetAnnotations() {
-  if (!confirm('Reset ALL annotations for Rater ' + raterMode + '? This cannot be undone.')) return;
-  if (!confirm('Are you sure? This will delete all your work.')) return;
+function showResetScreen() {
+  // Populate summary with how much will be lost
+  const annotated = Object.keys(annotations || {}).length;
+  const completed = countDone();
+  const summary = document.getElementById('resetSummary');
+  if (summary) {
+    summary.innerHTML = 'You are signed in as <strong>Rater ' + raterMode + '</strong>. ' +
+      'You currently have <strong>' + annotated + '</strong> page' + (annotated === 1 ? '' : 's') +
+      ' with annotations (<strong>' + completed + '</strong> marked complete) on this dataset.';
+  }
+  // Reset the input + button state
+  const input = document.getElementById('resetConfirmInput');
+  if (input) input.value = '';
+  updateResetButton();
+  // Swap screens
+  document.getElementById('appScreen').classList.add('hidden');
+  document.getElementById('resetScreen').classList.remove('hidden');
+  if (input) setTimeout(function() { input.focus(); }, 50);
+}
 
+function hideResetScreen() {
+  document.getElementById('resetScreen').classList.add('hidden');
+  document.getElementById('appScreen').classList.remove('hidden');
+}
+
+function updateResetButton() {
+  const input = document.getElementById('resetConfirmInput');
+  const btn = document.getElementById('resetConfirmBtn');
+  if (!input || !btn) return;
+  const ready = input.value.trim() === 'RESET';
+  btn.disabled = !ready;
+  btn.style.opacity = ready ? '1' : '0.4';
+  btn.style.cursor = ready ? 'pointer' : 'not-allowed';
+}
+
+async function confirmResetAnnotations() {
   // Clear local state
   annotations = {};
   currentPage = 0;
@@ -933,6 +1050,7 @@ async function resetAnnotations() {
     }
   }
 
+  hideResetScreen();
   render();
   showToast('Annotations reset.');
 }
