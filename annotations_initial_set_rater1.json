@@ -996,13 +996,26 @@
         0,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gpt4o": "Middle",
+        "aya": "Best",
+        "gemini": "Middle"
+      },
+      "qualityComments": {
+        "gpt4o": "",
+        "aya": "",
+        "gemini": "Great translation, great vocabulary used and matches complexity of the original source."
+      },
       "sourceConfirmed": {
         "HS-PS1-1": true
       },
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "gpt4o": true,
+        "aya": true,
+        "gemini": true
+      }
     },
     "193bdfbc": {
       "rater": 1,
