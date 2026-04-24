@@ -912,7 +912,15 @@
         "HS-PS1-3__aya": 3,
         "HS-PS2-6__aya": 3,
         "HS-PS1-2__aya": 3,
-        "HS-PS1-1__aya": 3
+        "HS-PS1-1__aya": 3,
+        "HS-PS1-3__gemini": 4,
+        "HS-PS1-3__gpt4o": 4,
+        "HS-PS2-6__gemini": 4,
+        "HS-PS2-6__gpt4o": 4,
+        "HS-PS1-2__gemini": 4,
+        "HS-PS1-2__gpt4o": 4,
+        "HS-PS1-1__gemini": 4,
+        "HS-PS1-1__gpt4o": 4
       },
       "standardComments": {},
       "unlocked": {
