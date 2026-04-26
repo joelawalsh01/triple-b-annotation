@@ -276,7 +276,9 @@
         "aya": "Best",
         "gemini": "Middle"
       },
-      "qualityComments": {},
+      "qualityComments": {
+        "gemini": "Trash is never mentioned in the original text "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
