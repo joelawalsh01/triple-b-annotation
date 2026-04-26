@@ -221,10 +221,13 @@
         1
       ],
       "quality": {
-        "aya": "Best"
+        "aya": "Best",
+        "gemini": "Middle",
+        "gpt4o": "Worst"
       },
       "qualityComments": {
-        "aya": "It used a simile to regard the organ systems as a group of friends working together, which was interesting to read. This simile was not in the original text "
+        "aya": "It used a simile to regard the organ systems as a group of friends working together, which was interesting to read. This simile was not in the original text ",
+        "gpt4o": "Changing \"grupo de organo\" to sistema de "
       },
       "sourceConfirmed": {},
       "preservation": {},
