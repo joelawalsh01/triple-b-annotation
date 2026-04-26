@@ -257,7 +257,9 @@
       "qualityComments": {
         "gpt4o": "Missing the idea that there are natural satellites "
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "5-ESS1-1": false
+      },
       "preservation": {},
       "standardComments": {}
     }
