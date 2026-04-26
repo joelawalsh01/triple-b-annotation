@@ -231,7 +231,8 @@
         "gemini": "Changing \"equipos del cuerpo\" to \"sistema de organos\""
       },
       "sourceConfirmed": {
-        "4-LS1-1": true
+        "4-LS1-1": true,
+        "4-LS1-2": false
       },
       "preservation": {
         "4-LS1-1__aya": 2,
