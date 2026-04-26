@@ -137,7 +137,9 @@
       "sourceConfirmed": {
         "5-LS1-1": true
       },
-      "preservation": {},
+      "preservation": {
+        "5-LS1-1__gpt4o": 2
+      },
       "standardComments": {}
     }
   }
