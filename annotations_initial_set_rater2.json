@@ -105,7 +105,9 @@
         "gpt4o": "Middle",
         "gemini": "Worst"
       },
-      "qualityComments": {},
+      "qualityComments": {
+        "gemini": "Doesn't use the word atraer "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
