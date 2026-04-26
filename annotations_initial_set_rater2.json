@@ -165,7 +165,8 @@
       },
       "qualityComments": {
         "gpt4o": "It's missing the subheading of the section",
-        "aya": "Bocadillos doesn't refer to trail mix "
+        "aya": "Bocadillos doesn't refer to trail mix ",
+        "gemini": "There needs to be a separation between the subheading and the paragraph "
       },
       "sourceConfirmed": {},
       "preservation": {},
