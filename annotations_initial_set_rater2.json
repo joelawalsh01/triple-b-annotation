@@ -125,10 +125,13 @@
         1
       ],
       "quality": {
-        "gpt4o": "Worst"
+        "gpt4o": "Worst",
+        "aya": "Middle",
+        "gemini": "Best"
       },
       "qualityComments": {
-        "gpt4o": "Does not mention producers and refers to them as \"otros pequenos\" "
+        "gpt4o": "Does not mention producers and refers to them as \"otros pequenos\" ",
+        "gemini": "Sin embargo is not needed "
       },
       "sourceConfirmed": {},
       "preservation": {},
