@@ -72,7 +72,9 @@
         0
       ],
       "quality": {
-        "aya": "Worst"
+        "aya": "Worst",
+        "gpt4o": "Middle",
+        "gemini": "Best"
       },
       "qualityComments": {
         "aya": "Missing the stepwise process ",
