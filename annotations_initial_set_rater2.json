@@ -106,7 +106,8 @@
         "gemini": "Worst"
       },
       "qualityComments": {
-        "gemini": "Doesn't use the word atraer "
+        "gemini": "Doesn't use the word atraer ",
+        "gpt4o": "The second and third sentences are redundant "
       },
       "sourceConfirmed": {},
       "preservation": {},
