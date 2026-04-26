@@ -164,7 +164,8 @@
         "gpt4o": "Middle"
       },
       "qualityComments": {
-        "gpt4o": "It's missing the subheading of the section"
+        "gpt4o": "It's missing the subheading of the section",
+        "aya": "Bocadillos doesn't refer to trail mix "
       },
       "sourceConfirmed": {},
       "preservation": {},
