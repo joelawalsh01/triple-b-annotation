@@ -107,7 +107,8 @@
       },
       "qualityComments": {
         "gemini": "Doesn't use the word atraer ",
-        "gpt4o": "The second and third sentences are redundant "
+        "gpt4o": "The second and third sentences are redundant ",
+        "aya": "In the first sentence, the word \"atrae\" is repeated twice "
       },
       "sourceConfirmed": {},
       "preservation": {},
