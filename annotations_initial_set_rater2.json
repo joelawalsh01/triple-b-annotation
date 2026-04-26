@@ -272,7 +272,8 @@
         0
       ],
       "quality": {
-        "gpt4o": "Worst"
+        "gpt4o": "Worst",
+        "aya": "Best"
       },
       "qualityComments": {},
       "sourceConfirmed": {},
