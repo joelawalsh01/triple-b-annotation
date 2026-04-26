@@ -50,15 +50,12 @@
       "sourceConfirmed": {
         "5-PS3-1": true,
         "3-LS4-3": false,
-        "5-LS2-1": true
+        "5-LS2-1": false
       },
       "preservation": {
         "5-PS3-1__gpt4o": 3,
         "5-PS3-1__gemini": 4,
-        "5-PS3-1__aya": 1,
-        "5-LS2-1__aya": 1,
-        "5-LS2-1__gemini": 2,
-        "5-LS2-1__gpt4o": 2
+        "5-PS3-1__aya": 1
       },
       "standardComments": {}
     }
