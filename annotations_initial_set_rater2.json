@@ -1,5 +1,5 @@
 {
-  "page": 5,
+  "page": 6,
   "data": {
     "f496d987": {
       "rater": 2,
@@ -171,7 +171,8 @@
       "sourceConfirmed": {
         "5-PS1-4": true,
         "5-PS1-1": true,
-        "5-PS1-2": false
+        "5-PS1-2": false,
+        "5-PS1-3": false
       },
       "preservation": {
         "5-PS1-4__aya": 2,
@@ -181,6 +182,19 @@
         "5-PS1-1__gemini": 3,
         "5-PS1-1__gpt4o": 2
       },
+      "standardComments": {}
+    },
+    "3172ff56": {
+      "rater": 2,
+      "translationOrder": [
+        1,
+        0,
+        2
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
       "standardComments": {}
     }
   }
