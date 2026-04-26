@@ -82,13 +82,28 @@
         "gemini": "The only thing that it is missing is the understanding that lightening will hit the tallest object or the best conductor"
       },
       "sourceConfirmed": {
-        "4-PS3-2": true
+        "4-PS3-2": true,
+        "3-ESS3-1": false,
+        "4-ESS3-2": false
       },
       "preservation": {
         "4-PS3-2__gpt4o": 3,
         "4-PS3-2__gemini": 3,
         "4-PS3-2__aya": 1
       },
+      "standardComments": {}
+    },
+    "53a7c33b": {
+      "rater": 2,
+      "translationOrder": [
+        1,
+        2,
+        0
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
       "standardComments": {}
     }
   }
