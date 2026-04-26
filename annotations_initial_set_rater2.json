@@ -50,7 +50,9 @@
       "sourceConfirmed": {
         "5-PS3-1": true
       },
-      "preservation": {},
+      "preservation": {
+        "5-PS3-1__gpt4o": 1
+      },
       "standardComments": {}
     }
   }
