@@ -18,7 +18,9 @@
         "aya": "Didn't mention what causes summer at the north pole ",
         "gpt4o": "The subject is more present in this translation"
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "5-ESS1-2": true
+      },
       "preservation": {},
       "standardComments": {}
     }
