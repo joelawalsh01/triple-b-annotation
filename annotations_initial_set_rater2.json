@@ -176,7 +176,8 @@
         "5-PS1-4__aya": 2,
         "5-PS1-4__gemini": 4,
         "5-PS1-4__gpt4o": 3,
-        "5-PS1-1__aya": 1
+        "5-PS1-1__aya": 1,
+        "5-PS1-1__gemini": 3
       },
       "standardComments": {}
     }
