@@ -37,8 +37,12 @@
         1,
         2
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "aya": "Worst"
+      },
+      "qualityComments": {
+        "aya": "Doesn't mention the particular organisms and the path of energy "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
