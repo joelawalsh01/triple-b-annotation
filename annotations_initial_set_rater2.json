@@ -234,7 +234,8 @@
         "4-LS1-1": true
       },
       "preservation": {
-        "4-LS1-1__aya": 2
+        "4-LS1-1__aya": 2,
+        "4-LS1-1__gpt4o": 2
       },
       "standardComments": {}
     }
