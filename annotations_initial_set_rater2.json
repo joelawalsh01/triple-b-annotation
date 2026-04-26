@@ -221,9 +221,9 @@
         1
       ],
       "quality": {
-        "aya": "Middle",
+        "aya": "Worst",
         "gemini": "Best",
-        "gpt4o": "Worst"
+        "gpt4o": "Middle"
       },
       "qualityComments": {
         "aya": "It used a simile to regard the organ systems as a group of friends working together, which was interesting to read. This simile was not in the original text ",
