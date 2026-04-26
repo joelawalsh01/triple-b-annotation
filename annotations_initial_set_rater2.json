@@ -204,7 +204,11 @@
       "sourceConfirmed": {
         "5-PS2-1": true
       },
-      "preservation": {},
+      "preservation": {
+        "5-PS2-1__gemini": 2,
+        "5-PS2-1__aya": 2,
+        "5-PS2-1__gpt4o": 2
+      },
       "standardComments": {}
     }
   }
