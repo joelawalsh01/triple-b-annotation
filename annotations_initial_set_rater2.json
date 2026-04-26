@@ -23,7 +23,9 @@
         "3-ESS2-2": true
       },
       "preservation": {
-        "3-ESS2-2__aya": 2
+        "3-ESS2-2__aya": 2,
+        "3-ESS2-2__gemini": 4,
+        "3-ESS2-2__gpt4o": 4
       },
       "standardComments": {}
     }
