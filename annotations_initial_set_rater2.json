@@ -135,7 +135,8 @@
         "aya": "It is not that clear what is being seen under the microscope - plants or algae"
       },
       "sourceConfirmed": {
-        "5-LS1-1": true
+        "5-LS1-1": true,
+        "5-LS2-1": false
       },
       "preservation": {
         "5-LS1-1__gpt4o": 2,
