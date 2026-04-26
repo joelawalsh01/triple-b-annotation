@@ -203,7 +203,8 @@
       },
       "sourceConfirmed": {
         "5-PS2-1": true,
-        "5-PS1-1": false
+        "5-PS1-1": false,
+        "5-ESS1-1": false
       },
       "preservation": {
         "5-PS2-1__gemini": 2,
