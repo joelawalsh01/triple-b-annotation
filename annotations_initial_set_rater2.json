@@ -15,7 +15,8 @@
       },
       "qualityComments": {
         "gemini": "",
-        "aya": "Didn't mention what causes summer at the north pole "
+        "aya": "Didn't mention what causes summer at the north pole ",
+        "gpt4o": "The subject is more present in this translation"
       },
       "sourceConfirmed": {},
       "preservation": {},
