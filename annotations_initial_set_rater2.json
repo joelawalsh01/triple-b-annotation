@@ -81,8 +81,12 @@
         "gpt4o": "It uses the word \"tumbate\" to mean squatting down, which does not fit with what the text means",
         "gemini": "The only thing that it is missing is the understanding that lightening will hit the tallest object or the best conductor"
       },
-      "sourceConfirmed": {},
-      "preservation": {},
+      "sourceConfirmed": {
+        "4-PS3-2": true
+      },
+      "preservation": {
+        "4-PS3-2__gpt4o": 1
+      },
       "standardComments": {}
     }
   }
