@@ -38,11 +38,14 @@
         2
       ],
       "quality": {
-        "aya": "Worst"
+        "aya": "Worst",
+        "gemini": "Best",
+        "gpt4o": "Middle"
       },
       "qualityComments": {
         "aya": "Doesn't mention the particular organisms and the path of energy ",
-        "gpt4o": "For \"plantas del mar\", it should be \"algas\""
+        "gpt4o": "For \"plantas del mar\", it should be \"algas\". \nThe first part makes it sense that it asking about the different forms that ones eats instead of ",
+        "gemini": "For \"plantas del mar\", it should be \"algas\""
       },
       "sourceConfirmed": {},
       "preservation": {},
