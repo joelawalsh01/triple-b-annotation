@@ -196,7 +196,9 @@
         "gpt4o": "Middle",
         "gemini": "Worst"
       },
-      "qualityComments": {},
+      "qualityComments": {
+        "gemini": "For the word \"balanza\" it is referring to the smaller scales "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
