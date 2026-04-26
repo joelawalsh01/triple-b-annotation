@@ -230,7 +230,9 @@
         "gpt4o": "Changing \"grupo de organo\" to \"sistema de organos\"",
         "gemini": "Changing \"equipos del cuerpo\" to \"sistema de organos\""
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "4-LS1-1": true
+      },
       "preservation": {},
       "standardComments": {}
     }
