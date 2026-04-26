@@ -19,7 +19,8 @@
         "gpt4o": "The subject is more present in this translation"
       },
       "sourceConfirmed": {
-        "5-ESS1-2": false
+        "5-ESS1-2": false,
+        "3-ESS2-2": true
       },
       "preservation": {},
       "standardComments": {}
