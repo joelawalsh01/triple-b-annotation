@@ -131,7 +131,8 @@
       },
       "qualityComments": {
         "gpt4o": "Does not mention producers and refers to them as \"otros pequenos\" ",
-        "gemini": ""
+        "gemini": "",
+        "aya": "It is not that clear what is being seen under the microscope - plants or algae"
       },
       "sourceConfirmed": {},
       "preservation": {},
