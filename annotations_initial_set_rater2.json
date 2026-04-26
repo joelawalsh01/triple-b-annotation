@@ -227,7 +227,8 @@
       },
       "qualityComments": {
         "aya": "It used a simile to regard the organ systems as a group of friends working together, which was interesting to read. This simile was not in the original text ",
-        "gpt4o": "Changing \"grupo de organo\" to \"sistema de organos\""
+        "gpt4o": "Changing \"grupo de organo\" to \"sistema de organos\"",
+        "gemini": "Changing \"equipos del cuerpo\" to \"sistema de organos\""
       },
       "sourceConfirmed": {},
       "preservation": {},
