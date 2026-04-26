@@ -21,7 +21,9 @@
       "sourceConfirmed": {
         "5-ESS1-2": true
       },
-      "preservation": {},
+      "preservation": {
+        "5-ESS1-2__aya": 2
+      },
       "standardComments": {}
     }
   }
