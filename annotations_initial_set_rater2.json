@@ -258,7 +258,8 @@
         "gpt4o": "Missing the idea that there are natural satellites "
       },
       "sourceConfirmed": {
-        "5-ESS1-1": false
+        "5-ESS1-1": false,
+        "5-ESS1-2": false
       },
       "preservation": {},
       "standardComments": {}
