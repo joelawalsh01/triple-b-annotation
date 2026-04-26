@@ -202,7 +202,8 @@
         "gpt4o": "There is not space between the subheading and the paragraph. The word \"masa\" makes me think of the masa that is used in making tamales"
       },
       "sourceConfirmed": {
-        "5-PS2-1": true
+        "5-PS2-1": true,
+        "5-PS1-1": false
       },
       "preservation": {
         "5-PS2-1__gemini": 2,
