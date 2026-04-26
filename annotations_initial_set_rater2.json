@@ -171,7 +171,11 @@
       "sourceConfirmed": {
         "5-PS1-4": true
       },
-      "preservation": {},
+      "preservation": {
+        "5-PS1-4__aya": 2,
+        "5-PS1-4__gemini": 4,
+        "5-PS1-4__gpt4o": 3
+      },
       "standardComments": {}
     }
   }
