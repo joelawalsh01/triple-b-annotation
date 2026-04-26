@@ -110,7 +110,9 @@
         "gpt4o": "The second and third sentences are redundant ",
         "aya": "In the first sentence, the word \"atrae\" is repeated twice "
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "3-PS2-3": false
+      },
       "preservation": {},
       "standardComments": {}
     }
