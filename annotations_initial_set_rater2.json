@@ -138,12 +138,14 @@
         "5-LS1-1": true,
         "5-LS2-1": false,
         "5-PS3-1": false,
-        "3-LS4-3": false
+        "3-LS4-3": false,
+        "4-LS1-1": true
       },
       "preservation": {
         "5-LS1-1__gpt4o": 2,
         "5-LS1-1__aya": 4,
-        "5-LS1-1__gemini": 4
+        "5-LS1-1__gemini": 4,
+        "4-LS1-1__gpt4o": 2
       },
       "standardComments": {}
     }
