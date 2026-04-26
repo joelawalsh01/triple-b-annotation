@@ -22,7 +22,9 @@
         "5-ESS1-2": true
       },
       "preservation": {
-        "5-ESS1-2__aya": 2
+        "5-ESS1-2__aya": 2,
+        "5-ESS1-2__gpt4o": 4,
+        "5-ESS1-2__gemini": 4
       },
       "standardComments": {}
     }
