@@ -48,7 +48,8 @@
         "gemini": "For \"plantas del mar\", it should be \"algas\""
       },
       "sourceConfirmed": {
-        "5-PS3-1": true
+        "5-PS3-1": true,
+        "3-LS4-3": false
       },
       "preservation": {
         "5-PS3-1__gpt4o": 3,
