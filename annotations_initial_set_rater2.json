@@ -13,7 +13,10 @@
         "gpt4o": "Best",
         "gemini": "Middle"
       },
-      "qualityComments": {},
+      "qualityComments": {
+        "gemini": "",
+        "aya": "Didn't mention what causes summer at the north pole "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
