@@ -131,7 +131,7 @@
       },
       "qualityComments": {
         "gpt4o": "Does not mention producers and refers to them as \"otros pequenos\" ",
-        "gemini": "Sin embargo is not needed "
+        "gemini": ""
       },
       "sourceConfirmed": {},
       "preservation": {},
