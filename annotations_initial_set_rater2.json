@@ -134,7 +134,9 @@
         "gemini": "",
         "aya": "It is not that clear what is being seen under the microscope - plants or algae"
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "5-LS1-1": true
+      },
       "preservation": {},
       "standardComments": {}
     }
