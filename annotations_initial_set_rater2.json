@@ -124,8 +124,12 @@
         0,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gpt4o": "Worst"
+      },
+      "qualityComments": {
+        "gpt4o": "Does not mention producers and refers to them as \"otros pequen"
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
