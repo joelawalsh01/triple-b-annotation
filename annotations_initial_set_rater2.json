@@ -163,7 +163,9 @@
         "gemini": "Best",
         "gpt4o": "Middle"
       },
-      "qualityComments": {},
+      "qualityComments": {
+        "gpt4o": "It's missing the subheading of the section"
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
