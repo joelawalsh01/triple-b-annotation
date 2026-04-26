@@ -20,7 +20,8 @@
       },
       "sourceConfirmed": {
         "5-ESS1-2": false,
-        "3-ESS2-2": true
+        "3-ESS2-2": true,
+        "3-ESS2-1": false
       },
       "preservation": {
         "3-ESS2-2__aya": 2,
