@@ -71,8 +71,12 @@
         1,
         0
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "aya": "Worst"
+      },
+      "qualityComments": {
+        "aya": "Missing the stepwise process "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
