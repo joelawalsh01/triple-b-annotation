@@ -1,4 +1,20 @@
 {
   "page": 0,
-  "data": {}
+  "data": {
+    "f496d987": {
+      "rater": 2,
+      "translationOrder": [
+        1,
+        2,
+        0
+      ],
+      "quality": {
+        "aya": "Worst"
+      },
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    }
+  }
 }
