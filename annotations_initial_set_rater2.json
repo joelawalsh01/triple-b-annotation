@@ -233,7 +233,9 @@
       "sourceConfirmed": {
         "4-LS1-1": true
       },
-      "preservation": {},
+      "preservation": {
+        "4-LS1-1__aya": 2
+      },
       "standardComments": {}
     }
   }
