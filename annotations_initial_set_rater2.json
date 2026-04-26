@@ -282,7 +282,8 @@
       },
       "sourceConfirmed": {
         "5-ESS2-2": false,
-        "5-ESS3-1": true
+        "5-ESS3-1": true,
+        "3-5-ETS1-2": false
       },
       "preservation": {
         "5-ESS3-1__gpt4o": 2,
