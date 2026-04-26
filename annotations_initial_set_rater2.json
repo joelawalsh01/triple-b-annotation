@@ -290,7 +290,9 @@
         "5-ESS3-1__gpt4o": 2,
         "5-ESS3-1__gemini": 4,
         "5-ESS3-1__aya": 3,
-        "3-5-ETS1-2__gpt4o": 1
+        "3-5-ETS1-2__gpt4o": 1,
+        "3-5-ETS1-2__gemini": 2,
+        "3-5-ETS1-2__aya": 2
       },
       "standardComments": {}
     }
