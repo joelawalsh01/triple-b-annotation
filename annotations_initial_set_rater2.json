@@ -85,7 +85,9 @@
         "4-PS3-2": true
       },
       "preservation": {
-        "4-PS3-2__gpt4o": 1
+        "4-PS3-2__gpt4o": 3,
+        "4-PS3-2__gemini": 3,
+        "4-PS3-2__aya": 1
       },
       "standardComments": {}
     }
