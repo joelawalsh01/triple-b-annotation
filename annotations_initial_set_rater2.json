@@ -277,7 +277,8 @@
         "gemini": "Middle"
       },
       "qualityComments": {
-        "gemini": "Trash is never mentioned in the original text "
+        "gemini": "Trash is never mentioned in the original text ",
+        "gpt4o": "It is not specific about how adding the "
       },
       "sourceConfirmed": {},
       "preservation": {},
