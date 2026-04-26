@@ -249,7 +249,11 @@
         2,
         0
       ],
-      "quality": {},
+      "quality": {
+        "gpt4o": "Worst",
+        "gemini": "Middle",
+        "aya": "Best"
+      },
       "qualityComments": {},
       "sourceConfirmed": {},
       "preservation": {},
