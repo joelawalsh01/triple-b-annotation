@@ -198,7 +198,8 @@
       },
       "qualityComments": {
         "gemini": "For the word \"balanza\" it is referring to the smaller scales that are used for measuring grams or kilograms. ",
-        "aya": "For the word \"balanza\" it is referring to the smaller scales that are used for measuring grams or kilograms. "
+        "aya": "For the word \"balanza\" it is referring to the smaller scales that are used for measuring grams or kilograms. There is no space between the subheading the paragraph ",
+        "gpt4o": "There is not space between the subheading and the paragraph "
       },
       "sourceConfirmed": {},
       "preservation": {},
