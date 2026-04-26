@@ -169,7 +169,8 @@
         "gemini": "There needs to be a separation between the subheading and the paragraph "
       },
       "sourceConfirmed": {
-        "5-PS1-4": true
+        "5-PS1-4": true,
+        "5-PS1-1": false
       },
       "preservation": {
         "5-PS1-4__aya": 2,
