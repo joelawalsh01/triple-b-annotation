@@ -523,7 +523,10 @@
       "qualityComments": {
         "aya": "This translation added that cells are building blocks, which is not mentioned in the original text "
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-LS1-2": true,
+        "MS-LS1-3": false
+      },
       "preservation": {},
       "standardComments": {}
     }
