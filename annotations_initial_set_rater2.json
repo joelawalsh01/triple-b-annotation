@@ -369,7 +369,9 @@
         1
       ],
       "quality": {},
-      "qualityComments": {},
+      "qualityComments": {
+        "gpt4o": "Instead of saying helium, it refers to \"otro gas\" "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
