@@ -382,7 +382,10 @@
         "5-PS1-1": true,
         "5-PS3-1": false
       },
-      "preservation": {},
+      "preservation": {
+        "5-PS1-1__gpt4o": 2,
+        "5-PS1-1__aya": 3
+      },
       "standardComments": {}
     }
   }
