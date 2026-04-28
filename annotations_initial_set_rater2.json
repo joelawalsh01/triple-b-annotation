@@ -398,7 +398,9 @@
         2,
         0
       ],
-      "quality": {},
+      "quality": {
+        "aya": "Middle"
+      },
       "qualityComments": {},
       "sourceConfirmed": {},
       "preservation": {},
