@@ -413,7 +413,8 @@
         "5-LS2-1": false
       },
       "preservation": {
-        "5-PS3-1__gemini": 3
+        "5-PS3-1__gemini": 3,
+        "5-PS3-1__aya": 2
       },
       "standardComments": {}
     }
