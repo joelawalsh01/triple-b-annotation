@@ -515,7 +515,10 @@
         2,
         0
       ],
-      "quality": {},
+      "quality": {
+        "aya": "Worst",
+        "gemini": "Middle"
+      },
       "qualityComments": {},
       "sourceConfirmed": {},
       "preservation": {},
