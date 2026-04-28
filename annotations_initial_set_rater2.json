@@ -407,7 +407,11 @@
         "gpt4o": "The beginning question is not specific like the original text ",
         "aya": "This translation doesn't say what is transporting the nutrients, air and the waste in your body "
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "5-PS3-1": true,
+        "4-LS1-1": false,
+        "5-LS2-1": false
+      },
       "preservation": {},
       "standardComments": {}
     }
