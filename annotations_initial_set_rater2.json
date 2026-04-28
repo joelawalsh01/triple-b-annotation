@@ -303,7 +303,9 @@
         0,
         1
       ],
-      "quality": {},
+      "quality": {
+        "gemini": "Worst"
+      },
       "qualityComments": {},
       "sourceConfirmed": {},
       "preservation": {},
