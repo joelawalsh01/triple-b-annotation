@@ -490,7 +490,8 @@
         "gpt4o": "Middle"
       },
       "qualityComments": {
-        "gemini": "The LLM using a simile in the third sentence "
+        "gemini": "The LLM using a simile in the third sentence ",
+        "gpt4o": "Uses \"ER\" instead of the whole word "
       },
       "sourceConfirmed": {
         "MS-LS1-2": true
