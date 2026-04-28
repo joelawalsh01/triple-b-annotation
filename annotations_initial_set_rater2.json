@@ -403,7 +403,9 @@
         "gpt4o": "Worst",
         "gemini": "Best"
       },
-      "qualityComments": {},
+      "qualityComments": {
+        "gpt4o": "The beginning question is not specific like the original text "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
