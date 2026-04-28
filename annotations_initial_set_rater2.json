@@ -440,7 +440,8 @@
       },
       "preservation": {
         "5-LS1-1__gpt4o": 2,
-        "5-LS1-1__aya": 3
+        "5-LS1-1__aya": 3,
+        "5-LS1-1__gemini": 3
       },
       "standardComments": {}
     }
