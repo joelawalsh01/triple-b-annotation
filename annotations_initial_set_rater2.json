@@ -345,7 +345,8 @@
       "sourceConfirmed": {
         "5-ESS2-2": true,
         "5-ESS2-1": false,
-        "5-ESS3-1": true
+        "5-ESS3-1": true,
+        "4-ESS2-2": true
       },
       "preservation": {
         "5-ESS2-2__aya": 3,
