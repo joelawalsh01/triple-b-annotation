@@ -528,7 +528,9 @@
         "MS-LS1-3": false,
         "MS-LS1-1": true
       },
-      "preservation": {},
+      "preservation": {
+        "MS-LS1-2__gemini": 2
+      },
       "standardComments": {}
     }
   }
