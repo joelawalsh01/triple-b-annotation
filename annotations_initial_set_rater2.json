@@ -347,7 +347,8 @@
       },
       "preservation": {
         "5-ESS2-2__aya": 3,
-        "5-ESS2-2__gemini": 2
+        "5-ESS2-2__gemini": 2,
+        "5-ESS2-2__gpt4o": 1
       },
       "standardComments": {}
     }
