@@ -517,9 +517,12 @@
       ],
       "quality": {
         "aya": "Worst",
-        "gemini": "Middle"
+        "gemini": "Middle",
+        "gpt4o": "Best"
       },
-      "qualityComments": {},
+      "qualityComments": {
+        "aya": "This translation added that cells are building blocks, which is not mentioned in the original text "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
