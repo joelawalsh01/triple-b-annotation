@@ -372,7 +372,8 @@
         "gemini": "Worst"
       },
       "qualityComments": {
-        "gpt4o": "Instead of saying helium, it refers to \"otro gas\" "
+        "gpt4o": "Instead of saying helium, it refers to \"otro gas\" ",
+        "gemini": "Use a simile at the beginning of the translation "
       },
       "sourceConfirmed": {},
       "preservation": {},
