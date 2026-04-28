@@ -318,7 +318,11 @@
         "4-ESS2-2": false,
         "5-ESS3-1": true
       },
-      "preservation": {},
+      "preservation": {
+        "5-ESS3-1__gpt4o": 3,
+        "5-ESS3-1__aya": 3,
+        "5-ESS3-1__gemini": 2
+      },
       "standardComments": {}
     }
   }
