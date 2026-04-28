@@ -384,7 +384,8 @@
       },
       "preservation": {
         "5-PS1-1__gpt4o": 1,
-        "5-PS1-1__aya": 3
+        "5-PS1-1__aya": 3,
+        "5-PS1-1__gemini": 1
       },
       "standardComments": {}
     }
