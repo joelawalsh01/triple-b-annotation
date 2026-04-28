@@ -497,7 +497,9 @@
         "MS-LS1-2": true
       },
       "preservation": {
-        "MS-LS1-2__gemini": 2
+        "MS-LS1-2__gemini": 2,
+        "MS-LS1-2__aya": 3,
+        "MS-LS1-2__gpt4o": 3
       },
       "standardComments": {}
     }
