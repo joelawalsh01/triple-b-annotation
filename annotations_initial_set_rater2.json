@@ -466,7 +466,9 @@
       "sourceConfirmed": {
         "MS-PS2-2": true
       },
-      "preservation": {},
+      "preservation": {
+        "MS-PS2-2__gpt4o": 3
+      },
       "standardComments": {}
     }
   }
