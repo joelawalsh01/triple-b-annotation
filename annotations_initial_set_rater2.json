@@ -494,7 +494,8 @@
         "gpt4o": "Uses \"ER\" instead of the whole word "
       },
       "sourceConfirmed": {
-        "MS-LS1-2": true
+        "MS-LS1-2": true,
+        "MS-LS1-1": false
       },
       "preservation": {
         "MS-LS1-2__gemini": 2,
