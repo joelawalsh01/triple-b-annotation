@@ -437,7 +437,8 @@
       },
       "sourceConfirmed": {
         "5-LS1-1": true,
-        "4-LS1-1": false
+        "4-LS1-1": false,
+        "5-LS2-1": false
       },
       "preservation": {
         "5-LS1-1__gpt4o": 2,
