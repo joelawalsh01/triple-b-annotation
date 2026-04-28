@@ -342,7 +342,9 @@
         "aya": "No separation between the different sections ",
         "gemini": "No separation between the different sections\nDoesn't mention streams "
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "5-ESS2-2": true
+      },
       "preservation": {},
       "standardComments": {}
     }
