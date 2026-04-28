@@ -312,7 +312,8 @@
         "gemini": "Refers to the aquifer as a sponge "
       },
       "sourceConfirmed": {
-        "5-ESS2-2": false
+        "5-ESS2-2": false,
+        "5-ESS2-1": false
       },
       "preservation": {},
       "standardComments": {}
