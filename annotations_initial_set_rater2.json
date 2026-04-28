@@ -464,7 +464,8 @@
       },
       "qualityComments": {},
       "sourceConfirmed": {
-        "MS-PS2-2": true
+        "MS-PS2-2": true,
+        "MS-PS2-4": true
       },
       "preservation": {
         "MS-PS2-2__gpt4o": 3,
