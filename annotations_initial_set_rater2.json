@@ -463,7 +463,9 @@
         "gpt4o": "Middle"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-PS2-2": true
+      },
       "preservation": {},
       "standardComments": {}
     }
