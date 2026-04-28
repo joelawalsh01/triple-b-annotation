@@ -375,7 +375,8 @@
       },
       "qualityComments": {
         "gpt4o": "Instead of saying helium, it refers to \"otro gas\" ",
-        "gemini": "Use a simile at the beginning of the translation "
+        "gemini": "Use a simile at the beginning of the translation ",
+        "aya": "Messed up the 365 days to 265, 24 days and uses commas instead of periods in percentages "
       },
       "sourceConfirmed": {},
       "preservation": {},
