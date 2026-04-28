@@ -470,7 +470,8 @@
       "preservation": {
         "MS-PS2-2__gpt4o": 3,
         "MS-PS2-2__aya": 4,
-        "MS-PS2-2__gemini": 2
+        "MS-PS2-2__gemini": 2,
+        "MS-PS2-4__gemini": 2
       },
       "standardComments": {}
     }
