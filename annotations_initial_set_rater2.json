@@ -492,7 +492,9 @@
       "qualityComments": {
         "gemini": "The LLM using a simile in the third sentence "
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-LS1-2": true
+      },
       "preservation": {},
       "standardComments": {}
     }
