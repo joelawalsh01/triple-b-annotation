@@ -368,7 +368,9 @@
         0,
         1
       ],
-      "quality": {},
+      "quality": {
+        "gemini": "Worst"
+      },
       "qualityComments": {
         "gpt4o": "Instead of saying helium, it refers to \"otro gas\" "
       },
