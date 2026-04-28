@@ -533,7 +533,8 @@
         "MS-LS1-2__gpt4o": 3,
         "MS-LS1-2__aya": 2,
         "MS-LS1-1__gemini": 3,
-        "MS-LS1-1__gpt4o": 4
+        "MS-LS1-1__gpt4o": 4,
+        "MS-LS1-1__aya": 2
       },
       "standardComments": {}
     }
