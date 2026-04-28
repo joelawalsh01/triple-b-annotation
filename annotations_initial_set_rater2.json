@@ -306,7 +306,9 @@
       "quality": {
         "gemini": "Worst"
       },
-      "qualityComments": {},
+      "qualityComments": {
+        "gemini": "Refers to the rock as a sponge "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
