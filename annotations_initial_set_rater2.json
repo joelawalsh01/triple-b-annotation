@@ -340,7 +340,7 @@
       "qualityComments": {
         "gpt4o": "Doesn't mention glaciers \nNo separation between the different sections ",
         "aya": "No separation between the different sections ",
-        "gemini": "No separation between the different sections "
+        "gemini": "No separation between the different sections\nDoesn't mention streams "
       },
       "sourceConfirmed": {},
       "preservation": {},
