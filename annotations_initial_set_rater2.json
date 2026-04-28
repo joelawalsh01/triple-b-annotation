@@ -313,7 +313,9 @@
       },
       "sourceConfirmed": {
         "5-ESS2-2": false,
-        "5-ESS2-1": false
+        "5-ESS2-1": false,
+        "4-ESS2-2": false,
+        "5-ESS3-1": true
       },
       "preservation": {},
       "standardComments": {}
