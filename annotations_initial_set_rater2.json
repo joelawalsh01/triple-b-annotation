@@ -311,7 +311,9 @@
       "qualityComments": {
         "gemini": "Refers to the aquifer as a sponge "
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "5-ESS2-2": false
+      },
       "preservation": {},
       "standardComments": {}
     }
