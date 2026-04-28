@@ -431,7 +431,9 @@
         "gemini": "Best",
         "aya": "Middle"
       },
-      "qualityComments": {},
+      "qualityComments": {
+        "aya": "The first sentence sounds like "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
