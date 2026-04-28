@@ -304,7 +304,9 @@
         1
       ],
       "quality": {
-        "gemini": "Worst"
+        "gemini": "Worst",
+        "aya": "Best",
+        "gpt4o": "Middle"
       },
       "qualityComments": {
         "gemini": "Refers to the aquifer as a sponge "
