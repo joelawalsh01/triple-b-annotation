@@ -378,7 +378,10 @@
         "gemini": "Use a simile at the beginning of the translation ",
         "aya": "Messed up the 365 days to 265, 24 days and uses commas instead of periods in percentages "
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "5-PS1-1": false,
+        "5-PS3-1": false
+      },
       "preservation": {},
       "standardComments": {}
     }
