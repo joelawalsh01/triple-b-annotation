@@ -484,7 +484,9 @@
         0,
         2
       ],
-      "quality": {},
+      "quality": {
+        "gemini": "Worst"
+      },
       "qualityComments": {
         "gemini": "The LLM using a simile in the third sentence "
       },
