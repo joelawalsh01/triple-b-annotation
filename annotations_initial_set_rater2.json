@@ -309,7 +309,8 @@
         "gpt4o": "Middle"
       },
       "qualityComments": {
-        "gemini": "Refers to the aquifer as a sponge "
+        "gemini": "Refers to the aquifer as a sponge ",
+        "aya": "Missing the description of the aquifer "
       },
       "sourceConfirmed": {
         "5-ESS2-2": false,
