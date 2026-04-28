@@ -345,7 +345,10 @@
       "sourceConfirmed": {
         "5-ESS2-2": true
       },
-      "preservation": {},
+      "preservation": {
+        "5-ESS2-2__aya": 3,
+        "5-ESS2-2__gemini": 2
+      },
       "standardComments": {}
     }
   }
