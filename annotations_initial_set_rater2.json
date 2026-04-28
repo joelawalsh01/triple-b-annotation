@@ -332,8 +332,14 @@
         0,
         2
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gpt4o": "Worst",
+        "aya": "Best",
+        "gemini": "Middle"
+      },
+      "qualityComments": {
+        "gpt4o": "Doesn't mention glaciers "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
