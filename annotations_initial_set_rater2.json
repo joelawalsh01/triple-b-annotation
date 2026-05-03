@@ -1117,7 +1117,9 @@
         "gemini": "Added specific vital functions such as metabolism, reproduction and homeostasis",
         "aya": "Skipped the sentence about unicellular organisms "
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-LS1-2": false
+      },
       "preservation": {},
       "standardComments": {}
     }
