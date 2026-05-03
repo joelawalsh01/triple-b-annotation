@@ -1221,7 +1221,10 @@
         "gpt4o": "Worst"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-ESS3-3": false,
+        "HS-ESS2-2": true
+      },
       "preservation": {},
       "standardComments": {}
     }
