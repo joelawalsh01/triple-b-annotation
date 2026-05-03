@@ -1223,7 +1223,8 @@
       "qualityComments": {},
       "sourceConfirmed": {
         "HS-ESS3-3": false,
-        "HS-ESS2-2": true
+        "HS-ESS2-2": true,
+        "HS-ESS3-1": true
       },
       "preservation": {},
       "standardComments": {}
