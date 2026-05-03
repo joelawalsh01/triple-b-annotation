@@ -840,7 +840,11 @@
       "sourceConfirmed": {
         "5-PS1-3": true
       },
-      "preservation": {},
+      "preservation": {
+        "5-PS1-3__gemini": 4,
+        "5-PS1-3__gpt4o": 4,
+        "5-PS1-3__aya": 4
+      },
       "standardComments": {}
     }
   }
