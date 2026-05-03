@@ -19,7 +19,8 @@
       },
       "preservation": {
         "HS-ESS2-5__gemini": 2,
-        "HS-ESS2-5__gpt4o": 2
+        "HS-ESS2-5__gpt4o": 2,
+        "HS-ESS2-5__aya": 3
       },
       "standardComments": {}
     },
