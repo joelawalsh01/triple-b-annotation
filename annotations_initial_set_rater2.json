@@ -608,7 +608,9 @@
         "gpt4o": "Middle",
         "gemini": "Worst"
       },
-      "qualityComments": {},
+      "qualityComments": {
+        "gpt4o": "This translation added more about the "
+      },
       "sourceConfirmed": {
         "HS-LS1-1": false,
         "HS-LS1-2": true
