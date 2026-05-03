@@ -1277,7 +1277,9 @@
         "MS-PS3-3__gpt4o": 3,
         "MS-PS3-3__aya": 3,
         "MS-PS3-3__gemini": 3,
-        "MS-ETS1-1__gpt4o": 3
+        "MS-ETS1-1__gpt4o": 3,
+        "MS-ETS1-1__aya": 3,
+        "MS-ETS1-1__gemini": 3
       },
       "standardComments": {}
     }
