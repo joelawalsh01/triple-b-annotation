@@ -942,7 +942,11 @@
         2,
         1
       ],
-      "quality": {},
+      "quality": {
+        "gemini": "Worst",
+        "aya": "Middle",
+        "gpt4o": "Best"
+      },
       "qualityComments": {},
       "sourceConfirmed": {},
       "preservation": {},
