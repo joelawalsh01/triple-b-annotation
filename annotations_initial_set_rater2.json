@@ -1112,7 +1112,10 @@
         "gemini": "Best",
         "gpt4o": "Middle"
       },
-      "qualityComments": {},
+      "qualityComments": {
+        "gpt4o": "Added the inclusion of regulation of homeostasis and reproduction of DNA",
+        "gemini": "Added "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
