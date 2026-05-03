@@ -710,7 +710,9 @@
         1
       ],
       "quality": {
-        "aya": "Worst"
+        "aya": "Worst",
+        "gpt4o": "Best",
+        "gemini": "Middle"
       },
       "qualityComments": {
         "aya": "Missing the description of sleet and hail "
