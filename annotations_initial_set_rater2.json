@@ -929,7 +929,8 @@
         "MS-PS2-1": true
       },
       "preservation": {
-        "MS-PS2-1__gemini": 3
+        "MS-PS2-1__gemini": 3,
+        "MS-PS2-1__aya": 2
       },
       "standardComments": {}
     }
