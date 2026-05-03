@@ -1269,7 +1269,9 @@
         "gpt4o": "Worst"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-PS3-3": true
+      },
       "preservation": {},
       "standardComments": {}
     }
