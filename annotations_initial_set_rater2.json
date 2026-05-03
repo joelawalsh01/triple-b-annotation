@@ -1019,8 +1019,12 @@
         2,
         0
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "aya": "Worst"
+      },
+      "qualityComments": {
+        "aya": "Only contains the answer response and not the question "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
