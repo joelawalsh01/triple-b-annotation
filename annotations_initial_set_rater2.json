@@ -559,7 +559,8 @@
         "HS-ESS2-7": false
       },
       "preservation": {
-        "HS-ESS2-1__aya": 2
+        "HS-ESS2-1__aya": 2,
+        "HS-ESS2-1__gpt4o": 4
       },
       "standardComments": {}
     }
