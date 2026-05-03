@@ -1272,7 +1272,9 @@
       "sourceConfirmed": {
         "MS-PS3-3": true
       },
-      "preservation": {},
+      "preservation": {
+        "MS-PS3-3__gpt4o": 3
+      },
       "standardComments": {}
     }
   }
