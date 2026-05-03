@@ -1090,7 +1090,10 @@
         "MS-PS3-4": false,
         "MS-PS3-5": true
       },
-      "preservation": {},
+      "preservation": {
+        "MS-PS3-5__gpt4o": 3,
+        "MS-PS3-5__aya": 4
+      },
       "standardComments": {}
     }
   }
