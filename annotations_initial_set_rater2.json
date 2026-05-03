@@ -751,7 +751,9 @@
         "3-PS2-2": true,
         "5-ESS1-2": false
       },
-      "preservation": {},
+      "preservation": {
+        "5-PS2-1__aya": 2
+      },
       "standardComments": {}
     }
   }
