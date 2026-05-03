@@ -551,7 +551,9 @@
         "aya": "Middle"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-ESS1-5": false
+      },
       "preservation": {},
       "standardComments": {}
     }
