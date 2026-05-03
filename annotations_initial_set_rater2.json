@@ -692,7 +692,9 @@
       "qualityComments": {
         "gpt4o": "Loses the specifics about vacuoles and vesicles; too general "
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-LS1-2": true
+      },
       "preservation": {},
       "standardComments": {}
     }
