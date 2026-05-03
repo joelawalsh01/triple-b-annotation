@@ -1006,7 +1006,9 @@
         "MS-PS4-2": true
       },
       "preservation": {
-        "MS-PS4-2__aya": 2
+        "MS-PS4-2__aya": 2,
+        "MS-PS4-2__gpt4o": 2,
+        "MS-PS4-2__gemini": 2
       },
       "standardComments": {}
     }
