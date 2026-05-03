@@ -723,7 +723,9 @@
         "3-ESS3-1": true,
         "5-ESS2-2": false
       },
-      "preservation": {},
+      "preservation": {
+        "5-ESS2-1__gpt4o": 4
+      },
       "standardComments": {}
     }
   }
