@@ -877,7 +877,9 @@
         "5-PS1-1__gpt4o": 2,
         "5-PS1-1__gemini": 4,
         "5-PS1-1__aya": 4,
-        "5-PS1-2__gpt4o": 2
+        "5-PS1-2__gpt4o": 2,
+        "5-PS1-2__gemini": 3,
+        "5-PS1-2__aya": 3
       },
       "standardComments": {}
     }
