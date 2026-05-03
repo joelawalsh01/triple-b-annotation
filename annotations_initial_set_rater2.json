@@ -717,7 +717,9 @@
       "qualityComments": {
         "aya": "Missing the description of sleet and hail "
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "3-ESS2-1": false
+      },
       "preservation": {},
       "standardComments": {}
     }
