@@ -1141,7 +1141,10 @@
         "gemini": "Best"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-LS1-3": false,
+        "HS-LS1-2": true
+      },
       "preservation": {},
       "standardComments": {}
     }
