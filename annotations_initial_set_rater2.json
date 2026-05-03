@@ -695,7 +695,9 @@
       "sourceConfirmed": {
         "HS-LS1-2": true
       },
-      "preservation": {},
+      "preservation": {
+        "HS-LS1-2__gpt4o": 1
+      },
       "standardComments": {}
     }
   }
