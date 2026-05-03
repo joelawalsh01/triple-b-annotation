@@ -777,12 +777,16 @@
         "5-LS1-1": true,
         "3-LS3-1": false,
         "5-LS2-1": true,
-        "3-LS1-1": true
+        "3-LS1-1": true,
+        "4-LS1-1": true
       },
       "preservation": {
         "3-LS1-1__gpt4o": 3,
         "3-LS1-1__gemini": 3,
-        "3-LS1-1__aya": 2
+        "3-LS1-1__aya": 2,
+        "4-LS1-1__gpt4o": 4,
+        "4-LS1-1__gemini": 4,
+        "4-LS1-1__aya": 2
       },
       "standardComments": {}
     }
