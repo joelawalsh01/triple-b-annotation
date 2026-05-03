@@ -1242,7 +1242,8 @@
         1
       ],
       "quality": {
-        "aya": "Worst"
+        "aya": "Worst",
+        "gpt4o": "Middle"
       },
       "qualityComments": {},
       "sourceConfirmed": {},
