@@ -1020,10 +1020,12 @@
         0
       ],
       "quality": {
-        "aya": "Worst"
+        "aya": "Worst",
+        "gpt4o": "Middle"
       },
       "qualityComments": {
-        "aya": "Only contains the answer response and not the question "
+        "aya": "Only contains the answer response and not the question ",
+        "gpt4o": "missing the synthesis part of the original text "
       },
       "sourceConfirmed": {},
       "preservation": {},
