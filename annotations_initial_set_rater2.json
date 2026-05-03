@@ -749,7 +749,7 @@
       "sourceConfirmed": {
         "5-PS2-1": true,
         "3-PS2-2": true,
-        "5-ESS1-2": false
+        "5-ESS1-2": true
       },
       "preservation": {
         "5-PS2-1__aya": 3,
