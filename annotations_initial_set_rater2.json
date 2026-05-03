@@ -740,7 +740,9 @@
         2,
         1
       ],
-      "quality": {},
+      "quality": {
+        "gpt4o": "Best"
+      },
       "qualityComments": {},
       "sourceConfirmed": {},
       "preservation": {},
