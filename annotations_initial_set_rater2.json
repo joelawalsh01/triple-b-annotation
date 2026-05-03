@@ -752,7 +752,8 @@
         "5-ESS1-2": false
       },
       "preservation": {
-        "5-PS2-1__aya": 2
+        "5-PS2-1__aya": 2,
+        "5-PS2-1__gpt4o": 4
       },
       "standardComments": {}
     }
