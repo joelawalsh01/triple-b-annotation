@@ -640,7 +640,8 @@
         "gpt4o": "Doesn't use the academic vocabulary Tsunami but does mention the concept of them. Makes me think about how MLs describe their understanding of a concept without using academic vocab"
       },
       "sourceConfirmed": {
-        "HS-ESS2-1": false
+        "HS-ESS2-1": false,
+        "HS-ESS1-5": false
       },
       "preservation": {},
       "standardComments": {}
