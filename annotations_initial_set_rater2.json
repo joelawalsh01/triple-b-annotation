@@ -755,7 +755,8 @@
         "5-PS2-1__aya": 3,
         "5-PS2-1__gpt4o": 4,
         "5-PS2-1__gemini": 3,
-        "3-PS2-2__aya": 3
+        "3-PS2-2__aya": 3,
+        "3-PS2-2__gpt4o": 4
       },
       "standardComments": {}
     }
