@@ -779,7 +779,10 @@
         "5-LS2-1": true,
         "3-LS1-1": true
       },
-      "preservation": {},
+      "preservation": {
+        "3-LS1-1__gpt4o": 4,
+        "3-LS1-1__gemini": 4
+      },
       "standardComments": {}
     }
   }
