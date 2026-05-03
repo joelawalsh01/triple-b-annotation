@@ -1227,7 +1227,9 @@
         "HS-ESS3-1": true,
         "HS-ESS3-2": false
       },
-      "preservation": {},
+      "preservation": {
+        "HS-ESS3-1__gemini": 4
+      },
       "standardComments": {}
     }
   }
