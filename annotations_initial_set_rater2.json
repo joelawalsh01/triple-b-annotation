@@ -1032,7 +1032,8 @@
         "MS-PS1-3": true
       },
       "preservation": {
-        "MS-PS1-3__gemini": 4
+        "MS-PS1-3__gemini": 4,
+        "MS-PS1-3__gpt4o": 3
       },
       "standardComments": {}
     }
