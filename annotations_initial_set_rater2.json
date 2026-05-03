@@ -1122,7 +1122,8 @@
         "HS-LS1-1": false
       },
       "preservation": {
-        "HS-LS1-2__aya": 1
+        "HS-LS1-2__aya": 1,
+        "HS-LS1-2__gpt4o": 2
       },
       "standardComments": {}
     }
