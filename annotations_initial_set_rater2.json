@@ -616,7 +616,9 @@
         "HS-LS1-1": true,
         "HS-LS1-2": false
       },
-      "preservation": {},
+      "preservation": {
+        "HS-LS1-1__gemini": 1
+      },
       "standardComments": {}
     }
   }
