@@ -1193,7 +1193,9 @@
         "gpt4o": "Middle"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-ESS2-1": true
+      },
       "preservation": {},
       "standardComments": {}
     }
