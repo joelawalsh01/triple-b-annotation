@@ -647,7 +647,8 @@
       },
       "preservation": {
         "HS-ESS3-1__gemini": 4,
-        "HS-ESS3-1__aya": 2
+        "HS-ESS3-1__aya": 2,
+        "HS-ESS3-1__gpt4o": 3
       },
       "standardComments": {}
     }
