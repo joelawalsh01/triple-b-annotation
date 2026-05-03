@@ -1002,7 +1002,9 @@
         "gpt4o": "Worst"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-PS4-2": true
+      },
       "preservation": {},
       "standardComments": {}
     }
