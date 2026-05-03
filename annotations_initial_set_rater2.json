@@ -873,7 +873,9 @@
         "5-PS1-3": false,
         "5-PS1-4": true
       },
-      "preservation": {},
+      "preservation": {
+        "5-PS1-1__gpt4o": 2
+      },
       "standardComments": {}
     }
   }
