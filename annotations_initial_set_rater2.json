@@ -1273,7 +1273,8 @@
         "MS-PS3-3": true,
         "MS-ETS1-1": false,
         "MS-ETS1-4": true,
-        "MS-ETS1-2": false
+        "MS-ETS1-2": false,
+        "MS-ETS1-3": false
       },
       "preservation": {
         "MS-PS3-3__gpt4o": 3,
