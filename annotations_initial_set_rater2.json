@@ -609,7 +609,7 @@
         "gemini": "Worst"
       },
       "qualityComments": {
-        "gpt4o": "This translation added more about the prokaryotic cells "
+        "gpt4o": "This translation added more about the prokaryotic cells than what was described in the original text"
       },
       "sourceConfirmed": {
         "HS-LS1-1": false,
