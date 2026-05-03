@@ -689,7 +689,9 @@
         "gemini": "Middle",
         "aya": "Best"
       },
-      "qualityComments": {},
+      "qualityComments": {
+        "gpt4o": "Loses the specifics about vacuoles and vesicles; too general "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
