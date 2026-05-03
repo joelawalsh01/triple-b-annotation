@@ -860,7 +860,9 @@
         0
       ],
       "quality": {
-        "aya": "Middle"
+        "aya": "Middle",
+        "gemini": "Best",
+        "gpt4o": "Worst"
       },
       "qualityComments": {
         "gpt4o": "Missing what atomic weight means from the original text "
