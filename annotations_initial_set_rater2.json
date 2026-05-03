@@ -1051,7 +1051,9 @@
         0,
         2
       ],
-      "quality": {},
+      "quality": {
+        "gemini": "Best"
+      },
       "qualityComments": {
         "gemini": "Add how the light comes together or separated when light reflects from a mirror "
       },
