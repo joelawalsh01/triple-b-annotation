@@ -712,7 +712,9 @@
       "quality": {
         "aya": "Worst"
       },
-      "qualityComments": {},
+      "qualityComments": {
+        "aya": "Missing the description of sleet and hail "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
