@@ -867,7 +867,9 @@
       "qualityComments": {
         "gpt4o": "Missing what atomic weight means from the original text "
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "5-PS1-1": true
+      },
       "preservation": {},
       "standardComments": {}
     }
