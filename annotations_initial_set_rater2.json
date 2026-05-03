@@ -769,7 +769,8 @@
         0
       ],
       "quality": {
-        "gemini": "Best"
+        "gemini": "Middle",
+        "gpt4o": "Best"
       },
       "qualityComments": {},
       "sourceConfirmed": {},
