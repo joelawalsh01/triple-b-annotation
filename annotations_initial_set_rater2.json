@@ -1295,8 +1295,8 @@
       ],
       "quality": {
         "aya": "Worst",
-        "gemini": "Best",
-        "gpt4o": "Middle"
+        "gemini": "Middle",
+        "gpt4o": "Best"
       },
       "qualityComments": {},
       "sourceConfirmed": {},
