@@ -1030,7 +1030,8 @@
       },
       "sourceConfirmed": {
         "MS-PS1-3": true,
-        "MS-LS2-5": false
+        "MS-LS2-5": false,
+        "MS-ESS3-4": false
       },
       "preservation": {
         "MS-PS1-3__gemini": 4,
