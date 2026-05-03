@@ -14,8 +14,12 @@
         "gemini": "Worst"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
-      "preservation": {},
+      "sourceConfirmed": {
+        "HS-ESS2-5": true
+      },
+      "preservation": {
+        "HS-ESS2-5__gemini": 2
+      },
       "standardComments": {}
     },
     "f496d987": {
