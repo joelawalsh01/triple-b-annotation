@@ -1304,7 +1304,9 @@
         "MS-LS1-1": false,
         "MS-LS1-2": false
       },
-      "preservation": {},
+      "preservation": {
+        "MS-LS1-3__aya": 2
+      },
       "standardComments": {}
     }
   }
