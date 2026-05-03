@@ -1005,7 +1005,9 @@
       "sourceConfirmed": {
         "MS-PS4-2": true
       },
-      "preservation": {},
+      "preservation": {
+        "MS-PS4-2__aya": 2
+      },
       "standardComments": {}
     }
   }
