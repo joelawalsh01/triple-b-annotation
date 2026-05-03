@@ -630,8 +630,12 @@
         0,
         2
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "aya": "Worst"
+      },
+      "qualityComments": {
+        "aya": "There is no separation between the topics and there is not clear mention of Tsunamis. "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
