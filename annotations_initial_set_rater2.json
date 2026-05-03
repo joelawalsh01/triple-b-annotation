@@ -930,7 +930,8 @@
       },
       "preservation": {
         "MS-PS2-1__gemini": 3,
-        "MS-PS2-1__aya": 2
+        "MS-PS2-1__aya": 2,
+        "MS-PS2-1__gpt4o": 3
       },
       "standardComments": {}
     }
