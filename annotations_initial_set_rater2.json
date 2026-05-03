@@ -1037,7 +1037,10 @@
       "preservation": {
         "MS-PS1-3__gemini": 4,
         "MS-PS1-3__gpt4o": 3,
-        "MS-PS1-3__aya": 2
+        "MS-PS1-3__aya": 2,
+        "MS-ESS3-3__gemini": 4,
+        "MS-ESS3-3__gpt4o": 3,
+        "MS-ESS3-3__aya": 1
       },
       "standardComments": {}
     }
