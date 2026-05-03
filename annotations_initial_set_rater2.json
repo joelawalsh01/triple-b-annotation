@@ -1086,7 +1086,9 @@
       "sourceConfirmed": {
         "MS-PS4-1": false,
         "MS-PS3-1": false,
-        "MS-PS4-2": true
+        "MS-PS4-2": true,
+        "MS-PS3-4": false,
+        "MS-PS3-5": true
       },
       "preservation": {},
       "standardComments": {}
