@@ -973,7 +973,9 @@
         "gemini": "Middle"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-ESS3-4": false
+      },
       "preservation": {},
       "standardComments": {}
     }
