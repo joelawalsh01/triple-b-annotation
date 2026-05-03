@@ -643,7 +643,8 @@
         "HS-ESS2-1": false,
         "HS-ESS1-5": false,
         "HS-ESS2-2": true,
-        "HS-ESS3-1": true
+        "HS-ESS3-1": true,
+        "HS-PS4-1": false
       },
       "preservation": {
         "HS-ESS3-1__gemini": 4,
