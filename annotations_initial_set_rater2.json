@@ -919,7 +919,11 @@
         0,
         2
       ],
-      "quality": {},
+      "quality": {
+        "gpt4o": "Best",
+        "gemini": "Middle",
+        "aya": "Worst"
+      },
       "qualityComments": {},
       "sourceConfirmed": {},
       "preservation": {},
