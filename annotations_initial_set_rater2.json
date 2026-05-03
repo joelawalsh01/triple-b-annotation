@@ -925,7 +925,9 @@
         "aya": "Worst"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-PS2-1": true
+      },
       "preservation": {},
       "standardComments": {}
     }
