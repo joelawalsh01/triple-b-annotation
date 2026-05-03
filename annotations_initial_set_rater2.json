@@ -859,7 +859,9 @@
         1,
         0
       ],
-      "quality": {},
+      "quality": {
+        "aya": "Best"
+      },
       "qualityComments": {
         "gpt4o": "Missing what atomic weight means from the original text "
       },
