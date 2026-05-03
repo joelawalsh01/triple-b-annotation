@@ -617,7 +617,9 @@
         "HS-LS1-2": false
       },
       "preservation": {
-        "HS-LS1-1__gemini": 1
+        "HS-LS1-1__gemini": 1,
+        "HS-LS1-1__gpt4o": 3,
+        "HS-LS1-1__aya": 3
       },
       "standardComments": {}
     }
