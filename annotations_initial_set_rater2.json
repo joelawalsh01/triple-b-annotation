@@ -632,10 +632,12 @@
       ],
       "quality": {
         "aya": "Worst",
-        "gemini": "Best"
+        "gemini": "Middle",
+        "gpt4o": "Best"
       },
       "qualityComments": {
-        "aya": "There is no separation between the topics and there is not clear mention of Tsunamis. "
+        "aya": "There is no separation between the topics and there is not clear mention of Tsunamis. ",
+        "gpt4o": "Doesn't use the academic vocabulary Tsunami but does mention the concept of them. Makes me think about "
       },
       "sourceConfirmed": {},
       "preservation": {},
