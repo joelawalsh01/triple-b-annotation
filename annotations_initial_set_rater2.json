@@ -670,7 +670,9 @@
         "HS-LS1-2": false,
         "HS-PS4-5": true
       },
-      "preservation": {},
+      "preservation": {
+        "HS-PS4-5__aya": 3
+      },
       "standardComments": {}
     }
   }
