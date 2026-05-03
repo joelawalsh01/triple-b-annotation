@@ -1280,7 +1280,7 @@
         "MS-PS3-3__aya": 3,
         "MS-PS3-3__gemini": 3,
         "MS-ETS1-4__gpt4o": 3,
-        "MS-ETS1-4__aya": 3,
+        "MS-ETS1-4__aya": 2,
         "MS-ETS1-4__gemini": 3
       },
       "standardComments": {}
