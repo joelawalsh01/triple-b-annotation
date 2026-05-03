@@ -905,7 +905,10 @@
       "preservation": {
         "MS-ESS2-5__aya": 2,
         "MS-ESS2-5__gpt4o": 4,
-        "MS-ESS2-5__gemini": 4
+        "MS-ESS2-5__gemini": 4,
+        "MS-ESS3-2__aya": 2,
+        "MS-ESS3-2__gpt4o": 4,
+        "MS-ESS3-2__gemini": 4
       },
       "standardComments": {}
     }
