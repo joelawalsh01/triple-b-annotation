@@ -975,7 +975,7 @@
       "qualityComments": {},
       "sourceConfirmed": {
         "MS-ESS3-4": false,
-        "MS-ESS3-3": false,
+        "MS-ESS3-3": true,
         "MS-LS2-4": false,
         "MS-ESS3-5": true
       },
