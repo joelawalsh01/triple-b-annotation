@@ -22,7 +22,8 @@
         "HS-ESS2-5__gemini": 2,
         "HS-ESS2-5__gpt4o": 2,
         "HS-ESS2-5__aya": 3,
-        "HS-ESS2-1__aya": 4
+        "HS-ESS2-1__aya": 4,
+        "HS-ESS2-1__gemini": 1
       },
       "standardComments": {}
     },
