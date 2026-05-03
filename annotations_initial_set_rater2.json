@@ -1021,7 +1021,8 @@
       ],
       "quality": {
         "aya": "Worst",
-        "gpt4o": "Middle"
+        "gpt4o": "Middle",
+        "gemini": "Worst"
       },
       "qualityComments": {
         "aya": "Only contains the answer response and not the question ",
