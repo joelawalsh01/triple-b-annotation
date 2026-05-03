@@ -967,7 +967,9 @@
         2,
         1
       ],
-      "quality": {},
+      "quality": {
+        "gpt4o": "Worst"
+      },
       "qualityComments": {},
       "sourceConfirmed": {},
       "preservation": {},
