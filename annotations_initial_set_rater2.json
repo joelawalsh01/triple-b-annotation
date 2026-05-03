@@ -982,7 +982,8 @@
       "preservation": {
         "MS-ESS3-5__aya": 3,
         "MS-ESS3-5__gpt4o": 2,
-        "MS-ESS3-5__gemini": 3
+        "MS-ESS3-5__gemini": 3,
+        "MS-LS2-4__aya": 3
       },
       "standardComments": {}
     }
