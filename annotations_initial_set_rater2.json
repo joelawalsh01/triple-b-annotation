@@ -1059,7 +1059,10 @@
       "qualityComments": {
         "gemini": "Add how the light comes together or separated when light reflects from a mirror "
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-PS4-1": false,
+        "MS-PS4-2": true
+      },
       "preservation": {},
       "standardComments": {}
     }
