@@ -631,7 +631,8 @@
         2
       ],
       "quality": {
-        "aya": "Worst"
+        "aya": "Worst",
+        "gemini": "Best"
       },
       "qualityComments": {
         "aya": "There is no separation between the topics and there is not clear mention of Tsunamis. "
