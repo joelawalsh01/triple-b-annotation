@@ -1270,12 +1270,14 @@
       },
       "qualityComments": {},
       "sourceConfirmed": {
-        "MS-PS3-3": true
+        "MS-PS3-3": true,
+        "MS-ETS1-1": true
       },
       "preservation": {
         "MS-PS3-3__gpt4o": 3,
         "MS-PS3-3__aya": 3,
-        "MS-PS3-3__gemini": 3
+        "MS-PS3-3__gemini": 3,
+        "MS-ETS1-1__gpt4o": 3
       },
       "standardComments": {}
     }
