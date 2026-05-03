@@ -552,7 +552,8 @@
       },
       "qualityComments": {},
       "sourceConfirmed": {
-        "HS-ESS1-5": false
+        "HS-ESS1-5": false,
+        "HS-ESS2-5": false
       },
       "preservation": {},
       "standardComments": {}
