@@ -948,7 +948,9 @@
         "gpt4o": "Best"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-LS1-2": true
+      },
       "preservation": {},
       "standardComments": {}
     }
