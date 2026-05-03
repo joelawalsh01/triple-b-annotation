@@ -1247,7 +1247,9 @@
         "gemini": "Best"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-PS3-5": false
+      },
       "preservation": {},
       "standardComments": {}
     }
