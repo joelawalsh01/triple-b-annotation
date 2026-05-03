@@ -891,7 +891,9 @@
         1
       ],
       "quality": {
-        "aya": "Worst"
+        "aya": "Worst",
+        "gpt4o": "Middle",
+        "gemini": "Best"
       },
       "qualityComments": {
         "aya": "Missing this chunk from the original text - \" ...display the data in the Table 1.8. The line graph in the Figure 1.41 shows one way this could be done.\" "
