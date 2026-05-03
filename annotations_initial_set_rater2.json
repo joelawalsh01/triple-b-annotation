@@ -558,7 +558,9 @@
         "HS-ESS2-6": true,
         "HS-ESS2-7": false
       },
-      "preservation": {},
+      "preservation": {
+        "HS-ESS2-1__aya": 2
+      },
       "standardComments": {}
     }
   }
