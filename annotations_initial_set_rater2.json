@@ -920,8 +920,8 @@
         2
       ],
       "quality": {
-        "gpt4o": "Best",
-        "gemini": "Middle",
+        "gpt4o": "Middle",
+        "gemini": "Best",
         "aya": "Worst"
       },
       "qualityComments": {},
