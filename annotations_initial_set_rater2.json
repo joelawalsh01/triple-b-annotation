@@ -1052,7 +1052,9 @@
         2
       ],
       "quality": {
-        "gemini": "Best"
+        "gemini": "Best",
+        "gpt4o": "Middle",
+        "aya": "Worst"
       },
       "qualityComments": {
         "gemini": "Add how the light comes together or separated when light reflects from a mirror "
