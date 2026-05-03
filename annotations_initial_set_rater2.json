@@ -1063,7 +1063,9 @@
         "MS-PS4-1": false,
         "MS-PS4-2": true
       },
-      "preservation": {},
+      "preservation": {
+        "MS-PS4-2__gemini": 3
+      },
       "standardComments": {}
     }
   }
