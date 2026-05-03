@@ -996,7 +996,9 @@
         2,
         1
       ],
-      "quality": {},
+      "quality": {
+        "gemini": "Best"
+      },
       "qualityComments": {},
       "sourceConfirmed": {},
       "preservation": {},
