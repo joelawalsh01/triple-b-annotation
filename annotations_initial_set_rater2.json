@@ -776,7 +776,8 @@
       "sourceConfirmed": {
         "5-LS1-1": true,
         "3-LS3-1": false,
-        "5-LS2-1": true
+        "5-LS2-1": true,
+        "3-LS1-1": true
       },
       "preservation": {},
       "standardComments": {}
