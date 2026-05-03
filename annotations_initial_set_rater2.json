@@ -671,9 +671,9 @@
         "HS-PS4-5": true
       },
       "preservation": {
-        "HS-PS4-5__aya": 3,
+        "HS-PS4-5__aya": 2,
         "HS-PS4-5__gemini": 3,
-        "HS-PS4-5__gpt4o": 3
+        "HS-PS4-5__gpt4o": 2
       },
       "standardComments": {}
     }
