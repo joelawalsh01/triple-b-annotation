@@ -1028,7 +1028,9 @@
         "aya": "Only contains the answer response and not the question ",
         "gpt4o": "missing the synthesis part of the original text "
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-PS1-3": true
+      },
       "preservation": {},
       "standardComments": {}
     }
