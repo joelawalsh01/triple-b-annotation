@@ -1659,7 +1659,9 @@
         "gemini": "Worst"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-ESS2-5": false
+      },
       "preservation": {},
       "standardComments": {}
     }
