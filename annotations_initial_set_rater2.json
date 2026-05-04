@@ -1763,7 +1763,8 @@
         "MS-LS1-3": true
       },
       "preservation": {
-        "MS-LS1-2__gemini": 3
+        "MS-LS1-2__gemini": 3,
+        "MS-LS1-2__gpt4o": 2
       },
       "standardComments": {}
     }
