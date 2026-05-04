@@ -1661,14 +1661,17 @@
       "qualityComments": {},
       "sourceConfirmed": {
         "HS-ESS2-5": false,
-        "HS-ESS2-2": false,
+        "HS-ESS2-2": true,
         "HS-ESS1-5": false,
         "HS-ESS2-1": true
       },
       "preservation": {
         "HS-ESS2-1__gemini": 3,
         "HS-ESS2-1__aya": 4,
-        "HS-ESS2-1__gpt4o": 3
+        "HS-ESS2-1__gpt4o": 3,
+        "HS-ESS2-2__gemini": 2,
+        "HS-ESS2-2__aya": 4,
+        "HS-ESS2-2__gpt4o": 4
       },
       "standardComments": {}
     }
