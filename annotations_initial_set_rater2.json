@@ -1637,7 +1637,9 @@
         "HS-LS1-3": true
       },
       "preservation": {
-        "HS-LS1-3__gemini": 4
+        "HS-LS1-3__gemini": 4,
+        "HS-LS1-3__aya": 3,
+        "HS-LS1-3__gpt4o": 3
       },
       "standardComments": {}
     }
