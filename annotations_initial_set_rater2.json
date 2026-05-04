@@ -1400,7 +1400,10 @@
         "gemini": "Middle"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-ESS2-5": true,
+        "MS-ESS3-2": true
+      },
       "preservation": {},
       "standardComments": {}
     }
