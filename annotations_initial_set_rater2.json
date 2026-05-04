@@ -1485,7 +1485,9 @@
         "HS-PS4-5": true,
         "HS-PS4-2": false
       },
-      "preservation": {},
+      "preservation": {
+        "HS-PS4-5__aya": 2
+      },
       "standardComments": {}
     }
   }
