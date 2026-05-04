@@ -1378,7 +1378,9 @@
         "MS-ESS1-4": true
       },
       "preservation": {
-        "MS-ESS2-2__aya": 3
+        "MS-ESS2-2__aya": 3,
+        "MS-ESS2-2__gpt4o": 4,
+        "MS-ESS2-2__gemini": 4
       },
       "standardComments": {}
     }
