@@ -1330,7 +1330,9 @@
         "MS-PS1-4": true
       },
       "preservation": {
-        "MS-PS1-4__aya": 3
+        "MS-PS1-4__aya": 3,
+        "MS-PS1-4__gpt4o": 3,
+        "MS-PS1-4__gemini": 3
       },
       "standardComments": {}
     }
