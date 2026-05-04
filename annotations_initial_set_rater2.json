@@ -1765,7 +1765,10 @@
       "preservation": {
         "MS-LS1-2__gemini": 3,
         "MS-LS1-2__gpt4o": 2,
-        "MS-LS1-2__aya": 3
+        "MS-LS1-2__aya": 3,
+        "MS-LS1-3__gpt4o": 2,
+        "MS-LS1-3__gemini": 3,
+        "MS-LS1-3__aya": 3
       },
       "standardComments": {}
     }
