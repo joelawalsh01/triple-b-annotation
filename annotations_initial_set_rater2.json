@@ -1458,7 +1458,8 @@
       "sourceConfirmed": {
         "HS-ESS2-1": false,
         "HS-ESS1-5": false,
-        "HS-ESS1-6": true
+        "HS-ESS1-6": true,
+        "HS-ESS2-3": false
       },
       "preservation": {
         "HS-ESS1-6__gpt4o": 4,
