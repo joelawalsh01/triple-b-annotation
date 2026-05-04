@@ -1733,7 +1733,9 @@
         "gemini": "\"Por regla general\" should be \"por lo general\""
       },
       "sourceConfirmed": {
-        "HS-LS1-2": true
+        "HS-LS1-2": true,
+        "HS-LS1-4": false,
+        "HS-LS1-1": false
       },
       "preservation": {
         "HS-LS1-2__aya": 3,
