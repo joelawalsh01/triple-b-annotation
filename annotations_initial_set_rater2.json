@@ -1666,7 +1666,8 @@
         "HS-ESS2-1": true
       },
       "preservation": {
-        "HS-ESS2-1__gemini": 2
+        "HS-ESS2-1__gemini": 2,
+        "HS-ESS2-1__aya": 4
       },
       "standardComments": {}
     }
