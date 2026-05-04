@@ -1660,7 +1660,9 @@
       },
       "qualityComments": {},
       "sourceConfirmed": {
-        "HS-ESS2-5": false
+        "HS-ESS2-5": false,
+        "HS-ESS2-2": true,
+        "HS-ESS1-5": false
       },
       "preservation": {},
       "standardComments": {}
