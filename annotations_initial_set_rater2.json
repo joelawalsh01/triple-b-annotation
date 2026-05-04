@@ -1528,7 +1528,9 @@
         "gpt4o": "Middle",
         "gemini": "Best"
       },
-      "qualityComments": {},
+      "qualityComments": {
+        "gpt4o": "Added the idea of passive transport at the end of the passage in this translation"
+      },
       "sourceConfirmed": {
         "HS-LS1-3": false,
         "HS-LS1-2": true
