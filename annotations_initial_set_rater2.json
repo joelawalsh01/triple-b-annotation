@@ -1751,7 +1751,9 @@
         2,
         0
       ],
-      "quality": {},
+      "quality": {
+        "gemini": "Best"
+      },
       "qualityComments": {},
       "sourceConfirmed": {},
       "preservation": {},
