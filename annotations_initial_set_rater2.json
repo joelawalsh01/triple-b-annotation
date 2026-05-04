@@ -1530,12 +1530,10 @@
       },
       "qualityComments": {},
       "sourceConfirmed": {
-        "HS-LS1-3": true
+        "HS-LS1-3": false,
+        "HS-LS1-2": true
       },
-      "preservation": {
-        "HS-LS1-3__aya": 2,
-        "HS-LS1-3__gpt4o": 3
-      },
+      "preservation": {},
       "standardComments": {}
     }
   }
