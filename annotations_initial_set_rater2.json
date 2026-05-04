@@ -1486,7 +1486,9 @@
         "HS-PS4-2": false
       },
       "preservation": {
-        "HS-PS4-5__aya": 2
+        "HS-PS4-5__aya": 2,
+        "HS-PS4-5__gemini": 4,
+        "HS-PS4-5__gpt4o": 4
       },
       "standardComments": {}
     }
