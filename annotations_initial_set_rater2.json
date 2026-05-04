@@ -1,5 +1,5 @@
 {
-  "page": 64,
+  "page": 97,
   "data": {
     "14891590": {
       "rater": 2,
@@ -27,6 +27,19 @@
         "HS-ESS2-1__gemini": 1,
         "HS-ESS2-1__gpt4o": 2
       },
+      "standardComments": {}
+    },
+    "84071998": {
+      "rater": 2,
+      "translationOrder": [
+        0,
+        1,
+        2
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
       "standardComments": {}
     },
     "f496d987": {
@@ -1778,6 +1791,422 @@
         0,
         2,
         1
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "db8e89be": {
+      "rater": 2,
+      "translationOrder": [
+        1,
+        2,
+        0
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "2221f7f4": {
+      "rater": 2,
+      "translationOrder": [
+        2,
+        0,
+        1
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "0bff0ab7": {
+      "rater": 2,
+      "translationOrder": [
+        1,
+        0,
+        2
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "e5f02862": {
+      "rater": 2,
+      "translationOrder": [
+        2,
+        0,
+        1
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "10a427f0": {
+      "rater": 2,
+      "translationOrder": [
+        1,
+        2,
+        0
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "78da5fac": {
+      "rater": 2,
+      "translationOrder": [
+        1,
+        2,
+        0
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "16b4d869": {
+      "rater": 2,
+      "translationOrder": [
+        2,
+        0,
+        1
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "48d6e8d7": {
+      "rater": 2,
+      "translationOrder": [
+        2,
+        0,
+        1
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "28617fe3": {
+      "rater": 2,
+      "translationOrder": [
+        0,
+        1,
+        2
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "cd83cec4": {
+      "rater": 2,
+      "translationOrder": [
+        2,
+        1,
+        0
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "19d81748": {
+      "rater": 2,
+      "translationOrder": [
+        2,
+        0,
+        1
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "193bdfbc": {
+      "rater": 2,
+      "translationOrder": [
+        2,
+        0,
+        1
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "51429dcf": {
+      "rater": 2,
+      "translationOrder": [
+        2,
+        0,
+        1
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "b3d5b5f8": {
+      "rater": 2,
+      "translationOrder": [
+        0,
+        2,
+        1
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "9972a4f8": {
+      "rater": 2,
+      "translationOrder": [
+        1,
+        0,
+        2
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "dedca72f": {
+      "rater": 2,
+      "translationOrder": [
+        0,
+        1,
+        2
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "11dde5e6": {
+      "rater": 2,
+      "translationOrder": [
+        1,
+        2,
+        0
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "1e93a007": {
+      "rater": 2,
+      "translationOrder": [
+        0,
+        1,
+        2
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "21323d23": {
+      "rater": 2,
+      "translationOrder": [
+        1,
+        0,
+        2
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "2d761c54": {
+      "rater": 2,
+      "translationOrder": [
+        0,
+        1,
+        2
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "3dfa7ff5": {
+      "rater": 2,
+      "translationOrder": [
+        1,
+        0,
+        2
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "693644d2": {
+      "rater": 2,
+      "translationOrder": [
+        2,
+        0,
+        1
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "851665a8": {
+      "rater": 2,
+      "translationOrder": [
+        0,
+        1,
+        2
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "86972ae3": {
+      "rater": 2,
+      "translationOrder": [
+        0,
+        2,
+        1
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "a03fd616": {
+      "rater": 2,
+      "translationOrder": [
+        2,
+        1,
+        0
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "b25626a8": {
+      "rater": 2,
+      "translationOrder": [
+        0,
+        1,
+        2
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "b2e4004f": {
+      "rater": 2,
+      "translationOrder": [
+        0,
+        2,
+        1
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "d849fac4": {
+      "rater": 2,
+      "translationOrder": [
+        2,
+        1,
+        0
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "ed41b4a5": {
+      "rater": 2,
+      "translationOrder": [
+        0,
+        1,
+        2
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "f3f1e1e9": {
+      "rater": 2,
+      "translationOrder": [
+        1,
+        0,
+        2
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "f7368a32": {
+      "rater": 2,
+      "translationOrder": [
+        2,
+        0,
+        1
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
+    },
+    "f76c5ea8": {
+      "rater": 2,
+      "translationOrder": [
+        1,
+        2,
+        0
       ],
       "quality": {},
       "qualityComments": {},
