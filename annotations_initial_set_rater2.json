@@ -1427,7 +1427,9 @@
         "aya": "Worst"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-PS4-1": false
+      },
       "preservation": {},
       "standardComments": {}
     }
