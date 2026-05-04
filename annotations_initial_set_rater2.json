@@ -1757,7 +1757,9 @@
         "aya": "Middle"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-LS1-2": true
+      },
       "preservation": {},
       "standardComments": {}
     }
