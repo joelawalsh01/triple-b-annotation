@@ -1461,7 +1461,8 @@
         "HS-ESS1-6": true
       },
       "preservation": {
-        "HS-ESS1-6__gpt4o": 3
+        "HS-ESS1-6__gpt4o": 3,
+        "HS-ESS1-6__aya": 1
       },
       "standardComments": {}
     }
