@@ -1726,9 +1726,12 @@
       ],
       "quality": {
         "gpt4o": "Worst",
-        "aya": "Middle"
+        "aya": "Middle",
+        "gemini": "Best"
       },
-      "qualityComments": {},
+      "qualityComments": {
+        "gemini": "\"Por regla general\" should be \"por lo general\""
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
