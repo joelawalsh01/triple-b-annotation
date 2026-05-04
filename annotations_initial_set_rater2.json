@@ -1556,7 +1556,7 @@
       },
       "qualityComments": {},
       "sourceConfirmed": {
-        "HS-ESS2-1": false,
+        "HS-ESS2-1": true,
         "HS-ESS2-5": false
       },
       "preservation": {},
