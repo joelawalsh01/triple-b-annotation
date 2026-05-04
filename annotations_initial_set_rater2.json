@@ -1735,7 +1735,9 @@
       "sourceConfirmed": {
         "HS-LS1-2": true
       },
-      "preservation": {},
+      "preservation": {
+        "HS-LS1-2__aya": 3
+      },
       "standardComments": {}
     }
   }
