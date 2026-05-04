@@ -1432,7 +1432,9 @@
         "HS-PS4-5": true,
         "HS-PS4-3": true
       },
-      "preservation": {},
+      "preservation": {
+        "HS-PS4-3__aya": 1
+      },
       "standardComments": {}
     }
   }
