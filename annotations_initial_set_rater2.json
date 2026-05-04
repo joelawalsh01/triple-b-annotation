@@ -1404,7 +1404,9 @@
         "MS-ESS2-5": true,
         "MS-ESS3-2": true
       },
-      "preservation": {},
+      "preservation": {
+        "MS-ESS2-5__aya": 1
+      },
       "standardComments": {}
     }
   }
