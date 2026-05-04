@@ -1373,7 +1373,8 @@
       },
       "qualityComments": {},
       "sourceConfirmed": {
-        "MS-ESS2-3": false
+        "MS-ESS2-3": false,
+        "MS-ESS2-2": true
       },
       "preservation": {},
       "standardComments": {}
