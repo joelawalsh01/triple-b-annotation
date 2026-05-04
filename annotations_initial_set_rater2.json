@@ -1324,7 +1324,9 @@
         "aya": "Worst"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-LS1-2": false
+      },
       "preservation": {},
       "standardComments": {}
     }
