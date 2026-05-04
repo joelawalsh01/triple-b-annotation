@@ -1532,7 +1532,9 @@
       "sourceConfirmed": {
         "HS-LS1-3": true
       },
-      "preservation": {},
+      "preservation": {
+        "HS-LS1-3__aya": 2
+      },
       "standardComments": {}
     }
   }
