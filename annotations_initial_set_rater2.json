@@ -1762,7 +1762,9 @@
         "MS-LS1-1": false,
         "MS-LS1-3": true
       },
-      "preservation": {},
+      "preservation": {
+        "MS-LS1-2__gemini": 3
+      },
       "standardComments": {}
     }
   }
