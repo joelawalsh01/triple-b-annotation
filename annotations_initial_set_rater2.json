@@ -1344,10 +1344,14 @@
         1
       ],
       "quality": {
-        "gemini": "Best"
+        "gemini": "Best",
+        "gpt4o": "Middle",
+        "aya": "Worst"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-PS1-1": true
+      },
       "preservation": {},
       "standardComments": {}
     }
