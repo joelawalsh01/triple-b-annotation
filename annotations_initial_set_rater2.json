@@ -1499,7 +1499,9 @@
         0,
         1
       ],
-      "quality": {},
+      "quality": {
+        "aya": "Worst"
+      },
       "qualityComments": {},
       "sourceConfirmed": {},
       "preservation": {},
