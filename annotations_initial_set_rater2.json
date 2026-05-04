@@ -1460,7 +1460,9 @@
         "HS-ESS1-5": false,
         "HS-ESS1-6": true
       },
-      "preservation": {},
+      "preservation": {
+        "HS-ESS1-6__gpt4o": 3
+      },
       "standardComments": {}
     }
   }
