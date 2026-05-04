@@ -1609,7 +1609,8 @@
       },
       "qualityComments": {},
       "sourceConfirmed": {
-        "HS-LS1-3": true
+        "HS-LS1-3": true,
+        "HS-LS1-2": false
       },
       "preservation": {
         "HS-LS1-3__gpt4o": 3,
