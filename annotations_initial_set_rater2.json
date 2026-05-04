@@ -1561,7 +1561,9 @@
         "HS-ESS1-5": true
       },
       "preservation": {
-        "HS-ESS2-1__gpt4o": 3
+        "HS-ESS2-1__gpt4o": 3,
+        "HS-ESS2-1__aya": 2,
+        "HS-ESS2-1__gemini": 3
       },
       "standardComments": {}
     }
