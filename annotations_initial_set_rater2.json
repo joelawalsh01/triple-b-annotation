@@ -1451,11 +1451,13 @@
       ],
       "quality": {
         "aya": "Worst",
-        "gemini": "Best",
-        "gpt4o": "Middle"
+        "gemini": "Middle",
+        "gpt4o": "Best"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-ESS2-1": false
+      },
       "preservation": {},
       "standardComments": {}
     }
