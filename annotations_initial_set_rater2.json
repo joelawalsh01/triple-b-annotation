@@ -1581,7 +1581,9 @@
       },
       "qualityComments": {},
       "sourceConfirmed": {
-        "HS-ESS2-1": true
+        "HS-ESS2-1": true,
+        "HS-ESS1-5": false,
+        "HS-ESS2-3": true
       },
       "preservation": {},
       "standardComments": {}
