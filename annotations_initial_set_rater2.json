@@ -1732,7 +1732,9 @@
       "qualityComments": {
         "gemini": "\"Por regla general\" should be \"por lo general\""
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-LS1-2": true
+      },
       "preservation": {},
       "standardComments": {}
     }
