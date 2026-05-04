@@ -1380,7 +1380,10 @@
       "preservation": {
         "MS-ESS2-2__aya": 3,
         "MS-ESS2-2__gpt4o": 4,
-        "MS-ESS2-2__gemini": 4
+        "MS-ESS2-2__gemini": 4,
+        "MS-ESS1-4__aya": 3,
+        "MS-ESS1-4__gpt4o": 3,
+        "MS-ESS1-4__gemini": 3
       },
       "standardComments": {}
     }
