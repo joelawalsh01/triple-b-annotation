@@ -1352,7 +1352,9 @@
       "sourceConfirmed": {
         "MS-PS1-1": true
       },
-      "preservation": {},
+      "preservation": {
+        "MS-PS1-1__aya": 2
+      },
       "standardComments": {}
     }
   }
