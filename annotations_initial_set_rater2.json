@@ -1,5 +1,5 @@
 {
-  "page": 97,
+  "page": 96,
   "data": {
     "14891590": {
       "rater": 2,
@@ -2199,7 +2199,9 @@
       "qualityComments": {},
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "noStandardsApply": false,
+      "noStandardsProposed": ""
     },
     "f76c5ea8": {
       "rater": 2,
