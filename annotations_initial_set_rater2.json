@@ -1710,7 +1710,9 @@
       "sourceConfirmed": {
         "HS-LS1-2": true
       },
-      "preservation": {},
+      "preservation": {
+        "HS-LS1-2__gpt4o": 2
+      },
       "standardComments": {}
     }
   }
