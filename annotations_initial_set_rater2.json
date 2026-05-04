@@ -1482,7 +1482,8 @@
       },
       "qualityComments": {},
       "sourceConfirmed": {
-        "HS-PS4-5": true
+        "HS-PS4-5": true,
+        "HS-PS4-2": false
       },
       "preservation": {},
       "standardComments": {}
