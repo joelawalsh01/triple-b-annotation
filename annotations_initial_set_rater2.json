@@ -1523,7 +1523,11 @@
         2,
         0
       ],
-      "quality": {},
+      "quality": {
+        "aya": "Worst",
+        "gpt4o": "Middle",
+        "gemini": "Best"
+      },
       "qualityComments": {},
       "sourceConfirmed": {},
       "preservation": {},
