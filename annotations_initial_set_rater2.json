@@ -1555,7 +1555,10 @@
         "gemini": "Middle"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-ESS2-1": false,
+        "HS-ESS2-5": false
+      },
       "preservation": {},
       "standardComments": {}
     }
