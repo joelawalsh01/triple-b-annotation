@@ -2232,7 +2232,9 @@
         2,
         0
       ],
-      "quality": {},
+      "quality": {
+        "aya": "Worst"
+      },
       "qualityComments": {
         "gemini": "Masa is not the correct term",
         "gpt4o": "Masa is the not the correct term ",
