@@ -1882,7 +1882,8 @@
       "qualityComments": {},
       "sourceConfirmed": {
         "HS-PS2-6": true,
-        "HS-PS1-1": false
+        "HS-PS1-1": false,
+        "HS-PS1-3": false
       },
       "preservation": {},
       "standardComments": {}
