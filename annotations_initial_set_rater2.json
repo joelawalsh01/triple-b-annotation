@@ -1793,7 +1793,9 @@
         1
       ],
       "quality": {},
-      "qualityComments": {},
+      "qualityComments": {
+        "aya": "The abbreviations of the types of microscopes are kept in this translation "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
