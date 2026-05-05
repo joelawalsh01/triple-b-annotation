@@ -1953,8 +1953,8 @@
       ],
       "quality": {
         "aya": "Best",
-        "gpt4o": "Middle",
-        "gemini": "Worst"
+        "gpt4o": "Worst",
+        "gemini": "Middle"
       },
       "qualityComments": {},
       "sourceConfirmed": {},
