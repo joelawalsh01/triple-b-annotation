@@ -1936,7 +1936,9 @@
         "HS-ESS3-1": false,
         "HS-ESS1-6": false
       },
-      "preservation": {},
+      "preservation": {
+        "HS-ESS1-5__gemini": 3
+      },
       "standardComments": {}
     },
     "78da5fac": {
