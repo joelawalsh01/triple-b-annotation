@@ -2032,9 +2032,11 @@
       },
       "sourceConfirmed": {
         "HS-LS1-3": false,
-        "HS-LS1-2": false
+        "HS-LS1-2": true
       },
-      "preservation": {},
+      "preservation": {
+        "HS-LS1-2__gpt4o": 2
+      },
       "standardComments": {}
     },
     "cd83cec4": {
