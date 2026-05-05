@@ -1987,7 +1987,10 @@
       "sourceConfirmed": {
         "HS-ESS2-1": true
       },
-      "preservation": {},
+      "preservation": {
+        "HS-ESS2-1__gpt4o": 2,
+        "HS-ESS2-1__aya": 2
+      },
       "standardComments": {}
     },
     "48d6e8d7": {
