@@ -2021,7 +2021,9 @@
         1,
         2
       ],
-      "quality": {},
+      "quality": {
+        "gpt4o": "Worst"
+      },
       "qualityComments": {},
       "sourceConfirmed": {},
       "preservation": {},
