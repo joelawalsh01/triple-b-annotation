@@ -2022,7 +2022,9 @@
         2
       ],
       "quality": {
-        "gpt4o": "Worst"
+        "gpt4o": "Worst",
+        "aya": "Best",
+        "gemini": "Middle"
       },
       "qualityComments": {},
       "sourceConfirmed": {},
