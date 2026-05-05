@@ -2082,7 +2082,8 @@
         "gpt4o": "The last sentence was not present in the original text so it was added in the translation"
       },
       "sourceConfirmed": {
-        "HS-PS1-3": false
+        "HS-PS1-3": false,
+        "HS-PS2-6": false
       },
       "preservation": {},
       "standardComments": {}
