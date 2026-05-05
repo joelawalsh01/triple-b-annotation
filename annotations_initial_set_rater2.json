@@ -1961,7 +1961,9 @@
         "HS-ESS2-1": true,
         "HS-ESS1-5": true
       },
-      "preservation": {},
+      "preservation": {
+        "HS-ESS2-1__gemini": 3
+      },
       "standardComments": {}
     },
     "16b4d869": {
