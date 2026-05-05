@@ -1852,7 +1852,11 @@
         "gpt4o": "Worst"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-LS1-1": false,
+        "MS-LS1-6": true,
+        "MS-LS1-2": true
+      },
       "preservation": {},
       "standardComments": {}
     },
