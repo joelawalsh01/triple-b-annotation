@@ -1807,7 +1807,9 @@
         "MS-LS1-2": false,
         "MS-PS2-3": true
       },
-      "preservation": {},
+      "preservation": {
+        "MS-PS2-3__aya": 3
+      },
       "standardComments": {}
     },
     "db8e89be": {
