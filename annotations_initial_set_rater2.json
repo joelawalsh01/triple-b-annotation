@@ -1792,7 +1792,9 @@
         2,
         1
       ],
-      "quality": {},
+      "quality": {
+        "gpt4o": "Best"
+      },
       "qualityComments": {
         "aya": "The abbreviations of the types of microscopes found in the original text are kept ",
         "gpt4o": "The abbreviations of the types of microscopes found in the original text are kept ",
