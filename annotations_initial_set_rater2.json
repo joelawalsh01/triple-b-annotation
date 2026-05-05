@@ -1940,7 +1940,8 @@
       "preservation": {
         "HS-ESS1-5__gemini": 4,
         "HS-ESS1-5__gpt4o": 3,
-        "HS-ESS1-5__aya": 3
+        "HS-ESS1-5__aya": 3,
+        "HS-ESS2-1__gemini": 3
       },
       "standardComments": {}
     },
