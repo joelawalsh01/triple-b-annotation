@@ -1931,7 +1931,9 @@
       "qualityComments": {
         "gemini": "The word \"fallas\" in English means failures instead of the fault that the original text is saying"
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-ESS1-5": true
+      },
       "preservation": {},
       "standardComments": {}
     },
