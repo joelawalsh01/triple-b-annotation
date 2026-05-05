@@ -2027,7 +2027,8 @@
         "gemini": "Middle"
       },
       "qualityComments": {
-        "gemini": "Added a possible reasoning for letting Cl- and glucose to pass through the lipid bilayer "
+        "gemini": "Added a possible reasoning for letting Cl- and glucose to pass through the lipid bilayer ",
+        "gpt4o": "Referred to the lipid bilayers as grease"
       },
       "sourceConfirmed": {},
       "preservation": {},
