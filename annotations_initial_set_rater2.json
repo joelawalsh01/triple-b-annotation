@@ -1808,7 +1808,8 @@
         "MS-PS2-3": true
       },
       "preservation": {
-        "MS-PS2-3__aya": 3
+        "MS-PS2-3__aya": 3,
+        "MS-PS2-3__gpt4o": 3
       },
       "standardComments": {}
     },
