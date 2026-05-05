@@ -2061,7 +2061,8 @@
       },
       "preservation": {
         "HS-PS2-6__aya": 2,
-        "HS-PS2-6__gemini": 4
+        "HS-PS2-6__gemini": 4,
+        "HS-PS2-6__gpt4o": 4
       },
       "standardComments": {}
     },
