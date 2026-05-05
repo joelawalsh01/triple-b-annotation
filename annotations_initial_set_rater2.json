@@ -42,7 +42,9 @@
         "gpt4o": "Middle"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-PS4-5": true
+      },
       "preservation": {},
       "standardComments": {}
     },
