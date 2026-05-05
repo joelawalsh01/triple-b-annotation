@@ -2217,7 +2217,9 @@
         "HS-ESS2-3": false,
         "HS-ESS2-1": true
       },
-      "preservation": {},
+      "preservation": {
+        "HS-ESS2-1__aya": 2
+      },
       "standardComments": {}
     },
     "11dde5e6": {
