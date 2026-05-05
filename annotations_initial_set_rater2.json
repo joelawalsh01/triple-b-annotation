@@ -2236,7 +2236,9 @@
       "qualityComments": {},
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "noStandardsApply": true,
+      "noStandardsProposed": ""
     },
     "1e93a007": {
       "rater": 2,
