@@ -36,7 +36,9 @@
         1,
         2
       ],
-      "quality": {},
+      "quality": {
+        "gemini": "Worst"
+      },
       "qualityComments": {},
       "sourceConfirmed": {},
       "preservation": {},
