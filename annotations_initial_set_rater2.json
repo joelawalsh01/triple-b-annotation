@@ -2205,9 +2205,13 @@
         2
       ],
       "quality": {
-        "aya": "Worst"
+        "aya": "Worst",
+        "gpt4o": "Middle",
+        "gemini": "Best"
       },
-      "qualityComments": {},
+      "qualityComments": {
+        "gpt4o": "This translation included the ways in which the magma is "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
