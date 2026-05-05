@@ -2060,7 +2060,8 @@
         "HS-ESS2-1": false
       },
       "preservation": {
-        "HS-PS2-6__aya": 2
+        "HS-PS2-6__aya": 2,
+        "HS-PS2-6__gemini": 4
       },
       "standardComments": {}
     },
