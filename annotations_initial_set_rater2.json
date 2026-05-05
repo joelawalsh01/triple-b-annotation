@@ -2078,7 +2078,9 @@
         "aya": "Middle",
         "gpt4o": "Worst"
       },
-      "qualityComments": {},
+      "qualityComments": {
+        "gpt4o": "The last sentence was not present in the original text so it was added in the translation"
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
