@@ -1885,7 +1885,9 @@
         "HS-PS1-1": false,
         "HS-PS1-3": false
       },
-      "preservation": {},
+      "preservation": {
+        "HS-PS2-6__aya": 3
+      },
       "standardComments": {}
     },
     "e5f02862": {
