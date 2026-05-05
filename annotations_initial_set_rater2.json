@@ -1975,8 +1975,14 @@
         0,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gemini": "Best",
+        "aya": "Worst",
+        "gpt4o": "Middle"
+      },
+      "qualityComments": {
+        "gpt4o": "This translation added an additional idea at the end, which was not included in the original text "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
