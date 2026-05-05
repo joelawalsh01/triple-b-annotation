@@ -2026,7 +2026,9 @@
         "aya": "Best",
         "gemini": "Middle"
       },
-      "qualityComments": {},
+      "qualityComments": {
+        "gemini": "Added a possible reasoning for letting Cl- and glucose to pass through the lipid bilayer "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
