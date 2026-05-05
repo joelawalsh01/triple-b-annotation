@@ -1832,7 +1832,9 @@
         "MS-LS1-3": true,
         "MS-LS1-2": true
       },
-      "preservation": {},
+      "preservation": {
+        "MS-LS1-2__gemini": 3
+      },
       "standardComments": {}
     },
     "2221f7f4": {
