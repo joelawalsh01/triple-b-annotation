@@ -2133,7 +2133,9 @@
         "gemini": "Best"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-LS1-2": false
+      },
       "preservation": {},
       "standardComments": {}
     },
