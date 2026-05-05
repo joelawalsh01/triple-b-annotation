@@ -2007,7 +2007,9 @@
         "gemini": "Middle"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-LS1-3": false
+      },
       "preservation": {},
       "standardComments": {}
     },
