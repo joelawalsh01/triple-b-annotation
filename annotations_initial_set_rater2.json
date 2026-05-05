@@ -1857,7 +1857,10 @@
         "MS-LS1-6": true,
         "MS-LS1-2": true
       },
-      "preservation": {},
+      "preservation": {
+        "MS-LS1-2__gpt4o": 2,
+        "MS-LS1-2__aya": 4
+      },
       "standardComments": {}
     },
     "0bff0ab7": {
