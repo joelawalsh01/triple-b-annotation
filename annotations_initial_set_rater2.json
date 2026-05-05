@@ -1827,7 +1827,9 @@
         "gemini": "Worst"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-LS1-1": true
+      },
       "preservation": {},
       "standardComments": {}
     },
