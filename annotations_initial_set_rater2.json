@@ -1910,7 +1910,8 @@
       },
       "qualityComments": {},
       "sourceConfirmed": {
-        "HS-LS1-2": false
+        "HS-LS1-2": false,
+        "HS-LS1-1": true
       },
       "preservation": {},
       "standardComments": {}
