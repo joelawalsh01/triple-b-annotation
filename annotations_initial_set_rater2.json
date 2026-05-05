@@ -1928,7 +1928,9 @@
         "gpt4o": "Best",
         "gemini": "Middle"
       },
-      "qualityComments": {},
+      "qualityComments": {
+        "gemini": "The word \"fallas\" in English means failures instead of the fault that the original text is saying"
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
