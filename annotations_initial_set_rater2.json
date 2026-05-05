@@ -1794,7 +1794,9 @@
       ],
       "quality": {},
       "qualityComments": {
-        "aya": "The abbreviations of the types of microscopes are kept in this translation "
+        "aya": "The abbreviations of the types of microscopes found in the original text are kept ",
+        "gpt4o": "The abbreviations of the types of microscopes found in the original text are kept ",
+        "gemini": "The abbreviation of the types of microscopes change given their name in Spanish "
       },
       "sourceConfirmed": {},
       "preservation": {},
