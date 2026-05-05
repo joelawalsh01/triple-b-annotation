@@ -1859,7 +1859,8 @@
       },
       "preservation": {
         "MS-LS1-2__gpt4o": 2,
-        "MS-LS1-2__aya": 4
+        "MS-LS1-2__aya": 4,
+        "MS-LS1-2__gemini": 4
       },
       "standardComments": {}
     },
