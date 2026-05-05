@@ -2103,7 +2103,9 @@
         "aya": "Middle"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-PS1-1": false
+      },
       "preservation": {},
       "standardComments": {}
     },
