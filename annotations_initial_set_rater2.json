@@ -2059,7 +2059,9 @@
         "HS-PS2-6": true,
         "HS-ESS2-1": false
       },
-      "preservation": {},
+      "preservation": {
+        "HS-PS2-6__aya": 2
+      },
       "standardComments": {}
     },
     "19d81748": {
