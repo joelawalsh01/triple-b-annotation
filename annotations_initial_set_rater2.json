@@ -1880,7 +1880,9 @@
         "gpt4o": "Middle"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-PS2-6": true
+      },
       "preservation": {},
       "standardComments": {}
     },
