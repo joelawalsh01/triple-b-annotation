@@ -2106,7 +2106,9 @@
       "sourceConfirmed": {
         "HS-PS1-1": false,
         "HS-PS1-2": true,
-        "HS-PS1-3": false
+        "HS-PS1-3": false,
+        "HS-PS2-6": true,
+        "HS-ESS2-5": false
       },
       "preservation": {},
       "standardComments": {}
