@@ -2187,7 +2187,8 @@
         "gpt4o": "The idea of lysing is included in the third sentence of this translated text. This was not mentioned in the original"
       },
       "sourceConfirmed": {
-        "HS-LS1-3": false
+        "HS-LS1-3": false,
+        "HS-LS1-2": true
       },
       "preservation": {},
       "standardComments": {}
