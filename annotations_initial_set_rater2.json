@@ -1829,7 +1829,8 @@
       "qualityComments": {},
       "sourceConfirmed": {
         "MS-LS1-1": false,
-        "MS-LS1-3": true
+        "MS-LS1-3": true,
+        "MS-LS1-2": true
       },
       "preservation": {},
       "standardComments": {}
