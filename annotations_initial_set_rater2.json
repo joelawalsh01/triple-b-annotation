@@ -2031,7 +2031,8 @@
         "gpt4o": "Referred to the lipid bilayers as grease"
       },
       "sourceConfirmed": {
-        "HS-LS1-3": false
+        "HS-LS1-3": false,
+        "HS-LS1-2": true
       },
       "preservation": {},
       "standardComments": {}
