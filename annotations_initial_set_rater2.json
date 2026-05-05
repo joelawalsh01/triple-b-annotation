@@ -1923,7 +1923,9 @@
         2,
         0
       ],
-      "quality": {},
+      "quality": {
+        "aya": "Worst"
+      },
       "qualityComments": {},
       "sourceConfirmed": {},
       "preservation": {},
