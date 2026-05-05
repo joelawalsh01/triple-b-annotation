@@ -2054,7 +2054,9 @@
         "gpt4o": "Middle"
       },
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-PS1-3": false
+      },
       "preservation": {},
       "standardComments": {}
     },
