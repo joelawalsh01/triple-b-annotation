@@ -1963,7 +1963,8 @@
       },
       "preservation": {
         "HS-ESS2-1__gemini": 3,
-        "HS-ESS2-1__gpt4o": 3
+        "HS-ESS2-1__gpt4o": 3,
+        "HS-ESS2-1__aya": 3
       },
       "standardComments": {}
     },
