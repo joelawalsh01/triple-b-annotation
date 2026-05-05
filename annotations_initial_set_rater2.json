@@ -2153,7 +2153,8 @@
       },
       "qualityComments": {},
       "sourceConfirmed": {
-        "HS-LS1-3": false
+        "HS-LS1-3": false,
+        "HS-LS1-2": false
       },
       "preservation": {},
       "standardComments": {}
