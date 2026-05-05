@@ -2110,7 +2110,11 @@
         "HS-PS2-6": true,
         "HS-ESS2-5": false
       },
-      "preservation": {},
+      "preservation": {
+        "HS-PS1-2__gpt4o": 3,
+        "HS-PS1-2__aya": 3,
+        "HS-PS1-2__gemini": 3
+      },
       "standardComments": {}
     },
     "51429dcf": {
