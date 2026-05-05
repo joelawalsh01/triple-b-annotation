@@ -2183,7 +2183,8 @@
         "gpt4o": "Middle"
       },
       "qualityComments": {
-        "gemini": "The idea of lysing is included at the beginning of this translated text. The rigidity of the cell wall is also added in this translation. These concepts were not mentioned in the original text"
+        "gemini": "The idea of lysing is included at the beginning of this translated text. The rigidity of the cell wall is also added in this translation. These concepts were not mentioned in the original text",
+        "gpt4o": ""
       },
       "sourceConfirmed": {},
       "preservation": {},
