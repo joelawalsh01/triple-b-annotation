@@ -2213,7 +2213,8 @@
         "gpt4o": "At the end the translation mentions petrology which is not found in the original text. It also mentions that for sills the magma is traveling horizontal which again is not mentioned in the original text"
       },
       "sourceConfirmed": {
-        "HS-ESS1-5": false
+        "HS-ESS1-5": false,
+        "HS-ESS2-3": false
       },
       "preservation": {},
       "standardComments": {}
