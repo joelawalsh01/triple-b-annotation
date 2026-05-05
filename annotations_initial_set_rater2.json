@@ -2104,7 +2104,9 @@
       },
       "qualityComments": {},
       "sourceConfirmed": {
-        "HS-PS1-1": false
+        "HS-PS1-1": false,
+        "HS-PS1-2": true,
+        "HS-PS1-3": false
       },
       "preservation": {},
       "standardComments": {}
