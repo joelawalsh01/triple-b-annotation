@@ -1803,7 +1803,9 @@
         "gemini": "The abbreviation of the types of microscopes change given their name in Spanish "
       },
       "sourceConfirmed": {
-        "MS-LS1-1": false
+        "MS-LS1-1": false,
+        "MS-LS1-2": false,
+        "MS-PS2-3": true
       },
       "preservation": {},
       "standardComments": {}
