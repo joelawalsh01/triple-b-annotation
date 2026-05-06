@@ -1,5 +1,5 @@
 {
-  "page": 95,
+  "page": 94,
   "data": {
     "14891590": {
       "rater": 2,
@@ -2473,7 +2473,9 @@
         "gemini": "Middle",
         "aya": "Best"
       },
-      "qualityComments": {},
+      "qualityComments": {
+        "gpt4o": "Added Greenwich into the translation"
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {},
