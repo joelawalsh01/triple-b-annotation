@@ -1,5 +1,5 @@
 {
-  "page": 87,
+  "page": 88,
   "data": {
     "14891590": {
       "rater": 2,
@@ -2336,12 +2336,16 @@
         1
       ],
       "quality": {
-        "aya": "Best"
+        "aya": "Best",
+        "gemini": "Middle",
+        "gpt4o": "Worst"
       },
       "qualityComments": {},
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "noStandardsApply": false,
+      "noStandardsProposed": ""
     },
     "851665a8": {
       "rater": 2,
