@@ -2392,7 +2392,9 @@
         1,
         0
       ],
-      "quality": {},
+      "quality": {
+        "gpt4o": "Best"
+      },
       "qualityComments": {},
       "sourceConfirmed": {},
       "preservation": {},
