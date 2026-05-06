@@ -2374,7 +2374,8 @@
         1
       ],
       "quality": {
-        "gemini": "Best"
+        "gemini": "Best",
+        "aya": "Middle"
       },
       "qualityComments": {},
       "sourceConfirmed": {},
