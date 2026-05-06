@@ -2335,7 +2335,9 @@
         0,
         1
       ],
-      "quality": {},
+      "quality": {
+        "aya": "Best"
+      },
       "qualityComments": {},
       "sourceConfirmed": {},
       "preservation": {},
