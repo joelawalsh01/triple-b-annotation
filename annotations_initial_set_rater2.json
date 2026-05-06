@@ -2319,7 +2319,9 @@
         "aya": "Best",
         "gemini": "Worst"
       },
-      "qualityComments": {},
+      "qualityComments": {
+        "gpt4o": "Missing the part about several have won Nobel prizes "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {}
