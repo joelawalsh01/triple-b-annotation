@@ -2113,9 +2113,17 @@
         "gemini": "Great translation, great vocabulary and complexity of the text is the same as the source",
         "aya": "Great translation, great vocabulary and complexity of the text is the same as the source"
       },
-      "sourceConfirmed": {},
-      "preservation": {},
-      "standardComments": {},
+      "sourceConfirmed": {
+        "HS-ESS2-1": true
+      },
+      "preservation": {
+        "HS-ESS2-1__aya": 1,
+        "HS-ESS2-1__gpt4o": 2,
+        "HS-ESS2-1__gemini": 3
+      },
+      "standardComments": {
+        "HS-ESS2-1": "source and translation can be used to "
+      },
       "unlocked": {
         "gpt4o": true,
         "gemini": true,
