@@ -779,7 +779,8 @@
       "sourceConfirmed": {
         "3-LS1-1": true,
         "4-LS1-1": true,
-        "5-LS1-1": true
+        "5-LS1-1": true,
+        "3-LS3-1": false
       },
       "preservation": {
         "3-LS1-1__gpt4o": 3,
