@@ -2190,11 +2190,13 @@
         "gpt4o": "Great translation, great vocabulary and complexity of the text is the same as the source"
       },
       "sourceConfirmed": {
-        "HS-LS1-3": false
+        "HS-LS1-3": false,
+        "HS-LS1-2": false
       },
       "preservation": {},
       "standardComments": {
-        "HS-LS1-3": "the source and translations can be used as a source of(factual) for the completion of this standard"
+        "HS-LS1-3": "the source and translations can be used as a source of(factual) for the completion of this standard",
+        "HS-LS1-2": "the source and translations can be used as a source of(factual) for the completion of this standard"
       },
       "unlocked": {
         "aya": true,
