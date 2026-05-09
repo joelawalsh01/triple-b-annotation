@@ -1059,15 +1059,20 @@
         "aya": "Great translation, good explanation of concepts and good vocabulary used."
       },
       "sourceConfirmed": {
-        "MS-PS4-2": true
+        "MS-PS4-2": true,
+        "MS-PS4-1": true
       },
       "preservation": {
         "MS-PS4-2__gemini": 3,
         "MS-PS4-2__aya": 3,
-        "MS-PS4-2__gpt4o": 3
+        "MS-PS4-2__gpt4o": 3,
+        "MS-PS4-1__gemini": 2,
+        "MS-PS4-1__aya": 2,
+        "MS-PS4-1__gpt4o": 2
       },
       "standardComments": {
-        "MS-PS4-2": "the source and translations explains the physics inimages formed by a funhouse mirror"
+        "MS-PS4-2": "the source and translations explains the physics inimages formed by a funhouse mirror",
+        "MS-PS4-1": "the source and translations explains the physics inimages formed by a funhouse mirror"
       },
       "unlocked": {
         "aya": false
