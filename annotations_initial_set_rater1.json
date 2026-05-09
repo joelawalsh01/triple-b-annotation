@@ -3116,8 +3116,8 @@
       ],
       "quality": {
         "aya": "Worst",
-        "gemini": "Middle",
-        "gpt4o": "Best"
+        "gemini": "Best",
+        "gpt4o": "Middle"
       },
       "qualityComments": {
         "aya": "Good translation, some minor grammar errors but none that can be overlooked and the text understood ",
@@ -3131,7 +3131,9 @@
         "aya": true,
         "gemini": true,
         "gpt4o": true
-      }
+      },
+      "noStandardsApply": false,
+      "noStandardsProposed": ""
     }
   }
 }
