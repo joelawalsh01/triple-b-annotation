@@ -2613,11 +2613,13 @@
         "gemini": "Best"
       },
       "qualityComments": {
-        "gpt4o": "syntax's errors and ",
-        "aya": "",
+        "gpt4o": "syntax's errors and makes some sentences don't make sense ",
+        "aya": "over simplification and speaks on parts that are not in the source ",
         "gemini": "Great translation, great vocabulary used and matches complexity of the original source."
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-ESS2-1": false
+      },
       "preservation": {},
       "standardComments": {},
       "unlocked": {
