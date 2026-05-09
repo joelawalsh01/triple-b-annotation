@@ -2767,9 +2767,21 @@
         "gpt4o": "Great translation, great vocabulary and complexity of the text is the same as the source some simplification of vocabulary ",
         "gemini": "Great translation, great vocabulary and complexity of the text is the same as the source"
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-PS1-1": false,
+        "HS-PS1-2": false,
+        "HS-PS1-3": false,
+        "HS-PS2-6": false,
+        "HS-ESS2-5": true
+      },
       "preservation": {},
-      "standardComments": {},
+      "standardComments": {
+        "HS-PS1-1": "source and translation are factual can be later used as a source to cover the standard ",
+        "HS-PS1-2": "source and translation are factual can be later used as a source to cover the standard ",
+        "HS-PS1-3": "source and translation are factual can be later used as a source to cover the standard ",
+        "HS-PS2-6": "source and translation are factual can be later used as a source to cover the standard ",
+        "HS-ESS2-5": "source and translation are factual can be later used as a source to cover the standard "
+      },
       "unlocked": {
         "aya": true,
         "gpt4o": true,
