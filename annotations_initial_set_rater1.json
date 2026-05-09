@@ -3002,13 +3002,26 @@
         0,
         2
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gemini": "",
+        "aya": "Worst",
+        "gpt4o": "Best"
+      },
+      "qualityComments": {
+        "gemini": "",
+        "aya": "Great translation, vocabulary and examples are great and the complexity is the same as the source. ",
+        "gpt4o": "Great translation, vocabulary and examples are great and the complexity is the same as the source. "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {},
       "noStandardsApply": false,
-      "noStandardsProposed": ""
+      "noStandardsProposed": "",
+      "unlocked": {
+        "gemini": true,
+        "aya": true,
+        "gpt4o": true
+      }
     }
   }
 }
