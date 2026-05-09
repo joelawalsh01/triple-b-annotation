@@ -599,12 +599,12 @@
         "HS-LS1-2": true
       },
       "preservation": {
-        "HS-LS1-1__gemini": 2,
+        "HS-LS1-1__gemini": 1,
         "HS-LS1-1__gpt4o": 3,
-        "HS-LS1-1__aya": 3,
-        "HS-LS1-2__gemini": 2,
+        "HS-LS1-1__aya": 2,
+        "HS-LS1-2__gemini": 1,
         "HS-LS1-2__gpt4o": 3,
-        "HS-LS1-2__aya": 3
+        "HS-LS1-2__aya": 2
       },
       "standardComments": {
         "HS-LS1-1": "While the source an only covers the nucleus  this is a  good stepping stones to construct an explanation of the DNA structure. The translations fail to do so. ",
