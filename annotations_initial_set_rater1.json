@@ -1212,14 +1212,14 @@
       },
       "qualityComments": {
         "gpt4o": "Good translation because it explains the key concepts but adds more than the source gives",
-        "aya": "Good translation because it explains the key concept"
+        "aya": "Good translation because it explains the key concepts but explains more than the source "
       },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {},
       "unlocked": {
         "gpt4o": false,
-        "aya": true
+        "aya": false
       }
     }
   }
