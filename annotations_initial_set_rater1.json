@@ -959,10 +959,14 @@
         1
       ],
       "quality": {
-        "gpt4o": "Middle"
+        "gpt4o": "Middle",
+        "aya": "Worst",
+        "gemini": "Best"
       },
       "qualityComments": {
-        "gpt4o": "good translation of the source some words are changed but not terrible."
+        "gpt4o": "good translation of the source some words are changed but not terrible.",
+        "aya": "Terrible  translation, I am unsure of what what translated because the source and translation are on two different topics.",
+        "gemini": "Terrible  translation, I am unsure of what what translated because the source and translation are on two different topics."
       },
       "sourceConfirmed": {
         "3-ESS2-1": false,
@@ -978,7 +982,9 @@
         "5-ESS2-2": "no description or graph in the source or the translations just facts but can be used as a source to be able to cover the standard"
       },
       "unlocked": {
-        "gpt4o": false
+        "gpt4o": true,
+        "aya": true,
+        "gemini": true
       }
     },
     "12c6b265": {
