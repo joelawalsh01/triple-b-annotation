@@ -114,8 +114,14 @@
       "sourceConfirmed": {
         "5-LS1-1": true
       },
-      "preservation": {},
-      "standardComments": {}
+      "preservation": {
+        "5-LS1-1__gpt4o": 3,
+        "5-LS1-1__aya": 3,
+        "5-LS1-1__gemini": 3
+      },
+      "standardComments": {
+        "5-LS1-1": "Source and translations are ok, the partial of the standard is because without the state"
+      }
     }
   }
 }
