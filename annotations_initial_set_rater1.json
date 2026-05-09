@@ -2534,14 +2534,14 @@
         0
       ],
       "quality": {
-        "gemini": "",
-        "aya": "Best",
-        "gpt4o": ""
+        "gemini": "Worst",
+        "aya": "Middle",
+        "gpt4o": "Best"
       },
       "qualityComments": {
-        "gemini": "",
+        "gemini": "over simplified ",
         "aya": "Great translation, great vocabulary and complexity of the text",
-        "gpt4o": ""
+        "gpt4o": "great complexity of the text "
       },
       "sourceConfirmed": {},
       "preservation": {},
