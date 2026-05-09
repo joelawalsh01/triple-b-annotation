@@ -115,7 +115,8 @@
         "5-LS1-1": true,
         "5-LS2-1": false,
         "4-LS1-1": true,
-        "5-PS3-1": false
+        "5-PS3-1": false,
+        "3-LS4-3": true
       },
       "preservation": {
         "5-LS1-1__gpt4o": 3,
@@ -123,11 +124,15 @@
         "5-LS1-1__gemini": 3,
         "4-LS1-1__gpt4o": 2,
         "4-LS1-1__aya": 2,
-        "4-LS1-1__gemini": 2
+        "4-LS1-1__gemini": 2,
+        "3-LS4-3__gpt4o": 2,
+        "3-LS4-3__aya": 2,
+        "3-LS4-3__gemini": 2
       },
       "standardComments": {
         "5-LS1-1": "Source and translations are ok, the partial of the standard is because without the statement the argument cannot be made for the standard. ",
-        "4-LS1-1": "Source and translations are ok, the weakness of the standard is because without the statement the argument cannot be made for the standard. "
+        "4-LS1-1": "Source and translations are ok, the weakness of the standard is because without the statement the argument cannot be made for the standard. ",
+        "3-LS4-3": "Source and translations are ok, the partial of the standard is because without the statement the argument cannot be made for the standard. "
       }
     }
   }
