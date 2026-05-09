@@ -896,12 +896,14 @@
         2
       ],
       "quality": {
-        "gemini": "Worst",
-        "aya": "Middle"
+        "gemini": "Middle",
+        "aya": "Best",
+        "gpt4o": "Worst"
       },
       "qualityComments": {
         "gemini": "has parts of the source that are not in the source ",
-        "aya": "ok translation, but over explains part of the source that are not there "
+        "aya": "ok translation, but over explains part of the source that are not there ",
+        "gpt4o": "Terrible translation, has nothing to do with the original source"
       },
       "sourceConfirmed": {
         "HS-PS4-5": true,
@@ -917,7 +919,8 @@
       },
       "unlocked": {
         "gemini": true,
-        "aya": true
+        "aya": true,
+        "gpt4o": true
       }
     },
     "4a3e88c2": {
