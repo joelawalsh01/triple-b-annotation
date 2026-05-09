@@ -774,13 +774,13 @@
         "gpt4o": "Middle"
       },
       "qualityComments": {
-        "gpt4o": ""
+        "gpt4o": "Not terrible but the source gives a lot of information about different things, while the translation only gives the pollination and not the other examples"
       },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {},
       "unlocked": {
-        "gpt4o": true
+        "gpt4o": false
       }
     }
   }
