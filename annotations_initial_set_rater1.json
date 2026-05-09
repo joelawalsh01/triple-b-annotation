@@ -50,8 +50,8 @@
         2
       ],
       "quality": {
-        "gemini": "",
-        "aya": ""
+        "gemini": "Middle",
+        "aya": "Worst"
       },
       "qualityComments": {
         "gemini": "",
