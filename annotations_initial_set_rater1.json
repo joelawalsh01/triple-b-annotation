@@ -1,5 +1,5 @@
 {
-  "page": 33,
+  "page": 34,
   "data": {
     "14891590": {
       "rater": 1,
@@ -1348,12 +1348,14 @@
         1
       ],
       "quality": {
-        "aya": "Best",
-        "gemini": "Best"
+        "aya": "Middle",
+        "gemini": "Best",
+        "gpt4o": "Worst"
       },
       "qualityComments": {
         "aya": "Great translation, vocabulary is consistent and effective to the information at hand",
-        "gemini": "Great translation, vocabulary is consistent and effective to the information at hand"
+        "gemini": "Great translation, vocabulary is consistent and effective to the information at hand",
+        "gpt4o": "Great translation, vocabulary is consistent and effective to the information at hand"
       },
       "sourceConfirmed": {
         "MS-PS4-2": false
@@ -1363,8 +1365,9 @@
         "MS-PS4-2": "source and translations are about facts about C.V. Raman"
       },
       "unlocked": {
-        "aya": false,
-        "gemini": false
+        "aya": true,
+        "gemini": true,
+        "gpt4o": true
       }
     },
     "8ae18035": {
