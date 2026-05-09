@@ -1,5 +1,5 @@
 {
-  "page": 32,
+  "page": 33,
   "data": {
     "14891590": {
       "rater": 1,
@@ -955,8 +955,8 @@
       },
       "preservation": {
         "MS-LS1-2__gpt4o": 3,
-        "MS-LS1-2__aya": 3,
-        "MS-LS1-2__gemini": 3
+        "MS-LS1-2__aya": 1,
+        "MS-LS1-2__gemini": 2
       },
       "standardComments": {
         "MS-LS1-2": "source and translation speak on the cell and parts of the cell with functions, it can be used to cover this standard "
