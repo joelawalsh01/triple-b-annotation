@@ -1817,7 +1817,11 @@
         "MS-PS1-4": false,
         "MS-LS1-2": true
       },
-      "preservation": {},
+      "preservation": {
+        "MS-LS1-2__aya": 1,
+        "MS-LS1-2__gpt4o": 2,
+        "MS-LS1-2__gemini": 3
+      },
       "standardComments": {},
       "unlocked": {
         "gemini": true,
