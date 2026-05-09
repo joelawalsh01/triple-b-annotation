@@ -1,5 +1,5 @@
 {
-  "page": 51,
+  "page": 52,
   "data": {
     "14891590": {
       "rater": 1,
@@ -1977,6 +1977,32 @@
         "gpt4o": true,
         "gemini": true,
         "aya": true
+      }
+    },
+    "915bd19a": {
+      "rater": 1,
+      "translationOrder": [
+        1,
+        0,
+        2
+      ],
+      "quality": {
+        "gemini": "",
+        "aya": "Worst",
+        "gpt4o": "Worst"
+      },
+      "qualityComments": {
+        "gemini": "",
+        "aya": "Terrible translation. Translation has nothing to do with the source.",
+        "gpt4o": "Terrible translation. Translation has nothing to do with the source."
+      },
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {},
+      "unlocked": {
+        "gemini": true,
+        "aya": true,
+        "gpt4o": true
       }
     }
   }
