@@ -3003,12 +3003,12 @@
         2
       ],
       "quality": {
-        "gemini": "",
+        "gemini": "Middle",
         "aya": "Worst",
         "gpt4o": "Best"
       },
       "qualityComments": {
-        "gemini": "",
+        "gemini": "slight over simplification of the text makes it rank, but still a good translation ",
         "aya": "translation oversimplified compared to the others ",
         "gpt4o": "Great translation, vocabulary and examples are great and the complexity is the same as the source. "
       },
