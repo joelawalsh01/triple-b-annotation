@@ -1,5 +1,5 @@
 {
-  "page": 2,
+  "page": 3,
   "data": {
     "14891590": {
       "rater": 1,
@@ -156,8 +156,16 @@
         2,
         0
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gemini": "Worst",
+        "gpt4o": "Middle",
+        "aya": "Best"
+      },
+      "qualityComments": {
+        "gemini": "Incomplete translation. It begins not the best, but the concept is understood at first and then loses its significance and it does not finish the though or finish the source.",
+        "gpt4o": "Incomplete translation. It begins not the best, but the concept is understood at first and then loses its significance and it does not finish the though or finish the source.",
+        "aya": "Incomplete translation. It begins not the best, but the concept is understood at first and then loses its significance and it does not finish the though or finish the source."
+      },
       "sourceConfirmed": {
         "3-PS2-3": true,
         "3-PS2-4": false
@@ -170,6 +178,11 @@
       "standardComments": {
         "3-PS2-3": "While the source and translation aim for facts, it is a good way to begin determining cause and effect in electric or magnetic interactions ",
         "3-PS2-4": "There is a claim on magnets and its use . The translations are able to deliver the same context as the original source in different levels of complexity, not aim for the standard"
+      },
+      "unlocked": {
+        "gemini": true,
+        "gpt4o": true,
+        "aya": true
       }
     },
     "eb2abce2": {
