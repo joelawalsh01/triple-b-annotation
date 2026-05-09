@@ -1,5 +1,5 @@
 {
-  "page": 40,
+  "page": 41,
   "data": {
     "14891590": {
       "rater": 1,
@@ -1606,12 +1606,14 @@
         0
       ],
       "quality": {
-        "gpt4o": "Middle",
-        "aya": "Middle"
+        "gpt4o": "Best",
+        "aya": "Middle",
+        "gemini": "Worst"
       },
       "qualityComments": {
         "gpt4o": "Good translation because it explains the key concepts but adds more than the source gives",
-        "aya": "Good translation because it explains the key concepts but explains more than the source "
+        "aya": "Good translation because it explains the key concepts but explains more than the source ",
+        "gemini": "Good translation because it explains the key concept, but it would be better if it included the sedimentary rock that was excluded from the translation."
       },
       "sourceConfirmed": {
         "HS-ESS2-1": true,
@@ -1632,8 +1634,9 @@
         "HS-ESS2-3": "source and translations speak of the different types of rocks, an how they are made "
       },
       "unlocked": {
-        "gpt4o": false,
-        "aya": false
+        "gpt4o": true,
+        "aya": true,
+        "gemini": true
       }
     },
     "ed3b1bff": {
