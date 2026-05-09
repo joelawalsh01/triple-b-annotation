@@ -1312,7 +1312,8 @@
       "qualityComments": {},
       "sourceConfirmed": {
         "MS-ETS1-1": true,
-        "MS-ETS1-4": true
+        "MS-ETS1-4": true,
+        "MS-ETS1-2": false
       },
       "preservation": {
         "MS-ETS1-1__gemini": 3,
