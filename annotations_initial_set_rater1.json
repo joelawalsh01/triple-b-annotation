@@ -1,5 +1,5 @@
 {
-  "page": 39,
+  "page": 41,
   "data": {
     "14891590": {
       "rater": 1,
@@ -1189,9 +1189,9 @@
         "HS-ESS2-3": true
       },
       "preservation": {
-        "HS-ESS2-3__gemini": 2,
+        "HS-ESS2-3__gemini": 1,
         "HS-ESS2-3__gpt4o": 2,
-        "HS-ESS2-3__aya": 2
+        "HS-ESS2-3__aya": 3
       },
       "standardComments": {
         "HS-ESS2-1": "source and translations are factual and explain Contact Metamorphism",
@@ -1220,11 +1220,11 @@
         "HS-ESS2-3": true
       },
       "preservation": {
-        "HS-ESS2-1__gemini": 2,
-        "HS-ESS2-1__gpt4o": 2,
+        "HS-ESS2-1__gemini": 1,
+        "HS-ESS2-1__gpt4o": 3,
         "HS-ESS2-1__aya": 2,
-        "HS-ESS2-3__gemini": 2,
-        "HS-ESS2-3__gpt4o": 2,
+        "HS-ESS2-3__gemini": 1,
+        "HS-ESS2-3__gpt4o": 3,
         "HS-ESS2-3__aya": 2
       },
       "standardComments": {
