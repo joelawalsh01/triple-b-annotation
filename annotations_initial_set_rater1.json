@@ -2414,7 +2414,9 @@
         "MS-LS1-2": false
       },
       "preservation": {},
-      "standardComments": {},
+      "standardComments": {
+        "MS-LS1-2": ""
+      },
       "unlocked": {
         "gemini": true,
         "gpt4o": true,
