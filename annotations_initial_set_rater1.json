@@ -1765,8 +1765,16 @@
         2,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "aya": "Worst",
+        "gpt4o": "Middle",
+        "gemini": "Best"
+      },
+      "qualityComments": {
+        "aya": "Translation is completely different than the source. The translation talks about everything being divided and not working together as the source explains",
+        "gpt4o": "",
+        "gemini": "Translation is completely different than the source. The translation talks about everything being divided and not working together as the source explains"
+      },
       "sourceConfirmed": {
         "MS-LS1-3": true,
         "MS-LS1-1": false,
@@ -1781,6 +1789,11 @@
         "MS-LS1-3": "source and translations talk about Cells Working Together",
         "MS-LS1-1": "source is factual but it can be used as a source to complete the standard ",
         "MS-LS1-2": "source and translations talk about Cells Working Together, facts no model development "
+      },
+      "unlocked": {
+        "aya": true,
+        "gpt4o": true,
+        "gemini": true
       }
     },
     "7d266ec2": {
