@@ -2975,12 +2975,12 @@
         2
       ],
       "quality": {
-        "aya": "Worst",
-        "gemini": "Middle",
-        "gpt4o": "Best"
+        "aya": "Best",
+        "gemini": "Worst",
+        "gpt4o": "Middle"
       },
       "qualityComments": {
-        "aya": "translation, ",
+        "aya": "translation, is great and great balance of complexity and simplicity ",
         "gemini": "It is not a terrible translation, the only problem is midway through the translation it begins to be repetitive and the information is dumbed down too much to make an instructional impact.",
         "gpt4o": "It is not a terrible translation, the only problem is midway through the translation it begins to be repetitive and the information is dumbed down too much to make an instructional impact."
       },
