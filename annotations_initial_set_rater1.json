@@ -1002,11 +1002,21 @@
         2,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "aya": "Best",
+        "gemini": "Best"
+      },
+      "qualityComments": {
+        "aya": "",
+        "gemini": ""
+      },
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "aya": true,
+        "gemini": true
+      }
     }
   }
 }
