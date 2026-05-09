@@ -1,5 +1,5 @@
 {
-  "page": 38,
+  "page": 39,
   "data": {
     "14891590": {
       "rater": 1,
@@ -1532,8 +1532,16 @@
         0,
         2
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gpt4o": "Best",
+        "aya": "Worst",
+        "gemini": "Middle"
+      },
+      "qualityComments": {
+        "gpt4o": "",
+        "aya": "Translation has nothing to do with the source.",
+        "gemini": "Translation has nothing to do with the source."
+      },
       "sourceConfirmed": {
         "HS-LS1-2": true,
         "HS-LS1-3": false
@@ -1545,6 +1553,11 @@
       },
       "standardComments": {
         "HS-LS1-2": "the source and standard can be used to cover the standard eventually "
+      },
+      "unlocked": {
+        "gpt4o": true,
+        "aya": true,
+        "gemini": true
       }
     },
     "b911406b": {
