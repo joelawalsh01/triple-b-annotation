@@ -1,5 +1,5 @@
 {
-  "page": 8,
+  "page": 9,
   "data": {
     "14891590": {
       "rater": 1,
@@ -374,8 +374,16 @@
         1,
         0
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gemini": "Middle",
+        "gpt4o": "Middle",
+        "aya": "Middle"
+      },
+      "qualityComments": {
+        "gemini": "While the translation is not terrible, it is missing the complexity level of the source.The vocabulary used by the translation is too elementary even for the grade level that is it targeting.",
+        "gpt4o": "While the translation is not terrible, it is missing the complexity level of the source.The vocabulary used by the translation is too elementary even for the grade level that is it targeting.",
+        "aya": "While the translation is not terrible, it is missing the complexity level of the source.The vocabulary used by the translation is too elementary even for the grade level that is it targeting."
+      },
       "sourceConfirmed": {
         "5-ESS2-2": false,
         "5-ESS3-1": true,
@@ -395,6 +403,11 @@
         "5-ESS3-1": "source and translation speak on how to clean water, which can later be used to cover this standard ",
         "3-5-ETS1-2": "source and translation speak on how to clean water, which can later be used to cover this standard ",
         "5-PS1-3": "source and translation speak on how to clean water, not observation based and data based "
+      },
+      "unlocked": {
+        "gemini": true,
+        "gpt4o": true,
+        "aya": true
       }
     },
     "4fbf7980": {
