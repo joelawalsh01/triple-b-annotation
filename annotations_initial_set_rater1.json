@@ -308,15 +308,28 @@
         2,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "aya": "Best",
+        "gpt4o": "Middle",
+        "gemini": "Worst"
+      },
+      "qualityComments": {
+        "aya": "Good overall translation but it is missing a few key concepts that the source is utilizing.",
+        "gpt4o": "Good overall translation but it is missing a few key concepts that the source is utilizing.",
+        "gemini": "Good overall translation but it is missing a few key concepts that the source is utilizing."
+      },
       "sourceConfirmed": {
         "4-LS1-1": false,
         "4-LS1-2": false,
         "5-LS1-1": false
       },
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "aya": true,
+        "gpt4o": true,
+        "gemini": true
+      }
     },
     "3a218fce": {
       "rater": 1,
