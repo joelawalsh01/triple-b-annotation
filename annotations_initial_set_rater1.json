@@ -1865,11 +1865,21 @@
         2,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gpt4o": "Worst",
+        "aya": "Best"
+      },
+      "qualityComments": {
+        "gpt4o": "",
+        "aya": ""
+      },
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "gpt4o": true,
+        "aya": true
+      }
     }
   }
 }
