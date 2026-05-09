@@ -904,7 +904,9 @@
         "MS-ESS2-5": false
       },
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {
+        "MS-ESS2-5": "source and translation only speak on facts of graphs "
+      }
     }
   }
 }
