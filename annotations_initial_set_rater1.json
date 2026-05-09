@@ -1,5 +1,5 @@
 {
-  "page": 41,
+  "page": 42,
   "data": {
     "14891590": {
       "rater": 1,
@@ -1236,6 +1236,19 @@
         "gpt4o": false,
         "aya": false
       }
+    },
+    "ed3b1bff": {
+      "rater": 1,
+      "translationOrder": [
+        1,
+        2,
+        0
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
     }
   }
 }
