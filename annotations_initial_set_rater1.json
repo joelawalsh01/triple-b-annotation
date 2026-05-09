@@ -1,5 +1,5 @@
 {
-  "page": 21,
+  "page": 24,
   "data": {
     "14891590": {
       "rater": 1,
@@ -634,7 +634,10 @@
       "preservation": {
         "HS-ESS3-1__gemini": 2,
         "HS-ESS3-1__aya": 2,
-        "HS-ESS3-1__gpt4o": 2
+        "HS-ESS3-1__gpt4o": 2,
+        "HS-ESS1-5__gemini": 2,
+        "HS-ESS1-5__gpt4o": 2,
+        "HS-ESS1-5__aya": 2
       },
       "standardComments": {
         "HS-ESS3-1": "source is a partial teaching of this standard the translations are missing key elements of the source",
