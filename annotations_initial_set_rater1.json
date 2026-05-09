@@ -777,15 +777,20 @@
         "gpt4o": "Not terrible but the source gives a lot of information about different things, while the translation only gives the pollination and not the other examples"
       },
       "sourceConfirmed": {
-        "3-LS1-1": true
+        "3-LS1-1": true,
+        "4-LS1-1": true
       },
       "preservation": {
         "3-LS1-1__gpt4o": 3,
         "3-LS1-1__gemini": 3,
-        "3-LS1-1__aya": 3
+        "3-LS1-1__aya": 3,
+        "4-LS1-1__gpt4o": 3,
+        "4-LS1-1__gemini": 3,
+        "4-LS1-1__aya": 3
       },
       "standardComments": {
-        "3-LS1-1": "no development of models but the source and translations can be used further to help cover the standard "
+        "3-LS1-1": "no development of models but the source and translations can be used further to help cover the standard ",
+        "4-LS1-1": "no argument but the source and translations can be used further to help cover the standard "
       },
       "unlocked": {
         "gpt4o": false
