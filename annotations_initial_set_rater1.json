@@ -853,7 +853,8 @@
       "quality": {},
       "qualityComments": {},
       "sourceConfirmed": {
-        "5-PS1-3": true
+        "5-PS1-3": true,
+        "5-PS1-1": false
       },
       "preservation": {
         "5-PS1-3__gemini": 3,
@@ -861,7 +862,8 @@
         "5-PS1-3__aya": 3
       },
       "standardComments": {
-        "5-PS1-3": "the source and translation are factual, can be used to cover the standard later on "
+        "5-PS1-3": "the source and translation are factual, can be used to cover the standard later on ",
+        "5-PS1-1": "no model development but the source and translations are facts about the "
       }
     }
   }
