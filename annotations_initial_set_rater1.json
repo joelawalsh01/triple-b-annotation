@@ -1,5 +1,5 @@
 {
-  "page": 15,
+  "page": 16,
   "data": {
     "14891590": {
       "rater": 1,
@@ -692,8 +692,8 @@
         "MS-LS1-3": "while the source and the translations do not contribute to the entirety of the argument, its only about the Golgi apparatus but the facts can be used later on to be able to use argument and use evidence"
       },
       "unlocked": {
-        "aya": false,
-        "gpt4o": false
+        "aya": true,
+        "gpt4o": true
       }
     },
     "a02e2a15": {
