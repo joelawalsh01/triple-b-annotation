@@ -1311,15 +1311,20 @@
       "quality": {},
       "qualityComments": {},
       "sourceConfirmed": {
-        "MS-ETS1-1": true
+        "MS-ETS1-1": true,
+        "MS-ETS1-4": true
       },
       "preservation": {
         "MS-ETS1-1__gemini": 3,
         "MS-ETS1-1__gpt4o": 2,
-        "MS-ETS1-1__aya": 1
+        "MS-ETS1-1__aya": 1,
+        "MS-ETS1-4__gemini": 3,
+        "MS-ETS1-4__aya": 1,
+        "MS-ETS1-4__gpt4o": 2
       },
       "standardComments": {
-        "MS-ETS1-1": "Source and translations talk about possible designs are developed for the explanation of gathering of the suns rays "
+        "MS-ETS1-1": "Source and translations talk about possible designs are developed for the explanation of gathering of the suns rays ",
+        "MS-ETS1-4": "Source and translations talk about possible designs are developed for the explanation of gathering of the suns rays can be used to compare and contrast models "
       }
     }
   }
