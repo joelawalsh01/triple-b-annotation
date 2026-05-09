@@ -1214,9 +1214,17 @@
         "gpt4o": "Good translation because it explains the key concepts but adds more than the source gives",
         "aya": "Good translation because it explains the key concepts but explains more than the source "
       },
-      "sourceConfirmed": {},
-      "preservation": {},
-      "standardComments": {},
+      "sourceConfirmed": {
+        "HS-ESS2-1": true
+      },
+      "preservation": {
+        "HS-ESS2-1__gemini": 2,
+        "HS-ESS2-1__gpt4o": 2,
+        "HS-ESS2-1__aya": 2
+      },
+      "standardComments": {
+        "HS-ESS2-1": "source and translations speak om "
+      },
       "unlocked": {
         "gpt4o": false,
         "aya": false
