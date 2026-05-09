@@ -125,7 +125,8 @@
         "4-LS1-1__gemini": 2
       },
       "standardComments": {
-        "5-LS1-1": "Source and translations are ok, the partial of the standard is because without the statement the argument cannot be made for the standard. "
+        "5-LS1-1": "Source and translations are ok, the partial of the standard is because without the statement the argument cannot be made for the standard. ",
+        "4-LS1-1": "Source and translations are ok, the weakness of the standard is because without the statement the argument cannot be made for the standard. "
       }
     }
   }
