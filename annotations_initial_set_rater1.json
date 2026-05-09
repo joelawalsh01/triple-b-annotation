@@ -391,15 +391,25 @@
       "quality": {},
       "qualityComments": {},
       "sourceConfirmed": {
-        "5-LS1-1": true
+        "5-LS1-1": true,
+        "4-LS1-1": true,
+        "5-LS2-1": true
       },
       "preservation": {
         "5-LS1-1__aya": 2,
         "5-LS1-1__gpt4o": 2,
-        "5-LS1-1__gemini": 2
+        "5-LS1-1__gemini": 2,
+        "4-LS1-1__aya": 2,
+        "4-LS1-1__gpt4o": 2,
+        "4-LS1-1__gemini": 2,
+        "5-LS2-1__aya": 2,
+        "5-LS2-1__gpt4o": 2,
+        "5-LS2-1__gemini": 2
       },
       "standardComments": {
-        "5-LS1-1": "source and translation speak on facts on the rings on a tree  partially covering this standard, this standard can later be covered with this statement/facts "
+        "5-LS1-1": "source and translation speak on facts on the rings on a tree  partially covering this standard, this standard can later be covered with this statement/facts ",
+        "4-LS1-1": "source and translation speak on facts on the rings on a tree  partially covering this standard, this standard can later be covered with this statement/facts ",
+        "5-LS2-1": "source and translation speak on facts on the rings on a tree  partially covering this standard, this standard can later be covered with this statement/facts "
       }
     }
   }
