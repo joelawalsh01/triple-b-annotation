@@ -439,10 +439,12 @@
         2
       ],
       "quality": {
-        "aya": "Best"
+        "aya": "Best",
+        "gpt4o": "Middle"
       },
       "qualityComments": {
-        "aya": "Good translation, it aims to be as close as possible to the original source"
+        "aya": "Good translation, it aims to be as close as possible to the original source",
+        "gpt4o": ""
       },
       "sourceConfirmed": {
         "MS-LS1-2": true
@@ -456,7 +458,8 @@
         "MS-LS1-2": "while the source and the translations do not contribute to the entirety of the function of the cells, its only about the Golgi apparatus but a partial part of the standard can be covered with developing and using a model "
       },
       "unlocked": {
-        "aya": true
+        "aya": true,
+        "gpt4o": true
       }
     }
   }
