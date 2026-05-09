@@ -1286,12 +1286,16 @@
       },
       "sourceConfirmed": {
         "MS-PS3-5": false,
-        "MS-PS3-4": false
+        "MS-PS3-4": false,
+        "MS-PS1-4": false,
+        "MS-PS3-1": false
       },
       "preservation": {},
       "standardComments": {
         "MS-PS3-5": "The source and translation only speak on Physics is the study of energy, matter, and their interactions. ",
-        "MS-PS3-4": "The source and translation only speak on Physics is the study of energy, matter, and their interactions. "
+        "MS-PS3-4": "The source and translation only speak on Physics is the study of energy, matter, and their interactions. ",
+        "MS-PS1-4": "The source and translation only speak on Physics is the study of energy, matter, and their interactions. ",
+        "MS-PS3-1": "The source and translation only speak on Physics is the study of energy, matter, and their interactions. "
       },
       "unlocked": {
         "gemini": false
