@@ -2370,11 +2370,24 @@
         2,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gpt4o": "",
+        "gemini": "",
+        "aya": "Middle"
+      },
+      "qualityComments": {
+        "gpt4o": "",
+        "gemini": "",
+        "aya": "Good translation, some minor grammar errors but none that can be overlooked and the text understood"
+      },
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "gpt4o": true,
+        "gemini": true,
+        "aya": true
+      }
     }
   }
 }
