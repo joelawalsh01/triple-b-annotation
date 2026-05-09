@@ -2543,8 +2543,14 @@
         "aya": "Great translation, great vocabulary and complexity of the text",
         "gpt4o": "great complexity of the text, great translation "
       },
-      "sourceConfirmed": {},
-      "preservation": {},
+      "sourceConfirmed": {
+        "HS-ESS1-5": true
+      },
+      "preservation": {
+        "HS-ESS1-5__gemini": 1,
+        "HS-ESS1-5__gpt4o": 3,
+        "HS-ESS1-5__aya": 2
+      },
       "standardComments": {},
       "unlocked": {
         "gemini": true,
