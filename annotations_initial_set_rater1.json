@@ -1,5 +1,5 @@
 {
-  "page": 77,
+  "page": 78,
   "data": {
     "14891590": {
       "rater": 1,
@@ -2814,6 +2814,29 @@
       "standardComments": {},
       "unlocked": {
         "aya": true,
+        "gemini": true
+      }
+    },
+    "b3d5b5f8": {
+      "rater": 1,
+      "translationOrder": [
+        0,
+        2,
+        1
+      ],
+      "quality": {
+        "gpt4o": "",
+        "gemini": ""
+      },
+      "qualityComments": {
+        "gpt4o": "",
+        "gemini": ""
+      },
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {},
+      "unlocked": {
+        "gpt4o": true,
         "gemini": true
       }
     }
