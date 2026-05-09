@@ -3344,7 +3344,7 @@
         "gpt4o": "Worst"
       },
       "qualityComments": {
-        "gemini": "",
+        "gemini": "Great translation, vocabulary and examples are great and the complexity is the same as the source.",
         "aya": "Great translation, vocabulary and examples are great and the complexity is the same as the source. Good explanation of terms ",
         "gpt4o": "Great translation, vocabulary and examples are great and the complexity is the same as the source. It negates some words in the source "
       },
@@ -3355,7 +3355,9 @@
         "gemini": true,
         "aya": true,
         "gpt4o": true
-      }
+      },
+      "noStandardsApply": false,
+      "noStandardsProposed": ""
     }
   }
 }
