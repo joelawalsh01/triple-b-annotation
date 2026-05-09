@@ -1215,7 +1215,8 @@
         "aya": "Good translation because it explains the key concepts but explains more than the source "
       },
       "sourceConfirmed": {
-        "HS-ESS2-1": true
+        "HS-ESS2-1": true,
+        "HS-ESS1-5": false
       },
       "preservation": {
         "HS-ESS2-1__gemini": 2,
@@ -1223,7 +1224,7 @@
         "HS-ESS2-1__aya": 2
       },
       "standardComments": {
-        "HS-ESS2-1": "source and translations speak om "
+        "HS-ESS2-1": "source and translations speak of the different types of rocks, an how they are made "
       },
       "unlocked": {
         "gpt4o": false,
