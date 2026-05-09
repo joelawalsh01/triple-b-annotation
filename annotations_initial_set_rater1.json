@@ -1987,8 +1987,8 @@
         2
       ],
       "quality": {
-        "gemini": "",
-        "aya": "Worst",
+        "gemini": "Best",
+        "aya": "Middle",
         "gpt4o": "Worst"
       },
       "qualityComments": {
@@ -1996,7 +1996,10 @@
         "aya": "Terrible translation. Translation has nothing to do with the source.",
         "gpt4o": "Terrible translation. Translation has nothing to do with the source."
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-PS4-5": false,
+        "HS-PS4-2": false
+      },
       "preservation": {},
       "standardComments": {},
       "unlocked": {
