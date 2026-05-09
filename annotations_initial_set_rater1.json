@@ -482,9 +482,17 @@
       "qualityComments": {
         "gpt4o": "Translation is well translated covering the vocab and goal of the original source"
       },
-      "sourceConfirmed": {},
-      "preservation": {},
-      "standardComments": {},
+      "sourceConfirmed": {
+        "MS-LS1-1": true
+      },
+      "preservation": {
+        "MS-LS1-1__gemini": 2,
+        "MS-LS1-1__gpt4o": 3,
+        "MS-LS1-1__aya": 2
+      },
+      "standardComments": {
+        "MS-LS1-1": "While the source and translation only cover the cell theory these are good stepping stones to be able to conduct an investigation with evidence."
+      },
       "unlocked": {
         "gpt4o": false
       }
