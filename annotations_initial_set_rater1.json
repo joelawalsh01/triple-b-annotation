@@ -65,12 +65,18 @@
       "qualityComments": {},
       "sourceConfirmed": {
         "3-ESS3-1": false,
-        "4-ESS3-2": false
+        "4-ESS3-2": false,
+        "4-PS3-2": true
       },
-      "preservation": {},
+      "preservation": {
+        "4-PS3-2__gpt4o": 2,
+        "4-PS3-2__gemini": 2,
+        "4-PS3-2__aya": 2
+      },
       "standardComments": {
         "3-ESS3-1": "There is a claim on what to do in case of a lightning storm or strike. The translations are able to deliver the same context as the original source in different levels of complexity, not aim for the standard where the goal is to design a solution to a problem ",
-        "4-ESS3-2": "There is a claim on what to do in case of a lightning storm or strike. The translations are able to deliver the same context as the original source in different levels of complexity, not aim for the standard"
+        "4-ESS3-2": "There is a claim on what to do in case of a lightning storm or strike. The translations are able to deliver the same context as the original source in different levels of complexity, not aim for the standard",
+        "4-PS3-2": "While "
       }
     }
   }
