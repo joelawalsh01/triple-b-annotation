@@ -1892,11 +1892,24 @@
         1,
         0
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gpt4o": "Middle",
+        "gemini": "",
+        "aya": "Worst"
+      },
+      "qualityComments": {
+        "gpt4o": "Good translation, vocabulary and examples are appropriate and the complexity is the same as the source.",
+        "gemini": "",
+        "aya": ""
+      },
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "gpt4o": true,
+        "gemini": true,
+        "aya": true
+      }
     }
   }
 }
