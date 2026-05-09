@@ -1216,15 +1216,21 @@
       },
       "sourceConfirmed": {
         "HS-ESS2-1": true,
-        "HS-ESS1-5": false
+        "HS-ESS1-5": false,
+        "HS-ESS2-3": true
       },
       "preservation": {
         "HS-ESS2-1__gemini": 2,
         "HS-ESS2-1__gpt4o": 2,
-        "HS-ESS2-1__aya": 2
+        "HS-ESS2-1__aya": 2,
+        "HS-ESS2-3__gemini": 2,
+        "HS-ESS2-3__gpt4o": 2,
+        "HS-ESS2-3__aya": 2
       },
       "standardComments": {
-        "HS-ESS2-1": "source and translations speak of the different types of rocks, an how they are made "
+        "HS-ESS2-1": "source and translations speak of the different types of rocks, an how they are made ",
+        "HS-ESS1-5": "source and translations speak of the different types of rocks, an how they are made ",
+        "HS-ESS2-3": "source and translations speak of the different types of rocks, an how they are made "
       },
       "unlocked": {
         "gpt4o": false,
