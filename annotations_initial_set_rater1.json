@@ -3283,12 +3283,12 @@
         2
       ],
       "quality": {
-        "aya": "",
+        "aya": "Worst",
         "gemini": "Best",
         "gpt4o": ""
       },
       "qualityComments": {
-        "aya": "",
+        "aya": "no explanation of abbreviations ",
         "gemini": "Great translation, good explanation of concepts and good vocabulary used.",
         "gpt4o": ""
       },
