@@ -168,12 +168,17 @@
       "quality": {},
       "qualityComments": {},
       "sourceConfirmed": {
-        "5-PS2-1": true
+        "5-PS2-1": true,
+        "5-PS1-1": false,
+        "5-ESS1-1": true
       },
       "preservation": {
         "5-PS2-1__gemini": 3,
         "5-PS2-1__aya": 3,
-        "5-PS2-1__gpt4o": 3
+        "5-PS2-1__gpt4o": 3,
+        "5-ESS1-1__gemini": 3,
+        "5-ESS1-1__aya": 3,
+        "5-ESS1-1__gpt4o": 3
       },
       "standardComments": {}
     }
