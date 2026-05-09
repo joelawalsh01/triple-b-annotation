@@ -718,7 +718,9 @@
         "3-ESS2-1": false
       },
       "preservation": {},
-      "standardComments": {},
+      "standardComments": {
+        "3-ESS2-1": "no data in the source or the translations just facts "
+      },
       "unlocked": {
         "gpt4o": false
       }
