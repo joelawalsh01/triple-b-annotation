@@ -1096,7 +1096,9 @@
       "sourceConfirmed": {
         "MS-PS4-1": true,
         "MS-PS3-5": true,
-        "MS-PS3-1": false
+        "MS-PS3-1": false,
+        "MS-PS4-2": false,
+        "MS-PS3-4": true
       },
       "preservation": {
         "MS-PS4-1__gpt4o": 3,
@@ -1104,12 +1106,16 @@
         "MS-PS4-1__gemini": 3,
         "MS-PS3-5__gpt4o": 3,
         "MS-PS3-5__aya": 3,
-        "MS-PS3-5__gemini": 3
+        "MS-PS3-5__gemini": 3,
+        "MS-PS3-4__gpt4o": 3,
+        "MS-PS3-4__aya": 3,
+        "MS-PS3-4__gemini": 3
       },
       "standardComments": {
         "MS-PS4-1": "source and translations are able to explain examples of energy and matter interacting",
         "MS-PS3-5": "source and translations are able to explain examples of energy and matter interacting",
-        "MS-PS3-1": "source and translations are able to explain examples of energy and matter interacting but can be used as a source later on to be able to cover this "
+        "MS-PS3-1": "source and translations are able to explain examples of energy and matter interacting but can be used as a source later on to be able to cover this standard ",
+        "MS-PS4-2": "source and translations are able to explain examples of energy and matter interacting but can be used as a source later on to be able to cover this standard "
       },
       "unlocked": {
         "aya": false,
