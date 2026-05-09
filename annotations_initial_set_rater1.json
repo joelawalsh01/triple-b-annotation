@@ -1,5 +1,5 @@
 {
-  "page": 0,
+  "page": 1,
   "data": {
     "14891590": {
       "rater": 1,
@@ -51,7 +51,7 @@
         "3-ESS2-1__gpt4o": 3,
         "3-ESS2-1__aya": 2,
         "3-ESS2-2__gemini": 2,
-        "3-ESS2-2__gpt4o": 2,
+        "3-ESS2-2__gpt4o": 3,
         "3-ESS2-2__aya": 2
       },
       "standardComments": {
