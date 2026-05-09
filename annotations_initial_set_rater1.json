@@ -587,10 +587,10 @@
         0
       ],
       "quality": {
-        "gpt4o": ""
+        "gpt4o": "Best"
       },
       "qualityComments": {
-        "gpt4o": ""
+        "gpt4o": "Great translation of the source "
       },
       "sourceConfirmed": {},
       "preservation": {},
