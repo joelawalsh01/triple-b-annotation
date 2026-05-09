@@ -2016,9 +2016,9 @@
         1
       ],
       "quality": {
-        "gpt4o": "",
-        "aya": "Middle",
-        "gemini": ""
+        "gpt4o": "Middle",
+        "aya": "Worst",
+        "gemini": "Best"
       },
       "qualityComments": {
         "gpt4o": "",
