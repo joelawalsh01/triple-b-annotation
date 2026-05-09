@@ -2721,12 +2721,12 @@
         1
       ],
       "quality": {
-        "gpt4o": "",
+        "gpt4o": "Worst",
         "aya": "Middle"
       },
       "qualityComments": {
         "gpt4o": "over complexity of the text ",
-        "aya": ""
+        "aya": "slight simplification of vocabulary "
       },
       "sourceConfirmed": {},
       "preservation": {},
