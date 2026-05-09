@@ -1,5 +1,5 @@
 {
-  "page": 13,
+  "page": 14,
   "data": {
     "14891590": {
       "rater": 1,
@@ -589,8 +589,16 @@
         2,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "aya": "Best",
+        "gemini": "Middle",
+        "gpt4o": "Worst"
+      },
+      "qualityComments": {
+        "aya": "The translation explains the concept well but does not utilize the key concept, which defeats the purpose of the introduction of key terms. Which is also the goal of the source.",
+        "gemini": "",
+        "gpt4o": "The translation explains the concept well but does not utilize the key concept, which defeats the purpose of the introduction of key terms. Which is also the goal of the source."
+      },
       "sourceConfirmed": {
         "5-LS1-1": true,
         "4-LS1-1": true,
@@ -611,6 +619,11 @@
         "5-LS1-1": "source and translation speak on facts on the rings on a tree  partially covering this standard, this standard can later be covered with this statement/facts ",
         "4-LS1-1": "source and translation speak on facts on the rings on a tree  partially covering this standard, this standard can later be covered with this statement/facts ",
         "5-LS2-1": "source and translation speak on facts on the rings on a tree  partially covering this standard, this standard can later be covered with this statement/facts "
+      },
+      "unlocked": {
+        "aya": true,
+        "gemini": true,
+        "gpt4o": true
       }
     },
     "33c9a834": {
