@@ -1414,9 +1414,9 @@
         2
       ],
       "quality": {
-        "aya": "Middle",
-        "gemini": "Best",
-        "gpt4o": "Best"
+        "aya": "Best",
+        "gemini": "Worst",
+        "gpt4o": "Middle"
       },
       "qualityComments": {
         "aya": "Great translation, good explanation of concepts and good vocabulary used.",
