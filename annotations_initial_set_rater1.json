@@ -1,4 +1,20 @@
 {
   "page": 0,
-  "data": {}
+  "data": {
+    "f496d987": {
+      "rater": 1,
+      "translationOrder": [
+        1,
+        2,
+        0
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {
+        "5-ESS1-2": false
+      },
+      "preservation": {},
+      "standardComments": {}
+    }
+  }
 }
