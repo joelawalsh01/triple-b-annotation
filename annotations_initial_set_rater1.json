@@ -359,9 +359,18 @@
       ],
       "quality": {},
       "qualityComments": {},
-      "sourceConfirmed": {},
-      "preservation": {},
-      "standardComments": {}
+      "sourceConfirmed": {
+        "4-LS1-1": true,
+        "5-LS2-1": false
+      },
+      "preservation": {
+        "4-LS1-1__gemini": 3,
+        "4-LS1-1__gpt4o": 3,
+        "4-LS1-1__aya": 3
+      },
+      "standardComments": {
+        "4-LS1-1": "source and translation speak on facts on movement in the body partially covering this standard"
+      }
     }
   }
 }
