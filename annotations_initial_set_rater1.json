@@ -421,7 +421,9 @@
       ],
       "quality": {},
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-PS2-2": false
+      },
       "preservation": {},
       "standardComments": {}
     }
