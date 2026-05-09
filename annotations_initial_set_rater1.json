@@ -147,13 +147,15 @@
       "sourceConfirmed": {
         "5-PS1-1": false,
         "5-PS1-3": false,
-        "5-PS1-4": false
+        "5-PS1-4": false,
+        "5-PS1-2": false
       },
       "preservation": {},
       "standardComments": {
         "5-PS1-1": "The source is comparing trail mix to a mixture it does not cover or partially cover this standard.",
         "5-PS1-3": "The source is comparing trail mix to a mixture it does not cover or partially cover this standard.",
-        "5-PS1-4": "The source is comparing trail mix to a mixture it does not cover or partially cover this standard."
+        "5-PS1-4": "The source is comparing trail mix to a mixture it does not cover or partially cover this standard.",
+        "5-PS1-2": "The source is comparing trail mix to a mixture it does not cover or partially cover this standard."
       }
     }
   }
