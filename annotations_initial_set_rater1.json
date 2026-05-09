@@ -2410,7 +2410,9 @@
         "gpt4o": "over complexity of vocabulary ",
         "aya": "Great translation, good explanation of concepts and good vocabulary used."
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-LS1-2": false
+      },
       "preservation": {},
       "standardComments": {},
       "unlocked": {
