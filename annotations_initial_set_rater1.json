@@ -1,5 +1,5 @@
 {
-  "page": 30,
+  "page": 31,
   "data": {
     "14891590": {
       "rater": 1,
@@ -1234,8 +1234,16 @@
         0,
         2
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gemini": "Middle",
+        "aya": "Worst",
+        "gpt4o": "Best"
+      },
+      "qualityComments": {
+        "gemini": "Not a bad translation, but the key term of prediction is misused in the translation it is used as a guess. The last two sentences are not translated properly either.",
+        "aya": "Not a bad translation, but the key term of prediction is misused in the translation it is used as a guess. The last two sentences are not translated properly either.",
+        "gpt4o": "Not a bad translation, but the key term of prediction is misused in the translation it is used as a guess. The last two sentences are not translated properly either."
+      },
       "sourceConfirmed": {
         "MS-PS2-1": true
       },
@@ -1246,6 +1254,11 @@
       },
       "standardComments": {
         "MS-PS2-1": "The source and translations speak on Newton’s third law"
+      },
+      "unlocked": {
+        "gemini": true,
+        "aya": true,
+        "gpt4o": true
       }
     },
     "ffe4c793": {
