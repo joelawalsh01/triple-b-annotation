@@ -1,5 +1,5 @@
 {
-  "page": 17,
+  "page": 18,
   "data": {
     "14891590": {
       "rater": 1,
@@ -747,8 +747,16 @@
         2,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gpt4o": "Best",
+        "gemini": "Worst",
+        "aya": "Middle"
+      },
+      "qualityComments": {
+        "gpt4o": "Started off ok, but translation lost all significance. It is unusable after the first two sentences.",
+        "gemini": "Started off ok, but translation lost all significance. It is unusable after the first two sentences.",
+        "aya": "Started off ok, but translation lost all significance. It is unusable after the first two sentences."
+      },
       "sourceConfirmed": {
         "HS-ESS2-5": true,
         "HS-ESS1-5": true,
@@ -779,6 +787,11 @@
         "HS-ESS2-7": "While the source and translation only cover the sedimentary rocks these are good stepping stones to construct an argument with evidence.",
         "HS-ESS2-1": "While the source and translation only cover the sedimentary rocks these are good stepping stones to develop a model  with evidence.",
         "HS-ESS2-6": "While the source and translation only cover the sedimentary rocks these are good stepping stones to develop a model  with evidence."
+      },
+      "unlocked": {
+        "gpt4o": true,
+        "gemini": true,
+        "aya": true
       }
     },
     "f9282918": {
