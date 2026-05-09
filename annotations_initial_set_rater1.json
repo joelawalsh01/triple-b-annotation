@@ -3313,11 +3313,11 @@
       "quality": {
         "gemini": "Best",
         "gpt4o": "Worst",
-        "aya": "Worst"
+        "aya": "Middle"
       },
       "qualityComments": {
         "gemini": "Great syntax and understanding of concepts ",
-        "gpt4o": "Terrible translation, entirely too simplified. Loses all context in the original source.",
+        "gpt4o": "Terrible translation, entirely too simplified. Loses all context in the original source. Still has English words in the translation",
         "aya": "Terrible translation, entirely too simplified. Loses all context in the original source."
       },
       "sourceConfirmed": {},
@@ -3327,7 +3327,9 @@
         "gemini": true,
         "gpt4o": true,
         "aya": true
-      }
+      },
+      "noStandardsApply": false,
+      "noStandardsProposed": ""
     }
   }
 }
