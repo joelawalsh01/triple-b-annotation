@@ -633,8 +633,16 @@
         0,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gpt4o": "Best",
+        "aya": "Middle",
+        "gemini": "Worst"
+      },
+      "qualityComments": {
+        "gpt4o": "",
+        "aya": "Not the best translation, but it is missing a numerous amount of concepts that make it unusable in the classroom. The key concepts are lost throughout the translation and not explained properly",
+        "gemini": "Not the best translation, but it is missing a numerous amount of concepts that make it unusable in the classroom. The key concepts are lost throughout the translation and not explained properly"
+      },
       "sourceConfirmed": {
         "MS-PS2-2": false,
         "MS-PS2-4": false
@@ -643,6 +651,11 @@
       "standardComments": {
         "MS-PS2-2": "this is not covered in the source or translations ",
         "MS-PS2-4": "this is not covered in the source or translations "
+      },
+      "unlocked": {
+        "gpt4o": true,
+        "aya": true,
+        "gemini": true
       }
     },
     "17cbcbbd": {
