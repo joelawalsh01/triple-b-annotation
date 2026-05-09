@@ -931,10 +931,14 @@
         2
       ],
       "quality": {
-        "gemini": "Middle"
+        "gemini": "Best",
+        "aya": "Middle",
+        "gpt4o": "Worst"
       },
       "qualityComments": {
-        "gemini": "Good translation but over explains not like the source "
+        "gemini": "Good translation but over explains not like the source ",
+        "aya": "Terrible translation, it does not give Key concepts words and their definition like the source. The translation only gives a definition of a mystery, because it is not stated what it is.",
+        "gpt4o": "Terrible translation, it does not give Key concepts words and their definition like the source. The translation only gives a definition of a mystery, because it is not stated what it is."
       },
       "sourceConfirmed": {
         "HS-LS1-2": false
@@ -942,7 +946,9 @@
       "preservation": {},
       "standardComments": {},
       "unlocked": {
-        "gemini": false
+        "gemini": true,
+        "aya": true,
+        "gpt4o": true
       }
     },
     "24e0030b": {
