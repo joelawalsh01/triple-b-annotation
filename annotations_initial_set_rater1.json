@@ -2214,11 +2214,11 @@
       "quality": {
         "gemini": "Middle",
         "gpt4o": "Best",
-        "aya": "Middle"
+        "aya": "Worst"
       },
       "qualityComments": {
         "gemini": "Good translation minor errors but these are ones that are easily understood and overlooked by others. It can be utilized at the grade level and age group",
-        "gpt4o": "",
+        "gpt4o": "great translation with complexity of ",
         "aya": ""
       },
       "sourceConfirmed": {},
