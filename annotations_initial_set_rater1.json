@@ -2825,14 +2825,16 @@
         1
       ],
       "quality": {
-        "gpt4o": "",
-        "gemini": ""
+        "gpt4o": "Middle",
+        "gemini": "Worst"
       },
       "qualityComments": {
-        "gpt4o": "over complexity of the source material, it ",
-        "gemini": ""
+        "gpt4o": "over complexity of the source material, it makes sense but doesn't make sense compare to the source ",
+        "gemini": "good translation but over simplified and sintax errors "
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-LS1-2": false
+      },
       "preservation": {},
       "standardComments": {},
       "unlocked": {
