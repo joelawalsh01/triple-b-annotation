@@ -12,16 +12,21 @@
       "qualityComments": {},
       "sourceConfirmed": {
         "5-ESS1-2": false,
-        "3-ESS2-1": true
+        "3-ESS2-1": true,
+        "3-ESS2-2": true
       },
       "preservation": {
         "3-ESS2-1__gemini": 3,
         "3-ESS2-1__gpt4o": 3,
-        "3-ESS2-1__aya": 3
+        "3-ESS2-1__aya": 3,
+        "3-ESS2-2__gemini": 2,
+        "3-ESS2-2__gpt4o": 2,
+        "3-ESS2-2__aya": 2
       },
       "standardComments": {
         "5-ESS1-2": "The goal is to represent data, the passage is stating a fact and not asking to interpret data or look at data. ",
-        "3-ESS2-1": "while all translations are able to partially aim for this standard, the translations vary in complexity."
+        "3-ESS2-1": "while all translations are able to partially aim for this standard, the translations vary in complexity.",
+        "3-ESS2-2": "While the passage states a fact, the "
       }
     }
   }
