@@ -2799,11 +2799,21 @@
         0,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "aya": "Middle",
+        "gemini": "Worst"
+      },
+      "qualityComments": {
+        "aya": "",
+        "gemini": "while "
+      },
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "aya": true,
+        "gemini": true
+      }
     }
   }
 }
