@@ -716,11 +716,15 @@
       },
       "sourceConfirmed": {
         "3-ESS2-1": false,
-        "5-ESS2-1": false
+        "5-ESS2-1": false,
+        "3-ESS3-1": false
       },
       "preservation": {},
       "standardComments": {
-        "3-ESS2-1": "no data in the source or the translations just facts but can be used as a source to be able to cover the standard"
+        "3-ESS2-1": "no data in the source or the translations just facts but can be used as a source to be able to cover the standard",
+        "5-ESS2-1": "no model development in the source or the translations just facts but can be used as a source to be able to cover the standard",
+        "3-ESS3-1": "no design of solution in the source or the translations just facts but can be used as a source to be able to cover the standard",
+        "5-ESS2-2": "no description or graph in the source or the translations just facts but can be used as a source to be able to cover the standard"
       },
       "unlocked": {
         "gpt4o": false
