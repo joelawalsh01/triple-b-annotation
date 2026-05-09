@@ -1,5 +1,5 @@
 {
-  "page": 53,
+  "page": 54,
   "data": {
     "14891590": {
       "rater": 1,
@@ -2035,6 +2035,32 @@
         "gpt4o": true,
         "aya": true,
         "gemini": true
+      }
+    },
+    "4431992c": {
+      "rater": 1,
+      "translationOrder": [
+        1,
+        2,
+        0
+      ],
+      "quality": {
+        "gemini": "",
+        "gpt4o": "",
+        "aya": "Middle"
+      },
+      "qualityComments": {
+        "gemini": "",
+        "gpt4o": "",
+        "aya": "Not a terrible translation, but the translation does not cover as much as the source."
+      },
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {},
+      "unlocked": {
+        "gemini": true,
+        "gpt4o": true,
+        "aya": true
       }
     }
   }
