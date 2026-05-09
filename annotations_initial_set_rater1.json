@@ -19,7 +19,9 @@
         "3-ESS2-1__gpt4o": 3,
         "3-ESS2-1__aya": 3
       },
-      "standardComments": {}
+      "standardComments": {
+        "5-ESS1-2": "while all translations are able to partially "
+      }
     }
   }
 }
