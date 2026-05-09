@@ -334,7 +334,8 @@
       "qualityComments": {},
       "sourceConfirmed": {
         "5-ESS1-1": true,
-        "5-PS1-1": false
+        "5-PS1-1": false,
+        "5-PS3-1": false
       },
       "preservation": {
         "5-ESS1-1__gpt4o": 2,
