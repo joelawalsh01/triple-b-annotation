@@ -1253,7 +1253,8 @@
       "sourceConfirmed": {
         "HS-ESS3-1": false,
         "HS-ESS3-2": false,
-        "HS-ESS2-2": true
+        "HS-ESS2-2": true,
+        "HS-ESS3-3": false
       },
       "preservation": {
         "HS-ESS2-2__gemini": 2,
@@ -1263,7 +1264,8 @@
       "standardComments": {
         "HS-ESS3-1": "source and translations only speak on Soil Surveys and how they are completed ",
         "HS-ESS3-2": "source and translations only speak on Soil Surveys and how they are completed ",
-        "HS-ESS2-2": "source and translations only speak on Soil Surveys and how they are completed "
+        "HS-ESS2-2": "source and translations only speak on Soil Surveys and how they are completed ",
+        "HS-ESS3-3": "source and translations only speak on Soil Surveys and how they are completed "
       },
       "unlocked": {
         "aya": false
