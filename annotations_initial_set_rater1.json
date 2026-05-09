@@ -1,5 +1,5 @@
 {
-  "page": 24,
+  "page": 25,
   "data": {
     "14891590": {
       "rater": 1,
@@ -995,10 +995,14 @@
         1
       ],
       "quality": {
-        "gemini": "Best"
+        "gemini": "Best",
+        "aya": "Best",
+        "gpt4o": "Best"
       },
       "qualityComments": {
-        "gemini": "Great translation with correct examples and key concepts that are given in the source"
+        "gemini": "Great translation with correct examples and key concepts that are given in the source",
+        "aya": "Great translation with correct examples and key concepts that are given in the source",
+        "gpt4o": "Great translation with correct examples and key concepts that are given in the source"
       },
       "sourceConfirmed": {
         "5-PS2-1": false,
@@ -1016,7 +1020,9 @@
         "3-PS2-2": "the source and translations are factual of events that happen with the earth and the moon, partial covering of the standard with the making observations and some evidence "
       },
       "unlocked": {
-        "gemini": false
+        "gemini": true,
+        "aya": true,
+        "gpt4o": true
       }
     },
     "4a0bf105": {
