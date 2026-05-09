@@ -651,11 +651,21 @@
         1,
         2
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gemini": "Worst",
+        "aya": ""
+      },
+      "qualityComments": {
+        "gemini": "",
+        "aya": ""
+      },
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "gemini": true,
+        "aya": true
+      }
     }
   }
 }
