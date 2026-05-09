@@ -483,15 +483,25 @@
         "gpt4o": "Translation is well translated covering the vocab and goal of the original source"
       },
       "sourceConfirmed": {
-        "MS-LS1-1": true
+        "MS-LS1-1": true,
+        "MS-LS1-2": true,
+        "MS-LS1-3": true
       },
       "preservation": {
         "MS-LS1-1__gemini": 2,
         "MS-LS1-1__gpt4o": 3,
-        "MS-LS1-1__aya": 2
+        "MS-LS1-1__aya": 2,
+        "MS-LS1-2__gemini": 2,
+        "MS-LS1-2__gpt4o": 3,
+        "MS-LS1-2__aya": 2,
+        "MS-LS1-3__gemini": 2,
+        "MS-LS1-3__gpt4o": 3,
+        "MS-LS1-3__aya": 2
       },
       "standardComments": {
-        "MS-LS1-1": "While the source and translation only cover the cell theory these are good stepping stones to be able to conduct an investigation with evidence."
+        "MS-LS1-1": "While the source and translation only cover the cell theory these are good stepping stones to be able to conduct an investigation with evidence.",
+        "MS-LS1-2": "While the source and translation only cover the cell theory these are good stepping stones to be able to develop a model  with evidence.",
+        "MS-LS1-3": "While the source and translation only cover the cell theory these are good stepping stones to be able to conduct an investigation with evidence."
       },
       "unlocked": {
         "gpt4o": false
