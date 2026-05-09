@@ -683,11 +683,20 @@
         0,
         2
       ],
-      "quality": {},
-      "qualityComments": {},
-      "sourceConfirmed": {},
+      "quality": {
+        "gemini": "Middle"
+      },
+      "qualityComments": {
+        "gemini": "Good translation but over explains not like the source "
+      },
+      "sourceConfirmed": {
+        "HS-LS1-2": false
+      },
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "gemini": false
+      }
     }
   }
 }
