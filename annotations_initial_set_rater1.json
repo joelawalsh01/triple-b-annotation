@@ -2774,7 +2774,11 @@
         "HS-PS2-6": false,
         "HS-ESS2-5": true
       },
-      "preservation": {},
+      "preservation": {
+        "HS-ESS2-5__gpt4o": 2,
+        "HS-ESS2-5__aya": 1,
+        "HS-ESS2-5__gemini": 3
+      },
       "standardComments": {
         "HS-PS1-1": "source and translation are factual can be later used as a source to cover the standard ",
         "HS-PS1-2": "source and translation are factual can be later used as a source to cover the standard ",
