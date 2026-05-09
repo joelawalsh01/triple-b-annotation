@@ -15,35 +15,40 @@ Rough estimate for a standard GEPA run with Opus 4.6 as both executor and reflec
 
 ## Reflector model picks (open weights via Ollama)
 
+Hardware: Dell GB10 (Grace Blackwell, 128 GB unified memory, FP4-native).
+
 Already have: gpt-oss 120b.
 
-Top three to try, ranked:
+Top picks, ranked:
 
-1. **Qwen 2.5 72B Instruct** *(first pick)* — best reasoning-per-VRAM, explicitly multilingual (Spanish matters because the reflector evaluates Aya's Spanish output against English source + NGSS standards). Beats gpt-oss 120b on most reflection-relevant benchmarks. `ollama pull qwen2.5:72b-instruct` (~40GB Q4).
-2. **DeepSeek-V3 / V3.1** (or **DeepSeek-R1** for explicit reasoning behavior) — strongest open reasoning model in this size class. R1's think-before-answer pattern is a natural fit for GEPA's reflection step. Heavy footprint; only attempt if Qwen plateaus.
-3. **Command R+ 104B** — same family as Aya, so its failure-mode model is likely compatible. Multilingual-strong on Aya-trained languages. Niche but worth a comparison run.
+1. **Qwen 3.6-27B dense** *(first pick)* — released April 2026, ~17 GB. Reportedly outperforms a 397B MoE on agentic coding benchmarks, which is the closest public proxy for the read-trace / diagnose / propose-mutation loop GEPA's reflector runs. 256K context (useful — GEPA reflection packs traces + history). 201-language multilingual coverage (the reflector evaluates Aya's Spanish output against English source + NGSS standards). Apache 2.0. `ollama pull qwen3.6:27b`.
+2. **Qwen 3.6-35B-A3B** (MoE, 35B total / 3B active) — released April 2026, ~24 GB, Apache 2.0. Faster inference per token than the 27B dense thanks to 3B active params; smaller capability ceiling. Hold in reserve as a faster fallback if reflection latency becomes a bottleneck during long runs. `ollama pull qwen3.6:35b-a3b`.
+3. **DeepSeek-V3.1** or **DeepSeek-R1** — strongest open reasoning in this size class. Heavy footprint but the GB10 handles it. Use as a tiebreaker run if Qwen 3.6-27B plateaus.
+
+Rationale for 27B dense over the larger Qwen 3 235B-A22B-Thinking on this hardware: 17 GB leaves enormous memory headroom for batched rollouts and Aya 8B coexisting; dense outperforms small-active MoE on the short-prompt reflection calls GEPA actually makes; and the 27B's reasoning benchmarks beat Qwen 3 generation models head-to-head.
 
 ## Training data ("current numbers")
 
-- **Rater 2**: 82 non-zero-std pages, 240 source-confirm decisions (109 Yes / 131 No), all 16 zero-std passages confirmed "no standard applies." Per-translation quality is forced-rank but uses an absolute scale that doesn't align with rater 1 — treat as descriptive only for now.
-- **Rater 1 (Ashley)**: 25 pages so far (78 source-confirm decisions, 44 Yes / 34 No); ~67 pages of pre-existing quality ratings carry the duplicated-annotations bug from `annotated_data_done.json`.
-- **Inter-rater overlap**: 78 shared standards across 24 pages. Both-agree subset = 48 standards (24 Yes-Yes + 24 No-No). This is the cleanest supervision signal; the 30 disagreements are noise from the rater perspective.
+- **Rater 2**: 98/98 pages complete. 240 source-confirm decisions (109 Yes / 131 No, 45% Yes). 327 preservation ratings, 294 forced-rank quality labels. All 16 zero-std passages confirmed "no standard applies."
+- **Rater 1 (Ashley)**: 63 pages with input (62 complete on the non-zero-std rubric). 186 source-confirm decisions (76 Yes / 110 No, 41% Yes). 228 preservation ratings, 181 forced-rank quality overrides. Has not yet started the 16 zero-standards passages.
+- **Quality scale (Worst/Middle/Best) is now aligned**: both raters use forced-rank. Cohen's κ on per-translation labels rose from ≈0 (when rater 1 was using an absolute scale) to **0.183 unweighted / 0.347 quadratic-weighted** — fair agreement.
+- **Asymmetric signal worth noting for the paper**: agreement on the *worst* translation per page is strong (68%), but agreement on the *best* is weak (35%). Frame quality claims as "least-likely-to-fail" rather than "most-likely-best."
 
-For the standards-matching target, supervise on the both-agree subset to avoid tuning toward one rater's permissiveness baseline. Wait until Ashley reaches ~50–60 pages so the agreement set is bigger (estimate ~120 both-agree standards by then).
+For the **standards-matching** target, supervise on the both-agree subset (Yes-Yes ∪ No-No across the ~63 overlapping pages) to avoid tuning toward one rater's permissiveness baseline. Discard the disagreements as noise.
 
-For the translation target, use rater 2's preservation ratings (327 ratings across all 82 non-zero-std pages) as the dense per-(standard, translation) signal. Ashley's preservation data adds 129 more on the pages she's done.
+For the **translation** target, use rater 2's 327 preservation ratings as the dense per-(standard, translation) signal; Ashley's 228 add coverage on the overlapping pages. Forced-rank quality labels can serve as a coarser per-page model-comparison signal.
 
-## Budget estimates (open-model setup)
+## Budget estimates (open-model setup on GB10)
 
-Local compute is essentially free past hardware costs. Budget concern shifts to wall-clock:
+Local compute is essentially free past hardware costs. Budget concern is wall-clock. With Qwen 3.6-27B as the reflector (~17 GB, dense, fast on Blackwell FP4), wall-clock is much shorter than the 70B+ pick this plan originally assumed:
 
-| Run | Rollouts | Reflections | Approx wall-clock on a single 80GB-class GPU |
+| Run | Rollouts | Reflections | Approx wall-clock on GB10 with Qwen 3.6-27B |
 |-----|----------|-------------|----------------------------------------------|
-| Tight pilot | ~400 | ~30 | a few hours |
-| Standard | ~1,200 | ~120 | overnight |
-| Aggressive | ~2,500 | ~250 | 1–2 days |
+| Tight pilot | ~400 | ~30 | ~1 hour |
+| Standard | ~1,200 | ~120 | a few hours |
+| Aggressive | ~2,500 | ~250 | overnight |
 
-Wall-clock dominated by the 70B+ reflector. Aya 8B as executor runs fast.
+If you swap the reflector for the 35B-A3B MoE, expect somewhat slower per-rollout wall-clock but lower memory pressure. DeepSeek-V3.1 / R1 as reflector pushes wall-clock back into the overnight range even for tight pilots.
 
 ## Setup notes
 
@@ -55,6 +60,6 @@ Wall-clock dominated by the 70B+ reflector. Aya 8B as executor runs fast.
 ## Open questions / decisions before running
 
 - Translation prompt vs standards-matching prompt as first target. Plan recommends translation.
-- Reflector pick. Plan recommends Qwen 2.5 72B Instruct.
-- Whether to wait for Ashley to reach ~50–60 pages before running (gives larger both-agree training set). Worth waiting if standards-matching is the target; less critical if translation is the target.
+- Reflector pick. Plan recommends Qwen 3.6-27B dense.
 - How to score translations (preservation rating proxy via judge model, or direct rater-label match).
+- Whether to wait for Ashley to reach 98/98 (currently 63/98). The both-agree subset is already substantial at 63 overlapping pages; not a blocker for the translation target.
