@@ -1162,7 +1162,8 @@
       "quality": {},
       "qualityComments": {},
       "sourceConfirmed": {
-        "HS-LS1-2": true
+        "HS-LS1-2": true,
+        "HS-LS1-3": false
       },
       "preservation": {
         "HS-LS1-2__gemini": 2,
@@ -1170,7 +1171,7 @@
         "HS-LS1-2__gpt4o": 2
       },
       "standardComments": {
-        "HS-LS1-2": "the source and standard can be used "
+        "HS-LS1-2": "the source and standard can be used to cover the standard eventually "
       }
     }
   }
