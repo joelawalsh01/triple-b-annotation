@@ -1034,8 +1034,8 @@
       ],
       "quality": {
         "gpt4o": "Middle",
-        "gemini": "Middle",
-        "aya": "Middle"
+        "gemini": "Best",
+        "aya": "Worst"
       },
       "qualityComments": {
         "gpt4o": "Not terrible but the source gives a lot of information about different things, while the translation only gives the pollination and not the other examples",
