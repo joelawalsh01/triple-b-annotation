@@ -1,5 +1,5 @@
 {
-  "page": 75,
+  "page": 76,
   "data": {
     "14891590": {
       "rater": 1,
@@ -2748,6 +2748,32 @@
       "unlocked": {
         "gpt4o": true,
         "aya": true
+      }
+    },
+    "193bdfbc": {
+      "rater": 1,
+      "translationOrder": [
+        2,
+        0,
+        1
+      ],
+      "quality": {
+        "aya": "",
+        "gpt4o": "Best",
+        "gemini": "Best"
+      },
+      "qualityComments": {
+        "aya": "",
+        "gpt4o": "Great translation, great vocabulary and complexity of the text is the same as the source",
+        "gemini": "Great translation, great vocabulary and complexity of the text is the same as the source"
+      },
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {},
+      "unlocked": {
+        "aya": true,
+        "gpt4o": true,
+        "gemini": true
       }
     }
   }
