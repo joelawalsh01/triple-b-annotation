@@ -599,7 +599,7 @@
       "standardComments": {},
       "unlocked": {
         "gpt4o": false,
-        "aya": true
+        "aya": false
       }
     }
   }
