@@ -2223,12 +2223,16 @@
       },
       "sourceConfirmed": {
         "HS-ESS2-1": false,
-        "HS-ESS2-5": false
+        "HS-ESS2-5": false,
+        "HS-ESS1-5": false,
+        "HS-ESS2-2": false
       },
       "preservation": {},
       "standardComments": {
         "HS-ESS2-1": "the source and translations can be used as a source of(factual) for the completion of this standard",
-        "HS-ESS2-5": "the source and translations can be used as a source of(factual) for the completion of this standard"
+        "HS-ESS2-5": "the source and translations can be used as a source of(factual) for the completion of this standard",
+        "HS-ESS1-5": "the source and translations can be used as a source of(factual) for the completion of this standard",
+        "HS-ESS2-2": "the source and translations can be used as a source of(factual) for the completion of this standard"
       },
       "unlocked": {
         "gemini": true,
