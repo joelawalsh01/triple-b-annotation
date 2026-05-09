@@ -2696,11 +2696,15 @@
         "aya": "Worst"
       },
       "qualityComments": {
-        "gpt4o": "",
-        "gemini": "",
+        "gpt4o": "great translation, some simplification of the text ",
+        "gemini": "great translation and as close to the source as possible ",
         "aya": "Good translation, it's slightly simplified for the age group and grade band. But the main idea is there for the text"
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-PS1-3": false,
+        "HS-PS2-6": false,
+        "HS-ESS2-1": false
+      },
       "preservation": {},
       "standardComments": {},
       "unlocked": {
