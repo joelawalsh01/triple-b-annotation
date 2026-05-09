@@ -1367,16 +1367,22 @@
         1
       ],
       "quality": {
-        "gemini": ""
+        "gemini": "Best",
+        "gpt4o": "Middle",
+        "aya": "Worst"
       },
       "qualityComments": {
-        "gemini": ""
+        "gemini": "",
+        "gpt4o": "Great translation, vocabulary and examples are great and the complexity is the same as the source.",
+        "aya": "Great translation, vocabulary and examples are great and the complexity is the same as the source."
       },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {},
       "unlocked": {
-        "gemini": true
+        "gemini": true,
+        "gpt4o": true,
+        "aya": true
       }
     }
   }
