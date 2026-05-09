@@ -2887,12 +2887,12 @@
         2
       ],
       "quality": {
-        "gemini": "",
-        "aya": ""
+        "gemini": "Worst",
+        "aya": "Middle"
       },
       "qualityComments": {
         "gemini": "",
-        "aya": ""
+        "aya": "as close as the translation as possible "
       },
       "sourceConfirmed": {},
       "preservation": {},
