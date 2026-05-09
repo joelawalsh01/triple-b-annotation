@@ -2586,7 +2586,9 @@
         "gpt4o": "over complexities in vocabulary and at times it looses the meaning because they are words that are not normally used ",
         "aya": "good translation and good balance between complexity and simplicity of vocabulary"
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-ESS2-1": false
+      },
       "preservation": {},
       "standardComments": {},
       "unlocked": {
