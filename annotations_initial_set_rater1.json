@@ -1,5 +1,5 @@
 {
-  "page": 26,
+  "page": 27,
   "data": {
     "14891590": {
       "rater": 1,
@@ -1084,10 +1084,14 @@
         1
       ],
       "quality": {
-        "gpt4o": "Best"
+        "gpt4o": "Middle",
+        "aya": "Best",
+        "gemini": "Worst"
       },
       "qualityComments": {
-        "gpt4o": "Great translation, all key concepts, examples go hand in hand with the source."
+        "gpt4o": "Great translation, all key concepts, examples go hand in hand with the source.",
+        "aya": "Great translation, all key concepts, examples go hand in hand with the source.",
+        "gemini": "Great translation, all key concepts, examples go hand in hand with the source."
       },
       "sourceConfirmed": {
         "5-PS1-1": true,
@@ -1108,7 +1112,9 @@
         "5-PS1-4": "no investigation can come from this standards it is only factual "
       },
       "unlocked": {
-        "gpt4o": false
+        "gpt4o": true,
+        "aya": true,
+        "gemini": true
       }
     },
     "0798d0b7": {
