@@ -667,11 +667,13 @@
       ],
       "quality": {
         "aya": "Best",
-        "gpt4o": "Middle"
+        "gpt4o": "Middle",
+        "gemini": "Worst"
       },
       "qualityComments": {
         "aya": "Good translation, it aims to be as close as possible to the original source",
-        "gpt4o": "Good translation, it aims to be as close as possible to the original source, but uses some vocabulary that can be confusing to some "
+        "gpt4o": "Good translation, it aims to be as close as possible to the original source, but uses some vocabulary that can be confusing to some ",
+        "gemini": "Translation loses all the key concepts of the source, the Golgi apparatus isn't even translated properly which makes the entire translation lose the meaning."
       },
       "sourceConfirmed": {
         "MS-LS1-2": true,
@@ -693,7 +695,8 @@
       },
       "unlocked": {
         "aya": true,
-        "gpt4o": true
+        "gpt4o": true,
+        "gemini": true
       }
     },
     "a02e2a15": {
