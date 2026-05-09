@@ -3288,9 +3288,9 @@
         "gpt4o": ""
       },
       "qualityComments": {
-        "aya": "no explanation of abbreviations ",
+        "aya": "no explanation of abbreviations and too many syntax errors ",
         "gemini": "Great translation, good explanation of concepts and good vocabulary used.",
-        "gpt4o": ""
+        "gpt4o": "good translation but abbreviations and syntax errors are minimal "
       },
       "sourceConfirmed": {},
       "preservation": {},
