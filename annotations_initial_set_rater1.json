@@ -46,7 +46,9 @@
         "5-LS1-1": false
       },
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {
+        "5-LS2-1": "while the original passage aims for this standard it partially meets it. But the translations do not meet it at all. "
+      }
     }
   }
 }
