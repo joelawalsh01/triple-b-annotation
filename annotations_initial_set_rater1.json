@@ -3229,7 +3229,7 @@
       "quality": {
         "gpt4o": "Worst",
         "gemini": "",
-        "aya": "Worst"
+        "aya": "Middle"
       },
       "qualityComments": {
         "gpt4o": "Translation is on a topic that the source is not. While they both have navigation of boats and planes, that is the only thing they both talk about. The source is great at explaining key concepts and their importance while the translation only says who uses something that is not explained ",
