@@ -1,5 +1,5 @@
 {
-  "page": 72,
+  "page": 73,
   "data": {
     "14891590": {
       "rater": 1,
@@ -2652,6 +2652,32 @@
       "unlocked": {
         "aya": true,
         "gemini": true
+      }
+    },
+    "28617fe3": {
+      "rater": 1,
+      "translationOrder": [
+        0,
+        1,
+        2
+      ],
+      "quality": {
+        "aya": "Middle",
+        "gemini": "Best",
+        "gpt4o": "Middle"
+      },
+      "qualityComments": {
+        "aya": "Not the best translation, but it is missing slight details.",
+        "gemini": "",
+        "gpt4o": "Not the best translation, but it is missing slight details."
+      },
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {},
+      "unlocked": {
+        "aya": true,
+        "gemini": true,
+        "gpt4o": true
       }
     }
   }
