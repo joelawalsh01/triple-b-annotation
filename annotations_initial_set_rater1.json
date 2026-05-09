@@ -3116,18 +3116,21 @@
       ],
       "quality": {
         "aya": "Best",
-        "gemini": "Best"
+        "gemini": "Best",
+        "gpt4o": "Best"
       },
       "qualityComments": {
         "aya": "Good translation, some minor grammar errors but none that can be overlooked and the text understood ",
-        "gemini": "Good translation, some minor grammar errors but none that can be overlooked and the text understood "
+        "gemini": "Good translation, some minor grammar errors but none that can be overlooked and the text understood ",
+        "gpt4o": "Good translation, some minor grammar errors but none that can be overlooked and the text understood "
       },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {},
       "unlocked": {
         "aya": true,
-        "gemini": true
+        "gemini": true,
+        "gpt4o": true
       }
     }
   }
