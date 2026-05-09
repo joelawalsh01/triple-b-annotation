@@ -2343,9 +2343,13 @@
         "gpt4o": "",
         "gemini": ""
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-LS1-2": false
+      },
       "preservation": {},
-      "standardComments": {},
+      "standardComments": {
+        "MS-LS1-2": "source and translation are factual "
+      },
       "unlocked": {
         "gpt4o": true,
         "gemini": true
