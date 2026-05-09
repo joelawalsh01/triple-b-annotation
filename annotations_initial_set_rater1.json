@@ -2640,10 +2640,13 @@
         "gemini": "Middle"
       },
       "qualityComments": {
-        "aya": "translation ",
+        "aya": "translation is the closest one to the source ",
         "gemini": "Translation has nothing to do with the source."
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-LS1-3": false,
+        "HS-LS1-2": false
+      },
       "preservation": {},
       "standardComments": {},
       "unlocked": {
