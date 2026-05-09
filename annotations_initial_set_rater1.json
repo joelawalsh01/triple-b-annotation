@@ -342,7 +342,8 @@
         "5-ESS1-1__gemini": 2
       },
       "standardComments": {
-        "5-ESS1-1": "source and translation speak on facts on the sun , which can later be used to cover this standard "
+        "5-ESS1-1": "source and translation speak on facts on the sun , which can later be used to cover this standard ",
+        "5-PS1-1": "source and translation speak on facts on the sun, not covering this standard\n"
       }
     }
   }
