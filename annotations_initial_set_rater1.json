@@ -1,5 +1,5 @@
 {
-  "page": 36,
+  "page": 37,
   "data": {
     "14891590": {
       "rater": 1,
@@ -1063,12 +1063,12 @@
         "MS-PS4-1": true
       },
       "preservation": {
-        "MS-PS4-2__gemini": 3,
-        "MS-PS4-2__aya": 3,
+        "MS-PS4-2__gemini": 1,
+        "MS-PS4-2__aya": 2,
         "MS-PS4-2__gpt4o": 3,
-        "MS-PS4-1__gemini": 2,
+        "MS-PS4-1__gemini": 1,
         "MS-PS4-1__aya": 2,
-        "MS-PS4-1__gpt4o": 2
+        "MS-PS4-1__gpt4o": 3
       },
       "standardComments": {
         "MS-PS4-2": "the source and translations explains the physics inimages formed by a funhouse mirror",
