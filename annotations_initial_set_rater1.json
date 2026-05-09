@@ -1,5 +1,5 @@
 {
-  "page": 28,
+  "page": 29,
   "data": {
     "14891590": {
       "rater": 1,
@@ -858,8 +858,8 @@
         "4-PS3-2": false
       },
       "preservation": {
-        "5-PS1-3__gemini": 3,
-        "5-PS1-3__gpt4o": 3,
+        "5-PS1-3__gemini": 1,
+        "5-PS1-3__gpt4o": 2,
         "5-PS1-3__aya": 3
       },
       "standardComments": {
