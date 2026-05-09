@@ -2381,7 +2381,9 @@
         "aya": "Good translation, some minor grammar errors but none that can be overlooked and the text understood"
       },
       "sourceConfirmed": {
-        "MS-LS1-1": false
+        "MS-LS1-1": false,
+        "MS-LS1-2": false,
+        "MS-PS2-3": false
       },
       "preservation": {},
       "standardComments": {},
