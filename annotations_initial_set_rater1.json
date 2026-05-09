@@ -659,9 +659,18 @@
         "gemini": "has parts of the source that are not in the source ",
         "aya": "ok translation, but over explains part of the source that are not there "
       },
-      "sourceConfirmed": {},
-      "preservation": {},
-      "standardComments": {},
+      "sourceConfirmed": {
+        "HS-PS4-5": true,
+        "HS-LS1-2": false
+      },
+      "preservation": {
+        "HS-PS4-5__aya": 2,
+        "HS-PS4-5__gemini": 2,
+        "HS-PS4-5__gpt4o": 2
+      },
+      "standardComments": {
+        "HS-PS4-5": "The source and translation B are the only ones that are able to present facts that can "
+      },
       "unlocked": {
         "gemini": true,
         "aya": true
