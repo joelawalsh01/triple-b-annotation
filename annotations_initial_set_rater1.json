@@ -2221,9 +2221,13 @@
         "gpt4o": "great translation with complexity of vocabulary ",
         "aya": "over simplified vocabulary but overall good translation "
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-ESS2-1": false
+      },
       "preservation": {},
-      "standardComments": {},
+      "standardComments": {
+        "HS-ESS2-1": "Good tr"
+      },
       "unlocked": {
         "gemini": true,
         "gpt4o": true,
