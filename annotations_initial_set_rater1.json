@@ -1813,7 +1813,10 @@
         "gpt4o": "Great translation, vocabulary and examples are great and the complexity is the same as the source.",
         "aya": "Great translation, vocabulary and examples are great and the complexity is the same as the source."
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-PS1-4": false,
+        "MS-LS1-2": true
+      },
       "preservation": {},
       "standardComments": {},
       "unlocked": {
