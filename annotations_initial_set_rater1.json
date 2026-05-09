@@ -1161,9 +1161,17 @@
       ],
       "quality": {},
       "qualityComments": {},
-      "sourceConfirmed": {},
-      "preservation": {},
-      "standardComments": {}
+      "sourceConfirmed": {
+        "HS-LS1-2": true
+      },
+      "preservation": {
+        "HS-LS1-2__gemini": 2,
+        "HS-LS1-2__aya": 2,
+        "HS-LS1-2__gpt4o": 2
+      },
+      "standardComments": {
+        "HS-LS1-2": "the source and standard can be used "
+      }
     }
   }
 }
