@@ -1,5 +1,5 @@
 {
-  "page": 12,
+  "page": 13,
   "data": {
     "14891590": {
       "rater": 1,
@@ -371,8 +371,8 @@
       },
       "preservation": {
         "5-ESS1-1__gpt4o": 2,
-        "5-ESS1-1__aya": 2,
-        "5-ESS1-1__gemini": 2
+        "5-ESS1-1__aya": 3,
+        "5-ESS1-1__gemini": 1
       },
       "standardComments": {
         "5-ESS1-1": "source and translation speak on facts on the sun , which can later be used to cover this standard ",
