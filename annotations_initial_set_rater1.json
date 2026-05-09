@@ -1085,11 +1085,21 @@
         0,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "aya": "Best",
+        "gemini": "Best"
+      },
+      "qualityComments": {
+        "aya": "Great translation, good explanation of concepts and good vocabulary used.",
+        "gemini": "Great translation, good explanation of concepts and good vocabulary used."
+      },
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "aya": false,
+        "gemini": false
+      }
     }
   }
 }
