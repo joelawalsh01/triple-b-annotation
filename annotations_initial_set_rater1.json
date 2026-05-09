@@ -3171,14 +3171,14 @@
         0
       ],
       "quality": {
-        "gpt4o": "",
+        "gpt4o": "Middle",
         "gemini": "Best",
-        "aya": ""
+        "aya": "Worst"
       },
       "qualityComments": {
-        "gpt4o": "",
+        "gpt4o": "good, some words are over complicated ",
         "gemini": "Great translation, vocabulary and examples are great and the complexity is the same as the source. ",
-        "aya": ""
+        "aya": "words that  are not used in normal context are used and loses its significance"
       },
       "sourceConfirmed": {},
       "preservation": {},
