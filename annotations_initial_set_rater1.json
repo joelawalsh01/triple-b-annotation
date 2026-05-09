@@ -517,15 +517,20 @@
       "quality": {},
       "qualityComments": {},
       "sourceConfirmed": {
-        "HS-ESS2-5": true
+        "HS-ESS2-5": true,
+        "HS-ESS1-5": true
       },
       "preservation": {
         "HS-ESS2-5__aya": 2,
         "HS-ESS2-5__gpt4o": 2,
-        "HS-ESS2-5__gemini": 2
+        "HS-ESS2-5__gemini": 2,
+        "HS-ESS1-5__aya": 2,
+        "HS-ESS1-5__gpt4o": 2,
+        "HS-ESS1-5__gemini": 2
       },
       "standardComments": {
-        "HS-ESS2-5": "While the source and translation only cover the sedimentary rocks these are good stepping stones to be able to conduct an investigation with evidence."
+        "HS-ESS2-5": "While the source and translation only cover the sedimentary rocks these are good stepping stones to be able to conduct an investigation with evidence.",
+        "HS-ESS1-5": "While the source and translation only cover the sedimentary rocks these are good stepping stones to be able to conduct an investigation with evidence."
       }
     }
   }
