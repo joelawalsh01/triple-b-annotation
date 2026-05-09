@@ -1,5 +1,5 @@
 {
-  "page": 5,
+  "page": 6,
   "data": {
     "14891590": {
       "rater": 1,
@@ -268,8 +268,16 @@
         0,
         2
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gemini": "Worst",
+        "aya": "Middle",
+        "gpt4o": "Best"
+      },
+      "qualityComments": {
+        "gemini": "",
+        "aya": "Great translation, source and translation are equally convey the message and utilize correct vocabulary.",
+        "gpt4o": "Great translation, source and translation are equally convey the message and utilize correct vocabulary."
+      },
       "sourceConfirmed": {
         "5-PS2-1": true,
         "5-PS1-1": false,
@@ -286,6 +294,11 @@
       "standardComments": {
         "5-PS2-1": "while the source and translations are factual, without the facts an argument could not be supported ",
         "5-ESS1-1": "while the source and translations are factual, without the facts an argument could not be supported "
+      },
+      "unlocked": {
+        "gemini": true,
+        "aya": true,
+        "gpt4o": true
       }
     },
     "aaaafce1": {
