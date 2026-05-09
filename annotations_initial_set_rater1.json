@@ -1,5 +1,5 @@
 {
-  "page": 0,
+  "page": 1,
   "data": {
     "14891590": {
       "rater": 1,
@@ -41,11 +41,13 @@
       ],
       "quality": {
         "aya": "Best",
-        "gemini": "Worst"
+        "gemini": "Worst",
+        "gpt4o": "Middle"
       },
       "qualityComments": {
         "aya": "Not a terrible translation but the language is lower level and does not explain at all what the source is explaining it only explains why the summer is the summer based on the sunlight.",
-        "gemini": "Not a terrible translation but the language is lower level and does not explain at all what the source is explaining it only explains why the summer is the summer based on the sunlight."
+        "gemini": "Not a terrible translation but the language is lower level and does not explain at all what the source is explaining it only explains why the summer is the summer based on the sunlight.",
+        "gpt4o": "Not a terrible translation but the language is lower level and does not explain at all what the source is explaining it only explains why the summer is the summer based on the sunlight."
       },
       "sourceConfirmed": {
         "5-ESS1-2": false,
@@ -66,8 +68,9 @@
         "3-ESS2-2": "While the passage states a fact, the passage at hand does not necessarily ask to obtain or combine information to describe climate, the educator can do this easily with the help of this passage. "
       },
       "unlocked": {
-        "aya": false,
-        "gemini": false
+        "aya": true,
+        "gemini": true,
+        "gpt4o": true
       }
     },
     "1a8f9645": {
