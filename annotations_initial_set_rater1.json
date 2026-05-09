@@ -1926,16 +1926,20 @@
         2
       ],
       "quality": {
-        "aya": "Middle",
-        "gemini": "",
-        "gpt4o": ""
+        "aya": "Worst",
+        "gemini": "Best",
+        "gpt4o": "Middle"
       },
       "qualityComments": {
         "aya": "Not terrible translation but it has multiple grammatical errors. Throughout every sentence there is some error that makes it seem like someone who's second language is Spanish translated it. When reading it takes multiple readings for it to make sense.",
         "gemini": "",
         "gpt4o": ""
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-PS4-1": false,
+        "HS-PS4-3": false,
+        "HS-PS4-5": false
+      },
       "preservation": {},
       "standardComments": {},
       "unlocked": {
