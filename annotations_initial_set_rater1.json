@@ -39,8 +39,14 @@
         2,
         0
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "aya": "Best",
+        "gemini": "Worst"
+      },
+      "qualityComments": {
+        "aya": "Not a terrible translation but the language is lower level and does not explain at all what the source is explaining it only explains why the summer is the summer based on the sunlight.",
+        "gemini": "Not a terrible translation but the language is lower level and does not explain at all what the source is explaining it only explains why the summer is the summer based on the sunlight."
+      },
       "sourceConfirmed": {
         "5-ESS1-2": false,
         "3-ESS2-1": true,
@@ -58,6 +64,10 @@
         "5-ESS1-2": "The goal is to represent data, the passage is stating a fact and not asking to interpret data or look at data. ",
         "3-ESS2-1": "while all translations are able to partially aim for this standard, the translations vary in complexity.",
         "3-ESS2-2": "While the passage states a fact, the passage at hand does not necessarily ask to obtain or combine information to describe climate, the educator can do this easily with the help of this passage. "
+      },
+      "unlocked": {
+        "aya": false,
+        "gemini": false
       }
     },
     "1a8f9645": {
