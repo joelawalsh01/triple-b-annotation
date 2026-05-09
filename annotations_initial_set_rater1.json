@@ -1007,15 +1007,19 @@
         "gemini": "Best"
       },
       "qualityComments": {
-        "aya": "",
-        "gemini": ""
+        "aya": "Great translation, vocabulary is consistent and effective to the information at hand",
+        "gemini": "Great translation, vocabulary is consistent and effective to the information at hand"
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-PS4-2": false
+      },
       "preservation": {},
-      "standardComments": {},
+      "standardComments": {
+        "MS-PS4-2": "standard "
+      },
       "unlocked": {
-        "aya": true,
-        "gemini": true
+        "aya": false,
+        "gemini": false
       }
     }
   }
