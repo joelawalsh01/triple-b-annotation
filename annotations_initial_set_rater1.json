@@ -587,16 +587,19 @@
         0
       ],
       "quality": {
-        "gpt4o": "Best"
+        "gpt4o": "Best",
+        "aya": "Middle"
       },
       "qualityComments": {
-        "gpt4o": "Great translation of the source "
+        "gpt4o": "Great translation of the source ",
+        "aya": "overall ok translations, some part "
       },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {},
       "unlocked": {
-        "gpt4o": true
+        "gpt4o": false,
+        "aya": true
       }
     }
   }
