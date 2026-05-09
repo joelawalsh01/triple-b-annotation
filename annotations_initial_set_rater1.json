@@ -1453,12 +1453,14 @@
         1
       ],
       "quality": {
-        "aya": "Best",
-        "gemini": "Best"
+        "aya": "Middle",
+        "gemini": "Best",
+        "gpt4o": "Worst"
       },
       "qualityComments": {
         "aya": "Great translation, good explanation of concepts and good vocabulary used.",
-        "gemini": "Great translation, good explanation of concepts and good vocabulary used."
+        "gemini": "Great translation, good explanation of concepts and good vocabulary used.",
+        "gpt4o": "Great translation, good explanation of concepts and good vocabulary used."
       },
       "sourceConfirmed": {
         "MS-PS4-1": true,
@@ -1486,8 +1488,9 @@
         "MS-PS3-4": "source and translations are able to explain examples of energy and matter interacting"
       },
       "unlocked": {
-        "aya": false,
-        "gemini": false
+        "aya": true,
+        "gemini": true,
+        "gpt4o": true
       }
     },
     "2e64d413": {
