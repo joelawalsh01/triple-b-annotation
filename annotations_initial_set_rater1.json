@@ -2147,11 +2147,26 @@
         1,
         0
       ],
-      "quality": {},
-      "qualityComments": {},
-      "sourceConfirmed": {},
+      "quality": {
+        "gpt4o": "Best",
+        "gemini": "Worst",
+        "aya": "Middle"
+      },
+      "qualityComments": {
+        "gpt4o": "Great translation, great vocabulary and complexity of the text is the same as the source",
+        "gemini": "Great translation, great vocabulary and complexity of the text is the same as the source",
+        "aya": "Great translation, great vocabulary and complexity of the text is the same as the source"
+      },
+      "sourceConfirmed": {
+        "HS-LS1-3": false
+      },
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "gpt4o": true,
+        "gemini": true,
+        "aya": true
+      }
     }
   }
 }
