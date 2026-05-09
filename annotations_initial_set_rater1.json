@@ -2247,11 +2247,24 @@
         2,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "aya": "",
+        "gpt4o": "Middle",
+        "gemini": "Best"
+      },
+      "qualityComments": {
+        "aya": "",
+        "gpt4o": "Good translation because it still conveys the core concept, but it would be better if some of the sentences would be shorter and not such a runoff sentences.",
+        "gemini": ""
+      },
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "aya": true,
+        "gpt4o": true,
+        "gemini": true
+      }
     }
   }
 }
