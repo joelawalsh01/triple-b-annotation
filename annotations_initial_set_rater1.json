@@ -1,5 +1,5 @@
 {
-  "page": 25,
+  "page": 26,
   "data": {
     "14891590": {
       "rater": 1,
@@ -1033,10 +1033,14 @@
         0
       ],
       "quality": {
-        "gpt4o": "Middle"
+        "gpt4o": "Middle",
+        "gemini": "Middle",
+        "aya": "Middle"
       },
       "qualityComments": {
-        "gpt4o": "Not terrible but the source gives a lot of information about different things, while the translation only gives the pollination and not the other examples"
+        "gpt4o": "Not terrible but the source gives a lot of information about different things, while the translation only gives the pollination and not the other examples",
+        "gemini": "Not terrible but the source gives a lot of information about different things, while the translation only gives the pollination and not the other examples",
+        "aya": "Not terrible but the source gives a lot of information about different things, while the translation only gives the pollination and not the other examples"
       },
       "sourceConfirmed": {
         "3-LS1-1": true,
@@ -1067,7 +1071,9 @@
         "5-LS2-1": "he source can be used to support the development of a model to describe the movement of matter among plants, animals, decomposers, and the environment."
       },
       "unlocked": {
-        "gpt4o": false
+        "gpt4o": true,
+        "gemini": true,
+        "aya": true
       }
     },
     "bf7b9a20": {
