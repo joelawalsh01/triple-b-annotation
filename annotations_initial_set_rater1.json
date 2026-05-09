@@ -1,5 +1,5 @@
 {
-  "page": 25,
+  "page": 26,
   "data": {
     "14891590": {
       "rater": 1,
@@ -751,8 +751,8 @@
       },
       "preservation": {
         "3-PS2-2__aya": 3,
-        "3-PS2-2__gpt4o": 3,
-        "3-PS2-2__gemini": 3
+        "3-PS2-2__gpt4o": 2,
+        "3-PS2-2__gemini": 1
       },
       "standardComments": {
         "5-PS2-1": "no argument Great translation with correct examples and key concepts that are given in the source",
