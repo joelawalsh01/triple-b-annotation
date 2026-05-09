@@ -444,7 +444,7 @@
       },
       "qualityComments": {
         "aya": "Good translation, it aims to be as close as possible to the original source",
-        "gpt4o": ""
+        "gpt4o": "Good translation, it aims to be as close as possible to the original source, but uses some vocabulary that can be confusing to some "
       },
       "sourceConfirmed": {
         "MS-LS1-2": true
