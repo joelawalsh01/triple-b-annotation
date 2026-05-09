@@ -2189,9 +2189,13 @@
         "gemini": "Great translation, great vocabulary and complexity of the text is the same as the source",
         "gpt4o": "Great translation, great vocabulary and complexity of the text is the same as the source"
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-LS1-3": false
+      },
       "preservation": {},
-      "standardComments": {},
+      "standardComments": {
+        "HS-LS1-3": ""
+      },
       "unlocked": {
         "aya": true,
         "gemini": true,
