@@ -2804,10 +2804,12 @@
         "gemini": "Worst"
       },
       "qualityComments": {
-        "aya": "while it is close to the source, but ",
-        "gemini": "while "
+        "aya": "while it is close to the source, but sintax wise it goes down in the ranking ",
+        "gemini": "so many erros in vocabulary and syntax make it terrible."
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-LS1-2": false
+      },
       "preservation": {},
       "standardComments": {},
       "unlocked": {
