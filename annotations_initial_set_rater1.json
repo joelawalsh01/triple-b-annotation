@@ -17,14 +17,14 @@
       },
       "preservation": {
         "HS-ESS2-1__gemini": 1,
-        "HS-ESS2-1__gpt4o": 1,
-        "HS-ESS2-1__aya": 1,
+        "HS-ESS2-1__gpt4o": 2,
+        "HS-ESS2-1__aya": 3,
         "HS-ESS2-5__gemini": 1,
-        "HS-ESS2-5__gpt4o": 1,
-        "HS-ESS2-5__aya": 1,
+        "HS-ESS2-5__gpt4o": 2,
+        "HS-ESS2-5__aya": 3,
         "HS-ESS2-2__gemini": 1,
-        "HS-ESS2-2__gpt4o": 1,
-        "HS-ESS2-2__aya": 1
+        "HS-ESS2-2__gpt4o": 2,
+        "HS-ESS2-2__aya": 3
       },
       "standardComments": {
         "HS-ESS2-5": "While the source an only covers the sedimentary rocks these are good stepping stones to plan an investigation. The translations fail to do so. ",
