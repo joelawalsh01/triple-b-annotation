@@ -2833,10 +2833,14 @@
         "gemini": "good translation but over simplified and sintax errors "
       },
       "sourceConfirmed": {
-        "HS-LS1-2": false
+        "HS-LS1-2": false,
+        "HS-LS1-3": false
       },
       "preservation": {},
-      "standardComments": {},
+      "standardComments": {
+        "HS-LS1-2": "source and translation are factual can be later used as a source to cover the standard ",
+        "HS-LS1-3": "source and translation are factual can be later used as a source to cover the standard "
+      },
       "unlocked": {
         "gpt4o": true,
         "gemini": true
