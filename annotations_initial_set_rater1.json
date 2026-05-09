@@ -476,11 +476,18 @@
         2,
         0
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gpt4o": ""
+      },
+      "qualityComments": {
+        "gpt4o": ""
+      },
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "gpt4o": true
+      }
     }
   }
 }
