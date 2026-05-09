@@ -627,7 +627,9 @@
       "sourceConfirmed": {
         "HS-ESS3-1": true,
         "HS-ESS2-1": false,
-        "HS-ESS1-5": true
+        "HS-ESS1-5": true,
+        "HS-ESS2-2": false,
+        "HS-PS4-1": false
       },
       "preservation": {
         "HS-ESS3-1__gemini": 2,
@@ -636,7 +638,8 @@
       },
       "standardComments": {
         "HS-ESS3-1": "source is a partial teaching of this standard the translations are missing key elements of the source",
-        "HS-ESS2-1": "Source does not ask to develop a maiden but it is a goof stepping stone "
+        "HS-ESS2-1": "Source does not ask to develop a maiden but it is a goof stepping stone ",
+        "HS-ESS1-5": "source is a partial teaching of this standard the translations are missing key elements of the source"
       }
     }
   }
