@@ -1,5 +1,5 @@
 {
-  "page": 29,
+  "page": 30,
   "data": {
     "14891590": {
       "rater": 1,
@@ -1198,8 +1198,16 @@
         2,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "aya": "Worst",
+        "gpt4o": "Best",
+        "gemini": "Middle"
+      },
+      "qualityComments": {
+        "aya": "Great translation, vocabulary and examples are great and the complexity is the same as the source.",
+        "gpt4o": "Great translation, vocabulary and examples are great and the complexity is the same as the source.",
+        "gemini": "Great translation, vocabulary and examples are great and the complexity is the same as the source."
+      },
       "sourceConfirmed": {
         "MS-ESS2-5": false,
         "MS-ESS3-2": true
@@ -1212,6 +1220,11 @@
       "standardComments": {
         "MS-ESS2-5": "source and translation only speak on facts of graphs ",
         "MS-ESS3-2": "it is a weak part of the standard but it talks about tornadoes in different months/seasons "
+      },
+      "unlocked": {
+        "aya": true,
+        "gpt4o": true,
+        "gemini": true
       }
     },
     "964eabf3": {
