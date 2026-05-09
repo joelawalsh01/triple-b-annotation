@@ -2045,16 +2045,19 @@
         0
       ],
       "quality": {
-        "gemini": "",
-        "gpt4o": "",
-        "aya": "Middle"
+        "gemini": "Middle",
+        "gpt4o": "Best",
+        "aya": "Worst"
       },
       "qualityComments": {
         "gemini": "",
         "gpt4o": "",
         "aya": "Not a terrible translation, but the translation does not cover as much as the source."
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-LS1-2": false,
+        "HS-LS1-3": false
+      },
       "preservation": {},
       "standardComments": {},
       "unlocked": {
