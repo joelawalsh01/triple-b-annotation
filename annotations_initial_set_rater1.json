@@ -2539,9 +2539,9 @@
         "gpt4o": "Best"
       },
       "qualityComments": {
-        "gemini": "over simplified ",
+        "gemini": "over simplified vocabulary ",
         "aya": "Great translation, great vocabulary and complexity of the text",
-        "gpt4o": "great complexity of the text "
+        "gpt4o": "great complexity of the text, great translation "
       },
       "sourceConfirmed": {},
       "preservation": {},
