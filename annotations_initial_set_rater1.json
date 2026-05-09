@@ -2371,13 +2371,13 @@
         1
       ],
       "quality": {
-        "gpt4o": "",
-        "gemini": "",
+        "gpt4o": "Best",
+        "gemini": "Worst",
         "aya": "Middle"
       },
       "qualityComments": {
-        "gpt4o": "",
-        "gemini": "",
+        "gpt4o": "Great translation and explanation of terms",
+        "gemini": "Vocabulary needs to be less simplified and the ",
         "aya": "Good translation, some minor grammar errors but none that can be overlooked and the text understood"
       },
       "sourceConfirmed": {},
