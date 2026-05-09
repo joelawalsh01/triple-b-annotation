@@ -545,8 +545,16 @@
         2,
         0
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gemini": "Best",
+        "gpt4o": "Best",
+        "aya": "Best"
+      },
+      "qualityComments": {
+        "gemini": "Good overall translation, great for the grade band and age.",
+        "gpt4o": "Good overall translation, great for the grade band and age.",
+        "aya": "Good overall translation, great for the grade band and age."
+      },
       "sourceConfirmed": {
         "4-LS1-1": true,
         "5-LS2-1": true,
@@ -567,6 +575,11 @@
         "4-LS1-1": "source and translation speak on facts on movement in the body partially covering this standard",
         "5-LS2-1": "source and translation speak on facts on movement in the body partially covering this standard",
         "5-PS3-1": "source and translation speak on facts on movement in the body partially covering this standard"
+      },
+      "unlocked": {
+        "gemini": true,
+        "gpt4o": true,
+        "aya": true
       }
     },
     "2ef6a26a": {
