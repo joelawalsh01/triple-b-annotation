@@ -2671,7 +2671,10 @@
         "gemini": "good covering of vocabulary and with the source material ",
         "gpt4o": "Not the best translation, but it is missing too many  details."
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-LS1-2": false,
+        "HS-LS1-3": false
+      },
       "preservation": {},
       "standardComments": {},
       "unlocked": {
