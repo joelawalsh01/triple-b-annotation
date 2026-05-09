@@ -180,7 +180,9 @@
         "5-ESS1-1__aya": 3,
         "5-ESS1-1__gpt4o": 3
       },
-      "standardComments": {}
+      "standardComments": {
+        "5-PS2-1": "while the source and translations are factual, without the facts an argument could not be supported "
+      }
     }
   }
 }
