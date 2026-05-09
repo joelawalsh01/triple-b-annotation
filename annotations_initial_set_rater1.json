@@ -1304,8 +1304,16 @@
         2,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "aya": "Best",
+        "gpt4o": "Worst",
+        "gemini": "Middle"
+      },
+      "qualityComments": {
+        "aya": "Overly simplified translation of the source. If the more detailed explanation would be translated properly it would make more sense",
+        "gpt4o": "Overly simplified translation of the source. If the more detailed explanation would be translated properly it would make more sense",
+        "gemini": "Overly simplified translation of the source. If the more detailed explanation would be translated properly it would make more sense"
+      },
       "sourceConfirmed": {
         "MS-ESS3-5": false,
         "MS-ESS3-4": true,
@@ -1325,6 +1333,11 @@
         "MS-ESS3-4": "source and translation talk about ethical decisions ",
         "MS-ESS3-3": "source and translation talk about ethical decisions ",
         "MS-LS2-4": "source and translation talk about ethical decisions "
+      },
+      "unlocked": {
+        "aya": true,
+        "gpt4o": true,
+        "gemini": true
       }
     },
     "f7097664": {
