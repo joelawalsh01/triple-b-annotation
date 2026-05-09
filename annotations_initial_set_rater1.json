@@ -3089,7 +3089,7 @@
       "quality": {
         "gpt4o": "Middle",
         "aya": "Middle",
-        "gemini": ""
+        "gemini": "Worst"
       },
       "qualityComments": {
         "gpt4o": "Not terrible, it is over simplified but the key concept is understandable",
