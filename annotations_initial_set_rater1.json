@@ -1138,9 +1138,15 @@
         "gpt4o": "Translation is overly simplified, the only sentence that is properly translated is the first sentence.",
         "gemini": "Translation is overly simplified, the only sentence that is properly translated is the first sentence."
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-LS1-2": false,
+        "HS-LS1-1": false
+      },
       "preservation": {},
-      "standardComments": {},
+      "standardComments": {
+        "HS-LS1-2": "source and translations are factual not developing models ",
+        "HS-LS1-1": "no DNA talk in source or translations "
+      },
       "unlocked": {
         "gpt4o": false,
         "gemini": false
