@@ -2479,10 +2479,18 @@
         "gemini": "Great translation, vocabulary and examples are great and the complexity is the same as the source."
       },
       "sourceConfirmed": {
-        "HS-PS1-3": false
+        "HS-PS1-3": false,
+        "HS-PS2-6": false,
+        "HS-PS1-2": false,
+        "HS-PS1-1": false
       },
       "preservation": {},
-      "standardComments": {},
+      "standardComments": {
+        "HS-PS1-3": "source and translation are factual can be later used as a source to cover the standard ",
+        "HS-PS2-6": "source and translation are factual can be later used as a source to cover the standard ",
+        "HS-PS1-2": "source and translation are factual can be later used as a source to cover the standard ",
+        "HS-PS1-1": "source and translation are factual can be later used as a source to cover the standard "
+      },
       "unlocked": {
         "gpt4o": true,
         "aya": true,
