@@ -1,5 +1,5 @@
 {
-  "page": 94,
+  "page": 95,
   "data": {
     "14891590": {
       "rater": 1,
@@ -3302,6 +3302,32 @@
       },
       "noStandardsApply": false,
       "noStandardsProposed": ""
+    },
+    "f3f1e1e9": {
+      "rater": 1,
+      "translationOrder": [
+        1,
+        0,
+        2
+      ],
+      "quality": {
+        "gemini": "",
+        "gpt4o": "Worst",
+        "aya": "Worst"
+      },
+      "qualityComments": {
+        "gemini": "",
+        "gpt4o": "Terrible translation, entirely too simplified. Loses all context in the original source.",
+        "aya": "Terrible translation, entirely too simplified. Loses all context in the original source."
+      },
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {},
+      "unlocked": {
+        "gemini": true,
+        "gpt4o": true,
+        "aya": true
+      }
     }
   }
 }
