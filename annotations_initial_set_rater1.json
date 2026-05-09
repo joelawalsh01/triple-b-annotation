@@ -1102,14 +1102,14 @@
       },
       "preservation": {
         "MS-PS4-1__gpt4o": 3,
-        "MS-PS4-1__aya": 3,
-        "MS-PS4-1__gemini": 3,
+        "MS-PS4-1__aya": 2,
+        "MS-PS4-1__gemini": 1,
         "MS-PS3-5__gpt4o": 3,
-        "MS-PS3-5__aya": 3,
-        "MS-PS3-5__gemini": 3,
+        "MS-PS3-5__aya": 2,
+        "MS-PS3-5__gemini": 1,
         "MS-PS3-4__gpt4o": 3,
-        "MS-PS3-4__aya": 3,
-        "MS-PS3-4__gemini": 3
+        "MS-PS3-4__aya": 2,
+        "MS-PS3-4__gemini": 1
       },
       "standardComments": {
         "MS-PS4-1": "source and translations are able to explain examples of energy and matter interacting",
