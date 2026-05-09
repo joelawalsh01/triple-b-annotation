@@ -1,5 +1,5 @@
 {
-  "page": 7,
+  "page": 8,
   "data": {
     "14891590": {
       "rater": 1,
@@ -338,8 +338,14 @@
         2,
         0
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "aya": "Best",
+        "gpt4o": "Worst"
+      },
+      "qualityComments": {
+        "aya": "Good translation, the source gives details that are not included in the translation.",
+        "gpt4o": "Good translation, the source gives details that are not included in the translation."
+      },
       "sourceConfirmed": {
         "5-ESS1-1": true,
         "5-ESS1-2": false
@@ -352,6 +358,10 @@
       "standardComments": {
         "5-ESS1-1": "while the source and translations are factual, without the facts an argument could not be supported ",
         "5-ESS1-2": "no data in source or translations "
+      },
+      "unlocked": {
+        "aya": true,
+        "gpt4o": true
       }
     },
     "f788a298": {
