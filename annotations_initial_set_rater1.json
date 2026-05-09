@@ -340,11 +340,13 @@
       ],
       "quality": {
         "aya": "Best",
-        "gpt4o": "Worst"
+        "gpt4o": "Middle",
+        "gemini": "Worst"
       },
       "qualityComments": {
         "aya": "Good translation, the source gives details that are not included in the translation.",
-        "gpt4o": "Good translation, the source gives details that are not included in the translation."
+        "gpt4o": "Good translation, the source gives details that are not included in the translation.",
+        "gemini": "Good translation, the source gives details that are not included in the translation."
       },
       "sourceConfirmed": {
         "5-ESS1-1": true,
@@ -361,7 +363,8 @@
       },
       "unlocked": {
         "aya": true,
-        "gpt4o": true
+        "gpt4o": true,
+        "gemini": true
       }
     },
     "f788a298": {
