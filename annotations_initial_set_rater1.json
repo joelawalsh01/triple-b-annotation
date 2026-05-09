@@ -14,7 +14,11 @@
         "5-ESS1-2": false,
         "3-ESS2-1": true
       },
-      "preservation": {},
+      "preservation": {
+        "3-ESS2-1__gemini": 3,
+        "3-ESS2-1__gpt4o": 3,
+        "3-ESS2-1__aya": 3
+      },
       "standardComments": {}
     }
   }
