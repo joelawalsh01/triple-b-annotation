@@ -422,10 +422,14 @@
       "quality": {},
       "qualityComments": {},
       "sourceConfirmed": {
-        "MS-PS2-2": false
+        "MS-PS2-2": false,
+        "MS-PS2-4": false
       },
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {
+        "MS-PS2-2": "this is not covered in the source or translations ",
+        "MS-PS2-4": "this is not covered in the source or translations "
+      }
     }
   }
 }
