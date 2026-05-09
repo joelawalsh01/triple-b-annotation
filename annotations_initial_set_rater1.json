@@ -2377,10 +2377,12 @@
       },
       "qualityComments": {
         "gpt4o": "Great translation and explanation of terms",
-        "gemini": "Vocabulary needs to be less simplified and the ",
+        "gemini": "Vocabulary needs to be less simplified and some sentences do not make as much sense as the source.",
         "aya": "Good translation, some minor grammar errors but none that can be overlooked and the text understood"
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-LS1-1": false
+      },
       "preservation": {},
       "standardComments": {},
       "unlocked": {
