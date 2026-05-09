@@ -1,5 +1,5 @@
 {
-  "page": 90,
+  "page": 91,
   "data": {
     "14891590": {
       "rater": 1,
@@ -3190,6 +3190,34 @@
       },
       "noStandardsApply": false,
       "noStandardsProposed": ""
+    },
+    "b25626a8": {
+      "rater": 1,
+      "translationOrder": [
+        0,
+        1,
+        2
+      ],
+      "quality": {
+        "aya": "Worst",
+        "gemini": "Worst",
+        "gpt4o": "Middle"
+      },
+      "qualityComments": {
+        "aya": "Translation is completely different than the source. The first sentence began with a totally different concept causing the entire translation to lose its meaning",
+        "gemini": "Translation is completely different than the source. The first sentence began with a totally different concept causing the entire translation to lose its meaning",
+        "gpt4o": "Translation is completely different than the source. The first sentence began with a totally different concept causing the entire translation to lose its meaning"
+      },
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {},
+      "noStandardsApply": false,
+      "noStandardsProposed": "",
+      "unlocked": {
+        "aya": true,
+        "gemini": true,
+        "gpt4o": true
+      }
     }
   }
 }
