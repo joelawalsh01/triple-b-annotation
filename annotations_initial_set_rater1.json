@@ -2306,12 +2306,12 @@
         2
       ],
       "quality": {
-        "gemini": "",
+        "gemini": "Worst",
         "gpt4o": "Best",
         "aya": "Best"
       },
       "qualityComments": {
-        "gemini": "",
+        "gemini": "the vocabulary used in the ",
         "gpt4o": "Great translation, vocabulary and examples are great and the complexity is the same as the source.",
         "aya": "Great translation, vocabulary and examples are great and the complexity is the same as the source."
       },
