@@ -1366,11 +1366,18 @@
         2,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gemini": ""
+      },
+      "qualityComments": {
+        "gemini": ""
+      },
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "gemini": true
+      }
     }
   }
 }
