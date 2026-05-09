@@ -1,5 +1,5 @@
 {
-  "page": 63,
+  "page": 65,
   "data": {
     "14891590": {
       "rater": 1,
@@ -2411,11 +2411,15 @@
         "aya": "Great translation, good explanation of concepts and good vocabulary used."
       },
       "sourceConfirmed": {
-        "MS-LS1-2": false
+        "MS-LS1-2": false,
+        "MS-LS1-1": false,
+        "MS-LS1-3": false
       },
       "preservation": {},
       "standardComments": {
-        "MS-LS1-2": ""
+        "MS-LS1-2": "source and translation are factual can be later used as a source to cover the standard ",
+        "MS-LS1-1": "source and translation are factual can be later used as a source to cover the standard ",
+        "MS-LS1-3": "source and translation are factual can be later used as a source to cover the standard "
       },
       "unlocked": {
         "gemini": true,
