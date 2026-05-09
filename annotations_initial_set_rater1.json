@@ -1684,10 +1684,14 @@
         1
       ],
       "quality": {
-        "gemini": "Best"
+        "gemini": "Best",
+        "gpt4o": "Best",
+        "aya": "Best"
       },
       "qualityComments": {
-        "gemini": "Great translation, vocabulary and examples are great and the complexity is the same as the source."
+        "gemini": "Great translation, vocabulary and examples are great and the complexity is the same as the source.",
+        "gpt4o": "Great translation, vocabulary and examples are great and the complexity is the same as the source.",
+        "aya": "Great translation, vocabulary and examples are great and the complexity is the same as the source."
       },
       "sourceConfirmed": {
         "MS-PS3-5": false,
@@ -1703,7 +1707,9 @@
         "MS-PS3-1": "The source and translation only speak on Physics is the study of energy, matter, and their interactions. "
       },
       "unlocked": {
-        "gemini": false
+        "gemini": true,
+        "gpt4o": true,
+        "aya": true
       }
     },
     "5f4678db": {
