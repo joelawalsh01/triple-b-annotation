@@ -1,5 +1,5 @@
 {
-  "page": 86,
+  "page": 87,
   "data": {
     "14891590": {
       "rater": 1,
@@ -3075,6 +3075,34 @@
         "gemini": true,
         "aya": true,
         "gpt4o": true
+      },
+      "noStandardsApply": false,
+      "noStandardsProposed": ""
+    },
+    "693644d2": {
+      "rater": 1,
+      "translationOrder": [
+        2,
+        0,
+        1
+      ],
+      "quality": {
+        "gpt4o": "Middle",
+        "aya": "Middle",
+        "gemini": ""
+      },
+      "qualityComments": {
+        "gpt4o": "Not terrible, it is over simplified but the key concept is understandable",
+        "aya": "Not terrible, it is over simplified but the key concept is understandable",
+        "gemini": ""
+      },
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {},
+      "unlocked": {
+        "gpt4o": true,
+        "aya": true,
+        "gemini": true
       },
       "noStandardsApply": false,
       "noStandardsProposed": ""
