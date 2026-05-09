@@ -2073,11 +2073,28 @@
         1,
         0
       ],
-      "quality": {},
-      "qualityComments": {},
-      "sourceConfirmed": {},
+      "quality": {
+        "gpt4o": "Best",
+        "gemini": "Middle",
+        "aya": "Worst"
+      },
+      "qualityComments": {
+        "gpt4o": "Great translation, great vocabulary and complexity of the text is the same as the source",
+        "gemini": "Great translation, great vocabulary and complexity of the text is the same as the source",
+        "aya": "Great translation, great vocabulary and complexity of the text is the same as the source"
+      },
+      "sourceConfirmed": {
+        "HS-ESS2-1": false,
+        "HS-ESS2-5": false,
+        "HS-ESS1-5": false
+      },
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "gpt4o": true,
+        "gemini": true,
+        "aya": true
+      }
     }
   }
 }
