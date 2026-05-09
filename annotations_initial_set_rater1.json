@@ -1251,11 +1251,19 @@
         "aya": "Great translation, good explanation of concepts and good vocabulary used."
       },
       "sourceConfirmed": {
-        "HS-ESS3-1": false
+        "HS-ESS3-1": false,
+        "HS-ESS3-2": false,
+        "HS-ESS2-2": true
       },
-      "preservation": {},
+      "preservation": {
+        "HS-ESS2-2__gemini": 2,
+        "HS-ESS2-2__gpt4o": 2,
+        "HS-ESS2-2__aya": 2
+      },
       "standardComments": {
-        "HS-ESS3-1": "source and translations only speak on Soil Surveys"
+        "HS-ESS3-1": "source and translations only speak on Soil Surveys and how they are completed ",
+        "HS-ESS3-2": "source and translations only speak on Soil Surveys and how they are completed ",
+        "HS-ESS2-2": "source and translations only speak on Soil Surveys and how they are completed "
       },
       "unlocked": {
         "aya": false
