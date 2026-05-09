@@ -2277,11 +2277,21 @@
         0,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "aya": "",
+        "gemini": ""
+      },
+      "qualityComments": {
+        "aya": "",
+        "gemini": ""
+      },
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "aya": true,
+        "gemini": true
+      }
     }
   }
 }
