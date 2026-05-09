@@ -3030,13 +3030,26 @@
         1,
         2
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "aya": "Best",
+        "gemini": "Middle",
+        "gpt4o": "Worst"
+      },
+      "qualityComments": {
+        "aya": "Over simplified for the grade level and age group. The main idea is clear in both but the delivery is very different than the source. ",
+        "gemini": "Over simplified for the grade level and age group. The main idea is clear in both but the delivery is very different than the source. ",
+        "gpt4o": "too over simplified for the source "
+      },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {},
       "noStandardsApply": false,
-      "noStandardsProposed": ""
+      "noStandardsProposed": "",
+      "unlocked": {
+        "aya": true,
+        "gemini": true,
+        "gpt4o": true
+      }
     }
   }
 }
