@@ -547,8 +547,8 @@
       ],
       "quality": {
         "gemini": "Best",
-        "gpt4o": "Best",
-        "aya": "Best"
+        "gpt4o": "Middle",
+        "aya": "Worst"
       },
       "qualityComments": {
         "gemini": "Good overall translation, great for the grade band and age.",
