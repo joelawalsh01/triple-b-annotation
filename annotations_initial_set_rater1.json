@@ -1094,15 +1094,22 @@
         "gemini": "Great translation, good explanation of concepts and good vocabulary used."
       },
       "sourceConfirmed": {
-        "MS-PS4-1": true
+        "MS-PS4-1": true,
+        "MS-PS3-5": true,
+        "MS-PS3-1": false
       },
       "preservation": {
         "MS-PS4-1__gpt4o": 3,
         "MS-PS4-1__aya": 3,
-        "MS-PS4-1__gemini": 3
+        "MS-PS4-1__gemini": 3,
+        "MS-PS3-5__gpt4o": 3,
+        "MS-PS3-5__aya": 3,
+        "MS-PS3-5__gemini": 3
       },
       "standardComments": {
-        "MS-PS4-1": "source and translations are able to explain examples of energy and matter interacting"
+        "MS-PS4-1": "source and translations are able to explain examples of energy and matter interacting",
+        "MS-PS3-5": "source and translations are able to explain examples of energy and matter interacting",
+        "MS-PS3-1": "source and translations are able to explain examples of energy and matter interacting but can be used as a source later on to be able to cover this "
       },
       "unlocked": {
         "aya": false,
