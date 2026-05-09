@@ -1,5 +1,5 @@
 {
-  "page": 73,
+  "page": 74,
   "data": {
     "14891590": {
       "rater": 1,
@@ -2682,6 +2682,19 @@
         "gemini": true,
         "gpt4o": true
       }
+    },
+    "cd83cec4": {
+      "rater": 1,
+      "translationOrder": [
+        2,
+        1,
+        0
+      ],
+      "quality": {},
+      "qualityComments": {},
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {}
     }
   }
 }
