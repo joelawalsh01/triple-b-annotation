@@ -1313,8 +1313,14 @@
       "sourceConfirmed": {
         "MS-ETS1-1": true
       },
-      "preservation": {},
-      "standardComments": {}
+      "preservation": {
+        "MS-ETS1-1__gemini": 3,
+        "MS-ETS1-1__gpt4o": 2,
+        "MS-ETS1-1__aya": 1
+      },
+      "standardComments": {
+        "MS-ETS1-1": "Source and translations "
+      }
     }
   }
 }
