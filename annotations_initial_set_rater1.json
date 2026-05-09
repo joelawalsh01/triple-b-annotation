@@ -1,5 +1,5 @@
 {
-  "page": 3,
+  "page": 4,
   "data": {
     "14891590": {
       "rater": 1,
@@ -192,8 +192,14 @@
         0,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gpt4o": "Worst",
+        "gemini": "Best"
+      },
+      "qualityComments": {
+        "gpt4o": "Not a terrible translation, some concepts are missing towards the end but the key terms are easily understood.",
+        "gemini": "Not a terrible translation, some concepts are missing towards the end but the key terms are easily understood."
+      },
       "sourceConfirmed": {
         "5-LS1-1": true,
         "5-LS2-1": false,
@@ -216,6 +222,10 @@
         "5-LS1-1": "Source and translations are ok, the partial of the standard is because without the statement the argument cannot be made for the standard. ",
         "4-LS1-1": "Source and translations are ok, the weakness of the standard is because without the statement the argument cannot be made for the standard. ",
         "3-LS4-3": "Source and translations are ok, the partial of the standard is because without the statement the argument cannot be made for the standard. "
+      },
+      "unlocked": {
+        "gpt4o": true,
+        "gemini": true
       }
     },
     "ed326db6": {
