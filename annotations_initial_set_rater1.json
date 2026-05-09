@@ -1,5 +1,5 @@
 {
-  "page": 4,
+  "page": 5,
   "data": {
     "14891590": {
       "rater": 1,
@@ -235,8 +235,14 @@
         1,
         2
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gpt4o": "Worst",
+        "aya": "Middle"
+      },
+      "qualityComments": {
+        "gpt4o": "Good overall translation, examples are translated as the source and  the vocabulary used is consistent with the source and the expected age group and grade band.",
+        "aya": "Good overall translation, examples are translated as the source and  the vocabulary used is consistent with the source and the expected age group and grade band."
+      },
       "sourceConfirmed": {
         "5-PS1-1": false,
         "5-PS1-3": false,
@@ -249,6 +255,10 @@
         "5-PS1-3": "The source is comparing trail mix to a mixture it does not cover or partially cover this standard.",
         "5-PS1-4": "The source is comparing trail mix to a mixture it does not cover or partially cover this standard.",
         "5-PS1-2": "The source is comparing trail mix to a mixture it does not cover or partially cover this standard."
+      },
+      "unlocked": {
+        "gpt4o": true,
+        "aya": true
       }
     },
     "3172ff56": {
