@@ -1,5 +1,5 @@
 {
-  "page": 18,
+  "page": 19,
   "data": {
     "14891590": {
       "rater": 1,
@@ -556,20 +556,20 @@
       },
       "preservation": {
         "HS-ESS2-5__aya": 2,
-        "HS-ESS2-5__gpt4o": 2,
-        "HS-ESS2-5__gemini": 2,
+        "HS-ESS2-5__gpt4o": 3,
+        "HS-ESS2-5__gemini": 1,
         "HS-ESS1-5__aya": 2,
-        "HS-ESS1-5__gpt4o": 2,
-        "HS-ESS1-5__gemini": 2,
+        "HS-ESS1-5__gpt4o": 3,
+        "HS-ESS1-5__gemini": 1,
         "HS-ESS2-7__aya": 2,
         "HS-ESS2-7__gpt4o": 2,
         "HS-ESS2-7__gemini": 2,
         "HS-ESS2-1__aya": 2,
-        "HS-ESS2-1__gpt4o": 2,
-        "HS-ESS2-1__gemini": 2,
+        "HS-ESS2-1__gpt4o": 3,
+        "HS-ESS2-1__gemini": 1,
         "HS-ESS2-6__aya": 2,
-        "HS-ESS2-6__gpt4o": 2,
-        "HS-ESS2-6__gemini": 2
+        "HS-ESS2-6__gpt4o": 3,
+        "HS-ESS2-6__gemini": 1
       },
       "standardComments": {
         "HS-ESS2-5": "While the source and translation only cover the sedimentary rocks these are good stepping stones to be able to conduct an investigation with evidence.",
