@@ -1,5 +1,5 @@
 {
-  "page": 58,
+  "page": 59,
   "data": {
     "14891590": {
       "rater": 1,
@@ -2222,11 +2222,13 @@
         "aya": "over simplified vocabulary but overall good translation "
       },
       "sourceConfirmed": {
-        "HS-ESS2-1": false
+        "HS-ESS2-1": false,
+        "HS-ESS2-5": false
       },
       "preservation": {},
       "standardComments": {
-        "HS-ESS2-1": "Good tr"
+        "HS-ESS2-1": "the source and translations can be used as a source of(factual) for the completion of this standard",
+        "HS-ESS2-5": "the source and translations can be used as a source of(factual) for the completion of this standard"
       },
       "unlocked": {
         "gemini": true,
