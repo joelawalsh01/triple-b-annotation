@@ -1,5 +1,5 @@
 {
-  "page": 85,
+  "page": 86,
   "data": {
     "14891590": {
       "rater": 1,
@@ -3048,6 +3048,32 @@
       "unlocked": {
         "aya": true,
         "gemini": true,
+        "gpt4o": true
+      }
+    },
+    "3dfa7ff5": {
+      "rater": 1,
+      "translationOrder": [
+        1,
+        0,
+        2
+      ],
+      "quality": {
+        "gemini": "Worst",
+        "aya": "",
+        "gpt4o": ""
+      },
+      "qualityComments": {
+        "gemini": "Translation fall apart in the first sentence causing it to lose the entirety of its sense. ",
+        "aya": "",
+        "gpt4o": ""
+      },
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {},
+      "unlocked": {
+        "gemini": true,
+        "aya": true,
         "gpt4o": true
       }
     }
