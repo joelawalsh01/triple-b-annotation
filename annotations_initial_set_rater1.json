@@ -1085,8 +1085,8 @@
       ],
       "quality": {
         "gpt4o": "Middle",
-        "aya": "Best",
-        "gemini": "Worst"
+        "aya": "Worst",
+        "gemini": "Best"
       },
       "qualityComments": {
         "gpt4o": "Great translation, all key concepts, examples go hand in hand with the source.",
@@ -1099,12 +1099,12 @@
         "5-PS1-4": false
       },
       "preservation": {
-        "5-PS1-1__aya": 3,
+        "5-PS1-1__aya": 1,
         "5-PS1-1__gpt4o": 2,
-        "5-PS1-1__gemini": 1,
-        "5-PS1-3__aya": 3,
+        "5-PS1-1__gemini": 3,
+        "5-PS1-3__aya": 1,
         "5-PS1-3__gpt4o": 2,
-        "5-PS1-3__gemini": 1
+        "5-PS1-3__gemini": 3
       },
       "standardComments": {
         "5-PS1-1": "the source and translation can be used to develop a model ",
