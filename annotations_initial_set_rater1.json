@@ -852,9 +852,17 @@
       ],
       "quality": {},
       "qualityComments": {},
-      "sourceConfirmed": {},
-      "preservation": {},
-      "standardComments": {}
+      "sourceConfirmed": {
+        "5-PS1-3": true
+      },
+      "preservation": {
+        "5-PS1-3__gemini": 3,
+        "5-PS1-3__gpt4o": 3,
+        "5-PS1-3__aya": 3
+      },
+      "standardComments": {
+        "5-PS1-3": "the source and translation are factual, can be used to cover the standard later on "
+      }
     }
   }
 }
