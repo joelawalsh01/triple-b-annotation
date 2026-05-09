@@ -1501,12 +1501,14 @@
         1
       ],
       "quality": {
-        "gpt4o": "Worst",
-        "gemini": "Worst"
+        "gpt4o": "Middle",
+        "gemini": "Best",
+        "aya": "Worst"
       },
       "qualityComments": {
         "gpt4o": "Translation is overly simplified, the only sentence that is properly translated is the first sentence.",
-        "gemini": "Translation is overly simplified, the only sentence that is properly translated is the first sentence."
+        "gemini": "Translation is overly simplified, the only sentence that is properly translated is the first sentence.",
+        "aya": "Translation is overly simplified, the only sentence that is properly translated is the first sentence."
       },
       "sourceConfirmed": {
         "HS-LS1-2": false,
@@ -1518,8 +1520,9 @@
         "HS-LS1-1": "no DNA talk in source or translations "
       },
       "unlocked": {
-        "gpt4o": false,
-        "gemini": false
+        "gpt4o": true,
+        "gemini": true,
+        "aya": true
       }
     },
     "fe67d18c": {
