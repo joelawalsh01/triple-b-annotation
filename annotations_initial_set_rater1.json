@@ -2728,9 +2728,23 @@
         "gpt4o": "over complexity of the text ",
         "aya": "slight simplification of vocabulary "
       },
-      "sourceConfirmed": {},
-      "preservation": {},
-      "standardComments": {},
+      "sourceConfirmed": {
+        "HS-PS1-1": false,
+        "HS-PS1-8": true,
+        "HS-PS2-6": false,
+        "HS-PS1-3": false
+      },
+      "preservation": {
+        "HS-PS1-8__gpt4o": 1,
+        "HS-PS1-8__aya": 2,
+        "HS-PS1-8__gemini": 3
+      },
+      "standardComments": {
+        "HS-PS1-8": "source and translation are factual can be later used as a source to cover the standard ",
+        "HS-PS2-6": "source and translation are factual can be later used as a source to cover the standard ",
+        "HS-PS1-1": "source and translation are factual can be later used as a source to cover the standard ",
+        "HS-PS1-3": "source and translation are factual can be later used as a source to cover the standard "
+      },
       "unlocked": {
         "gpt4o": true,
         "aya": true
