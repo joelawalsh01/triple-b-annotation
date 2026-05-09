@@ -1032,11 +1032,15 @@
       "quality": {},
       "qualityComments": {},
       "sourceConfirmed": {
-        "MS-PS1-3": false
+        "MS-PS1-3": false,
+        "MS-LS2-5": false,
+        "MS-ESS3-4": false
       },
       "preservation": {},
       "standardComments": {
-        "MS-PS1-3": "The source and translations are about is the most ethical decision about the Paciﬁc yew"
+        "MS-PS1-3": "The source and translations are about is the most ethical decision about the Paciﬁc yew",
+        "MS-LS2-5": "The source and translations are about is the most ethical decision about the Paciﬁc yew",
+        "MS-ESS3-4": "The source and translations are about is the most ethical decision about the Paciﬁc yew"
       }
     }
   }
