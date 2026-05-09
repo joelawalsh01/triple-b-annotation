@@ -1,5 +1,5 @@
 {
-  "page": 50,
+  "page": 51,
   "data": {
     "14891590": {
       "rater": 1,
@@ -1946,6 +1946,32 @@
         "aya": true,
         "gemini": true,
         "gpt4o": true
+      }
+    },
+    "72cf2c1e": {
+      "rater": 1,
+      "translationOrder": [
+        2,
+        1,
+        0
+      ],
+      "quality": {
+        "gpt4o": "",
+        "gemini": "",
+        "aya": "Worst"
+      },
+      "qualityComments": {
+        "gpt4o": "",
+        "gemini": "",
+        "aya": "Oversimplified translation, the main idea is slightly there but not completely. Details are left out and the complexity is gone."
+      },
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {},
+      "unlocked": {
+        "gpt4o": true,
+        "gemini": true,
+        "aya": true
       }
     }
   }
