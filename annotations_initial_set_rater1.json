@@ -707,10 +707,12 @@
         0
       ],
       "quality": {
-        "gpt4o": "Best"
+        "gpt4o": "Best",
+        "gemini": "Worst"
       },
       "qualityComments": {
-        "gpt4o": "Translation is well translated covering the vocab and goal of the original source"
+        "gpt4o": "Translation is well translated covering the vocab and goal of the original source",
+        "gemini": "Translation is half way translated, its lost the last two sentences but it is overall ok for the grade level and age group"
       },
       "sourceConfirmed": {
         "MS-LS1-1": true,
@@ -720,7 +722,7 @@
       "preservation": {
         "MS-LS1-1__gemini": 2,
         "MS-LS1-1__gpt4o": 3,
-        "MS-LS1-1__aya": 2,
+        "MS-LS1-1__aya": 1,
         "MS-LS1-2__gemini": 2,
         "MS-LS1-2__gpt4o": 3,
         "MS-LS1-2__aya": 1,
@@ -734,7 +736,8 @@
         "MS-LS1-3": "While the source and translation only cover the cell theory these are good stepping stones to be able to conduct an argument  with evidence."
       },
       "unlocked": {
-        "gpt4o": false
+        "gpt4o": true,
+        "gemini": true
       }
     },
     "e8cd8548": {
