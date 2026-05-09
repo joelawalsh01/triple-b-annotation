@@ -1206,11 +1206,21 @@
         2,
         0
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gpt4o": "Middle",
+        "aya": "Middle"
+      },
+      "qualityComments": {
+        "gpt4o": "Good translation because it explains the key concept, but it would be better if it included the sedimentary rock that was excluded from the translation.",
+        "aya": "Good translation because it explains the key concept, but it would be better if it included the sedimentary rock that was excluded from the translation."
+      },
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "gpt4o": true,
+        "aya": true
+      }
     }
   }
 }
