@@ -1,5 +1,5 @@
 {
-  "page": 28,
+  "page": 29,
   "data": {
     "14891590": {
       "rater": 1,
@@ -1162,8 +1162,16 @@
         1,
         0
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "aya": "Best",
+        "gemini": "Middle",
+        "gpt4o": "Worst"
+      },
+      "qualityComments": {
+        "aya": "Great translation, great examples, key concepts are covered properly with proper vocabulary and complexity",
+        "gemini": "Great translation, great examples, key concepts are covered properly with proper vocabulary and complexity",
+        "gpt4o": "Great translation, great examples, key concepts are covered properly with proper vocabulary and complexity"
+      },
       "sourceConfirmed": {
         "5-PS1-1": false,
         "5-PS1-2": false,
@@ -1176,6 +1184,11 @@
         "5-PS1-2": "source and translation only speak on facts of atoms ",
         "5-PS1-3": "source and translation only speak on facts of atoms ",
         "5-PS1-4": "source and translation only speak on facts of atoms "
+      },
+      "unlocked": {
+        "aya": true,
+        "gemini": true,
+        "gpt4o": true
       }
     },
     "a224800d": {
