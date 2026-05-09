@@ -828,11 +828,11 @@
       },
       "preservation": {
         "5-PS1-1__aya": 3,
-        "5-PS1-1__gpt4o": 3,
-        "5-PS1-1__gemini": 3,
+        "5-PS1-1__gpt4o": 2,
+        "5-PS1-1__gemini": 1,
         "5-PS1-3__aya": 3,
-        "5-PS1-3__gpt4o": 3,
-        "5-PS1-3__gemini": 3
+        "5-PS1-3__gpt4o": 2,
+        "5-PS1-3__gemini": 1
       },
       "standardComments": {
         "5-PS1-1": "the source and translation can be used to develop a model ",
