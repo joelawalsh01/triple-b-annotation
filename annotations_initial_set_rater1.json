@@ -1965,7 +1965,12 @@
         "gemini": "",
         "aya": "Oversimplified translation, the main idea is slightly there but not completely. Details are left out and the complexity is gone."
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-ESS2-1": false,
+        "HS-ESS1-5": false,
+        "HS-ESS1-6": false,
+        "HS-ESS2-3": false
+      },
       "preservation": {},
       "standardComments": {},
       "unlocked": {
