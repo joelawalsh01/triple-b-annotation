@@ -1,5 +1,5 @@
 {
-  "page": 39,
+  "page": 40,
   "data": {
     "14891590": {
       "rater": 1,
@@ -1567,8 +1567,16 @@
         2,
         0
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "aya": "Best",
+        "gpt4o": "Middle",
+        "gemini": "Worst"
+      },
+      "qualityComments": {
+        "aya": "Good translation because it still conveys the core concept, but it would be better if the translation would include metamorphism  key concept in the source.",
+        "gpt4o": "Good translation because it still conveys the core concept, but it would be better if the translation would include metamorphism  key concept in the source.",
+        "gemini": "Good translation because it still conveys the core concept, but it would be better if the translation would include metamorphism  key concept in the source."
+      },
       "sourceConfirmed": {
         "HS-ESS2-1": false,
         "HS-ESS1-5": false,
@@ -1583,6 +1591,11 @@
         "HS-ESS2-1": "source and translations are factual and explain Contact Metamorphism",
         "HS-ESS1-5": "source and translations are factual and explain Contact Metamorphism",
         "HS-ESS2-3": "source and translations are factual and explain Contact Metamorphism"
+      },
+      "unlocked": {
+        "aya": true,
+        "gpt4o": true,
+        "gemini": true
       }
     },
     "ee877762": {
