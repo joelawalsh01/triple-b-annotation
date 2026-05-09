@@ -1093,9 +1093,17 @@
         "aya": "Great translation, good explanation of concepts and good vocabulary used.",
         "gemini": "Great translation, good explanation of concepts and good vocabulary used."
       },
-      "sourceConfirmed": {},
-      "preservation": {},
-      "standardComments": {},
+      "sourceConfirmed": {
+        "MS-PS4-1": true
+      },
+      "preservation": {
+        "MS-PS4-1__gpt4o": 3,
+        "MS-PS4-1__aya": 3,
+        "MS-PS4-1__gemini": 3
+      },
+      "standardComments": {
+        "MS-PS4-1": "source and translations are able to explain examples of energy and matter interacting"
+      },
       "unlocked": {
         "aya": false,
         "gemini": false
