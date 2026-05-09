@@ -1894,7 +1894,7 @@
       ],
       "quality": {
         "gpt4o": "Middle",
-        "gemini": "",
+        "gemini": "Best",
         "aya": "Worst"
       },
       "qualityComments": {
@@ -1902,8 +1902,13 @@
         "gemini": "",
         "aya": ""
       },
-      "sourceConfirmed": {},
-      "preservation": {},
+      "sourceConfirmed": {
+        "MS-ESS2-5": false,
+        "MS-ESS3-2": true
+      },
+      "preservation": {
+        "MS-ESS3-2__gpt4o": 3
+      },
       "standardComments": {},
       "unlocked": {
         "gpt4o": true,
