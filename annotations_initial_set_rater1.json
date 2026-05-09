@@ -1,5 +1,5 @@
 {
-  "page": 2,
+  "page": 3,
   "data": {
     "14891590": {
       "rater": 1,
@@ -49,10 +49,10 @@
       "preservation": {
         "3-ESS2-1__gemini": 2,
         "3-ESS2-1__gpt4o": 3,
-        "3-ESS2-1__aya": 2,
+        "3-ESS2-1__aya": 1,
         "3-ESS2-2__gemini": 2,
         "3-ESS2-2__gpt4o": 3,
-        "3-ESS2-2__aya": 2
+        "3-ESS2-2__aya": 1
       },
       "standardComments": {
         "5-ESS1-2": "The goal is to represent data, the passage is stating a fact and not asking to interpret data or look at data. ",
@@ -102,7 +102,7 @@
       "preservation": {
         "4-PS3-2__gpt4o": 2,
         "4-PS3-2__gemini": 3,
-        "4-PS3-2__aya": 2
+        "4-PS3-2__aya": 1
       },
       "standardComments": {
         "3-ESS3-1": "There is a claim on what to do in case of a lightning storm or strike. The translations are able to deliver the same context as the original source in different levels of complexity, not aim for the standard where the goal is to design a solution to a problem ",
