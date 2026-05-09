@@ -2103,11 +2103,21 @@
         2,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gpt4o": "",
+        "gemini": ""
+      },
+      "qualityComments": {
+        "gpt4o": "",
+        "gemini": ""
+      },
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "gpt4o": true,
+        "gemini": true
+      }
     }
   }
 }
