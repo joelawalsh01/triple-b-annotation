@@ -2533,11 +2533,24 @@
         2,
         0
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gemini": "",
+        "aya": "Best",
+        "gpt4o": ""
+      },
+      "qualityComments": {
+        "gemini": "",
+        "aya": "Great translation, great vocabulary and complexity of the text",
+        "gpt4o": ""
+      },
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "gemini": true,
+        "aya": true,
+        "gpt4o": true
+      }
     }
   }
 }
