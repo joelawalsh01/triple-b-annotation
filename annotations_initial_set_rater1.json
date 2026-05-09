@@ -477,16 +477,16 @@
         0
       ],
       "quality": {
-        "gpt4o": ""
+        "gpt4o": "Best"
       },
       "qualityComments": {
-        "gpt4o": ""
+        "gpt4o": "Translation is well translated covering the vocab and goal of the original source"
       },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {},
       "unlocked": {
-        "gpt4o": true
+        "gpt4o": false
       }
     }
   }
