@@ -745,11 +745,13 @@
         "gemini": "Great translation with correct examples and key concepts that are given in the source"
       },
       "sourceConfirmed": {
-        "5-PS2-1": false
+        "5-PS2-1": false,
+        "5-ESS1-2": false
       },
       "preservation": {},
       "standardComments": {
-        "5-PS2-1": "no argument Great translation with correct examples and key concepts that are given in the source"
+        "5-PS2-1": "no argument Great translation with correct examples and key concepts that are given in the source",
+        "5-ESS1-2": "no data for a graph Great translation with correct examples and key concepts that are given in the source"
       },
       "unlocked": {
         "gemini": false
