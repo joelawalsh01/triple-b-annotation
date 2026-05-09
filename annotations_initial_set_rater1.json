@@ -923,9 +923,17 @@
       ],
       "quality": {},
       "qualityComments": {},
-      "sourceConfirmed": {},
-      "preservation": {},
-      "standardComments": {}
+      "sourceConfirmed": {
+        "MS-PS2-1": true
+      },
+      "preservation": {
+        "MS-PS2-1__gemini": 3,
+        "MS-PS2-1__aya": 3,
+        "MS-PS2-1__gpt4o": 3
+      },
+      "standardComments": {
+        "MS-PS2-1": "The source and translations speak on Newton’s third law"
+      }
     }
   }
 }
