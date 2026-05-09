@@ -1257,8 +1257,8 @@
         "HS-ESS3-3": false
       },
       "preservation": {
-        "HS-ESS2-2__gemini": 2,
-        "HS-ESS2-2__gpt4o": 2,
+        "HS-ESS2-2__gemini": 3,
+        "HS-ESS2-2__gpt4o": 1,
         "HS-ESS2-2__aya": 2
       },
       "standardComments": {
