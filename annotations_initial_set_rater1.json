@@ -982,11 +982,11 @@
       },
       "preservation": {
         "MS-ESS3-4__aya": 2,
-        "MS-ESS3-4__gpt4o": 2,
-        "MS-ESS3-4__gemini": 2,
+        "MS-ESS3-4__gpt4o": 1,
+        "MS-ESS3-4__gemini": 3,
         "MS-ESS3-3__aya": 2,
-        "MS-ESS3-3__gpt4o": 2,
-        "MS-ESS3-3__gemini": 2
+        "MS-ESS3-3__gpt4o": 1,
+        "MS-ESS3-3__gemini": 3
       },
       "standardComments": {
         "MS-ESS3-5": "source and translation talk about ethical decisions ",
