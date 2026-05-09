@@ -2284,10 +2284,12 @@
       },
       "qualityComments": {
         "aya": "good complexity of vocabulary, no too simple which makes sense for multiple grade levels ",
-        "gemini": "great translation and vocabulary, ",
+        "gemini": "great translation and vocabulary, good complexity",
         "gpt4o": "Oversimplified material, the source has much more detail that at a fifth grade level students should be able to do. The translation should match complexity but it does not."
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-LS1-2": false
+      },
       "preservation": {},
       "standardComments": {},
       "unlocked": {
