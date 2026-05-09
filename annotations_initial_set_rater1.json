@@ -2763,7 +2763,7 @@
         "gemini": "Best"
       },
       "qualityComments": {
-        "aya": "slight simplification of vocabulary ",
+        "aya": "slight simplification of vocabulary, syntax errors make it the worst if the three ",
         "gpt4o": "Great translation, great vocabulary and complexity of the text is the same as the source some simplification of vocabulary ",
         "gemini": "Great translation, great vocabulary and complexity of the text is the same as the source"
       },
