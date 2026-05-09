@@ -2211,11 +2211,24 @@
         0,
         2
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gemini": "Middle",
+        "gpt4o": "Best",
+        "aya": "Middle"
+      },
+      "qualityComments": {
+        "gemini": "Good translation minor errors but these are ones that are easily understood and overlooked by others. It can be utilized at the grade level and age group",
+        "gpt4o": "",
+        "aya": ""
+      },
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "gemini": true,
+        "gpt4o": true,
+        "aya": true
+      }
     }
   }
 }
