@@ -1,5 +1,5 @@
 {
-  "page": 93,
+  "page": 94,
   "data": {
     "14891590": {
       "rater": 1,
@@ -3274,6 +3274,34 @@
         "gemini": true,
         "aya": true
       }
+    },
+    "ed41b4a5": {
+      "rater": 1,
+      "translationOrder": [
+        0,
+        1,
+        2
+      ],
+      "quality": {
+        "aya": "",
+        "gemini": "Best",
+        "gpt4o": ""
+      },
+      "qualityComments": {
+        "aya": "",
+        "gemini": "Great translation, good explanation of concepts and good vocabulary used.",
+        "gpt4o": ""
+      },
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {},
+      "unlocked": {
+        "aya": true,
+        "gemini": true,
+        "gpt4o": true
+      },
+      "noStandardsApply": false,
+      "noStandardsProposed": ""
     }
   }
 }
