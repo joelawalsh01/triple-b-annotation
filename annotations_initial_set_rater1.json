@@ -3065,8 +3065,8 @@
       },
       "qualityComments": {
         "gemini": "Translation fall apart in the first sentence causing it to lose the entirety of its sense. ",
-        "aya": "",
-        "gpt4o": ""
+        "aya": "close translation to the source no oversimplification ",
+        "gpt4o": "slight oversimplification of the text, but the core "
       },
       "sourceConfirmed": {},
       "preservation": {},
