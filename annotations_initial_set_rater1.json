@@ -211,9 +211,19 @@
       ],
       "quality": {},
       "qualityComments": {},
-      "sourceConfirmed": {},
-      "preservation": {},
-      "standardComments": {}
+      "sourceConfirmed": {
+        "5-ESS1-1": true,
+        "5-ESS1-2": false
+      },
+      "preservation": {
+        "5-ESS1-1__gemini": 2,
+        "5-ESS1-1__gpt4o": 2,
+        "5-ESS1-1__aya": 2
+      },
+      "standardComments": {
+        "5-ESS1-1": "while the source and translations are factual, without the facts an argument could not be supported ",
+        "5-ESS1-2": "no data in source or translations "
+      }
     }
   }
 }
