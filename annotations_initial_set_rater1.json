@@ -850,8 +850,16 @@
         0,
         2
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gemini": "Best",
+        "aya": "Worst",
+        "gpt4o": "Middle"
+      },
+      "qualityComments": {
+        "gemini": "Not a terrible translation, but the translation does not cover as much as the source. Specifically when the source gives multiple examples of what causes injuries when there are earthquakes, the translation only sources one, that is not in the original source.But the tsunami explanation is ok, very simplified but understood.",
+        "aya": "Not a terrible translation, but the translation does not cover as much as the source. Specifically when the source gives multiple examples of what causes injuries when there are earthquakes, the translation only sources one, that is not in the original source.But the tsunami explanation is ok, very simplified but understood.",
+        "gpt4o": "Not a terrible translation, but the translation does not cover as much as the source. Specifically when the source gives multiple examples of what causes injuries when there are earthquakes, the translation only sources one, that is not in the original source.But the tsunami explanation is ok, very simplified but understood."
+      },
       "sourceConfirmed": {
         "HS-ESS3-1": true,
         "HS-ESS2-1": false,
@@ -873,6 +881,11 @@
         "HS-ESS1-5": "source is a partial teaching of this standard the translations are missing key elements of the source",
         "HS-ESS2-2": "Source does not ask to analyze data  but it is a good stepping stone ",
         "HS-PS4-1": "Source does not ask to support a claim   but it is a good stepping stone "
+      },
+      "unlocked": {
+        "gemini": true,
+        "aya": true,
+        "gpt4o": true
       }
     },
     "f1843798": {
