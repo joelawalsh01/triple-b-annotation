@@ -1184,11 +1184,19 @@
       "quality": {},
       "qualityComments": {},
       "sourceConfirmed": {
-        "HS-ESS2-1": false
+        "HS-ESS2-1": false,
+        "HS-ESS1-5": false,
+        "HS-ESS2-3": true
       },
-      "preservation": {},
+      "preservation": {
+        "HS-ESS2-3__gemini": 2,
+        "HS-ESS2-3__gpt4o": 2,
+        "HS-ESS2-3__aya": 2
+      },
       "standardComments": {
-        "HS-ESS2-1": "source and translations are factual and explain Contact Metamorphism"
+        "HS-ESS2-1": "source and translations are factual and explain Contact Metamorphism",
+        "HS-ESS1-5": "source and translations are factual and explain Contact Metamorphism",
+        "HS-ESS2-3": "source and translations are factual and explain Contact Metamorphism"
       }
     }
   }
