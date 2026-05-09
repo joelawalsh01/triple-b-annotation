@@ -1,5 +1,5 @@
 {
-  "page": 95,
+  "page": 96,
   "data": {
     "14891590": {
       "rater": 1,
@@ -3330,6 +3330,32 @@
       },
       "noStandardsApply": false,
       "noStandardsProposed": ""
+    },
+    "f7368a32": {
+      "rater": 1,
+      "translationOrder": [
+        2,
+        0,
+        1
+      ],
+      "quality": {
+        "gemini": "",
+        "aya": "Best",
+        "gpt4o": "Best"
+      },
+      "qualityComments": {
+        "gemini": "",
+        "aya": "Great translation, vocabulary and examples are great and the complexity is the same as the source. ",
+        "gpt4o": "Great translation, vocabulary and examples are great and the complexity is the same as the source. "
+      },
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {},
+      "unlocked": {
+        "gemini": true,
+        "aya": true,
+        "gpt4o": true
+      }
     }
   }
 }
