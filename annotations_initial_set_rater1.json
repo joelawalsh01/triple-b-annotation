@@ -1,5 +1,5 @@
 {
-  "page": 87,
+  "page": 88,
   "data": {
     "14891590": {
       "rater": 1,
@@ -3106,6 +3106,29 @@
       },
       "noStandardsApply": false,
       "noStandardsProposed": ""
+    },
+    "851665a8": {
+      "rater": 1,
+      "translationOrder": [
+        0,
+        1,
+        2
+      ],
+      "quality": {
+        "aya": "Best",
+        "gemini": "Best"
+      },
+      "qualityComments": {
+        "aya": "Good translation, some minor grammar errors but none that can be overlooked and the text understood ",
+        "gemini": "Good translation, some minor grammar errors but none that can be overlooked and the text understood "
+      },
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {},
+      "unlocked": {
+        "aya": true,
+        "gemini": true
+      }
     }
   }
 }
