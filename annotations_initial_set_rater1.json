@@ -1,5 +1,5 @@
 {
-  "page": 43,
+  "page": 44,
   "data": {
     "14891590": {
       "rater": 1,
@@ -1719,8 +1719,16 @@
         0,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gpt4o": "Middle",
+        "aya": "Worst",
+        "gemini": "Best"
+      },
+      "qualityComments": {
+        "gpt4o": "Great translation, vocabulary and examples are great and the complexity is the same as the source.",
+        "aya": "Great translation, vocabulary and examples are great and the complexity is the same as the source.",
+        "gemini": "Great translation, vocabulary and examples are great and the complexity is the same as the source."
+      },
       "sourceConfirmed": {
         "MS-ETS1-1": true,
         "MS-ETS1-4": true,
@@ -1743,6 +1751,11 @@
         "MS-ETS1-1": "Source and translations talk about possible designs are developed for the explanation of gathering of the suns rays ",
         "MS-ETS1-4": "Source and translations talk about possible designs are developed for the explanation of gathering of the suns rays can be used to compare and contrast models ",
         "MS-PS3-3": "Source and translations talk about possible designs are developed for the explanation of gathering of the suns rays can be used as a source to cover this standard "
+      },
+      "unlocked": {
+        "gpt4o": true,
+        "aya": true,
+        "gemini": true
       }
     },
     "fa60ceb8": {
