@@ -2278,19 +2278,22 @@
         1
       ],
       "quality": {
-        "aya": "",
-        "gemini": ""
+        "aya": "Middle",
+        "gemini": "Best",
+        "gpt4o": "Worst"
       },
       "qualityComments": {
-        "aya": "",
-        "gemini": ""
+        "aya": "good complexity of vocabulary, no too simple which makes sense for multiple grade levels ",
+        "gemini": "great translation and vocabulary, ",
+        "gpt4o": "Oversimplified material, the source has much more detail that at a fifth grade level students should be able to do. The translation should match complexity but it does not."
       },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {},
       "unlocked": {
         "aya": true,
-        "gemini": true
+        "gemini": true,
+        "gpt4o": true
       }
     }
   }
