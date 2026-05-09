@@ -2544,14 +2544,21 @@
         "gpt4o": "great complexity of the text, great translation "
       },
       "sourceConfirmed": {
-        "HS-ESS1-5": true
+        "HS-ESS1-5": true,
+        "HS-ESS2-1": true
       },
       "preservation": {
         "HS-ESS1-5__gemini": 1,
         "HS-ESS1-5__gpt4o": 3,
-        "HS-ESS1-5__aya": 2
+        "HS-ESS1-5__aya": 2,
+        "HS-ESS2-1__gemini": 1,
+        "HS-ESS2-1__gpt4o": 3,
+        "HS-ESS2-1__aya": 2
       },
-      "standardComments": {},
+      "standardComments": {
+        "HS-ESS1-5": "source and translation are factual can be later used as a source to cover the standard, but explains the past movement of the tectonic plates ",
+        "HS-ESS2-1": "source and translation are factual can be later used as a source to cover the standard, that can be used to develop the "
+      },
       "unlocked": {
         "gemini": true,
         "aya": true,
