@@ -1,5 +1,5 @@
 {
-  "page": 10,
+  "page": 11,
   "data": {
     "14891590": {
       "rater": 1,
@@ -466,8 +466,14 @@
         0,
         2
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gemini": "Best",
+        "aya": "Middle"
+      },
+      "qualityComments": {
+        "gemini": "Translation is not terrible, but it is missing key concepts that the source explains. Overall the missing key concepts makes this source hard to understand and to utilize in the classroom.",
+        "aya": "Translation is not terrible, but it is missing key concepts that the source explains. Overall the missing key concepts makes this source hard to understand and to utilize in the classroom."
+      },
       "sourceConfirmed": {
         "5-ESS2-2": true,
         "5-ESS2-1": true,
@@ -489,6 +495,10 @@
         "5-ESS2-2": "source and translation speak on facts on freshwater , which can later be used to cover this standard ",
         "5-ESS2-1": "source and translation speak on facts on groundwater , which can later be used to cover this standard ",
         "4-ESS2-2": "source and translation speak on facts on groundwater , which can later be used to cover this standard "
+      },
+      "unlocked": {
+        "gemini": true,
+        "aya": true
       }
     },
     "0756328a": {
