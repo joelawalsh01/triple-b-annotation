@@ -2248,18 +2248,22 @@
         1
       ],
       "quality": {
-        "aya": "",
-        "gpt4o": "Middle",
+        "aya": "Middle",
+        "gpt4o": "Worst",
         "gemini": "Best"
       },
       "qualityComments": {
-        "aya": "",
+        "aya": "Good translation and some simplification but good complexity ",
         "gpt4o": "Good translation because it still conveys the core concept, but it would be better if some of the sentences would be shorter and not such a runoff sentences.",
-        "gemini": ""
+        "gemini": "Good translation and complexity "
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-LS1-2": false
+      },
       "preservation": {},
-      "standardComments": {},
+      "standardComments": {
+        "HS-LS1-2": "the source and translations can be used as a source of(factual) for the completion of this standard"
+      },
       "unlocked": {
         "aya": true,
         "gpt4o": true,
