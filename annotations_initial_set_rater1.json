@@ -1,5 +1,5 @@
 {
-  "page": 18,
+  "page": 19,
   "data": {
     "14891590": {
       "rater": 1,
@@ -8,8 +8,14 @@
         2,
         0
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gpt4o": "Middle",
+        "aya": "Best"
+      },
+      "qualityComments": {
+        "gpt4o": "Translation makes little sense, based on the source. The source does a great job explaining sorting and utilizing the key work sorting. While the translation does not, this causing the translation to be so bad.",
+        "aya": "Translation makes little sense, based on the source. The source does a great job explaining sorting and utilizing the key work sorting. While the translation does not, this causing the translation to be so bad."
+      },
       "sourceConfirmed": {
         "HS-ESS2-5": true,
         "HS-ESS2-1": true,
@@ -30,6 +36,10 @@
         "HS-ESS2-5": "While the source an only covers the sedimentary rocks these are good stepping stones to plan an investigation. The translations fail to do so. ",
         "HS-ESS2-1": "While the source an only covers the sedimentary rocks this is a  good stepping stones to develop a model. The translations fail to do so. ",
         "HS-ESS2-2": "While the source an only covers the sedimentary rocks this is a  good stepping stones to analyze data, the source is factual and can be used later on. The translations fail to do so. "
+      },
+      "unlocked": {
+        "gpt4o": true,
+        "aya": true
       }
     },
     "f496d987": {
