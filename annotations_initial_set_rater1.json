@@ -2122,7 +2122,7 @@
         "HS-ESS2-1__gemini": 3
       },
       "standardComments": {
-        "HS-ESS2-1": "source and translation can be used to "
+        "HS-ESS2-1": "source and translation can be used to cover the standard, but the source doesn't aim to develop a model "
       },
       "unlocked": {
         "gpt4o": true,
