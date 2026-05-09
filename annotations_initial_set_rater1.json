@@ -10,8 +10,15 @@
       ],
       "quality": {},
       "qualityComments": {},
-      "sourceConfirmed": {},
-      "preservation": {},
+      "sourceConfirmed": {
+        "HS-ESS2-5": false,
+        "HS-ESS2-1": true
+      },
+      "preservation": {
+        "HS-ESS2-1__gemini": 2,
+        "HS-ESS2-1__gpt4o": 2,
+        "HS-ESS2-1__aya": 2
+      },
       "standardComments": {}
     },
     "f496d987": {
