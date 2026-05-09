@@ -2308,10 +2308,10 @@
       "quality": {
         "gemini": "Worst",
         "gpt4o": "Best",
-        "aya": "Best"
+        "aya": "Middle"
       },
       "qualityComments": {
-        "gemini": "the vocabulary used in the ",
+        "gemini": "the vocabulary used in the translation is one that no one uses, over complexity making it unusable in the classroom ",
         "gpt4o": "Great translation, vocabulary and examples are great and the complexity is the same as the source.",
         "aya": "Great translation, vocabulary and examples are great and the complexity is the same as the source."
       },
