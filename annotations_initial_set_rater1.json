@@ -594,8 +594,14 @@
         "gpt4o": "Great translation of the source ",
         "aya": "overall ok translations, some parts are overly simplified or overly explained."
       },
-      "sourceConfirmed": {},
-      "preservation": {},
+      "sourceConfirmed": {
+        "HS-LS1-1": true
+      },
+      "preservation": {
+        "HS-LS1-1__gemini": 2,
+        "HS-LS1-1__gpt4o": 3,
+        "HS-LS1-1__aya": 3
+      },
       "standardComments": {},
       "unlocked": {
         "gpt4o": false,
