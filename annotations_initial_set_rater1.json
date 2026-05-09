@@ -2635,11 +2635,21 @@
         0,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "aya": "Best",
+        "gemini": "Middle"
+      },
+      "qualityComments": {
+        "aya": "translation ",
+        "gemini": "Translation has nothing to do with the source."
+      },
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "aya": true,
+        "gemini": true
+      }
     }
   }
 }
