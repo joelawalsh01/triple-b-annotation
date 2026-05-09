@@ -714,7 +714,9 @@
       "qualityComments": {
         "gpt4o": "good translation of the source some words are changed but not terrible."
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "3-ESS2-1": false
+      },
       "preservation": {},
       "standardComments": {},
       "unlocked": {
