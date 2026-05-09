@@ -1956,8 +1956,8 @@
         0
       ],
       "quality": {
-        "gpt4o": "",
-        "gemini": "",
+        "gpt4o": "Best",
+        "gemini": "Middle",
         "aya": "Worst"
       },
       "qualityComments": {
