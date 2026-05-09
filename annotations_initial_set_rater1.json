@@ -2948,8 +2948,8 @@
       ],
       "quality": {
         "gemini": "Middle",
-        "gpt4o": "Middle",
-        "aya": "Middle"
+        "gpt4o": "Best",
+        "aya": "Worst"
       },
       "qualityComments": {
         "gemini": "While the translation is not terrible it is missing small details.  But overall it is understandable and proper to use in the classroom. ",
