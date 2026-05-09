@@ -712,13 +712,13 @@
         "gpt4o": "Middle"
       },
       "qualityComments": {
-        "gpt4o": "good translation of the source "
+        "gpt4o": "good translation of the source some words are changed but not terrible."
       },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {},
       "unlocked": {
-        "gpt4o": true
+        "gpt4o": false
       }
     }
   }
