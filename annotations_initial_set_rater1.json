@@ -3339,9 +3339,9 @@
         1
       ],
       "quality": {
-        "gemini": "",
-        "aya": "Best",
-        "gpt4o": "Middle"
+        "gemini": "Best",
+        "aya": "Middle",
+        "gpt4o": "Worst"
       },
       "qualityComments": {
         "gemini": "",
