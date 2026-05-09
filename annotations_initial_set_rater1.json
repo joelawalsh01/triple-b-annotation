@@ -1343,9 +1343,19 @@
       ],
       "quality": {},
       "qualityComments": {},
-      "sourceConfirmed": {},
-      "preservation": {},
-      "standardComments": {}
+      "sourceConfirmed": {
+        "MS-LS1-3": true,
+        "MS-LS1-1": false
+      },
+      "preservation": {
+        "MS-LS1-3__aya": 1,
+        "MS-LS1-3__gemini": 3,
+        "MS-LS1-3__gpt4o": 2
+      },
+      "standardComments": {
+        "MS-LS1-3": "source and translations talk about Cells Working Together",
+        "MS-LS1-1": "source is factual but it can be used as a source to complete the standard "
+      }
     }
   }
 }
