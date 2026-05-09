@@ -742,13 +742,13 @@
         "gemini": "Best"
       },
       "qualityComments": {
-        "gemini": ""
+        "gemini": "Great translation with correct examples and key concepts that are given in the source"
       },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {},
       "unlocked": {
-        "gemini": true
+        "gemini": false
       }
     }
   }
