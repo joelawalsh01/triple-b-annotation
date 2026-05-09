@@ -669,7 +669,7 @@
         "HS-PS4-5__gpt4o": 2
       },
       "standardComments": {
-        "HS-PS4-5": "The source and translation B are the only ones that are able to present facts that can "
+        "HS-PS4-5": "The source and translation B are the only ones that are able to present facts that can communicate technical information, "
       },
       "unlocked": {
         "gemini": true,
