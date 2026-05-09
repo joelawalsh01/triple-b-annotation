@@ -1,5 +1,5 @@
 {
-  "page": 17,
+  "page": 18,
   "data": {
     "14891590": {
       "rater": 1,
@@ -524,10 +524,10 @@
         "MS-LS1-1__aya": 2,
         "MS-LS1-2__gemini": 2,
         "MS-LS1-2__gpt4o": 3,
-        "MS-LS1-2__aya": 2,
+        "MS-LS1-2__aya": 1,
         "MS-LS1-3__gemini": 2,
         "MS-LS1-3__gpt4o": 3,
-        "MS-LS1-3__aya": 2
+        "MS-LS1-3__aya": 1
       },
       "standardComments": {
         "MS-LS1-1": "While the source and translation only cover the cell theory these are good stepping stones to be able to conduct an investigation with evidence.",
