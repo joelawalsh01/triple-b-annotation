@@ -3060,8 +3060,8 @@
       ],
       "quality": {
         "gemini": "Worst",
-        "aya": "Middle",
-        "gpt4o": ""
+        "aya": "Best",
+        "gpt4o": "Middle"
       },
       "qualityComments": {
         "gemini": "Translation fall apart in the first sentence causing it to lose the entirety of its sense. ",
