@@ -1183,9 +1183,13 @@
       ],
       "quality": {},
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-ESS2-1": false
+      },
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {
+        "HS-ESS2-1": "source and translations are factual and explain Contact Metamorphism"
+      }
     }
   }
 }
