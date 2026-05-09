@@ -194,7 +194,9 @@
       ],
       "quality": {},
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "4-LS1-1": false
+      },
       "preservation": {},
       "standardComments": {}
     }
