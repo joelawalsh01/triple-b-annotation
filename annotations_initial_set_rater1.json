@@ -1,5 +1,5 @@
 {
-  "page": 70,
+  "page": 71,
   "data": {
     "14891590": {
       "rater": 1,
@@ -2598,6 +2598,32 @@
         "gemini": true,
         "gpt4o": true,
         "aya": true
+      }
+    },
+    "16b4d869": {
+      "rater": 1,
+      "translationOrder": [
+        2,
+        0,
+        1
+      ],
+      "quality": {
+        "gpt4o": "Middle",
+        "aya": "Worst",
+        "gemini": "Best"
+      },
+      "qualityComments": {
+        "gpt4o": "syntax's errors and ",
+        "aya": "",
+        "gemini": "Great translation, great vocabulary used and matches complexity of the original source."
+      },
+      "sourceConfirmed": {},
+      "preservation": {},
+      "standardComments": {},
+      "unlocked": {
+        "gpt4o": true,
+        "aya": true,
+        "gemini": true
       }
     }
   }
