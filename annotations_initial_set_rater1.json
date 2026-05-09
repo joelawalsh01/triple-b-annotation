@@ -996,8 +996,8 @@
       ],
       "quality": {
         "gemini": "Best",
-        "aya": "Best",
-        "gpt4o": "Best"
+        "aya": "Worst",
+        "gpt4o": "Middle"
       },
       "qualityComments": {
         "gemini": "Great translation with correct examples and key concepts that are given in the source",
