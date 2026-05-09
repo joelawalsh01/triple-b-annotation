@@ -49,11 +49,21 @@
         1,
         2
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gemini": "",
+        "aya": ""
+      },
+      "qualityComments": {
+        "gemini": "",
+        "aya": ""
+      },
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "gemini": true,
+        "aya": true
+      }
     },
     "f496d987": {
       "rater": 1,
