@@ -595,14 +595,20 @@
         "aya": "overall ok translations, some parts are overly simplified or overly explained."
       },
       "sourceConfirmed": {
-        "HS-LS1-1": true
+        "HS-LS1-1": true,
+        "HS-LS1-2": true
       },
       "preservation": {
         "HS-LS1-1__gemini": 2,
         "HS-LS1-1__gpt4o": 3,
-        "HS-LS1-1__aya": 3
+        "HS-LS1-1__aya": 3,
+        "HS-LS1-2__gemini": 2,
+        "HS-LS1-2__gpt4o": 3,
+        "HS-LS1-2__aya": 3
       },
-      "standardComments": {},
+      "standardComments": {
+        "HS-LS1-1": "While the source an only covers the sedimentary rocks this is a  good stepping stones to develop a model. The translations fail to do so. "
+      },
       "unlocked": {
         "gpt4o": false,
         "aya": false
