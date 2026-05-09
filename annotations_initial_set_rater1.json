@@ -744,9 +744,13 @@
       "qualityComments": {
         "gemini": "Great translation with correct examples and key concepts that are given in the source"
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "5-PS2-1": false
+      },
       "preservation": {},
-      "standardComments": {},
+      "standardComments": {
+        "5-PS2-1": "no argument Great translation with correct examples and key concepts that are given in the source"
+      },
       "unlocked": {
         "gemini": false
       }
