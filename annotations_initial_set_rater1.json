@@ -2963,7 +2963,9 @@
         "gemini": true,
         "gpt4o": true,
         "aya": true
-      }
+      },
+      "noStandardsApply": false,
+      "noStandardsProposed": ""
     }
   }
 }
