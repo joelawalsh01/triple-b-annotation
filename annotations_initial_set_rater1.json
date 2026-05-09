@@ -1244,11 +1244,22 @@
         2,
         0
       ],
-      "quality": {},
-      "qualityComments": {},
-      "sourceConfirmed": {},
+      "quality": {
+        "aya": "Best"
+      },
+      "qualityComments": {
+        "aya": "Great translation, good explanation of concepts and good vocabulary used."
+      },
+      "sourceConfirmed": {
+        "HS-ESS3-1": false
+      },
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {
+        "HS-ESS3-1": "source and translations only speak on Soil Surveys"
+      },
+      "unlocked": {
+        "aya": false
+      }
     }
   }
 }
