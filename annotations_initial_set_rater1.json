@@ -458,8 +458,8 @@
         "MS-LS1-2": "while the source and the translations do not contribute to the entirety of the function of the cells, its only about the Golgi apparatus but a partial part of the standard can be covered with developing and using a model "
       },
       "unlocked": {
-        "aya": true,
-        "gpt4o": true
+        "aya": false,
+        "gpt4o": false
       }
     }
   }
