@@ -821,9 +821,24 @@
       "qualityComments": {
         "gpt4o": "Great translation, all key concepts, examples go hand in hand with the source."
       },
-      "sourceConfirmed": {},
-      "preservation": {},
-      "standardComments": {},
+      "sourceConfirmed": {
+        "5-PS1-1": true,
+        "5-PS1-3": true,
+        "5-PS1-4": false
+      },
+      "preservation": {
+        "5-PS1-1__aya": 3,
+        "5-PS1-1__gpt4o": 3,
+        "5-PS1-1__gemini": 3,
+        "5-PS1-3__aya": 3,
+        "5-PS1-3__gpt4o": 3,
+        "5-PS1-3__gemini": 3
+      },
+      "standardComments": {
+        "5-PS1-1": "the source and translation can be used to develop a model ",
+        "5-PS1-3": "the source and translations are great resources to be able to cover this standard ",
+        "5-PS1-4": "no investigation can come from this standards it is only factual "
+      },
       "unlocked": {
         "gpt4o": false
       }
