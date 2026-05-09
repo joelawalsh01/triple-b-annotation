@@ -942,11 +942,28 @@
         2,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
-      "sourceConfirmed": {},
-      "preservation": {},
-      "standardComments": {}
+      "quality": {
+        "gpt4o": "Best"
+      },
+      "qualityComments": {
+        "gpt4o": "Great translation, vocabulary and examples are great and the complexity is the same as the source."
+      },
+      "sourceConfirmed": {
+        "MS-LS1-2": true,
+        "MS-LS1-1": false,
+        "MS-LS1-3": false
+      },
+      "preservation": {
+        "MS-LS1-2__gpt4o": 3,
+        "MS-LS1-2__aya": 3,
+        "MS-LS1-2__gemini": 3
+      },
+      "standardComments": {
+        "MS-LS1-2": "source and translation speak on the cell and parts of the cell with functions, it can be used to cover this standard "
+      },
+      "unlocked": {
+        "gpt4o": false
+      }
     }
   }
 }
