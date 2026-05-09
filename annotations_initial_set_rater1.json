@@ -2401,12 +2401,12 @@
         0
       ],
       "quality": {
-        "gemini": "",
-        "gpt4o": "",
+        "gemini": "Worst",
+        "gpt4o": "Middle",
         "aya": "Best"
       },
       "qualityComments": {
-        "gemini": "",
+        "gemini": "oversimplification of vocabulary ",
         "gpt4o": "",
         "aya": "Great translation, good explanation of concepts and good vocabulary used."
       },
