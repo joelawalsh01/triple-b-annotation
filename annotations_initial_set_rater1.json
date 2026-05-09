@@ -1,5 +1,5 @@
 {
-  "page": 19,
+  "page": 20,
   "data": {
     "14891590": {
       "rater": 1,
@@ -813,11 +813,13 @@
       ],
       "quality": {
         "gpt4o": "Best",
-        "aya": "Middle"
+        "aya": "Middle",
+        "gemini": "Worst"
       },
       "qualityComments": {
         "gpt4o": "Great translation of the source ",
-        "aya": "overall ok translations, some parts are overly simplified or overly explained."
+        "aya": "overall ok translations, some parts are overly simplified or overly explained.",
+        "gemini": "Good translation based on the source, it is able to convey the same information as the source"
       },
       "sourceConfirmed": {
         "HS-LS1-1": true,
@@ -836,8 +838,9 @@
         "HS-LS1-2": "While the source an only covers the nucleus  this is a  good stepping stones to develop a model . The translations fail to do so. "
       },
       "unlocked": {
-        "gpt4o": false,
-        "aya": false
+        "gpt4o": true,
+        "aya": true,
+        "gemini": true
       }
     },
     "26fb492c": {
