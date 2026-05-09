@@ -268,7 +268,7 @@
         "5-ESS2-2": true,
         "5-ESS2-1": true,
         "5-ESS3-1": true,
-        "4-ESS2-2": false
+        "4-ESS2-2": true
       },
       "preservation": {
         "5-ESS2-2__gpt4o": 2,
@@ -279,13 +279,16 @@
         "5-ESS2-1__gemini": 2,
         "5-ESS3-1__gpt4o": 2,
         "5-ESS3-1__aya": 2,
-        "5-ESS3-1__gemini": 2
+        "5-ESS3-1__gemini": 2,
+        "4-ESS2-2__gpt4o": 2,
+        "4-ESS2-2__aya": 2,
+        "4-ESS2-2__gemini": 2
       },
       "standardComments": {
         "5-ESS2-2": "source and translation speak on facts on groundwater , which can later be used to cover this standard ",
         "5-ESS2-1": "source and translation speak on facts on groundwater , which can later be used to cover this standard ",
         "5-ESS3-1": "source and translation speak on facts on groundwater , which can later be used to cover this standard ",
-        "4-ESS2-2": "source and translation speak on facts on groundwater ,not data driven "
+        "4-ESS2-2": "source and translation speak on facts on groundwater , which can later be used to cover this standard "
       }
     }
   }
