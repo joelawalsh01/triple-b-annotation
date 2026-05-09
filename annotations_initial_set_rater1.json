@@ -2104,19 +2104,22 @@
         1
       ],
       "quality": {
-        "gpt4o": "",
-        "gemini": ""
+        "gpt4o": "Middle",
+        "gemini": "Best",
+        "aya": "Worst"
       },
       "qualityComments": {
-        "gpt4o": "",
-        "gemini": ""
+        "gpt4o": "Great translation, great vocabulary and complexity of the text is the same as the source",
+        "gemini": "Great translation, great vocabulary and complexity of the text is the same as the source",
+        "aya": "Great translation, great vocabulary and complexity of the text is the same as the source"
       },
       "sourceConfirmed": {},
       "preservation": {},
       "standardComments": {},
       "unlocked": {
         "gpt4o": true,
-        "gemini": true
+        "gemini": true,
+        "aya": true
       }
     }
   }
