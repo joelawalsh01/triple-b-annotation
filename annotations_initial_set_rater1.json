@@ -778,7 +778,8 @@
       },
       "sourceConfirmed": {
         "3-LS1-1": true,
-        "4-LS1-1": true
+        "4-LS1-1": true,
+        "5-LS1-1": true
       },
       "preservation": {
         "3-LS1-1__gpt4o": 3,
@@ -786,11 +787,15 @@
         "3-LS1-1__aya": 3,
         "4-LS1-1__gpt4o": 3,
         "4-LS1-1__gemini": 3,
-        "4-LS1-1__aya": 3
+        "4-LS1-1__aya": 3,
+        "5-LS1-1__gpt4o": 3,
+        "5-LS1-1__gemini": 3,
+        "5-LS1-1__aya": 3
       },
       "standardComments": {
         "3-LS1-1": "no development of models but the source and translations can be used further to help cover the standard ",
-        "4-LS1-1": "no argument but the source and translations can be used further to help cover the standard "
+        "4-LS1-1": "no argument but the source and translations can be used further to help cover the standard ",
+        "5-LS1-1": "the source can be used to support the argument that plants get the materials they need for growth chiefly from air and water."
       },
       "unlocked": {
         "gpt4o": false
