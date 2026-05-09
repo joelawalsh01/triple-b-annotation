@@ -1815,7 +1815,8 @@
       },
       "sourceConfirmed": {
         "MS-PS1-4": false,
-        "MS-LS1-2": true
+        "MS-LS1-2": true,
+        "MS-PS3-4": false
       },
       "preservation": {
         "MS-LS1-2__aya": 1,
