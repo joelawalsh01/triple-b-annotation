@@ -519,7 +519,8 @@
       "sourceConfirmed": {
         "HS-ESS2-5": true,
         "HS-ESS1-5": true,
-        "HS-ESS2-7": true
+        "HS-ESS2-7": true,
+        "HS-ESS2-1": true
       },
       "preservation": {
         "HS-ESS2-5__aya": 2,
@@ -530,12 +531,16 @@
         "HS-ESS1-5__gemini": 2,
         "HS-ESS2-7__aya": 2,
         "HS-ESS2-7__gpt4o": 2,
-        "HS-ESS2-7__gemini": 2
+        "HS-ESS2-7__gemini": 2,
+        "HS-ESS2-1__aya": 2,
+        "HS-ESS2-1__gpt4o": 2,
+        "HS-ESS2-1__gemini": 2
       },
       "standardComments": {
         "HS-ESS2-5": "While the source and translation only cover the sedimentary rocks these are good stepping stones to be able to conduct an investigation with evidence.",
         "HS-ESS1-5": "While the source and translation only cover the sedimentary rocks these are good stepping stones to evaluate evidence of past and current movements with evidence.",
-        "HS-ESS2-7": "While the source and translation only cover the sedimentary rocks these are good stepping stones to evaluate evidence of past and current movements with evidence."
+        "HS-ESS2-7": "While the source and translation only cover the sedimentary rocks these are good stepping stones to construct an argument with evidence.",
+        "HS-ESS2-1": "While the source and translation only cover the sedimentary rocks these are good stepping stones to evaluate evidence of past and current movements with evidence."
       }
     }
   }
