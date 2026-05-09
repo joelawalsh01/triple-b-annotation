@@ -508,8 +508,14 @@
         0,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "aya": "Best",
+        "gemini": "Worst"
+      },
+      "qualityComments": {
+        "aya": "Not a terrible translation, the source gives a lot more details that are lost in the translation but, for the target grade it is acceptable.",
+        "gemini": "Not a terrible translation, the source gives a lot more details that are lost in the translation but, for the target grade it is acceptable."
+      },
       "sourceConfirmed": {
         "5-ESS1-1": true,
         "5-PS1-1": false,
@@ -526,6 +532,10 @@
         "5-PS1-1": "source and translation speak on facts on the sun, not covering this standard\n",
         "5-PS3-1": "source and translation speak on facts on the sun, not covering this standard",
         "5-PS1-2": "source and translation speak on facts on the sun, not covering this standard"
+      },
+      "unlocked": {
+        "aya": true,
+        "gemini": true
       }
     },
     "770e7aa3": {
