@@ -624,9 +624,20 @@
       ],
       "quality": {},
       "qualityComments": {},
-      "sourceConfirmed": {},
-      "preservation": {},
-      "standardComments": {}
+      "sourceConfirmed": {
+        "HS-ESS3-1": true,
+        "HS-ESS2-1": false,
+        "HS-ESS1-5": true
+      },
+      "preservation": {
+        "HS-ESS3-1__gemini": 2,
+        "HS-ESS3-1__aya": 2,
+        "HS-ESS3-1__gpt4o": 2
+      },
+      "standardComments": {
+        "HS-ESS3-1": "source is a partial teaching of this standard the translations are missing key elements of the source",
+        "HS-ESS2-1": "Source does not ask to develop a maiden but it is a goof stepping stone "
+      }
     }
   }
 }
