@@ -2514,7 +2514,10 @@
         "aya": "Not a terrible translation but mid way through it the sentences lose its meanings, but vocabulary use is ok ",
         "gemini": "Not a terrible translation but mid way through it the sentences lose its meaning, but vocabulary use is the best "
       },
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "HS-LS1-2": false,
+        "HS-LS1-1": false
+      },
       "preservation": {},
       "standardComments": {},
       "unlocked": {
