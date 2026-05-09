@@ -2511,8 +2511,8 @@
       },
       "qualityComments": {
         "gpt4o": "Not a terrible translation but mid way through it the sentences lose its meaning.",
-        "aya": "Not a terrible translation but mid way through it the sentences lose its meaning.",
-        "gemini": "Not a terrible translation but mid way through it the sentences lose its meaning."
+        "aya": "Not a terrible translation but mid way through it the sentences lose its meanings, but vocabulary use is ok ",
+        "gemini": "Not a terrible translation but mid way through it the sentences lose its meaning, but vocabulary use is the best "
       },
       "sourceConfirmed": {},
       "preservation": {},
