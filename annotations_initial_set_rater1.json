@@ -1130,11 +1130,21 @@
         2,
         1
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gpt4o": "Worst",
+        "gemini": "Worst"
+      },
+      "qualityComments": {
+        "gpt4o": "Translation is overly simplified, the only sentence that is properly translated is the first sentence.",
+        "gemini": "Translation is overly simplified, the only sentence that is properly translated is the first sentence."
+      },
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "gpt4o": false,
+        "gemini": false
+      }
     }
   }
 }
