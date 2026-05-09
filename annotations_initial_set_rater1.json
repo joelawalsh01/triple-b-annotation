@@ -746,12 +746,18 @@
       },
       "sourceConfirmed": {
         "5-PS2-1": false,
-        "5-ESS1-2": false
+        "5-ESS1-2": false,
+        "3-PS2-2": true
       },
-      "preservation": {},
+      "preservation": {
+        "3-PS2-2__aya": 3,
+        "3-PS2-2__gpt4o": 3,
+        "3-PS2-2__gemini": 3
+      },
       "standardComments": {
         "5-PS2-1": "no argument Great translation with correct examples and key concepts that are given in the source",
-        "5-ESS1-2": "no data for a graph Great translation with correct examples and key concepts that are given in the source"
+        "5-ESS1-2": "no data for a graph Great translation with correct examples and key concepts that are given in the source",
+        "3-PS2-2": "the source and translations are factual of events that happen "
       },
       "unlocked": {
         "gemini": false
