@@ -1310,7 +1310,9 @@
       ],
       "quality": {},
       "qualityComments": {},
-      "sourceConfirmed": {},
+      "sourceConfirmed": {
+        "MS-ETS1-1": true
+      },
       "preservation": {},
       "standardComments": {}
     }
