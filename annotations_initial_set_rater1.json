@@ -2690,11 +2690,24 @@
         1,
         0
       ],
-      "quality": {},
-      "qualityComments": {},
+      "quality": {
+        "gpt4o": "",
+        "gemini": "",
+        "aya": "Middle"
+      },
+      "qualityComments": {
+        "gpt4o": "",
+        "gemini": "",
+        "aya": "Good translation, it's slightly simplified for the age group and grade band. But the main idea is there for the text"
+      },
       "sourceConfirmed": {},
       "preservation": {},
-      "standardComments": {}
+      "standardComments": {},
+      "unlocked": {
+        "gpt4o": true,
+        "gemini": true,
+        "aya": true
+      }
     }
   }
 }
