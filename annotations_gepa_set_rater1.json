@@ -1,5 +1,5 @@
 {
-  "page": 6,
+  "page": 7,
   "data": {
     "56690335": {
       "rater": 1,
@@ -42,6 +42,12 @@
       "content_preservation": "B better",
       "spanish_fluency": "B better",
       "comment": "while they both added extra material to the translation, B was able to keep the core vocabulary like the one in the original source "
+    },
+    "5d79a72e": {
+      "rater": 1,
+      "content_preservation": null,
+      "spanish_fluency": null,
+      "comment": ""
     }
   }
 }
