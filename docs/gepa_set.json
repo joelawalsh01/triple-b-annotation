@@ -1,0 +1,624 @@
+{
+  "$schema": "gepa-rater-set/1.0",
+  "description": "GEPA Set 2: Aya 8B with optimized prompt vs Aya 8B with seed prompt. Both translations were generated on the same Aya 8B model; only the prompt differs. Raters compare A vs B on TWO independent dimensions.",
+  "source_run_module_json": "output/qwen_optimized_20260510_061835_module.json",
+  "source_run_eval_json": "output/qwen_optimized_20260510_061835_eval.json",
+  "generated_utc": "2026-05-10T07:18:30Z",
+  "student_model": "ollama/aya:8b",
+  "n_passages": 30,
+  "n_dropped_set": 27,
+  "n_val_set": 3,
+  "rater_questions": [
+    {
+      "key": "content_preservation",
+      "question": "Which translation better preserves the content of the English source?",
+      "options": [
+        "A better",
+        "B better",
+        "Tie / cannot determine"
+      ]
+    },
+    {
+      "key": "spanish_fluency",
+      "question": "Which translation has better Spanish fluency (grammar, naturalness, terminology)?",
+      "options": [
+        "A better",
+        "B better",
+        "Tie / cannot determine"
+      ]
+    },
+    {
+      "key": "comment",
+      "question": "Optional comment",
+      "type": "freetext"
+    }
+  ],
+  "blinding_key": "_blinding",
+  "blinding_note": "_blinding maps {A,B} -> {optimized,seed}. NOT to be shown to raters. Used only to unblind for analysis after both raters submit.",
+  "prompts_used": {
+    "seed_system_prompt": "You are an expert Spanish translator of K-12 science textbook passages. Produce translations that preserve all scientific content of the source: every example, definition, named entity, number, and causal explanation. Do not oversimplify, summarize, or omit content. Match the source's level of detail and sentence structure. Use accepted Spanish scientific terminology.",
+    "seed_translation_instructions": "Translate the following English science passage to Spanish for {target_grade} students (ages {target_age}). Domain: {domain}. Subject: {subject}.\n\nProduce a complete Spanish translation. Do not skip content. Do not summarize. Maintain the source's scope and specificity.",
+    "optimized_system_prompt": "You are an expert Spanish translator of K-12 science textbook passages. Your goal is to produce high-fidelity translations that preserve every element of the source text without addition, omission, or simplification.\n\nFollow these strict guidelines:\n\n1. **Zero-Addition Policy (No Preambles or Postscripts):** \n   - Output **ONLY** the translated Spanish text. \n   - Do NOT include introductory phrases (e.g., \"Here is the translation...\"), concluding remarks, explanations, or meta-commentary. \n   - Do NOT mention NGSS standards, grading rubrics, or evaluation metrics in the output.\n\n2. **Content Fidelity & Completeness:**\n   - Preserve ALL scientific content, including examples, definitions, named entities, numbers, figures, table references, and causal explanations.\n   - Do NOT oversimplify, summarize, paraphrase for brevity, or omit any details.\n   - Match the source's level of detail exactly. If the source uses complex sentence structures, maintain that complexity in the translation unless it results in grammatically incorrect Spanish.\n\n3. **Terminology & Tone:**\n   - Use accepted, standard Spanish scientific terminology appropriate for the specified grade level (e.g., \"gráficos en línea\" or \"gráficos de líneas\" for \"line graphs\"; \"células especializadas\" for \"specialized cells\").\n   - Maintain the pedagogical tone of the original textbook. The translation should be accessible to the target age group (as specified in the input) but must not dumb down the scientific concepts.\n\n4. **Formatting & Structure:**\n   - Preserve the original formatting, including paragraph breaks, question/answer pairs, figure references (e.g., \"Figure 1.41\"), and table citations (e.g., \"Table 1.8\").\n   - Ensure that sentence counts generally align with the source; do not split sentences unnecessarily or merge them if it alters the structural rhythm of the textbook.\n\n5. **Input Format:**\n   You will receive inputs containing:\n   - Target grade/age group.\n   - Domain and Subject.\n   - The English passage to translate.\n\n6. **Output Format:**\n   - Provide only the raw Spanish translation of the passage.\n\nExample of correct output behavior:\nInput: \"Line graphs are especially useful...\"\nOutput: \"Los gráficos en línea son especialmente útiles...\"\n\nInput: \"Specialized Cells: All cells...\"\nOutput: \"Células especializadas: Todas las células...\"\n\nDo not explain your translation choices. Do not comment on the quality. Do not add filler text.",
+    "optimized_translation_instructions": "Translate the following English science passage to Spanish for {target_grade} students (ages {target_age}). Domain: {domain}. Subject: {subject}.\n\nProduce a complete Spanish translation. Do not skip content. Do not summarize. Maintain the source's scope and specificity."
+  },
+  "passages": [
+    {
+      "page_id": "0032f708",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "no_models_succeeded",
+      "english_text": "What are carnivores and omnivores? Lions and hawks eat other animals. They are carnivores. A carnivore is an animal that eats other animals. Some animals eat plants and animals. For example, a bear eats berries, leaves, mice, and squirrels. A bear is an omnivore. An omnivore is an animal that eats plants and animals. Raccoons and wasps are omnivores. People are omnivores. Some animals hunt the animals they eat. Animals that hunt other animals for food are predators.",
+      "domain": "Life Science",
+      "subject": "Living Things Need Energy",
+      "textbook_grade": "4",
+      "target_grade": null,
+      "target_age": "9-10",
+      "standards": [],
+      "translation_A": "Los carnívoros y los omnívoros son animales que se alimentan de otros animales o de plantas, según el caso. Los león y los halcones son carnívoros; se alimentan de otros animales. Un carnívoro es un animal que come carne, es decir, la proteína de otros animales. Por ejemplo, un oso come bayas, hojas, ratones y ardillas. Es un omnívoro. Un omnívoro es un animal que come tanto plantas como animales. Los tejones y las avispas también son omnívoros. Los humanos somos omnívoros también. Algunos animales cazan a los animales que comen; estos se llaman depredadores.",
+      "translation_B": "Aquí está la traducción del pasaje de ciencias para estudiantes de 9 y 10 años sobre los animales que necesitan energía:\n\n¿Qué son los carnívoros y los omnívoros? Los leones y las águilas comen a otros animales. Ellos son carnívoros. Un carnívoro es un animal que come a otros animales. Algunos animales comen plantas y animales. Por ejemplo, un oso come bayas, hojas, ratones y ardillas. Un oso es un omnívoro. Un omnívoro es un animal que come plantas y animales. Las comadrejas y las avispas son omnívoras. Las personas también lo son. Algunos animales cazan a los animales que comen. Los animales que cazan a otros animales para alimentarse se llaman depredadores.\n\nEn esta traducción, he mantenido el nivel de detalle y la estructura de las oraciones del pasaje original, asegurándome de incluir todos los ejemplos y explicaciones causales. También utilicé términos científicos aceptados en español para describir las características de los diferentes tipos de animales.",
+      "_blinding": {
+        "A": "optimized",
+        "B": "seed"
+      }
+    },
+    {
+      "page_id": "05de3db3",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "no_models_succeeded",
+      "english_text": "Why do we see different stars during different seasons? The night sky looks different from one season to the next. This is because Earth revolves around the Sun during the year. We face one direction on a summer night. We face another direction on a winter night.",
+      "domain": "Earth and Space Science",
+      "subject": "Our Solar System",
+      "textbook_grade": "3",
+      "target_grade": null,
+      "target_age": "8-9",
+      "standards": [],
+      "translation_A": "Por qué vemos diferentes estrellas en diferentes estaciones? El cielo nocturno parece diferente de una estación a otra. Esto es porque la Tierra gira alrededor del Sol durante el año. En verano, enfrentamos una dirección en una noche de invierno, enfrentamos otra dirección.",
+      "translation_B": "¿Por qué vemos diferentes estrellas en diferentes estaciones? El cielo nocturno parece diferente de una temporada a otra. Esto es porque la Tierra orbita alrededor del Sol durante el año. En verano, nos enfrentamos en una dirección en una noche de invierno.",
+      "_blinding": {
+        "A": "seed",
+        "B": "optimized"
+      }
+    },
+    {
+      "page_id": "1b47068e",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "no_models_succeeded",
+      "english_text": "What are physical changes? Matter can change. A physical change is a change in how matter looks. It looks different, but it is still the same kind of matter. When you tear paper, you make a physical change. The paper is in pieces, but it is still paper.",
+      "domain": "Physical Science",
+      "subject": "Matter",
+      "textbook_grade": "3",
+      "target_grade": null,
+      "target_age": "8-9",
+      "standards": [],
+      "translation_A": "¿Qué son los cambios físicos? La materia puede cambiar. Un cambio físico es un cambio en la forma en que se ve la materia. Se ve diferente, pero sigue siendo del mismo tipo de materia. Cuando rasgas un papel, haces un cambio físico. El papel está en pedazos, pero sigue siendo papel.",
+      "translation_B": "Aquí está la traducción del pasaje de ciencia de física sobre los cambios físicos en español, dirigida a estudiantes de 8-9 años:\n\n¿Qué son los cambios físicos? La materia puede cambiar. Un cambio físico es un cambio en cómo se ve la materia. Se ve diferente, pero sigue siendo del mismo tipo de materia. Cuando rasgas un papel, estás haciendo un cambio físico. El papel está en pedazos, pero todavía es papel.\n\nEn este pasaje, se introduce el concepto de cambios físicos en la materia. Se explica que un cambio físico implica una alteración en la apariencia o forma de la materia, pero sin cambiar su naturaleza o tipo básico. El ejemplo utilizado es el de rasgar un papel, lo que resulta en su separación en pedazos, pero manteniendo su identidad como papel. Este pasaje es una introducción básica a la idea de cambios físicos y su impacto en la materia.",
+      "_blinding": {
+        "A": "optimized",
+        "B": "seed"
+      }
+    },
+    {
+      "page_id": "a4ac89d7",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "no_models_succeeded",
+      "english_text": "How can we use electricity safely? Here are two tips for using electricity safely: bared wires - Be sure the coating around a wire is unbroken. The coating is an insulator. If the coating tears and the wire is bared, the wire can touch another wire. A short circuit can heat the wire and start a fire. overloaded - outlets Never plug too many devices into one outlet. They can overheat circuits in the wall and start a fire.",
+      "domain": "Physical Science",
+      "subject": "Electricity",
+      "textbook_grade": "4",
+      "target_grade": null,
+      "target_age": "9-10",
+      "standards": [],
+      "translation_A": "Cómo podemos usar la electricidad de manera segura? Aquí hay dos consejos para usar la electricidad de manera segura: cables desnudos - Asegúrate de que el aislamiento de un cable no esté dañado. El aislamiento es un aislante. Si el aislamiento se rasga y se exponen los cables, estos pueden tocarse entre sí. Un cortocircuito puede hacer que los cables se caliente y causen un incendio. enchufes - No enchufes demasiados dispositivos en un solo enchufe. Pueden sobrecalentar las circuitos en la pared y causar un incendio.",
+      "translation_B": "Aquí hay dos consejos para usar la electricidad de manera segura:\n\n**Punta 1: Asegurar los cables expuestos:**\n\nAsegúrate de que el aislamiento de un cable no esté dañado. El aislamiento es un material aislante que rodea el cable y evita que la electricidad se escape o cause un cortocircuito. Si el aislamiento se rompe y se exponen los cables, pueden tocarse entre sí y causar un cortocircuito. Un cortocircuito puede hacer que el cable se sobrecaliente y comience un incendio.\n\n**Punta 2: No sobrecargar las tomas de corriente:**\n\nNo enchufes demasiados dispositivos en una sola toma de corriente. Esto puede sobrecalentar los cables y las conexiones dentro de la pared, lo que podría provocar un incendio. Siempre usa varias tomas de corriente cuando sea necesario para evitar sobrecargar una sola toma de corriente.\n\nRecuerda siempre tener precaución al manejar equipos eléctricos. La seguridad es lo primero.",
+      "_blinding": {
+        "A": "optimized",
+        "B": "seed"
+      }
+    },
+    {
+      "page_id": "440df353",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "one_model_succeeded",
+      "english_text": "What are atoms? Elements are made up of tiny parts called atoms. An atom is the smallest part of an element that still has the properties of that element. All atoms of an element are the same. Atoms are too small to see with our eyes. Scientists must use tools to observe them. A microscope is one of these tools. A powerful microscope can make atoms appear much larger.",
+      "domain": "Physical Science",
+      "subject": "Matter",
+      "textbook_grade": "3",
+      "target_grade": null,
+      "target_age": "8-9",
+      "standards": [],
+      "translation_A": "Los átomos son unas partitas diminutas que componen los elementos. Un átomo es la porción más pequeña de un elemento que conserva las características de ese elemento. Todos los átomos de un mismo elemento son iguales. Los átomos son tan pequeños que no podemos verlos a simple vista. Los científicos necesitan utilizar herramientas para observarlos. El microscopio es una de esas herramientas. Con un microscopio potente, los átomos pueden parecer mucho más grandes.",
+      "translation_B": "Aquí está la traducción del pasaje de ciencia de nivel K-12 sobre materia y átomos:\n\n¿Qué son los átomos? Los elementos están formados por partes diminutas llamadas átomos. Un átomo es la parte más pequeña de un elemento que aún conserva las propiedades de ese elemento. Todos los átomos de un elemento son iguales. Los átomos son demasiado pequeños para ser vistos a simple vista. Los científicos necesitan utilizar herramientas para observarlos. Un microscopio es una de esas herramientas. Un microscopio potente puede hacer que los átomos parezcan mucho más grandes.\n\nEspero que esta traducción sea útil para tus estudiantes de 8 y 9 años interesados en la ciencia física. No dudes en pedirme cualquier aclaración o traducción adicional. ¡La ciencia no tiene límites!",
+      "_blinding": {
+        "A": "optimized",
+        "B": "seed"
+      }
+    },
+    {
+      "page_id": "56690335",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "one_model_succeeded",
+      "english_text": "What are the planets? The four planets closest to the Sun are Mercury, Venus, Earth, and Mars. These are the inner planets. They are warmer than the other planets because they are closer to the Sun. The four planets farthest from the Sun are Jupiter, Saturn, Uranus, and Neptune. They are the outer planets. Jupiter, Saturn, Uranus, and Neptune are the largest planets in the solar system. The solar system also has some dwarf planets. Pluto is now called a dwarf planet.",
+      "domain": "Earth and Space Science",
+      "subject": "Our Solar System",
+      "textbook_grade": "3",
+      "target_grade": null,
+      "target_age": "8-9",
+      "standards": [],
+      "translation_A": "Aquí está la traducción del pasaje de ciencia de K-12 sobre nuestro sistema solar:\n\n¿Qué son los planetas? Los cuatro planetas más cercanos al Sol son Mercurio, Venus, Tierra y Marte. Estos son los planetas interiores. Son más cálidos que los demás planetas porque están más cerca del Sol. Los cuatro planetas más alejados del Sol son Júpiter, Saturno, Urano y Neptuno. Estos son los planetas exteriores. Júpiter, Saturno, Urano y Neptuno son los planetas más grandes en el sistema solar. El sistema solar también tiene algunos planetas enano. Plutón ahora se considera un planeta enano.\n\nEsta traducción mantiene todo el contenido científico del pasaje original, incluyendo ejemplos, definiciones, entidades nombradas, números y explicaciones causales. Se adapta al nivel de detalle y estructura de oraciones del texto fuente y utiliza terminología científica española aceptada.",
+      "translation_B": "Qué son los planetas? Los cuatro planetas más cercanos al Sol son Mercurio, Venus, Tierra y Marte. Estos son los planetas internos. Son más cálidos que los otros planetas porque están más cerca del Sol. Los cuatro planetas más distantes del Sol son Júpiter, Saturno, Urano y Neptuno. Ellos son los planetas externos. Júpiter, Saturno, Urano y Neptuno son los planetas más grandes en el sistema solar. El sistema solar también tiene algunos planetas enanos. Plutón ahora se considera un planeta enano.",
+      "_blinding": {
+        "A": "seed",
+        "B": "optimized"
+      }
+    },
+    {
+      "page_id": "5cc11d23",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "one_model_succeeded",
+      "english_text": "Vocabulary: 1. axis: a line through the middle of a spinning thing. 2. lunar cycle: the time it takes the Moon to go through all its phases. 3. orbit: the path an object takes as it moves around another object. 4. phase: any shape of the Moon that we see. 5. revolve: to move around another object in a circular path. 6. rotate: to spin or turn.",
+      "domain": "Earth and Space Science",
+      "subject": "Our Earth, Sun, and Moon",
+      "textbook_grade": "3",
+      "target_grade": null,
+      "target_age": "8-9",
+      "standards": [],
+      "translation_A": "axis: un eje; lunar cycle: ciclo lunar; orbit: órbita; phase: fase; revolve: girar; rotate: rotar.\n\nLa Tierra, el Sol y la Luna giran y se mueven en diferentes trayectorias. El axys de la Tierra es una línea imaginaria que pasa por su centro mientras gira. Este eje es importante porque determina las estaciones y cómo gira la Tierra.\n\nEl ciclo lunar es el tiempo que tarda la Luna en pasar por todas sus fases. Las fases de la Luna son los diferentes formas que toma la Luna en el cielo nocturno. Estas fases incluyen la luna nueva, la luna creciente, la luna llena y la luna menguante.\n\nLa Luna orbita alrededor de la Tierra mientras la Tierra orbita alrededor del Sol. La Luna gira alrededor de la Tierra una vez cada 27,3 días, lo que es un ciclo lunar. Durante este tiempo, la Luna pasa por sus diferentes fases.\n\n¿Te has preguntado alguna vez por qué la Luna a veces parece estar llana y otras veces llena? Pues esto tiene explicación. La Luna gira sobre sí misma mientras orbita alrededor de la Tierra, lo que significa que desde nuestra perspectiva en la Tierra, vemos diferentes partes de la luna iluminada a medida que orbita.\n\nLa rotación de la Tierra y su órbita alrededor del Sol también son importantes para comprender nuestro mundo. La Tierra tarda aproximadamente 365 días en completar una órbita alrededor del Sol, lo que es un año. La rotación de la Tierra, o el giro de la Tierra sobre su eje, dura solo 24 horas, lo que es un día.",
+      "translation_B": "Aquí está la traducción del pasaje de ciencia para estudiantes de 8-9 años sobre la Tierra, el Sol y la Luna:\n\nVocabulario:\n\n1. eje: una línea que pasa por el centro de algo que gira.\n2. ciclo lunar: el tiempo que tarda la Luna en pasar por todas sus fases.\n3. órbita: el camino que sigue un objeto al moverse alrededor de otro objeto.\n4. fase: cualquier forma que toma la Luna y que podemos ver.\n5. revolucionar: moverse alrededor de otro objeto en un camino circular.\n6. rotar: girar o turnar.\n\nNuestra Tierra, el Sol y la Luna son tres cuerpos celestes importantes en nuestro sistema solar. La Tierra es nuestro hogar y es un planeta dinámico que gira y orbita alrededor del Sol. Por otro lado, la Luna es un satélite natural de la Tierra que también orbita a nuestro planeta. Tanto la Tierra como la Luna giran sobre sus propios ejes, lo que significa que rotan sobre sus centros.\n\nEl eje de la Tierra está orientado hacia una dirección específica, lo que hace que el planeta gire en una dirección particular mientras orbita alrededor del Sol. Esta orientación del eje es lo que determina las estaciones y causa cambios en la cantidad de luz solar que llega a diferentes partes del planeta.\n\nLa Luna también tiene su propio eje y, al igual que la Tierra, gira sobre su eje. Esto significa que la Luna también experimenta días y noches, aunque sus ciclos son un poco diferentes debido a su tamaño y distancia desde la Tierra.\n\nLa Luna orbita alrededor de la Tierra en una trayectoria elíptica. Esto significa que la distancia entre la Luna y la Tierra varía a lo largo del tiempo. Cuando la Luna está más cerca de la Tierra, se le llama перигея; cuando está más lejos, se le llama апогея. Estos términos describen las partes de la órbita de la Luna donde está más cerca y más lejos de nuestro planeta.\n\nEl ciclo lunar se refiere al tiempo que tarda la Luna en pasar por todas sus fases. Estas fases incluyen la Luna Nueva, la Luna Creciente, la Luna Llena y la Luna Decadente. Cada una de estas fases tiene un aspecto único que podemos observar desde la Tierra. El ciclo lunar es importante porque afecta las mareas en los océanos y también influye en ciertos eventos celestes, como los eclipses.\n\nTanto la Tierra como la Luna giran sobre sus ejes y orbitan alrededor del Sol, lo que las hace esenciales para la vida en nuestro planeta y para el fascinante baile de los cuerpos celestes en nuestro sistema solar.",
+      "_blinding": {
+        "A": "optimized",
+        "B": "seed"
+      }
+    },
+    {
+      "page_id": "5d79a72e",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "one_model_succeeded",
+      "english_text": "How do we classify matter? Matter can take three states: solid, liquid, gas A solid takes up a certain amount of space. It also keeps its shape. Most of the things you see are solids. A liquid also takes up a certain amount of space. However, it does not keep its shape. A liquid takes the shape of the thing that holds it. A gas, like a liquid, does not keep its shape. Unlike a liquid, a gas spreads out to fill different amounts of space. You cannot see most gases, but you know a gas is inside these balloons because it gives them their shape.",
+      "domain": "Physical Science",
+      "subject": "Matter",
+      "textbook_grade": "3",
+      "target_grade": null,
+      "target_age": "8-9",
+      "standards": [],
+      "translation_A": "¿Cómo clasificamos la materia? La materia puede existir en tres estados: sólido, líquido y gas. Un sólido ocupa un espacio determinado y mantiene su forma. La mayoría de las cosas que ves son sólidos. Un líquido también ocupa un espacio determinado, pero no mantiene su forma. Adopta la forma del recipiente que lo contiene. Un gas, al igual que un líquido, no mantiene su forma. A diferencia de un líquido, un gas se extiende para llenar diferentes cantidades de espacio. No puedes ver la mayoría de los gases, pero sabes que están dentro de estos globos porque les dan forma.",
+      "translation_B": "Aquí está la traducción del pasaje de ciencia de K-12 sobre la materia:\n\n**¿Cómo clasificamos la materia?** La materia puede existir en tres estados: sólido, líquido y gaseoso. Un sólido ocupa un espacio determinado y mantiene su forma. La mayoría de las cosas que ves son sólidos. Un líquido también ocupa un espacio determinado, pero no mantiene su forma. Un líquido adopta la forma del recipiente que lo contiene. Un gas, al igual que un líquido, no mantiene su forma. A diferencia de un líquido, un gas se extiende para ocupar diferentes cantidades de espacio. No puedes ver la mayoría de los gases, pero sabes que están dentro de estos globos porque les dan forma.\n\nEsta traducción mantiene el nivel de detalle y la estructura gramatical del pasaje original, asegurándose de transmitir toda la información científica relevante en español.",
+      "_blinding": {
+        "A": "optimized",
+        "B": "seed"
+      }
+    },
+    {
+      "page_id": "5e732f56",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "one_model_succeeded",
+      "english_text": "What are herbivores? In a food chain, the first consumer is an animal that eats a plant. For example, a gopher is a plant eater. A gopher is a herbivore. A herbivore is an animal that eats mostly plants. Deer, rabbits, grasshoppers, squirrels, and cows are herbivores. Herbivores are food for other animals. The word for an animal that is hunted by another animal for food is prey. All the animals here are prey for some larger or stronger animal.",
+      "domain": "Life Science",
+      "subject": "Living Things Need Energy",
+      "textbook_grade": "4",
+      "target_grade": null,
+      "target_age": "9-10",
+      "standards": [],
+      "translation_A": "Los herbívoros son animales que comen principalmente plantas. Las ardillas, los ciervos, las liebres, las saltamontes y los vacunos también pertenecen a esta categoría. Los herbívoros son una parte importante de la cadena alimentaria; sirven como alimento para otros animales. El término que describe a un animal que es cazado por otro para ser comido es presa. Todos estos animales son presa de algún animal más grande o fuerte.",
+      "translation_B": "Aquí está la traducción del pasaje de ciencia de K-12 sobre los herbívoros:\n\n¿Qué son los herbívoros? En una cadena alimentaria, el primer consumidor es un animal que come una planta. Por ejemplo, un tópico es un comedor de plantas. Un tópico es un herbívoro. Un herbívoro es un animal que come principalmente plantas. Ciervos, conejos, saltamontes, ardillas y vacas son herbívoros. Los herbívoros son comida para otros animales. La palabra para un animal que es cazado por otro animal para la comida es presa. Todos los animales aquí son presa de algún animal más grande o más fuerte.\n\nEsta traducción mantiene todo el contenido científico del pasaje original, incluyendo ejemplos, definiciones, entidades nombradas y explicaciones causales. Utiliza terminología científica española aceptados y se adapta al nivel de detalle y estructura de oracion del público objetivo.",
+      "_blinding": {
+        "A": "optimized",
+        "B": "seed"
+      }
+    },
+    {
+      "page_id": "77f3b3de",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "one_model_succeeded",
+      "english_text": "How did we learn about space? People long ago thought Earth was the center of the solar system. They thought the Sun traveled around Earth. Copernicus was a scientist. In 1543 he said that the Sun was the center of the solar system. Galileo was another scientist. In 1609 he used a telescope to show that Copernicus was right. Galileo helped us learn about the solar system.",
+      "domain": "Earth and Space Science",
+      "subject": "Our Solar System",
+      "textbook_grade": "3",
+      "target_grade": null,
+      "target_age": "8-9",
+      "standards": [],
+      "translation_A": "Aquí está la traducción del pasaje de ciencia sobre nuestro sistema solar:\n\n**¿Cómo aprendimos sobre el espacio?**\n\nLa gente, desde tiempo antiguo, creía que la Tierra era el centro del sistema solar. Pensaban que el Sol daba vueltas alrededor de la Tierra. Copérnico fue un científico y en 1543 afirmó que el Sol era el centro del sistema solar. Galileo también fue un científico y en 1609 utilizó un telescopio para demostrar que Copérnico tenía razón. Galileo nos ayudó a aprender sobre el sistema solar.",
+      "translation_B": "Cómo aprendimos sobre el espacio? Hace mucho tiempo, la gente pensaba que la Tierra era el centro del sistema solar. Creían que el Sol giraba alrededor de la Tierra. Copérnico fue un científico. En 1543, dijo que el Sol era el centro del sistema solar. Galileo también fue un científico. En 1609, utilizó un telescopio para mostrar que Copérnico tenía razón. Galileo nos ayudó a aprender sobre el sistema solar.",
+      "_blinding": {
+        "A": "seed",
+        "B": "optimized"
+      }
+    },
+    {
+      "page_id": "a53f6e08",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "one_model_succeeded",
+      "english_text": "What happens when heat is added to matter? Matter gains energy when it is heated. This can change its state. If a solid is heated enough, it will melt. This means the solid turns into a liquid. Ice is water in its solid state. It does not take much heat to melt it. Rocks can also melt. It takes a lot of heat to melt them.",
+      "domain": "Physical Science",
+      "subject": "Matter",
+      "textbook_grade": "3",
+      "target_grade": null,
+      "target_age": "8-9",
+      "standards": [],
+      "translation_A": "Cuando se agrega calor a la materia, esta gana energía. Esto puede cambiar su estado. Si un sólido se calienta lo suficiente, se derrite. Esto significa que el sólido se convierte en un líquido. El hielo es agua en su estado sólido. No se necesita mucho calor para derretirlo. Las rocas también pueden derretirse. Se necesita mucha energía térmica para lograrlo.",
+      "translation_B": "Cuando se agrega calor a una sustancia, esta gana energía y puede cambiar su estado. Si un sólido es lo suficientemente caliente, se fundirá. Esto significa que el sólido se convertirá en un líquido. El hielo es agua en su estado sólido y no requiere mucho calor para derretirse. Las rocas también pueden derretirse, pero se necesita mucha más cantidad de calor para lograrlo.",
+      "_blinding": {
+        "A": "optimized",
+        "B": "seed"
+      }
+    },
+    {
+      "page_id": "146fc069",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "two_models_succeeded",
+      "english_text": "Why does the Moon’s shape seem to change? The Moon is shaped like a ball. It revolves around Earth. This orbit makes its shape appear to change. Half of the Moon is always lit by the Sun. The other half is in darkness. The Moon takes about four weeks to finish one orbit. It goes through all of its phases in that time. This is called the lunar cycle. The diagram shows how the Moon’s shape appears to change over the lunar cycle. ",
+      "domain": "Earth and Space Science",
+      "subject": "Our Earth, Sun, and Moon",
+      "textbook_grade": "3",
+      "target_grade": null,
+      "target_age": "8-9",
+      "standards": [],
+      "translation_A": "¿Por qué parece cambiar de forma la Luna? La Luna tiene forma de esfera y orbita alrededor de la Tierra. Este movimiento hace que su apariencia cambie. La mitad de la Luna siempre está iluminada por el Sol, mientras que la otra mitad permanece en la oscuridad. La Luna tarda aproximadamente cuatro semanas en completar una órbita, durante las cuales pasa por todas sus fases, lo que se conoce como ciclo lunar. El diagrama ilustra cómo parece cambiar la forma de la Luna a lo largo del ciclo lunar.",
+      "translation_B": "Aquí está la traducción del pasaje de ciencia de K-12 sobre la Tierra, el Sol y la Luna, adaptado para tres estudiantes de 8 a 9 años:\n\n**¿Por qué parece cambiar de forma la Luna?** La Luna tiene forma de bola y orbita alrededor de la Tierra. Este recorrido hace que su apariencia cambie. La mitad de la Luna siempre está iluminada por el Sol, mientras que la otra mitad permanece en oscuridad. La Luna tarda unas cuatro semanas en completar una órbita, y durante este tiempo pasa por todas sus fases, lo que se conoce como ciclo lunar. El diagrama ilustra cómo parece cambiar la forma de la Luna a lo largo de su ciclo lunar. \n\n¡Espero que esto sea útil para tus estudiantes!",
+      "_blinding": {
+        "A": "optimized",
+        "B": "seed"
+      }
+    },
+    {
+      "page_id": "340a35d6",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "two_models_succeeded",
+      "english_text": "During an eclipse, darkness covers the face of the Moon. This is Earth’s shadow. As the Moon moves, it will leave Earth’s shadow. The face of the Moon will be bright again. During a lunar eclipse, the Moon may turn red.",
+      "domain": "Earth and Space Science",
+      "subject": "Our Earth, Sun, and Moon",
+      "textbook_grade": "3",
+      "target_grade": null,
+      "target_age": "8-9",
+      "standards": [],
+      "translation_A": "Durante un eclipse, la oscuridad cubre la cara de la Luna. Esta es la sombra de la Tierra. A medida que la Luna se mueve, abandonará la sombra de la Tierra. La cara de la Luna volverá a brillar. Durante un eclipse lunar, la Luna puede teñirse de rojo.",
+      "translation_B": "Aquí tiene la traducción del pasaje de ciencia de Tierra y Espacio para tres estudiantes (edades 8-9):\n\nDurante un eclipse, la oscuridad cubre la cara de la Luna. Esta es la sombra de la Tierra. A medida que la Luna se mueve, abandonará la sombra de la Tierra. La cara de la Luna volverá a brillar de nuevo. Durante un eclipse lunar, la Luna puede volverse roja.",
+      "_blinding": {
+        "A": "optimized",
+        "B": "seed"
+      }
+    },
+    {
+      "page_id": "3978130d",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "two_models_succeeded",
+      "english_text": "Each element is made up of tiny particles called atoms. An atom is the smallest particle that makes up an element and has the properties of that element. To get an atom, you would have to keep breaking a piece of an element into smaller and smaller bits.",
+      "domain": "Physical Science",
+      "subject": "Types of Matter",
+      "textbook_grade": "5",
+      "target_grade": null,
+      "target_age": "10-11",
+      "standards": [],
+      "translation_A": "Cada elemento está formado por partículas diminutas llamadas átomos. Un átomo es la partícula más pequeña que compone un elemento y posee las propiedades de ese elemento. Para conseguir un átomo, tendrías que ir rompiendo poco a poco una porción de un elemento en trozos cada vez más pequeños.",
+      "translation_B": "Cada elemento está compuesto por partículas diminutas llamadas átomos. Un átomo es la partícula más pequeña que compone un elemento y posee las propiedades de ese elemento. Para obtener un átomo, tendrías que seguir rompiendo una pieza de un elemento en pedacitos cada vez más pequeños.",
+      "_blinding": {
+        "A": "optimized",
+        "B": "seed"
+      }
+    },
+    {
+      "page_id": "3a0b56d1",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "two_models_succeeded",
+      "english_text": "Most matter is made up of more than one element. Water is made up of two elements, oxygen and hydrogen. Sugar contains those two elements plus carbon. Elements join together in many ways. They help build all the matter in our world. These things are made up of more than one element: salt, metal, wood.",
+      "domain": "Physical Science",
+      "subject": "Matter",
+      "textbook_grade": "3",
+      "target_grade": null,
+      "target_age": "8-9",
+      "standards": [],
+      "translation_A": "La mayoría de la materia está formada por más de un elemento. El agua está formada por dos elementos: oxígeno e hidrógeno. El azúcar contiene esos dos elementos más el carbono. Los elementos se unen en muchas formas y ayudan a formar toda la materia del mundo. Estas cosas están formadas por más de un elemento: la sal, el metal y la madera.",
+      "translation_B": "La mayor parte de la materia está formada por más de un elemento. El agua está compuesta por dos elementos: oxígeno e hidrógeno. El azúcar contiene esos dos elementos más el carbono. Los elementos se unen de muchas maneras; son los que forman toda la materia del mundo. Estas cosas están compuestas por más de un elemento: la sal, el metal, la madera.",
+      "_blinding": {
+        "A": "optimized",
+        "B": "seed"
+      }
+    },
+    {
+      "page_id": "3bbdb7d4",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "two_models_succeeded",
+      "english_text": "What are stars? Stars are hot, glowing balls of gases. Some stars group together. Our solar system is in a group of stars called the Milky Way. Stars of all sizes look like tiny points of light in the night sky. They are very far away. The Sun is the closest star to Earth. Its light makes it too bright to see the other stars during the daytime.",
+      "domain": "Earth and Space Science",
+      "subject": "Our Solar System",
+      "textbook_grade": "3",
+      "target_grade": null,
+      "target_age": "8-9",
+      "standards": [],
+      "translation_A": "¿Qué son las estrellas? Las estrellas son esferas calientes y brillantes de gases. Algunas estrellas se agrupan. Nuestro sistema solar pertenece a un grupo de estrellas llamado Vía Láctea. Las estrellas de todos los tamaños parecen ser pequeños puntos de luz en el cielo nocturno. Están muy lejos. El Sol es la estrella más cercana a la Tierra. Su luz hace que sea demasiado brillante para ver las demás estrellas durante el día.",
+      "translation_B": "Aquí está la traducción del pasaje de ciencia de K-12 sobre nuestro sistema solar:\n\n¿Qué son las estrellas? Las estrellas son bolas calientes y brillantes de gases. Algunas estrellas se agrupan. Nuestro sistema solar es parte de un grupo de estrellas llamado Vía Láctea. Las estrellas de todos los tamaños parecen pequeños puntos de luz en el cielo nocturno. Están muy lejos. El Sol es la estrella más cercana a la Tierra. Su luz hace que sea demasiado brillante para ver las otras estrellas durante el día.\n\nEsta traducción mantiene todo el contenido científico del pasaje original, incluyendo ejemplos, definiciones y explicaciones causales. Utiliza un lenguaje y una estructura de oraciones apropiadas para estudiantes de 8-9 años de edad, asegurándose de que la información sea accesible y comprensible para esta edad.",
+      "_blinding": {
+        "A": "optimized",
+        "B": "seed"
+      }
+    },
+    {
+      "page_id": "63f6e60b",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "two_models_succeeded",
+      "english_text": "How are electromagnets used? Electromagnets are often more useful than permanent magnets because: - you can turn them on and off by switching the current on and off - you can make them stronger by increasing the current and/or the coils of wire. Electromagnets are used in many things people use everyday, including: - doorbells - motors that run hobby trains and cars - electric guitars.",
+      "domain": "Physical Science",
+      "subject": "Magnetism",
+      "textbook_grade": "4",
+      "target_grade": null,
+      "target_age": "9-10",
+      "standards": [],
+      "translation_A": "Aquí está la traducción del pasaje de ciencias físicas sobre el uso de los imanes:\n\n¿Cómo se utilizan los electromagnetos? Los electromagnetos son a menudo más útiles que los imanes permanentes porque puedes encenderlos y apagarles al encender y apagar la corriente eléctrica, y también puedes hacer que sean más fuertes aumentando la cantidad de corriente o el número de bobinas de alambre. Los electromagnetos se usan en muchas cosas que usamos todos los días, como:\n\n- Campanas de entrada: Las campanas de entrada suelen estar conectadas a un elektromagnet, que produce un campo magnético cuando se enciende la corriente eléctrica, haciendo sonar la campana.\n\n- Motores: Los motores eléctricos que se utilizan para hacer funcionar los trenes de juguete y los coches de juguete también utilizan electromagnetos. La corriente eléctrica hace que las bobinas de alambre hagan vibrar un núcleo de hierro, creando así movimiento rotativo.\n\n- Guitarras eléctricas: Las guitarras eléctricas también utilizan electromagnetos. Cuando tocas la cuerda, haz que el diapasón o la barra de traste vibren, haciendo contacto con las bobinas de alambre. Estas vibraciones se convierten en señales eléctricas, que luego se amplifican para producir sonido a través de los altavoces.\n\nEn resumen, los electromagnetos son versátiles y útiles porque podemos controlar su fuerza y activación mediante la manipulación de la corriente eléctrica. Esto los hace ideales para una amplia variedad de aplicaciones en nuestra vida diaria.",
+      "translation_B": "Los electromagnetos son útiles porque se pueden encender y apagar al controlar la corriente eléctrica, y también se pueden hacer más fuertes aumentando la corriente o el número de bobinas de alambre. Los electromagnetos se usan en muchas cosas que usamos todos los días, como los campanas de las puertas, los motores de los trenes y coches de juguete, e incluso las guitarras eléctricas.",
+      "_blinding": {
+        "A": "seed",
+        "B": "optimized"
+      }
+    },
+    {
+      "page_id": "895b8782",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "two_models_succeeded",
+      "english_text": "Using Scientiﬁc Notation It’s easier to convert numbers to and from scientiﬁc notation than you might think. Refer to the examples on the chalkboard below as you read the following steps. Follow the steps in the sequence listed here to convert a number to scientiﬁc notation. Follow the steps in the reverse order to convert a number from scientiﬁc notation. 1. Move the decimal point left or right until you reach the last nonzero digit. This new decimal number is a in a × 10b. 2. Count how many places you moved the decimal point in Step 1. This number is b in a × 10b. 3. Did you move the decimal point left (ﬁrst example in the Figure 1.38)? If so, b is positive. Did you move the decimal point right (second example in the Figure 1.38)? If so, b is negative.",
+      "domain": "Physical Science",
+      "subject": "Scientiﬁc Notation",
+      "textbook_grade": "Middle School ",
+      "target_grade": null,
+      "target_age": "11-14",
+      "standards": [],
+      "translation_A": "Usando la Notación Científica Es más fácil convertir números a notación científica de lo que podrías pensar. Consulta los ejemplos en el pizarra debajo mientras lees los siguientes pasos. Sigue los pasos en el orden secuencial que se presentan aquí para convertir un número a notación científica. Sigue los pasos en el orden inverso para convertir un número de la notación científica. 1. Mueve el punto decimal hacia la izquierda o hacia la derecha hasta llegar al último dígito no cero. Este nuevo número decimal es un en un × 10b. 2. Cuenta cuántos lugares moviste el punto decimal en el Paso 1. Este número es b en un × 10b. 3. ¿Moviste el punto decimal hacia la izquierda (primer ejemplo en la Figura 1.38)? Si es así, b es positivo. ¿Moviste el punto decimal hacia la derecha (segundo ejemplo en la Figura 1.38)? Si es así, b es negativo.",
+      "translation_B": "Aquí te presento la traducción al español del pasaje de ciencia para estudiantes de secundaria:\n\nUsando la Notación Científica\n\nEs más fácil convertir números a notación científica y viceversa de lo que podrías pensar. Revisa los ejemplos en el pizarrón debajo mientras lees los siguientes pasos. Sigue los pasos en el orden que se indican aquí para convertir un número a notación científica. Sigue los mismos pasos en orden inverso para convertir un número de la notación científica.\n\n1. Desplaza el punto decimal hacia la izquierda o hacia la derecha hasta que llegues al último dígito no cero. Este nuevo número decimal es \"a\" en \"a × 10^b\".\n\n2. Cuenta cuántas posiciones has movido el punto decimal en el Paso 1. Ese número es \"b\" en \"a × 10^b\".\n\n3. ¿Has movido el punto decimal hacia la izquierda (primer ejemplo en el Figura 1.38)? Si es así, \"b\" es positivo. ¿Has movido el punto decimal hacia la derecha (segundo ejemplo en la Figura 1.38)? Si es así, \"b\" es negativo.\n\nEsta traducción mantiene el nivel de detalle y estructura de oración del pasaje original, utilizando terminología científica española adecuada para estudiantes de secundaria.",
+      "_blinding": {
+        "A": "optimized",
+        "B": "seed"
+      }
+    },
+    {
+      "page_id": "add0dae2",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "two_models_succeeded",
+      "english_text": "Which microorganisms are decomposers? Remember, decomposers are the last step in a food chain. They break down dead plants and animals. The diagram shows three decomposers on a dead tree. One is a large living thing, the mushroom. The two other decomposers are microorganisms. They are mold and bacteria. A mushroom is a fungus. A fungus is a living thing that may look like a plant. However, a fungus does not make its own food as plants do. It gets food by feeding off a dead thing.",
+      "domain": "Life Science",
+      "subject": "Living Things Need Energy",
+      "textbook_grade": "4",
+      "target_grade": null,
+      "target_age": "9-10",
+      "standards": [],
+      "translation_A": "¿Cuáles son los microorganismos descomponedores? Recuerda que los descomponedores son el último eslabón en la cadena alimentaria. Ellos descomponen la materia orgánica en desecho. El diagrama muestra tres descomponedores en un árbol muerto. Uno es una gran entidad viva, un hongo. Los otros dos descomponedores son microorganismos: el moho y las bacterias. Un hongo es un organismo que puede asemejarse a una planta. Sin embargo, los hongos no producen su propia comida como lo hacen las plantas. Se alimentan de materia orgánica en desecho.",
+      "translation_B": "¿Cuáles son los descomponedores? Recuerda, los descomponedores son la etapa final de una cadena alimentaria. Ellos descomponen materia orgánica muerta, como plantas y animales muertos. El diagrama muestra tres descomponedores en un árbol muerto. Uno es un organismo vivo grande, el hongo. Los otros dos descomponedores son microorganismos: el moho y las bacterias. Un hongo es un fungo. Un fungo es un organismo vivo que parece una planta, pero no produce su propia comida como lo hacen las plantas. Se alimenta de materia orgánica muerta.",
+      "_blinding": {
+        "A": "seed",
+        "B": "optimized"
+      }
+    },
+    {
+      "page_id": "dd7dc9ef",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "two_models_succeeded",
+      "english_text": "On a cool morning, small droplets of water may form on grass and other objects. These water droplets are called dew. Dew forms when water vapor in the air touches a cool object. The water vapor loses heat energy and condenses to form liquid water.",
+      "domain": "Earth and Space Science",
+      "subject": "Matter",
+      "textbook_grade": "3",
+      "target_grade": null,
+      "target_age": "8-9",
+      "standards": [],
+      "translation_A": "\"En una mañana fresca, pequeñas gotas de agua pueden formarse en la hierba y en otros objetos. Estas gotas de agua se llaman rocío. El rocío se forma cuando el vapor de agua en el aire toca un objeto frío. El vapor de agua pierde energía térmica y se condensa para formar agua líquida.\"",
+      "translation_B": "Por la mañana, cuando hace fresco, pueden formarse pequeñas gotas de agua sobre el césped y otros objetos. A estas gotas de agua se les llama rocío. El rocío se forma cuando el vapor de agua en el aire se toca con un objeto frío. El vapor de agua pierde energía térmica y se condensa para formar agua líquida.",
+      "_blinding": {
+        "A": "optimized",
+        "B": "seed"
+      }
+    },
+    {
+      "page_id": "39e7738b",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "all_three_no_shared_target_grade",
+      "english_text": "In 1665, Robert Hooke, an Englishman, used an early microscope to look at a nonliving thin slice of cork, a plant material. Under the microscope, cork seemed to be made of thousands of tiny empty chambers, as shown in Figure 8-1. Hooke called the chambers “cells,” because they reminded him of a monastery’s tiny rooms. That term, cell, is used in biology to this day. ",
+      "domain": "Life Science",
+      "subject": "Life is Cellular",
+      "textbook_grade": "High School",
+      "target_grade": null,
+      "target_age": "14-18",
+      "standards": [],
+      "translation_A": "En 1665, Robert Hooke, un inglés, utilizó un microscopio temprano para observar una rebanada delgada y no viva de corcho, un material vegetal. Bajo el microscopio, el corcho parecía estar compuesto por miles de pequeñas cámaras vacías, como se muestra en la Figura 8-1. Hooke llamó a estas cámaras \"células\", porque le recordaban las pequeñas habitaciones de un monasterio. Ese término, célula, se utiliza en biología hasta el día de hoy.",
+      "translation_B": "En 1665, Robert Hooke, un inglés, utilizó un microscopio temprano para observar una fina rebanada no viva de corcho, un material vegetal. Bajo el microscopio, el corcho parecía estar formado por miles de pequeñas cámaras vacías, como se muestra en la Figura 8-1. Hooke llamó a estas cámaras \"celdas\", porque le recordaban las pequeños habitaciones de un convento. Este término, \"celda\", se utiliza aún en biología.",
+      "_blinding": {
+        "A": "optimized",
+        "B": "seed"
+      }
+    },
+    {
+      "page_id": "5d3d5b9e",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "all_three_no_shared_target_grade",
+      "english_text": "Although this cartoon pokes fun at scientiﬁc hypotheses, the concept of hypothesis is one of the most important in science. Scientiﬁc investigations discover evidence that helps science advance, and the purpose of scientiﬁc investigations generally is to test hypotheses. Finding evidence to support or disprove hypotheses is how science advances.",
+      "domain": "Physical Science",
+      "subject": "Hypothesis",
+      "textbook_grade": "Middle School ",
+      "target_grade": null,
+      "target_age": "11-14",
+      "standards": [],
+      "translation_A": "Aunque este cartoon se burla de las hipótesis científicas, el concepto de hipótesis es uno de los más importantes en la ciencia. Las investigaciones científicas descubren evidencia que ayuda al avance de la ciencia, y el propósito general de las investigaciones científicas es probar hipótesis. Encontrar evidencia para apoyar o refutar hipótesis es así como avanza la ciencia.",
+      "translation_B": "Aunque este cartel burla de las hipótesis científicas, el concepto de hipótesis es uno de los más importantes en la ciencia. Las investigaciones científicas descubren evidencia que ayuda al avance de la ciencia, y el propósito de las investigaciones científicas en general es probar hipótesis. Encontrar evidencia para apoyar o refutar hipótesis es así como avanza la ciencia.",
+      "_blinding": {
+        "A": "optimized",
+        "B": "seed"
+      }
+    },
+    {
+      "page_id": "e13d8a50",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "all_three_no_shared_target_grade",
+      "english_text": "Conic Projections: A projection made by placing a paper cone over a lighted globe so that the axis of the cone aligns with the axis of the globe is known as a conic projection. The cone touches the globe along one parallel of latitude. As shown in Figure 4, areas near the parallel where the cone and globe are in contact are distorted the least.",
+      "domain": "Earth and Space Science",
+      "subject": "Models of the Earth",
+      "textbook_grade": "High School",
+      "target_grade": null,
+      "target_age": "14-18",
+      "standards": [],
+      "translation_A": "Proyecciones Cónicas: Se llama proyección cónica a la que se realiza al colocar un cono de papel sobre una esfera iluminada, de modo que el eje del cono esté alineado con el eje de la esfera. El cono toca la esfera a lo largo de uno de los paralelos de latitud. Como se muestra en la Figura 4, las áreas cerca del paralelo donde el cono y la esfera están en contacto son las menos distorsionadas.",
+      "translation_B": "Proyecciones Cónicas: Una proyección que se realiza colocando un cono de papel sobre una esfera iluminada de modo que el eje del cono coincida con el eje de la esfera se conoce como una proyección cónica. El cono toca la esfera a lo largo de un paralelo de latitud. Como se muestra en la Figura 4, las áreas cercanas al paralelo donde el cono y la esfera están en contacto están distorsionadas menos.",
+      "_blinding": {
+        "A": "seed",
+        "B": "optimized"
+      }
+    },
+    {
+      "page_id": "0b577080",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "all_three_shared_grade_missing_tagger",
+      "english_text": "Angularity: As sediment is transported from its source to where it is deposited, the particles collide with each other and with other objects in their path. These collisions can cause the particles to change size and shape. When particles first break from the source rock, they tend to be angular and uneven. Particles that have moved long distances from the source tend to be more rounded and smooth. In general, the farther sediment travels from its source, the finer and smoother the particles of sediment become. ",
+      "domain": "Earth and Space Science",
+      "subject": "Rocks",
+      "textbook_grade": "High School",
+      "target_grade": null,
+      "target_age": "14-18",
+      "standards": [],
+      "translation_A": "La angularidad: Al ser transportado el sedimento desde su fuente hasta donde se deposita, las partículas colisionan entre sí y con otros objetos en su camino. Estas colisiones pueden causar que las partículas cambien de tamaño y forma. Cuando las partículas se separan por primera vez de la roca fuente, tienden a ser angulares e irregulares. Las partículas que han recorrido largas distancias desde la fuente suelen ser más redondeadas y suaves. En general, cuanto mayor sea la distancia que recorre el sedimento desde su fuente, más fino y suave se vuelve el tamaño de las partículas.",
+      "translation_B": "La angulacion: Durante el transporte de los sedimentos desde su fuente hasta el lugar donde se depositan, las partículas colisionan entre sí y con otros objetos en su camino. Estas colisiones pueden causar que las partículas cambien de tamaño y forma. Cuando las partículas se desprenden primero de la roca matriz, tienden a ser angulares e irregulares. Las partículas que han recorrido largas distancias desde la fuente suelen ser más redondeadas y suaves. En general, cuanto mayor es la distancia que recorre el sedimento desde su fuente, más finas y suaves son sus partículas.",
+      "_blinding": {
+        "A": "optimized",
+        "B": "seed"
+      }
+    },
+    {
+      "page_id": "156553a4",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "all_three_shared_grade_missing_tagger",
+      "english_text": "When you add sugar to coffee or tea, for example, the sugar molecules move away from their original positions in the sugar crystals and disperse throughout the hot liquid. The process by which particles move from an area of higher concentration to an area of lower concentration is known as diffusion. Diffusion is the driving force behind the movement of many substances across the cell membrane.",
+      "domain": "Life Science",
+      "subject": "Cell Transport",
+      "textbook_grade": "High School",
+      "target_grade": null,
+      "target_age": "14-18",
+      "standards": [],
+      "translation_A": "Cuando agregas azúcar al café o al té, por ejemplo, las moléculas de azúcar se alejan de sus posiciones originales en los cristales de azúcar y se dispersan por todo el líquido caliente. Este proceso, en el que las partículas se mueven desde un área de mayor concentración hasta una de menor concentración, se conoce como difusión. La difusión es la fuerza impulsora detrás del movimiento de muchas sustancias a través de la membrana celular.",
+      "translation_B": "Cuando agregas azúcar al café o al té, por ejemplo, las moléculas de azúcar se alejan de sus posiciones originales en los cristales de azúcar y se dispersan por todo el líquido caliente. Este proceso, en el que las partículas se mueven desde un área de mayor concentración hasta una de menor concentración, se conoce como difusión. La difusión es la fuerza motriz detrás del movimiento de muchas sustancias a través de la membrana celular.",
+      "_blinding": {
+        "A": "seed",
+        "B": "optimized"
+      }
+    },
+    {
+      "page_id": "a9b320b4",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "all_three_shared_grade_missing_tagger",
+      "english_text": "Each cell has its own border, which separates the cell from its surroundings and also determines what comes in and what goes out. How can a cell separate itself from its environment and still allow materials to enter and leave? That’s where the transport of molecules across its border, the cell membrane, comes in.",
+      "domain": "Life Science",
+      "subject": "Cell Transport",
+      "textbook_grade": "High School",
+      "target_grade": null,
+      "target_age": "14-18",
+      "standards": [],
+      "translation_A": "Cada célula tiene su propia barrera, que la separa de su entorno y determina también lo que entra y sale. ¿Cómo puede una célula separarse de su entorno y permitir al mismo tiempo el paso de materiales? Eso es lo que se conoce como transporte de moléculas a través de su barrera, la membrana celular.",
+      "translation_B": "Cada célula tiene su propia frontera, que la separa de su entorno y también determina lo que entra y sale. ¿Cómo puede una célula separarse de su entorno y a la vez permitir que entren y salgan materiales? Ahí es donde entra en juego el transporte de moléculas a través de su frontera, la membrana celular.",
+      "_blinding": {
+        "A": "optimized",
+        "B": "seed"
+      }
+    },
+    {
+      "page_id": "d41d1653",
+      "source": "dropped_passages.json",
+      "exclusion_reason": "all_three_shared_grade_missing_tagger",
+      "english_text": "Atomic Number: The number of protons in the nucleus of an atom is called the atomic number. All atoms of any given element have the same atomic number. An element’s atomic number sets the atoms of that element apart from the atoms of all other kinds of elements, as shown in Figure 3. Because an uncharged atom has an equal number of protons and electrons, the atomic number is also equal to the number of electrons in an atom of any given element. Elements on the periodic table are ordered according to their atomic numbers. The periodic table, shown on the following pages, is a system for classifying elements. Elements in the same column on the periodic table have similar arrangements of electrons in their atoms. Elements that have similar arrangements of electrons have similar chemical properties. Atomic Mass: The sum of the number of protons and neutrons in an atom is the mass number. The mass of a subatomic particle is too small to be expressed easily in grams. So, a special unit called the unified atomic mass unit (u) is used. Protons and neutrons each have an atomic mass that is close to 1 u. In contrast, electrons have much less mass than protons and neutrons do. The mass of 1 proton is equal to the combined mass of about 1,840 electrons. Because electrons add little to an atom’s total mass, their mass can be ignored when calculating an atom’s approximate mass. Isotopes: Although all atoms of a given element contain the same number of protons, the number of neutrons may differ. For example, while most helium atoms have two neutrons, some helium atoms have only one neutron. An atom that has the same number of pro- tons (or the same atomic number) as other atoms of the same element do but has a different number of neutrons (and thus a different atomic mass) is called an isotope isotope. A helium atom that has two neutrons is more massive than a helium atom that has only one neutron. Because of their different numbers of neutrons and their different masses, different isotopes of the same element have slightly different properties. ",
+      "domain": "Earth and Space Science",
+      "subject": "Earth Chemistry",
+      "textbook_grade": "High School",
+      "target_grade": null,
+      "target_age": "14-18",
+      "standards": [],
+      "translation_A": "Número Atómico: El número de protones en el núcleo de un átomo se llama número atómico. Todos los átomos de cualquier elemento dado tienen el mismo número atómico. El número atómico de un elemento separa a los átomos de ese elemento de los átomos de todo tipo de elementos, como se muestra en la Figura 3. Dado que un átomo no cargado tiene un número igual de protones y electrones, el número atómico también es igual al número de electrones en un átomo de cualquier elemento dado. Los elementos en la tabla periódica están ordenados según sus números atómicos. La tabla periódica, que se muestra en las páginas siguientes, es un sistema para clasificar los elementos. Los elementos en la misma columna de la tabla periódica tienen arreglos similares de electrones en sus átomos. Los elementos que tienen arreglos similares de electrones tienen propiedades químicas similares. Masas Atómicas: La suma del número de protones y neutrones en un átomo se llama número de masa. La masa de una partícula subatómica es demasiado pequeña para expresarse fácilmente en gramos. Por lo tanto, se utiliza una unidad especial llamada unidad atómica unificada (u). Los protones y los neutrones tienen cada uno una masa que se acerca a 1 u. En contraste, los electrones tienen una masa mucho menor que la de los protones y neutrones. La masa de 1 protón es igual a la masa combinada de unos 1840 electrones. Dado que los electrones aportan poco a la masa total de un átomo, su masa puede ignorarse al calcular aproximadamente la masa de un átomo. Isótopos: Aunque todos los átomos de un elemento dado contienen el mismo número de protones, el número de neutrones puede ser diferente. Por ejemplo, mientras que la mayoría de los átomos de helio tienen dos neutrones, algunos átomos de helio solo tienen uno. Un átomo que tiene el mismo número de protones (o el mismo número atómico) que otros átomos del mismo elemento pero un número diferente de neutrones (y, por lo tanto, una masa atómica diferente) se llama isótopo. Un átomo de helio que tiene dos neutrones es más pesado que un átomo de helio que tiene solo uno. Debido a sus diferentes números de neutrones y masas, los diferentes isótopos del mismo elemento tienen propiedades ligeramente diferentes.",
+      "translation_B": "Aquí está la traducción del pasaje de ciencia de Earth y Space Science sobre química terrestre al español:\n\nNúmero atómico: El número de protones en el núcleo de un átomo se llama número atómico. Todos los átomos de un elemento dado tienen el mismo número atómico. El número atómico de un elemento distingue los átomos de ese elemento de los de cualquier otro tipo de elemento, como se muestra en la Figura 3. Dado que un átomo sin carga tiene un número igual de protones y electrones, el número atómico es también igual al número de electrones en un átomo de cualquier elemento dado. Los elementos en la tabla periódica se ordenan según sus números atómicos. La tabla periódica, que se muestra en las páginas siguientes, es un sistema para clasificar los elementos. Los elementos en la misma columna de la tabla periódica tienen arreglos similares de electrones en sus átomos. Los elementos que tienen arreglos similares de electrones tienen propiedades químicas similares.\n\nMasa atómica: La suma del número de protones y neutrones en un átomo se llama número de masa. La masa de una partícula subatómica es demasiado pequeña para expresarse fácilmente en gramos. Por lo tanto, se utiliza una unidad especial llamada unidad atómica unificada (u). Los protones y los neutrones tienen cada uno una masa cercana a 1 u. En contraste, los electrones tienen una masa mucho menor que la de los protones y neutrones. La masa de 1 protón es igual a la masa combinada de aproximadamente 1,840 electrones. Debido a que los electrones contribuyen poco a la masa total de un átomo, su masa se puede ignorar al calcular aproximadamente la masa de un átomo.\n\nIsótopos: Aunque todos los átomos de un elemento dado contienen el mismo número de protones, el número de neutrones puede variar. Por ejemplo, mientras que la mayoría de los átomos de helio tienen dos neutrones, algunos átomos de helio solo tienen uno. Un átomo que tiene el mismo número de protones (o el mismo número atómico) que otros átomos del mismo elemento pero tiene un número diferente de neutrones (y, por lo tanto, una masa atómica diferente) se llama isótopo. Un átomo de helio con dos neutrones es más masivo que uno con solo un neutrón. Debido a sus diferentes números de neutrones y masas, los diferentes isótopos de un mismo elemento tienen propiedades ligeramente diferentes.",
+      "_blinding": {
+        "A": "optimized",
+        "B": "seed"
+      }
+    },
+    {
+      "page_id": "4a0bf105",
+      "source": "data/triple_b/data.json (val)",
+      "exclusion_reason": null,
+      "english_text": "Seeds Look back at the diagram as you follow the steps. 1. pollination Pollen grains collect on the top of a stamen. They are moved to the pistil of the same flower or another flower. Pollination is the movement of pollen grains from a stamen to a pistil. What moves the pollen grains? - wind - insects and birds are attracted to flowers by the colors and smells. They brush up against the stamens and pick up the pollen grains on their bodies. They drop the grains onto other flowers. 2. making a seed - When a pollen grain reaches a pistil, it travels down into the ovary. A pollen and an egg cell can then join and form a seed. The ovary slowly enlarges, becoming a fruit with the seeds inside. 3. scattering seeds - Seeds are then scattered by wind or animals. If a seed reaches a place where the soil is moist and the temperature is just right, the new plant inside begins to grow. ",
+      "domain": "Life Science",
+      "subject": "Plant Structures and Functions",
+      "textbook_grade": null,
+      "target_grade": "4th",
+      "target_age": "9-10",
+      "standards": [
+        {
+          "code": "3-LS1-1",
+          "description": "Develop models to describe that organisms have unique and diverse life cycles but all have in common birth, growth, reproduction, and death.",
+          "grade_band": "3-5"
+        },
+        {
+          "code": "4-LS1-1",
+          "description": "Construct an argument that plants and animals have internal and external structures that function to support survival, growth, behavior, and reproduction.",
+          "grade_band": "3-5"
+        },
+        {
+          "code": "5-LS1-1",
+          "description": "Support an argument that plants get the materials they need for growth chiefly from air and water.",
+          "grade_band": "3-5"
+        },
+        {
+          "code": "5-LS2-1",
+          "description": "Develop a model to describe the movement of matter among plants, animals, decomposers, and the environment.",
+          "grade_band": "3-5"
+        }
+      ],
+      "translation_A": "Aquí está la traducción del pasaje de ciencia de vida sobre las estructuras y funciones de las plantas:\n\nLos semillas\n\n1. polinación\n\nMira el diagrama mientras sigues estos pasos.\n\n1. Polinización: Los granos de polen se recogen en la parte superior de un estame. Estos son trasladados al pistilo de la misma flor o de otra diferente. La polinización es el movimiento de los granos de polen desde un estame hasta un pistilo. ¿Qué mueve estos granos?\n\n- El viento: Los granos de polen son llevados por el viento, y terminan en diferentes flores.\n\n- Insectos y aves: Estos animales son atraídos por los colores y olores de las flores. Al acercarse, rozan los estames y colectan los granos de polen en sus cuerpos. Luego, depositan los granos en otras flores.\n\n2. Formación de semillas:\n\nCuando un grano de polen llega a un pistilo, viaja hacia el ovario. Aquí, puede unirse con una célula huevo y formar una semilla. El ovario se expande lentamente, convirtiéndose en un fruto que contiene las semillas.\n\n3. Dispersión de semillas:\n\nLas semillas son dispersadas por el viento o los animales. Si una semilla cae en un lugar donde el suelo está húmedo y la temperatura es la adecuada, comienza a crecer una nueva planta.\n\nEspero que esta traducción sea útil para ti. Si tienes alguna pregunta o necesitas ayuda con algo más, no dudes en preguntar. Estoy aquí para ayudarte.",
+      "translation_B": "Semillas:\n\n1. Polinización: Los granos de polen se acumulan en la parte superior de un estambre. Se desplazan hacia el pistilo, ya sea del mismo flor o de otra diferente. La polinización es el movimiento de los granos de polen desde un estambre hasta un pistilo. ¿Qué mueve estos granos? - El viento: los granos son transportados por las corrientes de aire. - Los insectos y aves: estas criaturas están atraídas por los colores y olores de las flores. Al rozar sus cuerpos con los estambres, recogerán los granos de polen y los depositarán en otras flores.\n\n2. Formación de semillas: Cuando un grano de polen alcanza un pistilo, viaja hacia el ovario. Allí, puede unirse a una célula huevo y formar una semilla. El ovario se expande lentamente, convirtiéndose en un fruto que alberga las semillas dentro.\n\n3. Dispersión de semillas: Finalmente, las semillas son dispersadas por el viento o animales. Si una semilla llega a un lugar donde el suelo está húmedo y la temperatura es agradable, la nueva planta que crece dentro comienza su proceso de desarrollo.",
+      "_blinding": {
+        "A": "seed",
+        "B": "optimized"
+      }
+    },
+    {
+      "page_id": "c220fd24",
+      "source": "data/triple_b/data.json (val)",
+      "exclusion_reason": null,
+      "english_text": "Scientists use three main types of very powerful microscopes: Transmission Electron Microscope (TEM): A TEM focuses a beam of electrons so that they pass through a very thinly sliced specimen. They are very useful for studying the interior structures of cells. Scanning Electron Microscope (SEM): An SEM uses an electron beam to scan the surface of the specimen. The electron beam excites the electrons on the object’s surface. The excited electrons are used to make a three-dimensional image of the specimen. Scanning Tunneling Microscope (STM): An STM works by passing an electrically charged probe very close to the surface of a specimen. As the probe passes over the specimen, the probe moves up and down to keep the current in the probe constant. The path of the probe is recorded and is used to create an image of the specimen’s surface.",
+      "domain": "Life Science",
+      "subject": "Intro to Cells",
+      "textbook_grade": null,
+      "target_grade": "6th",
+      "target_age": "11-12",
+      "standards": [
+        {
+          "code": "MS-PS2-3",
+          "description": "Ask questions about data to determine the factors that affect the strength of electric and magnetic forces.",
+          "grade_band": "MS"
+        }
+      ],
+      "translation_A": "Los científicos utilizan tres tipos principales de microscopios muy potentes:\n\n- Microscopio Electrónico de Transmisión (TEM): Un TEM enfoca un haz de electrones para que pasen a través de una muestra muy delgada. Son muy útiles para estudiar las estructuras internas de las células.\n\n- Microscopio Electrónico de Escaneo (SEM): Un SEM utiliza un haz electrónico para escanear la superficie de la muestra. El haz electrónico excita los electrones en la superficie del objeto. Los electrones excitados se utilizan para crear una imagen tridimensional de la muestra.\n\n- Microscopio Túnel de Escaneo (STM): Un STM funciona pasando una sonda cargada eléctricamente muy cerca de la superficie de una muestra. A medida que la sonda se mueve sobre la muestra, sube y baja para mantener constante la corriente en la sonda. Se registra el camino de la sonda y se utiliza para crear una imagen de la superficie de la muestra.\n\nCada uno de estos microscopios tiene sus propias características únicas y aplicaciones en el campo de la biología y la ciencia de los materiales. Son herramientas esenciales para estudiar la estructura y la composición de diversos materiales, incluidas las células y tejidos biológicos.",
+      "translation_B": "Los científicos utilizan tres tipos principales de microscopios muy potentes:\n\n- Microscopio Eletrónico de Transmisión (TEM): Un TEM enfoca un haz de electrones para que pase a través de una muestra muy finamente cortada. Son muy útiles para estudiar las estructuras internas de las células.\n\n- Microscopio Eletrónico de Escaneo (SEM): Un SEM utiliza un haz de electrones para escanear la superficie de la muestra. El haz de electrones excita los electrones en la superficie del objeto. Estos electrones excitados se utilizan para crear una imagen tridimensional de la muestra.\n\n- Microscopio de Túnel de Escaneo (STM): Un STM funciona pasando una sonda cargada eléctricamente muy cerca de la superficie de una muestra. A medida que la sonda se mueve sobre la muestra, sube y baja para mantener constante el corriente en la sonda. El camino de la sonda se registra y se utiliza para crear una imagen de la superficie de la muestra.",
+      "_blinding": {
+        "A": "seed",
+        "B": "optimized"
+      }
+    },
+    {
+      "page_id": "0756328a",
+      "source": "data/triple_b/data.json (val)",
+      "exclusion_reason": null,
+      "english_text": "The Sun’s Mass We cannot “weigh” the Sun. However, we can find out the Sun’s mass, the amount of matter in the Sun. To do so, we need two facts: - the time it takes a planet to go around the Sun (Earth takes 365.24 days) - the distance of that planet to the Sun. With these facts, we can tell the Sun’s mass: 2 million trillion trillion kilograms. The Sun makes up 99.8% of the mass of our solar system. The Sun is made up mostly of two gases. Hydrogen makes up most of the Sun (71%). Helium makes up 27%. Inside the Sun, particles of hydrogen are smashing together and giving off energy. See the diagram above.",
+      "domain": "Earth and Space Science",
+      "subject": "The Solar System",
+      "textbook_grade": null,
+      "target_grade": "2nd-3rd",
+      "target_age": "7-8",
+      "standards": [
+        {
+          "code": "5-ESS1-1",
+          "description": "Support an argument that differences in the apparent brightness of the sun compared to other stars is due to their relative distances from the Earth.",
+          "grade_band": "3-5"
+        },
+        {
+          "code": "5-PS1-1",
+          "description": "Develop a model to describe that matter is made of particles too small to be seen.",
+          "grade_band": "3-5"
+        }
+      ],
+      "translation_A": "La masa del Sol No podemos \"pesar\" el Sol, pero sí podemos descubrir su masa, es decir, la cantidad de materia que contiene. Para calcularla, necesitamos dos datos: el tiempo que tarda un planeta en dar una vuelta alrededor del Sol (a la Tierra le toma 365,24 días) y la distancia de ese planeta al Sol. Con estos datos, podemos determinar la masa del Sol: 2 millones de billones de billones de kilos. El Sol representa el 99,8% de la masa de todo nuestro sistema solar. El Sol está compuesto principalmente por dos gases: hidrógeno y helio. El hidrógeno es el componente mayoritario en el Sol (71%), mientras que el helio lo sigue con un 27%. En el interior del Sol, las partículas de hidrógeno colisionan entre sí y liberan energía. Mira el diagrama de arriba para verlo mejor.",
+      "translation_B": "El masa del Sol No podemos \"pesar\" el Sol, pero podemos descubrir su masa, es decir, la cantidad de materia que contiene. Para hacerlo, necesitamos dos hechos: el tiempo que tarda un planeta en dar una vuelta alrededor del Sol (a la Tierra le toma 365,24 días) y la distancia de ese planeta al Sol. Con estos datos, podemos calcular el masa del Sol: 2 millones de billones de billones de kilogramos. El Sol representa el 99,8% de la masa de todo nuestro sistema solar. El Sol está compuesto principalmente por dos gases: hidrógeno y helio. El hidrógeno constituye el 71% del Sol, mientras que el helio el 27%. En el interior del Sol, las partículas de hidrógeno se chocan y producen energía. Mira el diagrama anterior.",
+      "_blinding": {
+        "A": "seed",
+        "B": "optimized"
+      }
+    }
+  ]
+}

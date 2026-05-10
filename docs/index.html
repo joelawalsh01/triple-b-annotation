@@ -278,7 +278,19 @@
   </div>
 </div>
 
-<!-- App (hidden until login) -->
+<!-- Set chooser (shown after login, before the main app) -->
+<div id="setChooserScreen" class="hidden" style="min-height:100vh;background:linear-gradient(135deg,#1f2937 0%,#1a1a2e 100%);display:flex;align-items:center;justify-content:center;padding:24px;">
+  <div style="background:#fff;border-radius:12px;padding:36px;max-width:760px;width:100%;box-shadow:0 8px 32px rgba(0,0,0,0.3);">
+    <h1 style="font-size:22px;color:#1f2937;margin:0 0 6px 0;">Choose your task</h1>
+    <p id="setChooserSubtitle" style="font-size:14px;color:#6b7280;margin:0 0 22px 0;">Select which set you want to rate. You can switch between sets later from the topbar.</p>
+    <div id="setChooserCards" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;"></div>
+    <div style="margin-top:20px;display:flex;justify-content:flex-end;">
+      <button class="topbar-btn topbar-btn-secondary" style="padding:8px 16px;font-size:13px;" onclick="logout()">Sign out</button>
+    </div>
+  </div>
+</div>
+
+<!-- App (hidden until login + set chosen) -->
 <div id="appScreen" class="hidden">
   <!-- Top bar -->
   <div class="topbar">
@@ -340,21 +352,41 @@
 const WORKER_URL = 'https://triple-b-annotation-worker.joelawalsh01.workers.dev';
 
 // ==================== DATASETS ====================
+// `kind` controls which UI flow renders the dataset:
+//   - 'triple'   : 3 model translations per passage, source-confirm + preservation per standard,
+//                  forced-rank Worst/Middle/Best per translation. Existing legacy format.
+//   - 'pairwise' : 2 blinded translations per passage (A vs B), top-level questions defined by
+//                  the dataset's `rater_questions` array. New for GEPA Set 2.
 const DATASETS = [
-  { id: 'initial_set', label: 'Initial Set', file: 'data.json' },
-  // { id: 'second_set', label: 'Second Set', file: 'data_second.json' },
+  { id: 'initial_set', label: 'Set 1 — Initial Set', file: 'data.json',     kind: 'triple',   description: '98 passages, 3 translations per passage. Source-confirmation, preservation ratings (1–4), and forced-rank quality (Worst/Middle/Best) per translation.' },
+  { id: 'gepa_set',    label: 'Set 2 — GEPA',         file: 'gepa_set.json', kind: 'pairwise', description: '30 passages, 2 blinded translations per passage. Two pairwise A-vs-B questions (content preservation, Spanish fluency) plus an optional comment.' },
 ];
 
 // ==================== STATE ====================
-let DATA = [];
+let DATA = [];                // array of passages for the current dataset (already unwrapped)
+let DATASET_DOC = null;       // full source document (for new-style wrapped datasets); holds rater_questions
 let currentPage = 0;
-let raterMode = null;     // 1 or 2
-let raterPassword = null; // held in memory for Worker requests (not localStorage)
+let raterMode = null;         // 1 or 2
+let raterPassword = null;     // held in memory for Worker requests (not localStorage)
 let currentDataset = DATASETS[0].id;
 let annotations = {};
-let latestSha = null;     // GitHub SHA of the current rater's annotation file
+let latestSha = null;         // GitHub SHA of the current rater's annotation file
 let saveTimer = null;
 let isSyncing = false;
+
+function currentDatasetMeta() {
+  return DATASETS.find(d => d.id === currentDataset) || DATASETS[0];
+}
+function currentDatasetKind() {
+  return currentDatasetMeta().kind;
+}
+// Both 'triple' (flat array) and 'pairwise' (wrapped { passages, rater_questions, ... })
+// dataset files are normalized to { passages: [...], doc: <full> } on load.
+function normalizeDatasetPayload(raw) {
+  if (Array.isArray(raw)) return { passages: raw, doc: { passages: raw } };
+  if (raw && Array.isArray(raw.passages)) return { passages: raw.passages, doc: raw };
+  return { passages: [], doc: {} };
+}
 
 // ==================== AUTH ====================
 async function attemptLogin() {
@@ -375,9 +407,10 @@ async function attemptLogin() {
 
   raterMode = rater;
   raterPassword = pass;
+  // Persist credentials only — dataset choice is set explicitly by the chooser below.
   sessionStorage.setItem('at_session', JSON.stringify({ rater, password: pass }));
   errEl.style.display = 'none';
-  showApp();
+  showSetChooser();
 }
 
 function logout() {
@@ -386,6 +419,7 @@ function logout() {
   raterPassword = null;
   latestSha = null;
   document.getElementById('appScreen').classList.add('hidden');
+  document.getElementById('setChooserScreen').classList.add('hidden');
   document.getElementById('loginScreen').classList.remove('hidden');
   document.getElementById('username').value = '';
   document.getElementById('password').value = '';
@@ -399,15 +433,76 @@ function checkSession() {
       if ((s.rater === 1 || s.rater === 2) && typeof s.password === 'string') {
         raterMode = s.rater;
         raterPassword = s.password;
-        return true;
+        // If the rater previously picked a dataset in this session, restore it and skip the chooser.
+        if (s.dataset && DATASETS.find(function(d){ return d.id === s.dataset; })) {
+          currentDataset = s.dataset;
+        }
+        return { hasDataset: !!s.dataset };
       }
     } catch(e) {}
   }
   return false;
 }
 
+function showSetChooser() {
+  document.getElementById('loginScreen').classList.add('hidden');
+  document.getElementById('appScreen').classList.add('hidden');
+  document.getElementById('setChooserScreen').classList.remove('hidden');
+  const subtitle = document.getElementById('setChooserSubtitle');
+  if (subtitle) subtitle.textContent = 'Signed in as Rater ' + raterMode + '. Pick which task to rate. You can switch later from the topbar.';
+  const wrap = document.getElementById('setChooserCards');
+  if (!wrap) return;
+  wrap.innerHTML = DATASETS.map(function(ds) {
+    return '<button class="set-chooser-card" onclick="pickSet(\'' + ds.id + '\')" '
+      + 'style="text-align:left;background:#f9fafb;border:1.5px solid #e5e7eb;border-radius:10px;padding:18px 20px;cursor:pointer;font-family:inherit;transition:border-color 0.15s,background 0.15s;">'
+      + '<div style="font-size:16px;font-weight:700;color:#1f2937;margin-bottom:6px;">' + escapeHtml(ds.label) + '</div>'
+      + '<div style="font-size:13px;color:#4b5563;line-height:1.5;">' + escapeHtml(ds.description || '') + '</div>'
+      + '</button>';
+  }).join('');
+  // Hover styling via inline JS so we don't have to add a stylesheet rule.
+  Array.prototype.forEach.call(wrap.querySelectorAll('.set-chooser-card'), function(el) {
+    el.addEventListener('mouseenter', function(){ el.style.borderColor = '#2563eb'; el.style.background = '#eff6ff'; });
+    el.addEventListener('mouseleave', function(){ el.style.borderColor = '#e5e7eb'; el.style.background = '#f9fafb'; });
+  });
+}
+
+async function pickSet(datasetId) {
+  if (!DATASETS.find(function(d){ return d.id === datasetId; })) return;
+  document.getElementById('setChooserScreen').classList.add('hidden');
+  // Persist the choice in the session so refreshes skip the chooser.
+  try {
+    const sessRaw = sessionStorage.getItem('at_session');
+    const sess = sessRaw ? JSON.parse(sessRaw) : { rater: raterMode, password: raterPassword };
+    sess.dataset = datasetId;
+    sessionStorage.setItem('at_session', JSON.stringify(sess));
+  } catch(e) {}
+  // If we're switching from a different dataset, route through switchDataset which handles
+  // flushing pending saves. Otherwise just load this one fresh.
+  if (currentDataset !== datasetId || DATA.length === 0) {
+    currentDataset = datasetId;
+    const ds = currentDatasetMeta();
+    try {
+      const resp = await fetch(ds.file);
+      const norm = normalizeDatasetPayload(await resp.json());
+      DATA = norm.passages;
+      DATASET_DOC = norm.doc;
+    } catch(e) {
+      showToast('Could not load ' + ds.file);
+      return;
+    }
+    currentPage = 0;
+    annotations = {};
+    latestSha = null;
+  }
+  // Sync the dropdown with the chosen dataset.
+  const sel = document.getElementById('datasetSelect');
+  if (sel) sel.value = currentDataset;
+  await showApp();
+}
+
 async function showApp() {
   document.getElementById('loginScreen').classList.add('hidden');
+  document.getElementById('setChooserScreen').classList.add('hidden');
   document.getElementById('appScreen').classList.remove('hidden');
   await loadProgress();
   render();
@@ -450,7 +545,7 @@ async function workerPost(action, extra) {
   return fetch(WORKER_URL, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ rater: raterMode, password: raterPassword, action, ...(extra || {}) })
+    body: JSON.stringify({ rater: raterMode, password: raterPassword, dataset: currentDataset, action, ...(extra || {}) })
   });
 }
 
@@ -464,8 +559,16 @@ async function syncToGitHub() {
     });
     if (resp.ok) {
       const result = await resp.json();
-      latestSha = result.sha;
-      updateSyncStatus('saved');
+      // Defense-in-depth: if the Worker doesn't echo the dataset back, it's an old Worker
+      // that may have written to the wrong file. Reject and surface the error.
+      if (result.dataset !== currentDataset) {
+        console.error('Worker did not echo dataset; refusing to trust save. Got:', result.dataset, 'expected:', currentDataset);
+        updateSyncStatus('error');
+        showToast('Sync failed: server is not dataset-aware. Redeploy worker.');
+      } else {
+        latestSha = result.sha;
+        updateSyncStatus('saved');
+      }
     } else {
       console.error('Worker save failed:', resp.status);
       updateSyncStatus('error');
@@ -483,6 +586,12 @@ async function loadFromGitHub() {
     const resp = await workerPost('load');
     if (!resp.ok) return null;
     const result = await resp.json();
+    if (result.dataset !== currentDataset) {
+      // Old Worker that doesn't understand datasets — refuse to load to avoid mixing files.
+      console.error('Worker did not echo dataset on load; refusing to trust response.');
+      showToast('Could not load saved progress: server is not dataset-aware.');
+      return null;
+    }
     latestSha = result.sha;
     return result.data;  // null if file doesn't exist yet
   } catch(e) {
@@ -534,16 +643,25 @@ async function loadProgress() {
 
 function ensureAnnotation(pageId) {
   if (!annotations[pageId]) {
-    const order = shuffleOrder(pageId);
-    annotations[pageId] = {
-      rater: raterMode,
-      translationOrder: order,
-      quality: {},
-      qualityComments: {},
-      sourceConfirmed: {},
-      preservation: {},
-      standardComments: {},
-    };
+    if (currentDatasetKind() === 'pairwise') {
+      annotations[pageId] = {
+        rater: raterMode,
+        content_preservation: null,
+        spanish_fluency: null,
+        comment: '',
+      };
+    } else {
+      const order = shuffleOrder(pageId);
+      annotations[pageId] = {
+        rater: raterMode,
+        translationOrder: order,
+        quality: {},
+        qualityComments: {},
+        sourceConfirmed: {},
+        preservation: {},
+        standardComments: {},
+      };
+    }
   }
   return annotations[pageId];
 }
@@ -554,6 +672,25 @@ function getPageStatus(pageId) {
   const page = DATA.find(d => d.page_id === pageId);
   if (!ann || !page) return 'not-started';
 
+  if (currentDatasetKind() === 'pairwise') {
+    return getPairwisePageStatus(ann);
+  }
+  return getTriplePageStatus(page, ann);
+}
+
+function getPairwisePageStatus(ann) {
+  // Pairwise: 2 required questions (content_preservation, spanish_fluency) + optional comment.
+  const questions = (DATASET_DOC && Array.isArray(DATASET_DOC.rater_questions))
+    ? DATASET_DOC.rater_questions.filter(function(q){ return q.type !== 'freetext'; })
+    : [{ key: 'content_preservation' }, { key: 'spanish_fluency' }];
+  let answered = 0;
+  questions.forEach(function(q) { if (ann[q.key]) answered++; });
+  if (answered === 0) return 'not-started';
+  if (answered === questions.length) return 'complete';
+  return 'partial';
+}
+
+function getTriplePageStatus(page, ann) {
   let hasAnything = false;
   let allDone = true;
 
@@ -604,11 +741,8 @@ function render() {
   if (!raterMode || DATA.length === 0) return;
   const page = DATA[currentPage];
   const ann = ensureAnnotation(page.page_id);
-  const order = ann.translationOrder;
-  const labels = getLabels();
-  const colClasses = ['col-a', 'col-b', 'col-c'];
 
-  // Topbar
+  // Topbar (dataset-agnostic)
   document.getElementById('pageInfo').innerHTML = 'Page <strong>' + (currentPage+1) + '</strong> of <strong>' + DATA.length + '</strong>';
   document.getElementById('doneInfo').innerHTML = 'Done: <strong>' + countDone() + '</strong> / <strong>' + DATA.length + '</strong>';
   document.getElementById('raterBadge').textContent = 'Rater ' + raterMode;
@@ -621,6 +755,18 @@ function render() {
   if (status === 'not-started') { statusEl.classList.add('status-not-started'); statusEl.textContent = 'Not Started'; }
   else if (status === 'partial') { statusEl.classList.add('status-partial'); statusEl.textContent = 'Partial'; }
   else { statusEl.classList.add('status-complete'); statusEl.textContent = 'Complete'; }
+
+  if (currentDatasetKind() === 'pairwise') {
+    renderPairwise(page, ann);
+  } else {
+    renderTriple(page, ann);
+  }
+}
+
+function renderTriple(page, ann) {
+  const order = ann.translationOrder;
+  const labels = getLabels();
+  const colClasses = ['col-a', 'col-b', 'col-c'];
 
   let html = '';
 
@@ -798,9 +944,78 @@ function render() {
   document.getElementById('mainContainer').innerHTML = html;
 }
 
+// ==================== PAIRWISE RENDER (Set 2 / GEPA) ====================
+function renderPairwise(page, ann) {
+  const questions = (DATASET_DOC && Array.isArray(DATASET_DOC.rater_questions))
+    ? DATASET_DOC.rater_questions
+    : [];
+
+  let html = '';
+
+  // Source passage card
+  html += '<div class="card">';
+  html += '<div class="passage-header">';
+  html += '<span class="badge badge-id">' + escapeHtml(page.page_id) + '</span>';
+  if (page.textbook_grade != null) html += '<span class="badge badge-grade">Grade: ' + escapeHtml(String(page.textbook_grade)) + '</span>';
+  if (page.target_grade) html += '<span class="badge badge-grade">Target: ' + escapeHtml(page.target_grade) + '</span>';
+  if (page.domain)  html += '<span class="badge badge-domain">' + escapeHtml(page.domain) + '</span>';
+  if (page.subject) html += '<span class="badge badge-subject">' + escapeHtml(page.subject) + '</span>';
+  if (page.target_age) html += '<span class="badge badge-age">Age ' + escapeHtml(page.target_age) + '</span>';
+  html += '</div>';
+  html += '<div class="section-label">English (Source)</div>';
+  html += '<div class="passage-text">' + escapeHtml(page.english_text) + '</div>';
+  html += '</div>';
+
+  // Two translation columns (A and B). No model labels — A/B stay blinded.
+  html += '<div class="translations-grid" style="grid-template-columns:1fr 1fr;">';
+  ['A', 'B'].forEach(function(letter) {
+    const text = page['translation_' + letter] || '';
+    html += '<div class="translation-col col-' + letter.toLowerCase() + '">';
+    html += '<div class="translation-col-header">Translation ' + letter + '</div>';
+    html += '<div class="translation-text-card">' + escapeHtml(text) + '</div>';
+    html += '</div>';
+  });
+  html += '</div>';
+
+  // Pairwise questions
+  html += '<div class="card">';
+  html += '<div class="section-label">Pairwise comparison</div>';
+  html += '<p style="font-size:13px;color:#666;margin-bottom:14px;">Compare Translation A and Translation B against the English source. Answer each question independently.</p>';
+
+  questions.forEach(function(q) {
+    if (q.type === 'freetext') {
+      const cmt = ann[q.key] || '';
+      html += '<div class="standard-block">';
+      html += '<div style="font-weight:600;color:#374151;margin-bottom:6px;">' + escapeHtml(q.question) + '</div>';
+      html += '<textarea class="standard-comment-field" rows="3" placeholder="Optional notes..." onchange="setPairwiseFreetext(\'' + escapeAttr(q.key) + '\', this.value)" oninput="setPairwiseFreetext(\'' + escapeAttr(q.key) + '\', this.value)">' + escapeHtml(cmt) + '</textarea>';
+      html += '</div>';
+      return;
+    }
+    const current = ann[q.key] || null;
+    html += '<div class="standard-block">';
+    html += '<div style="font-weight:600;color:#374151;margin-bottom:10px;">' + escapeHtml(q.question) + '</div>';
+    html += '<div class="confirm-row" style="flex-wrap:wrap;gap:8px;">';
+    (q.options || []).forEach(function(opt) {
+      const sel = current === opt;
+      const cls = sel ? (opt === 'A better' ? 'selected-yes' : opt === 'B better' ? 'selected-yes' : 'selected-no') : '';
+      html += '<button class="confirm-btn ' + cls + '" onclick="setPairwiseAnswer(\'' + escapeAttr(q.key) + '\', \'' + escapeAttr(opt) + '\')">' + escapeHtml(opt) + '</button>';
+    });
+    html += '</div>';
+    html += '</div>';
+  });
+
+  html += '</div>';
+
+  document.getElementById('mainContainer').innerHTML = html;
+}
+
 function escapeHtml(str) {
-  if (!str) return '';
-  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  if (str === null || str === undefined) return '';
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+function escapeAttr(str) {
+  // For values placed inside single-quoted onclick attributes.
+  return String(str || '').replace(/\\/g,'\\\\').replace(/'/g,"\\'");
 }
 
 // ==================== EVENT HANDLERS ====================
@@ -884,6 +1099,22 @@ function setNoStandardsProposed(value) {
   saveProgress();
 }
 
+// Pairwise handlers (Set 2 / GEPA)
+function setPairwiseAnswer(key, value) {
+  const page = DATA[currentPage];
+  const ann = ensureAnnotation(page.page_id);
+  ann[key] = value;
+  saveProgress();
+  render();
+}
+
+function setPairwiseFreetext(key, value) {
+  const page = DATA[currentPage];
+  const ann = ensureAnnotation(page.page_id);
+  ann[key] = value;
+  saveProgress();
+}
+
 function navigate(dir) {
   const newPage = currentPage + dir;
   if (newPage < 0 || newPage >= DATA.length) return;
@@ -895,7 +1126,37 @@ function navigate(dir) {
 
 // ==================== EXPORT ====================
 function exportJSON() {
-  const output = DATA.map(function(page) {
+  const output = (currentDatasetKind() === 'pairwise')
+    ? exportPairwise()
+    : exportTriple();
+
+  const blob = new Blob([JSON.stringify(output, null, 2)], {type: 'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'annotations_' + currentDataset + '_rater' + raterMode + '_' + new Date().toISOString().slice(0,10) + '.json';
+  a.click();
+  URL.revokeObjectURL(url);
+  showToast('JSON exported!');
+}
+
+function exportPairwise() {
+  return DATA.map(function(page) {
+    const ann = annotations[page.page_id] || {};
+    const result = {
+      page_id: page.page_id,
+      rater: raterMode,
+      status: getPageStatus(page.page_id),
+      content_preservation: ann.content_preservation || null,
+      spanish_fluency: ann.spanish_fluency || null,
+      comment: ann.comment || ''
+    };
+    return result;
+  });
+}
+
+function exportTriple() {
+  return DATA.map(function(page) {
     const ann = annotations[page.page_id] || {};
     const order = ann.translationOrder || shuffleOrder(page.page_id);
 
@@ -946,28 +1207,22 @@ function exportJSON() {
     }
     return result;
   });
-
-  const blob = new Blob([JSON.stringify(output, null, 2)], {type: 'application/json'});
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = 'annotations_rater' + raterMode + '_' + new Date().toISOString().slice(0,10) + '.json';
-  a.click();
-  URL.revokeObjectURL(url);
-  showToast('JSON exported!');
 }
 
 // ==================== DATASET SWITCH ====================
 async function switchDataset(datasetId) {
+  if (datasetId === currentDataset) return;
   // Save current progress first
   saveProgress();
   if (saveTimer) { clearTimeout(saveTimer); await syncToGitHub(); }
 
   currentDataset = datasetId;
-  const ds = DATASETS.find(d => d.id === datasetId);
+  const ds = currentDatasetMeta();
   try {
     const resp = await fetch(ds.file);
-    DATA = await resp.json();
+    const norm = normalizeDatasetPayload(await resp.json());
+    DATA = norm.passages;
+    DATASET_DOC = norm.doc;
   } catch(e) {
     showToast('Could not load ' + ds.file);
     return;
@@ -975,6 +1230,13 @@ async function switchDataset(datasetId) {
   currentPage = 0;
   annotations = {};
   latestSha = null;
+  // Persist the new dataset choice to the session.
+  try {
+    const sessRaw = sessionStorage.getItem('at_session');
+    const sess = sessRaw ? JSON.parse(sessRaw) : { rater: raterMode, password: raterPassword };
+    sess.dataset = datasetId;
+    sessionStorage.setItem('at_session', JSON.stringify(sess));
+  } catch(e) {}
   await loadProgress();
   render();
   showToast('Switched to ' + ds.label);
@@ -1072,7 +1334,7 @@ document.addEventListener('keydown', function(e) {
 
 // ==================== INIT ====================
 async function init() {
-  // Populate dataset dropdown
+  // Populate dataset dropdown (used after the chooser, for switching mid-session)
   const sel = document.getElementById('datasetSelect');
   DATASETS.forEach(function(ds) {
     const opt = document.createElement('option');
@@ -1082,20 +1344,27 @@ async function init() {
   });
   sel.value = currentDataset;
 
-  // Load data
-  const ds = DATASETS.find(d => d.id === currentDataset);
-  try {
-    const resp = await fetch(ds.file);
-    DATA = await resp.json();
-  } catch(e) {
-    document.getElementById('loginScreen').innerHTML = '<div class="login-box"><h1>Error</h1><p>Could not load ' + ds.file + '. Make sure it is in the same directory.</p></div>';
-    return;
-  }
-
-  // Check existing session
-  if (checkSession()) {
+  // Restore session if available. Branch on whether the rater also picked a dataset already.
+  const session = checkSession();
+  if (session && session.hasDataset) {
+    // Restored a full session — load that dataset and go straight to the app.
+    sel.value = currentDataset;
+    const ds = currentDatasetMeta();
+    try {
+      const resp = await fetch(ds.file);
+      const norm = normalizeDatasetPayload(await resp.json());
+      DATA = norm.passages;
+      DATASET_DOC = norm.doc;
+    } catch(e) {
+      document.getElementById('loginScreen').innerHTML = '<div class="login-box"><h1>Error</h1><p>Could not load ' + ds.file + '. Make sure it is in the same directory.</p></div>';
+      return;
+    }
     showApp();
+  } else if (session) {
+    // Logged in but hasn't picked a set yet — show chooser. Datasets are fetched lazily.
+    showSetChooser();
   }
+  // Otherwise stay on the login screen; data will be fetched after pickSet().
 }
 
 init();

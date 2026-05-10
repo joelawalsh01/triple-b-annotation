@@ -2,7 +2,9 @@
 *.json
 !docs/data.json
 !docs/dropped_passages.json
+!docs/gepa_set.json
 !annotations_initial_set_rater*.json
+!annotations_gepa_set_rater*.json
 raw_translations/
 *.csv
 *.png
