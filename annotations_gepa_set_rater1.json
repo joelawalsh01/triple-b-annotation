@@ -1,5 +1,5 @@
 {
-  "page": 16,
+  "page": 17,
   "data": {
     "56690335": {
       "rater": 1,
@@ -98,6 +98,12 @@
       "comment": "A has better grammar, terms and fluency "
     },
     "63f6e60b": {
+      "rater": 1,
+      "content_preservation": "B better",
+      "spanish_fluency": "B better",
+      "comment": "B has better grammar, terms and fluency and stays true to the original source "
+    },
+    "895b8782": {
       "rater": 1,
       "content_preservation": null,
       "spanish_fluency": null,
