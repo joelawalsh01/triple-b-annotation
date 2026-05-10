@@ -1,5 +1,5 @@
 {
-  "page": 2,
+  "page": 3,
   "data": {
     "0032f708": {
       "rater": 2,
@@ -17,6 +17,12 @@
       "rater": 2,
       "content_preservation": "B better",
       "spanish_fluency": "B better",
+      "comment": ""
+    },
+    "a4ac89d7": {
+      "rater": 2,
+      "content_preservation": null,
+      "spanish_fluency": null,
       "comment": ""
     }
   }
