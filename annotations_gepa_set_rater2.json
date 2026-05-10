@@ -1,0 +1,11 @@
+{
+  "page": 0,
+  "data": {
+    "0032f708": {
+      "rater": 2,
+      "content_preservation": "B better",
+      "spanish_fluency": "B better",
+      "comment": "For translation b, the LLM included the prompts and translated them. "
+    }
+  }
+}
