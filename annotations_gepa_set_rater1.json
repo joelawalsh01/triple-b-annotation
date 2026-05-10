@@ -1,5 +1,5 @@
 {
-  "page": 27,
+  "page": 28,
   "data": {
     "56690335": {
       "rater": 1,
@@ -164,6 +164,12 @@
       "comment": "While B has a little more added to the source it is easier to read and understand "
     },
     "4a0bf105": {
+      "rater": 1,
+      "content_preservation": "B better",
+      "spanish_fluency": "B better",
+      "comment": "A has too many added terms and does not stay on the source."
+    },
+    "c220fd24": {
       "rater": 1,
       "content_preservation": null,
       "spanish_fluency": null,
