@@ -15,9 +15,9 @@
     },
     "1b47068e": {
       "rater": 1,
-      "content_preservation": null,
-      "spanish_fluency": null,
-      "comment": ""
+      "content_preservation": "A better",
+      "spanish_fluency": "A better",
+      "comment": "the second one has all the conversations with the Ai tool "
     }
   }
 }
