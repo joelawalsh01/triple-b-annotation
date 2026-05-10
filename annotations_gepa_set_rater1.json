@@ -1,5 +1,5 @@
 {
-  "page": 21,
+  "page": 22,
   "data": {
     "56690335": {
       "rater": 1,
@@ -131,7 +131,13 @@
       "rater": 1,
       "content_preservation": "Tie / cannot determine",
       "spanish_fluency": "Tie / cannot determine",
-      "comment": "Both have terrible grammar, English is still in A, B uses words that are not used "
+      "comment": "Both have terrible grammar, English is still in A, B uses words that are not used in Spanish. "
+    },
+    "e13d8a50": {
+      "rater": 1,
+      "content_preservation": null,
+      "spanish_fluency": null,
+      "comment": ""
     }
   }
 }
