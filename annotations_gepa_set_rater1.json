@@ -171,9 +171,9 @@
     },
     "c220fd24": {
       "rater": 1,
-      "content_preservation": null,
-      "spanish_fluency": null,
-      "comment": ""
+      "content_preservation": "B better",
+      "spanish_fluency": "B better",
+      "comment": "B is easier to read "
     }
   }
 }
