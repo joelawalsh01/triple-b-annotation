@@ -1,5 +1,5 @@
 {
-  "page": 21,
+  "page": 22,
   "data": {
     "56690335": {
       "rater": 2,
@@ -132,6 +132,12 @@
       "content_preservation": "Tie / cannot determine",
       "spanish_fluency": "A better",
       "comment": "For both translation, the word for cartoon is \"caricatura\""
+    },
+    "e13d8a50": {
+      "rater": 2,
+      "content_preservation": null,
+      "spanish_fluency": null,
+      "comment": ""
     }
   }
 }
