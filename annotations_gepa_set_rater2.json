@@ -11,7 +11,7 @@
       "rater": 2,
       "content_preservation": "Tie / cannot determine",
       "spanish_fluency": "Tie / cannot determine",
-      "comment": "The LLM is getting mixed up with translating \"We "
+      "comment": "The LLM is getting mixed up with translating  \"We face one direction on a summer night. We face another direction on a winter night.\" In Translation A, it is missing the inverted question mark at the beginning of the question"
     }
   }
 }
