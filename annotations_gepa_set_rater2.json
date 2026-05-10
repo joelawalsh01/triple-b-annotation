@@ -1,5 +1,5 @@
 {
-  "page": 1,
+  "page": 2,
   "data": {
     "0032f708": {
       "rater": 2,
@@ -12,6 +12,12 @@
       "content_preservation": "Tie / cannot determine",
       "spanish_fluency": "Tie / cannot determine",
       "comment": "The LLM is getting mixed up with translating  \"We face one direction on a summer night. We face another direction on a winter night.\" In Translation A, it is missing the inverted question mark at the beginning of the question. "
+    },
+    "1b47068e": {
+      "rater": 2,
+      "content_preservation": null,
+      "spanish_fluency": null,
+      "comment": ""
     }
   }
 }
