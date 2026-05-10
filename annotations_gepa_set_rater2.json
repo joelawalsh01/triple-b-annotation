@@ -141,8 +141,8 @@
     },
     "0b577080": {
       "rater": 2,
-      "content_preservation": null,
-      "spanish_fluency": null,
+      "content_preservation": "A better",
+      "spanish_fluency": "A better",
       "comment": ""
     }
   }
