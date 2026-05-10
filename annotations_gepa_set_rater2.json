@@ -64,8 +64,8 @@
     "a53f6e08": {
       "rater": 2,
       "content_preservation": "A better",
-      "spanish_fluency": null,
-      "comment": ""
+      "spanish_fluency": "A better",
+      "comment": "For both of the translations, the beginning question was not included in the translated texts"
     }
   }
 }
