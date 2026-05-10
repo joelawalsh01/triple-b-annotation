@@ -1,5 +1,5 @@
 {
-  "page": 8,
+  "page": 9,
   "data": {
     "56690335": {
       "rater": 2,
@@ -54,6 +54,12 @@
       "content_preservation": "B better",
       "spanish_fluency": "Tie / cannot determine",
       "comment": "Translation B translated the prompt and included it "
+    },
+    "77f3b3de": {
+      "rater": 2,
+      "content_preservation": null,
+      "spanish_fluency": null,
+      "comment": ""
     }
   }
 }
