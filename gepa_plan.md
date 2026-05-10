@@ -29,14 +29,17 @@ Rationale for 27B dense over the larger Qwen 3 235B-A22B-Thinking on this hardwa
 
 ## Training data ("current numbers")
 
-- **Rater 2**: 98/98 pages complete. 240 source-confirm decisions (109 Yes / 131 No, 45% Yes). 327 preservation ratings, 294 forced-rank quality labels. All 16 zero-std passages confirmed "no standard applies."
-- **Rater 1 (Ashley)**: 63 pages with input (62 complete on the non-zero-std rubric). 186 source-confirm decisions (76 Yes / 110 No, 41% Yes). 228 preservation ratings, 181 forced-rank quality overrides. Has not yet started the 16 zero-standards passages.
-- **Quality scale (Worst/Middle/Best) is now aligned**: both raters use forced-rank. Cohen's κ on per-translation labels rose from ≈0 (when rater 1 was using an absolute scale) to **0.183 unweighted / 0.347 quadratic-weighted** — fair agreement.
-- **Asymmetric signal worth noting for the paper**: agreement on the *worst* translation per page is strong (68%), but agreement on the *best* is weak (35%). Frame quality claims as "least-likely-to-fail" rather than "most-likely-best."
+Both raters at 98/98 pages complete (final, fetched 2026-05-09).
 
-For the **standards-matching** target, supervise on the both-agree subset (Yes-Yes ∪ No-No across the ~63 overlapping pages) to avoid tuning toward one rater's permissiveness baseline. Discard the disagreements as noise.
+- **Rater 2**: 240 source-confirm decisions (109 Yes / 131 No, 45% Yes). 327 preservation ratings, 294 forced-rank quality labels. All 16 zero-std passages confirmed "no standard applies."
+- **Rater 1 (Ashley)**: 240 source-confirm decisions (82 Yes / 158 No, 34% Yes). 246 preservation ratings, 277 forced-rank quality labels. All 16 zero-std passages also confirmed "no standard applies."
+- **Source-confirmation IRR (binary)**: 240 paired decisions, 60.4% raw agreement, **Cohen's κ = 0.185.** Both raters net-rejected Opus v1's candidate tags; rater 1 is the stricter of the two (34% vs 45% Yes).
+- **Quality IRR (forced-rank Worst/Middle/Best)**: 97 passages with all three translations rated by both raters (291 paired labels). 47.1% exact agreement. **κ_unweighted = 0.206, κ_linear = 0.273, κ_quadratic = 0.340.** Up from κ ≈ 0 before rater 1 switched from absolute-scale to forced-rank.
+- **Asymmetric signal — important for the paper**: agreement on the *worst* translation per page is strong (64%), but agreement on the *best* is weak (39%); full ranking match = 29%. Frame per-model quality claims as "least-likely-to-fail" rather than "most-likely-best."
 
-For the **translation** target, use rater 2's 327 preservation ratings as the dense per-(standard, translation) signal; Ashley's 228 add coverage on the overlapping pages. Forced-rank quality labels can serve as a coarser per-page model-comparison signal.
+For the **standards-matching** target, supervise on the both-agree subset (Yes-Yes ∪ No-No across all 98 pages) to avoid tuning toward one rater's permissiveness baseline. Discard the disagreements as noise.
+
+For the **translation** target, use rater 2's 327 preservation ratings as the dense per-(standard, translation) signal; rater 1's 246 add coverage on overlapping pages. Forced-rank quality labels can serve as a coarser per-page model-comparison signal, with the worst-pick being the IRR-cleanest summary.
 
 ## Budget estimates (open-model setup on GB10)
 
