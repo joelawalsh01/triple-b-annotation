@@ -1,5 +1,5 @@
 {
-  "page": 3,
+  "page": 4,
   "data": {
     "0032f708": {
       "rater": 1,
@@ -24,6 +24,12 @@
       "content_preservation": "A better",
       "spanish_fluency": "A better",
       "comment": "B is adding things to the translation that are not on the original source, A stays true to the original source "
+    },
+    "440df353": {
+      "rater": 1,
+      "content_preservation": null,
+      "spanish_fluency": null,
+      "comment": ""
     }
   }
 }
