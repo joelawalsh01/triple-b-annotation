@@ -560,11 +560,15 @@ async function syncToGitHub() {
     if (resp.ok) {
       const result = await resp.json();
       // Defense-in-depth: if the Worker doesn't echo the dataset back, it's an old Worker
-      // that may have written to the wrong file. Reject and surface the error.
-      if (result.dataset !== currentDataset) {
-        console.error('Worker did not echo dataset; refusing to trust save. Got:', result.dataset, 'expected:', currentDataset);
+      // that ignores the `dataset` field and always writes to initial_set. That's safe for
+      // Set 1 (initial_set) but would silently misroute Set 2 writes to the Set 1 file —
+      // refuse only in that case.
+      const echoOk = result.dataset === currentDataset;
+      const fallbackOk = !result.dataset && currentDataset === 'initial_set';
+      if (!echoOk && !fallbackOk) {
+        console.error('Worker did not echo dataset; refusing to trust save for non-default dataset. Got:', result.dataset, 'expected:', currentDataset);
         updateSyncStatus('error');
-        showToast('Sync failed: server is not dataset-aware. Redeploy worker.');
+        showToast('Sync failed: server is not dataset-aware. Redeploy worker before using Set 2.');
       } else {
         latestSha = result.sha;
         updateSyncStatus('saved');
@@ -586,10 +590,14 @@ async function loadFromGitHub() {
     const resp = await workerPost('load');
     if (!resp.ok) return null;
     const result = await resp.json();
-    if (result.dataset !== currentDataset) {
-      // Old Worker that doesn't understand datasets — refuse to load to avoid mixing files.
+    // Same backward-compat allowance as syncToGitHub: an old (pre-multi-dataset) Worker
+    // doesn't echo the field but always serves the initial_set file, which is fine when
+    // currentDataset === 'initial_set' and only wrong for Set 2.
+    const echoOk = result.dataset === currentDataset;
+    const fallbackOk = !result.dataset && currentDataset === 'initial_set';
+    if (!echoOk && !fallbackOk) {
       console.error('Worker did not echo dataset on load; refusing to trust response.');
-      showToast('Could not load saved progress: server is not dataset-aware.');
+      showToast('Could not load saved progress: server is not dataset-aware. Redeploy worker before using Set 2.');
       return null;
     }
     latestSha = result.sha;
