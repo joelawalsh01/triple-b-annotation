@@ -111,9 +111,9 @@
     },
     "add0dae2": {
       "rater": 1,
-      "content_preservation": null,
-      "spanish_fluency": null,
-      "comment": ""
+      "content_preservation": "A better",
+      "spanish_fluency": "B better",
+      "comment": "B has better grammar, terms and fluency, the understanding of the reading is much better "
     }
   }
 }
