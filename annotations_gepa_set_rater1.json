@@ -159,9 +159,9 @@
     },
     "d41d1653": {
       "rater": 1,
-      "content_preservation": null,
-      "spanish_fluency": null,
-      "comment": ""
+      "content_preservation": "A better",
+      "spanish_fluency": "B better",
+      "comment": "While B has a little more added to the source it is easier to read and "
     }
   }
 }
