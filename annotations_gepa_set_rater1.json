@@ -1,5 +1,5 @@
 {
-  "page": 2,
+  "page": 3,
   "data": {
     "0032f708": {
       "rater": 1,
@@ -17,7 +17,13 @@
       "rater": 1,
       "content_preservation": "A better",
       "spanish_fluency": "A better",
-      "comment": "the second one has all the conversations with the Ai tool "
+      "comment": "the second one has all the conversations with the Ai tool, and A has a better flow of the translation "
+    },
+    "a4ac89d7": {
+      "rater": 1,
+      "content_preservation": null,
+      "spanish_fluency": null,
+      "comment": ""
     }
   }
 }
