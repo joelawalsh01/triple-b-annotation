@@ -1,5 +1,5 @@
 {
-  "page": 24,
+  "page": 25,
   "data": {
     "56690335": {
       "rater": 1,
@@ -146,6 +146,12 @@
       "comment": "while A stays as closely as possible to the source, but B has better fluency and grammar "
     },
     "156553a4": {
+      "rater": 1,
+      "content_preservation": "Tie / cannot determine",
+      "spanish_fluency": "Tie / cannot determine",
+      "comment": "Both good translations and both use good grammar "
+    },
+    "a9b320b4": {
       "rater": 1,
       "content_preservation": null,
       "spanish_fluency": null,
