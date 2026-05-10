@@ -1,5 +1,5 @@
 {
-  "page": 25,
+  "page": 26,
   "data": {
     "56690335": {
       "rater": 1,
@@ -152,6 +152,12 @@
       "comment": "Both good translations and both use good grammar "
     },
     "a9b320b4": {
+      "rater": 1,
+      "content_preservation": "B better",
+      "spanish_fluency": "B better",
+      "comment": "B has better grammar, terms and fluency and stays true to the source "
+    },
+    "d41d1653": {
       "rater": 1,
       "content_preservation": null,
       "spanish_fluency": null,
