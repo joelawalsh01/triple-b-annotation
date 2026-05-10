@@ -1,5 +1,5 @@
 {
-  "page": 6,
+  "page": 7,
   "data": {
     "56690335": {
       "rater": 2,
@@ -42,6 +42,12 @@
       "content_preservation": "Tie / cannot determine",
       "spanish_fluency": "Tie / cannot determine",
       "comment": "Both translation describe the vocabulary words described in the original text, but translation B is the only one that actually structures its text like the original text. "
+    },
+    "5d79a72e": {
+      "rater": 2,
+      "content_preservation": null,
+      "spanish_fluency": null,
+      "comment": ""
     }
   }
 }
