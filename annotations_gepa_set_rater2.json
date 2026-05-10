@@ -1,11 +1,11 @@
 {
-  "page": 5,
+  "page": 6,
   "data": {
     "56690335": {
       "rater": 2,
       "content_preservation": "A better",
       "spanish_fluency": "A better",
-      "comment": "Translation A included and translated the prompt"
+      "comment": "Translation A translated and kept the prompt"
     },
     "0032f708": {
       "rater": 2,
@@ -36,6 +36,12 @@
       "content_preservation": "B better",
       "spanish_fluency": "B better",
       "comment": "Translation B included the prompt and the explanation in the translated text. "
+    },
+    "5cc11d23": {
+      "rater": 2,
+      "content_preservation": null,
+      "spanish_fluency": null,
+      "comment": ""
     }
   }
 }
