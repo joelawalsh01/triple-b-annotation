@@ -1,5 +1,5 @@
 {
-  "page": 7,
+  "page": 8,
   "data": {
     "56690335": {
       "rater": 2,
@@ -44,6 +44,12 @@
       "comment": "Both translation describe the vocabulary words described in the original text, but translation B is the only one that actually structures its text like the original text. "
     },
     "5d79a72e": {
+      "rater": 2,
+      "content_preservation": "A better",
+      "spanish_fluency": "A better",
+      "comment": ""
+    },
+    "5e732f56": {
       "rater": 2,
       "content_preservation": null,
       "spanish_fluency": null,
