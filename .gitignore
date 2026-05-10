@@ -1,6 +1,7 @@
 # Data files (keep local, don't push to public repo)
 *.json
 !docs/data.json
+!docs/dropped_passages.json
 !annotations_initial_set_rater*.json
 raw_translations/
 *.csv

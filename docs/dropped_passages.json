@@ -1,0 +1,576 @@
+{
+  "$schema": "dropped-passages/1.0",
+  "description": "Passages from the original 125-passage sample that did not reach the 98-passage human-evaluation pool. Generated for selection-bias disclosure in the paper.",
+  "source_corpus": "raw_translations/ORIGINAL_SAMPLE_DATASET.json (n=125)",
+  "evaluation_pool": "docs/data.json (n=98)",
+  "generated": "2026-05-09",
+  "total_excluded": 27,
+  "exclusion_summary": {
+    "no_models_succeeded": 4,
+    "one_model_succeeded": 7,
+    "two_models_succeeded": 9,
+    "all_three_no_shared_target_grade": 3,
+    "all_three_shared_grade_missing_tagger": 4
+  },
+  "exclusion_reason_definitions": {
+    "no_models_succeeded": "0 of 3 models produced a valid translation at any target grade.",
+    "one_model_succeeded": "Exactly 1 of 3 models produced a valid translation at any target grade.",
+    "two_models_succeeded": "Exactly 2 of 3 models produced valid translations.",
+    "all_three_no_shared_target_grade": "All 3 models produced valid translations, but the intersection of their successful target grades is empty (no A/B/C trio at a shared target grade).",
+    "all_three_shared_grade_missing_tagger": "All 3 models produced valid translations at a shared target grade, but the standards-tagging pipeline (Claude Opus 4.6) had not yet processed the passage."
+  },
+  "passages": [
+    {
+      "id": "0032f708",
+      "english_text": "What are carnivores and omnivores? Lions and hawks eat other animals. They are carnivores. A carnivore is an animal that eats other animals. Some animals eat plants and animals. For example, a bear eats berries, leaves, mice, and squirrels. A bear is an omnivore. An omnivore is an animal that eats plants and animals. Raccoons and wasps are omnivores. People are omnivores. Some animals hunt the animals they eat. Animals that hunt other animals for food are predators.",
+      "textbook_grade": "4",
+      "domain": "Life Science",
+      "subject": "Living Things Need Energy",
+      "exclusion_reason": "no_models_succeeded",
+      "successful_target_grades": {
+        "aya": [],
+        "gemini": [],
+        "gpt4o": []
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "05de3db3",
+      "english_text": "Why do we see different stars during different seasons? The night sky looks different from one season to the next. This is because Earth revolves around the Sun during the year. We face one direction on a summer night. We face another direction on a winter night.",
+      "textbook_grade": "3",
+      "domain": "Earth and Space Science",
+      "subject": "Our Solar System",
+      "exclusion_reason": "no_models_succeeded",
+      "successful_target_grades": {
+        "aya": [],
+        "gemini": [],
+        "gpt4o": []
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "1b47068e",
+      "english_text": "What are physical changes? Matter can change. A physical change is a change in how matter looks. It looks different, but it is still the same kind of matter. When you tear paper, you make a physical change. The paper is in pieces, but it is still paper.",
+      "textbook_grade": "3",
+      "domain": "Physical Science",
+      "subject": "Matter",
+      "exclusion_reason": "no_models_succeeded",
+      "successful_target_grades": {
+        "aya": [],
+        "gemini": [],
+        "gpt4o": []
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "a4ac89d7",
+      "english_text": "How can we use electricity safely? Here are two tips for using electricity safely: bared wires - Be sure the coating around a wire is unbroken. The coating is an insulator. If the coating tears and the wire is bared, the wire can touch another wire. A short circuit can heat the wire and start a fire. overloaded - outlets Never plug too many devices into one outlet. They can overheat circuits in the wall and start a fire.",
+      "textbook_grade": "4",
+      "domain": "Physical Science",
+      "subject": "Electricity",
+      "exclusion_reason": "no_models_succeeded",
+      "successful_target_grades": {
+        "aya": [],
+        "gemini": [],
+        "gpt4o": []
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "440df353",
+      "english_text": "What are atoms? Elements are made up of tiny parts called atoms. An atom is the smallest part of an element that still has the properties of that element. All atoms of an element are the same. Atoms are too small to see with our eyes. Scientists must use tools to observe them. A microscope is one of these tools. A powerful microscope can make atoms appear much larger.",
+      "textbook_grade": "3",
+      "domain": "Physical Science",
+      "subject": "Matter",
+      "exclusion_reason": "one_model_succeeded",
+      "successful_target_grades": {
+        "aya": [],
+        "gemini": [
+          "2nd-3rd"
+        ],
+        "gpt4o": []
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "56690335",
+      "english_text": "What are the planets? The four planets closest to the Sun are Mercury, Venus, Earth, and Mars. These are the inner planets. They are warmer than the other planets because they are closer to the Sun. The four planets farthest from the Sun are Jupiter, Saturn, Uranus, and Neptune. They are the outer planets. Jupiter, Saturn, Uranus, and Neptune are the largest planets in the solar system. The solar system also has some dwarf planets. Pluto is now called a dwarf planet.",
+      "textbook_grade": "3",
+      "domain": "Earth and Space Science",
+      "subject": "Our Solar System",
+      "exclusion_reason": "one_model_succeeded",
+      "successful_target_grades": {
+        "aya": [],
+        "gemini": [
+          "2nd-3rd"
+        ],
+        "gpt4o": []
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "5cc11d23",
+      "english_text": "Vocabulary: 1. axis: a line through the middle of a spinning thing. 2. lunar cycle: the time it takes the Moon to go through all its phases. 3. orbit: the path an object takes as it moves around another object. 4. phase: any shape of the Moon that we see. 5. revolve: to move around another object in a circular path. 6. rotate: to spin or turn.",
+      "textbook_grade": "3",
+      "domain": "Earth and Space Science",
+      "subject": "Our Earth, Sun, and Moon",
+      "exclusion_reason": "one_model_succeeded",
+      "successful_target_grades": {
+        "aya": [],
+        "gemini": [],
+        "gpt4o": [
+          "2nd-3rd"
+        ]
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "5d79a72e",
+      "english_text": "How do we classify matter? Matter can take three states: solid, liquid, gas A solid takes up a certain amount of space. It also keeps its shape. Most of the things you see are solids. A liquid also takes up a certain amount of space. However, it does not keep its shape. A liquid takes the shape of the thing that holds it. A gas, like a liquid, does not keep its shape. Unlike a liquid, a gas spreads out to fill different amounts of space. You cannot see most gases, but you know a gas is inside these balloons because it gives them their shape.",
+      "textbook_grade": "3",
+      "domain": "Physical Science",
+      "subject": "Matter",
+      "exclusion_reason": "one_model_succeeded",
+      "successful_target_grades": {
+        "aya": [],
+        "gemini": [
+          "2nd-3rd"
+        ],
+        "gpt4o": []
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "5e732f56",
+      "english_text": "What are herbivores? In a food chain, the first consumer is an animal that eats a plant. For example, a gopher is a plant eater. A gopher is a herbivore. A herbivore is an animal that eats mostly plants. Deer, rabbits, grasshoppers, squirrels, and cows are herbivores. Herbivores are food for other animals. The word for an animal that is hunted by another animal for food is prey. All the animals here are prey for some larger or stronger animal.",
+      "textbook_grade": "4",
+      "domain": "Life Science",
+      "subject": "Living Things Need Energy",
+      "exclusion_reason": "one_model_succeeded",
+      "successful_target_grades": {
+        "aya": [],
+        "gemini": [
+          "4th"
+        ],
+        "gpt4o": []
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "77f3b3de",
+      "english_text": "How did we learn about space? People long ago thought Earth was the center of the solar system. They thought the Sun traveled around Earth. Copernicus was a scientist. In 1543 he said that the Sun was the center of the solar system. Galileo was another scientist. In 1609 he used a telescope to show that Copernicus was right. Galileo helped us learn about the solar system.",
+      "textbook_grade": "3",
+      "domain": "Earth and Space Science",
+      "subject": "Our Solar System",
+      "exclusion_reason": "one_model_succeeded",
+      "successful_target_grades": {
+        "aya": [],
+        "gemini": [
+          "2nd-3rd"
+        ],
+        "gpt4o": []
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "a53f6e08",
+      "english_text": "What happens when heat is added to matter? Matter gains energy when it is heated. This can change its state. If a solid is heated enough, it will melt. This means the solid turns into a liquid. Ice is water in its solid state. It does not take much heat to melt it. Rocks can also melt. It takes a lot of heat to melt them.",
+      "textbook_grade": "3",
+      "domain": "Physical Science",
+      "subject": "Matter",
+      "exclusion_reason": "one_model_succeeded",
+      "successful_target_grades": {
+        "aya": [],
+        "gemini": [
+          "2nd-3rd"
+        ],
+        "gpt4o": []
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "146fc069",
+      "english_text": "Why does the Moon’s shape seem to change? The Moon is shaped like a ball. It revolves around Earth. This orbit makes its shape appear to change. Half of the Moon is always lit by the Sun. The other half is in darkness. The Moon takes about four weeks to finish one orbit. It goes through all of its phases in that time. This is called the lunar cycle. The diagram shows how the Moon’s shape appears to change over the lunar cycle. ",
+      "textbook_grade": "3",
+      "domain": "Earth and Space Science",
+      "subject": "Our Earth, Sun, and Moon",
+      "exclusion_reason": "two_models_succeeded",
+      "successful_target_grades": {
+        "aya": [],
+        "gemini": [
+          "2nd-3rd"
+        ],
+        "gpt4o": [
+          "2nd-3rd"
+        ]
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "340a35d6",
+      "english_text": "During an eclipse, darkness covers the face of the Moon. This is Earth’s shadow. As the Moon moves, it will leave Earth’s shadow. The face of the Moon will be bright again. During a lunar eclipse, the Moon may turn red.",
+      "textbook_grade": "3",
+      "domain": "Earth and Space Science",
+      "subject": "Our Earth, Sun, and Moon",
+      "exclusion_reason": "two_models_succeeded",
+      "successful_target_grades": {
+        "aya": [],
+        "gemini": [
+          "2nd-3rd"
+        ],
+        "gpt4o": [
+          "2nd-3rd"
+        ]
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "3978130d",
+      "english_text": "Each element is made up of tiny particles called atoms. An atom is the smallest particle that makes up an element and has the properties of that element. To get an atom, you would have to keep breaking a piece of an element into smaller and smaller bits.",
+      "textbook_grade": "5",
+      "domain": "Physical Science",
+      "subject": "Types of Matter",
+      "exclusion_reason": "two_models_succeeded",
+      "successful_target_grades": {
+        "aya": [],
+        "gemini": [
+          "2nd-3rd",
+          "4th",
+          "5th"
+        ],
+        "gpt4o": [
+          "5th"
+        ]
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "3a0b56d1",
+      "english_text": "Most matter is made up of more than one element. Water is made up of two elements, oxygen and hydrogen. Sugar contains those two elements plus carbon. Elements join together in many ways. They help build all the matter in our world. These things are made up of more than one element: salt, metal, wood.",
+      "textbook_grade": "3",
+      "domain": "Physical Science",
+      "subject": "Matter",
+      "exclusion_reason": "two_models_succeeded",
+      "successful_target_grades": {
+        "aya": [],
+        "gemini": [
+          "2nd-3rd"
+        ],
+        "gpt4o": [
+          "2nd-3rd"
+        ]
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "3bbdb7d4",
+      "english_text": "What are stars? Stars are hot, glowing balls of gases. Some stars group together. Our solar system is in a group of stars called the Milky Way. Stars of all sizes look like tiny points of light in the night sky. They are very far away. The Sun is the closest star to Earth. Its light makes it too bright to see the other stars during the daytime.",
+      "textbook_grade": "3",
+      "domain": "Earth and Space Science",
+      "subject": "Our Solar System",
+      "exclusion_reason": "two_models_succeeded",
+      "successful_target_grades": {
+        "aya": [],
+        "gemini": [
+          "2nd-3rd"
+        ],
+        "gpt4o": [
+          "2nd-3rd"
+        ]
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "63f6e60b",
+      "english_text": "How are electromagnets used? Electromagnets are often more useful than permanent magnets because: - you can turn them on and off by switching the current on and off - you can make them stronger by increasing the current and/or the coils of wire. Electromagnets are used in many things people use everyday, including: - doorbells - motors that run hobby trains and cars - electric guitars.",
+      "textbook_grade": "4",
+      "domain": "Physical Science",
+      "subject": "Magnetism",
+      "exclusion_reason": "two_models_succeeded",
+      "successful_target_grades": {
+        "aya": [
+          "2nd-3rd"
+        ],
+        "gemini": [
+          "4th"
+        ],
+        "gpt4o": []
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "895b8782",
+      "english_text": "Using Scientiﬁc Notation It’s easier to convert numbers to and from scientiﬁc notation than you might think. Refer to the examples on the chalkboard below as you read the following steps. Follow the steps in the sequence listed here to convert a number to scientiﬁc notation. Follow the steps in the reverse order to convert a number from scientiﬁc notation. 1. Move the decimal point left or right until you reach the last nonzero digit. This new decimal number is a in a × 10b. 2. Count how many places you moved the decimal point in Step 1. This number is b in a × 10b. 3. Did you move the decimal point left (ﬁrst example in the Figure 1.38)? If so, b is positive. Did you move the decimal point right (second example in the Figure 1.38)? If so, b is negative.",
+      "textbook_grade": "Middle School ",
+      "domain": "Physical Science",
+      "subject": "Scientiﬁc Notation",
+      "exclusion_reason": "two_models_succeeded",
+      "successful_target_grades": {
+        "aya": [],
+        "gemini": [
+          "2nd-3rd",
+          "4th",
+          "5th",
+          "6th",
+          "7th-8th"
+        ],
+        "gpt4o": [
+          "4th",
+          "5th",
+          "6th",
+          "7th-8th"
+        ]
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "add0dae2",
+      "english_text": "Which microorganisms are decomposers? Remember, decomposers are the last step in a food chain. They break down dead plants and animals. The diagram shows three decomposers on a dead tree. One is a large living thing, the mushroom. The two other decomposers are microorganisms. They are mold and bacteria. A mushroom is a fungus. A fungus is a living thing that may look like a plant. However, a fungus does not make its own food as plants do. It gets food by feeding off a dead thing.",
+      "textbook_grade": "4",
+      "domain": "Life Science",
+      "subject": "Living Things Need Energy",
+      "exclusion_reason": "two_models_succeeded",
+      "successful_target_grades": {
+        "aya": [],
+        "gemini": [
+          "2nd-3rd",
+          "4th"
+        ],
+        "gpt4o": [
+          "4th"
+        ]
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "dd7dc9ef",
+      "english_text": "On a cool morning, small droplets of water may form on grass and other objects. These water droplets are called dew. Dew forms when water vapor in the air touches a cool object. The water vapor loses heat energy and condenses to form liquid water.",
+      "textbook_grade": "3",
+      "domain": "Earth and Space Science",
+      "subject": "Matter",
+      "exclusion_reason": "two_models_succeeded",
+      "successful_target_grades": {
+        "aya": [],
+        "gemini": [
+          "2nd-3rd"
+        ],
+        "gpt4o": [
+          "2nd-3rd"
+        ]
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "39e7738b",
+      "english_text": "In 1665, Robert Hooke, an Englishman, used an early microscope to look at a nonliving thin slice of cork, a plant material. Under the microscope, cork seemed to be made of thousands of tiny empty chambers, as shown in Figure 8-1. Hooke called the chambers “cells,” because they reminded him of a monastery’s tiny rooms. That term, cell, is used in biology to this day. ",
+      "textbook_grade": "High School",
+      "domain": "Life Science",
+      "subject": "Life is Cellular",
+      "exclusion_reason": "all_three_no_shared_target_grade",
+      "successful_target_grades": {
+        "aya": [
+          "6th",
+          "7th-8th"
+        ],
+        "gemini": [
+          "4th",
+          "5th",
+          "9th-10th"
+        ],
+        "gpt4o": [
+          "4th",
+          "5th",
+          "6th",
+          "7th-8th",
+          "9th-10th"
+        ]
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "5d3d5b9e",
+      "english_text": "Although this cartoon pokes fun at scientiﬁc hypotheses, the concept of hypothesis is one of the most important in science. Scientiﬁc investigations discover evidence that helps science advance, and the purpose of scientiﬁc investigations generally is to test hypotheses. Finding evidence to support or disprove hypotheses is how science advances.",
+      "textbook_grade": "Middle School ",
+      "domain": "Physical Science",
+      "subject": "Hypothesis",
+      "exclusion_reason": "all_three_no_shared_target_grade",
+      "successful_target_grades": {
+        "aya": [
+          "5th",
+          "6th"
+        ],
+        "gemini": [
+          "2nd-3rd",
+          "7th-8th"
+        ],
+        "gpt4o": [
+          "4th",
+          "5th",
+          "6th",
+          "7th-8th"
+        ]
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "e13d8a50",
+      "english_text": "Conic Projections: A projection made by placing a paper cone over a lighted globe so that the axis of the cone aligns with the axis of the globe is known as a conic projection. The cone touches the globe along one parallel of latitude. As shown in Figure 4, areas near the parallel where the cone and globe are in contact are distorted the least.",
+      "textbook_grade": "High School",
+      "domain": "Earth and Space Science",
+      "subject": "Models of the Earth",
+      "exclusion_reason": "all_three_no_shared_target_grade",
+      "successful_target_grades": {
+        "aya": [
+          "2nd-3rd",
+          "4th",
+          "5th"
+        ],
+        "gemini": [
+          "2nd-3rd",
+          "4th",
+          "6th",
+          "7th-8th"
+        ],
+        "gpt4o": [
+          "11th-12th",
+          "5th",
+          "6th",
+          "7th-8th",
+          "9th-10th"
+        ]
+      },
+      "shared_target_grades_across_all_three": []
+    },
+    {
+      "id": "0b577080",
+      "english_text": "Angularity: As sediment is transported from its source to where it is deposited, the particles collide with each other and with other objects in their path. These collisions can cause the particles to change size and shape. When particles first break from the source rock, they tend to be angular and uneven. Particles that have moved long distances from the source tend to be more rounded and smooth. In general, the farther sediment travels from its source, the finer and smoother the particles of sediment become. ",
+      "textbook_grade": "High School",
+      "domain": "Earth and Space Science",
+      "subject": "Rocks",
+      "exclusion_reason": "all_three_shared_grade_missing_tagger",
+      "successful_target_grades": {
+        "aya": [
+          "5th",
+          "6th"
+        ],
+        "gemini": [
+          "11th-12th",
+          "2nd-3rd",
+          "4th",
+          "5th",
+          "6th",
+          "7th-8th",
+          "9th-10th"
+        ],
+        "gpt4o": [
+          "11th-12th",
+          "4th",
+          "5th",
+          "6th",
+          "7th-8th",
+          "9th-10th"
+        ]
+      },
+      "shared_target_grades_across_all_three": [
+        "5th",
+        "6th"
+      ]
+    },
+    {
+      "id": "156553a4",
+      "english_text": "When you add sugar to coffee or tea, for example, the sugar molecules move away from their original positions in the sugar crystals and disperse throughout the hot liquid. The process by which particles move from an area of higher concentration to an area of lower concentration is known as diffusion. Diffusion is the driving force behind the movement of many substances across the cell membrane.",
+      "textbook_grade": "High School",
+      "domain": "Life Science",
+      "subject": "Cell Transport",
+      "exclusion_reason": "all_three_shared_grade_missing_tagger",
+      "successful_target_grades": {
+        "aya": [
+          "5th",
+          "6th"
+        ],
+        "gemini": [
+          "11th-12th",
+          "2nd-3rd",
+          "4th",
+          "5th",
+          "6th",
+          "7th-8th"
+        ],
+        "gpt4o": [
+          "2nd-3rd",
+          "4th",
+          "5th",
+          "6th",
+          "7th-8th"
+        ]
+      },
+      "shared_target_grades_across_all_three": [
+        "5th",
+        "6th"
+      ]
+    },
+    {
+      "id": "a9b320b4",
+      "english_text": "Each cell has its own border, which separates the cell from its surroundings and also determines what comes in and what goes out. How can a cell separate itself from its environment and still allow materials to enter and leave? That’s where the transport of molecules across its border, the cell membrane, comes in.",
+      "textbook_grade": "High School",
+      "domain": "Life Science",
+      "subject": "Cell Transport",
+      "exclusion_reason": "all_three_shared_grade_missing_tagger",
+      "successful_target_grades": {
+        "aya": [
+          "5th",
+          "6th"
+        ],
+        "gemini": [
+          "11th-12th",
+          "2nd-3rd",
+          "4th",
+          "5th",
+          "6th",
+          "7th-8th",
+          "9th-10th"
+        ],
+        "gpt4o": [
+          "11th-12th",
+          "5th",
+          "6th",
+          "7th-8th",
+          "9th-10th"
+        ]
+      },
+      "shared_target_grades_across_all_three": [
+        "5th",
+        "6th"
+      ]
+    },
+    {
+      "id": "d41d1653",
+      "english_text": "Atomic Number: The number of protons in the nucleus of an atom is called the atomic number. All atoms of any given element have the same atomic number. An element’s atomic number sets the atoms of that element apart from the atoms of all other kinds of elements, as shown in Figure 3. Because an uncharged atom has an equal number of protons and electrons, the atomic number is also equal to the number of electrons in an atom of any given element. Elements on the periodic table are ordered according to their atomic numbers. The periodic table, shown on the following pages, is a system for classifying elements. Elements in the same column on the periodic table have similar arrangements of electrons in their atoms. Elements that have similar arrangements of electrons have similar chemical properties. Atomic Mass: The sum of the number of protons and neutrons in an atom is the mass number. The mass of a subatomic particle is too small to be expressed easily in grams. So, a special unit called the unified atomic mass unit (u) is used. Protons and neutrons each have an atomic mass that is close to 1 u. In contrast, electrons have much less mass than protons and neutrons do. The mass of 1 proton is equal to the combined mass of about 1,840 electrons. Because electrons add little to an atom’s total mass, their mass can be ignored when calculating an atom’s approximate mass. Isotopes: Although all atoms of a given element contain the same number of protons, the number of neutrons may differ. For example, while most helium atoms have two neutrons, some helium atoms have only one neutron. An atom that has the same number of pro- tons (or the same atomic number) as other atoms of the same element do but has a different number of neutrons (and thus a different atomic mass) is called an isotope isotope. A helium atom that has two neutrons is more massive than a helium atom that has only one neutron. Because of their different numbers of neutrons and their different masses, different isotopes of the same element have slightly different properties. ",
+      "textbook_grade": "High School",
+      "domain": "Earth and Space Science",
+      "subject": "Earth Chemistry",
+      "exclusion_reason": "all_three_shared_grade_missing_tagger",
+      "successful_target_grades": {
+        "aya": [
+          "5th",
+          "6th",
+          "7th-8th"
+        ],
+        "gemini": [
+          "5th",
+          "6th",
+          "7th-8th"
+        ],
+        "gpt4o": [
+          "6th",
+          "7th-8th",
+          "9th-10th"
+        ]
+      },
+      "shared_target_grades_across_all_three": [
+        "6th",
+        "7th-8th"
+      ]
+    }
+  ]
+}
