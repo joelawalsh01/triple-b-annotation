@@ -1,5 +1,5 @@
 {
-  "page": 3,
+  "page": 4,
   "data": {
     "0032f708": {
       "rater": 2,
@@ -23,7 +23,13 @@
       "rater": 2,
       "content_preservation": "A better",
       "spanish_fluency": "A better",
-      "comment": "The beginning of the question translation A is missing an inverted question mark "
+      "comment": "The beginning of the question translation A is missing an inverted question mark . Translation B added more information than what was given in the original text "
+    },
+    "440df353": {
+      "rater": 2,
+      "content_preservation": null,
+      "spanish_fluency": null,
+      "comment": ""
     }
   }
 }
