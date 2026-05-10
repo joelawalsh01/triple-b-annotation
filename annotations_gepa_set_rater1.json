@@ -141,9 +141,9 @@
     },
     "0b577080": {
       "rater": 1,
-      "content_preservation": null,
-      "spanish_fluency": null,
-      "comment": ""
+      "content_preservation": "A better",
+      "spanish_fluency": "B better",
+      "comment": "while A stays as closely as possible to "
     }
   }
 }
