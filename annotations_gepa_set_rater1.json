@@ -1,5 +1,5 @@
 {
-  "page": 11,
+  "page": 12,
   "data": {
     "56690335": {
       "rater": 1,
@@ -72,6 +72,12 @@
       "content_preservation": "Tie / cannot determine",
       "spanish_fluency": "Tie / cannot determine",
       "comment": "They are both good translations, B has the added conversation of the Ai tool "
+    },
+    "340a35d6": {
+      "rater": 1,
+      "content_preservation": null,
+      "spanish_fluency": null,
+      "comment": ""
     }
   }
 }
