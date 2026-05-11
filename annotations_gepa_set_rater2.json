@@ -1,5 +1,5 @@
 {
-  "page": 28,
+  "page": 29,
   "data": {
     "56690335": {
       "rater": 2,
@@ -171,8 +171,8 @@
     },
     "c220fd24": {
       "rater": 2,
-      "content_preservation": null,
-      "spanish_fluency": null,
+      "content_preservation": "B better",
+      "spanish_fluency": "B better",
       "comment": ""
     },
     "0756328a": {
