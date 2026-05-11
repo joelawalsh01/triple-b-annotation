@@ -161,7 +161,7 @@
       "rater": 2,
       "content_preservation": "Tie / cannot determine",
       "spanish_fluency": "B better",
-      "comment": "The LLM separates the science vocabulary and definition from each other, which makes it easier to reas"
+      "comment": "The LLM separates the science vocabulary and definition from each other, which makes it easier to read"
     }
   }
 }
