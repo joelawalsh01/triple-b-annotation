@@ -1,5 +1,5 @@
 {
-  "page": 26,
+  "page": 27,
   "data": {
     "56690335": {
       "rater": 2,
@@ -162,6 +162,12 @@
       "content_preservation": "Tie / cannot determine",
       "spanish_fluency": "B better",
       "comment": "The LLM separates the science vocabulary and definition from each other, which makes it easier to read"
+    },
+    "4a0bf105": {
+      "rater": 2,
+      "content_preservation": null,
+      "spanish_fluency": null,
+      "comment": ""
     }
   }
 }
