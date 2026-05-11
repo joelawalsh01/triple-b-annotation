@@ -159,9 +159,9 @@
     },
     "d41d1653": {
       "rater": 2,
-      "content_preservation": "B better",
+      "content_preservation": "Tie / cannot determine",
       "spanish_fluency": "B better",
-      "comment": "The LLM "
+      "comment": "The LLM separates the "
     }
   }
 }
